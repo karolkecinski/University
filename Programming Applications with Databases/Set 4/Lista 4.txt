@@ -1,0 +1,380 @@
+-- Zadanie 1 --------------------------------------------------------------
+
+USE KPABD2;
+GO
+
+DROP TABLE IF EXISTS Konto;
+GO
+
+CREATE TABLE Konto(
+	ID INT PRIMARY KEY,
+	stan INT Default 0
+);
+GO
+
+INSERT INTO Konto VALUES
+(1, 100),
+(2, 500);
+GO
+
+SELECT * FROM Konto;
+GO
+
+
+
+
+-- Transakcja 1 ------------
+
+USE KPABD2;
+GO
+
+SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED;
+BEGIN TRANSACTION;
+UPDATE Konto SET
+stan = stan + 500
+WHERE ID = 2;
+
+-- Tutaj zaczynamy tansakcję 2
+
+Rollback -- Or COMMIT
+
+SELECT * FROM Konto;
+GO
+
+
+
+
+
+
+-- Transakcja 2 ---------------
+
+USE KPABD2;
+GO
+
+SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED;
+BEGIN TRANSACTION;
+SELECT * FROM Konto; --Tutaj mamy Dirty Read
+
+-- Tutaj wracamy dokończyć transakcję 1
+
+SELECT * FROM Konto; --Tutaj mamy non Repeatable read
+
+COMMIT
+
+SELECT * FROM Konto;
+
+
+
+
+
+-- Transakcja 3 --------------
+
+USE KPABD2;
+GO
+
+
+--Wykonujemy początek transakcji 4
+
+SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED;
+BEGIN TRANSACTION;
+INSERT INTO Konto VALUES
+(3, 1000),
+(4, 2000);
+GO
+
+COMMIT
+
+SELECT * FROM Konto;
+
+
+
+
+-- transakcja 4 --------------
+
+USE KPABD2;
+GO
+
+SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED;
+BEGIN TRANSACTION;
+SELECT * FROM Konto
+WHERE stan > 200;
+
+-- Tutaj wracamy wykonać transakcję 3
+
+SELECT * FROM Konto
+WHERE stan > 200;
+
+COMMIT
+
+SELECT * FROM Konto;
+
+
+
+
+
+
+
+
+
+-- Zadanie 2 ---------------------------------------------------------------
+
+1NF:
+
+Powinniśmy rozdzielić imię i nazwisko pacjenta. Również adres można podzielić na miejscowość, kod pocztowy, ulicę i numer domu. 
+Powinniśmy odseparować pokój od daty wizyty, datę można podzielić na datę (dzień) i osobno godzinę wizyty.
+Powód wizyty można podzielić na typ wizyty i opis osobno.
+
+2NF:
+
+Musimy rozdzielić dane na tabelę dotyczącą informacji o pacjentach (ID pacjenta, imię, nazwisko, adres) oraz wizytach (ID wizyty, Data, Godzina, miejsce wizyty, Lekarz, Kwota, Powód).
+
+3NF:
+
+Jeżeli w danym gabinecie przyjmuje dany lekarz, to można pozostawić tylko jedną z tych informacji (np. lekarz), a gabinet w którym przyjmuje przenieść do osobnej tabeli Lekarze (ID lekarza, Imię, Nazwisko, Pokój).
+
+
+
+
+
+
+
+
+-- Zadanie 3 ----------------------------------------------------------------
+
+USE KPABD2;
+GO
+
+INSERT INTO Czytelnik (PESEL, Nazwisko, Miasto, Data_Urodzenia, Ostatnie_Wypozyczenie) VALUES
+(37234523454, 'Mydłowski', 'Kraków', '1937-04-06', NULL),
+(15345234524, 'Żubr', 'Warszawa', '1947-04-06', NULL),
+(99999999998, 'Charatonik', 'Wrocław', '1957-04-06', NULL),
+(13443434334, 'Abece', 'Warszawa', '1967-04-06', NULL),
+(44433355522, 'Iksiński', 'Toruń', '1977-04-06', NULL),
+(55555333333, 'Nikt', 'Bydgoszcz', '1987-04-06', NULL)
+GO
+
+INSERT INTO Wypozyczenie (Czytelnik_ID,Egzemplarz_ID,Data,Liczba_Dni) VALUES
+(6, 15, '2001-7-19', 24),
+(2, 9, '2001-7-8', 25),
+(2, 2, '2001-8-2', 44),
+(3, 2, '2001-3-1', 4),
+(4, 8, '2001-7-24', 66),
+(3, 9, '2001-10-24', 52),
+(4, 15, '2001-8-19', 33),
+(5, 9, '2001-2-21', 74),
+(5, 4, '2001-12-18', 10),
+(5, 9, '2001-3-28', 4),
+(2, 7, '2001-7-7', 17),
+(1, 4, '2001-12-11', 20),
+(3, 5, '2001-4-16', 5),
+(1, 13, '2001-3-28', 9),
+(4, 3, '2001-12-1', 139),
+(3, 4, '2001-6-22', 27),
+(2, 4, '2001-3-5', 13),
+(1, 8, '2001-5-19', 13),
+(5, 5, '2001-12-6', 33),
+(6, 8, '2001-3-11', 23),
+(5, 7, '2001-9-27', 11),
+(4, 14, '2001-1-11', 6),
+(1, 13, '2001-4-8', 2),
+(4, 7, '2001-10-17', 22),
+(4, 12, '2001-5-17', 23),
+(5, 8, '2001-9-6', 33),
+(1, 8, '2001-5-20', 61);
+GO
+
+INSERT INTO Wypozyczenie (Czytelnik_ID,Egzemplarz_ID,Data,Liczba_Dni) VALUES
+(6, 2, '2001-7-19', 24),
+(2, 7, '2001-7-8', 25),
+(2, 11, '2001-8-2', 44),
+(3, 5, '2001-3-1', 4),
+(4, 4, '2001-7-24', 66),
+(3, 3, '2001-10-24', 52),
+(4, 5, '2001-8-19', 33),
+(5, 2, '2001-2-21', 74),
+(5, 10, '2001-12-18', 10),
+(5, 9, '2001-3-28', 4),
+(2, 1, '2001-7-7', 17),
+(1, 1, '2001-12-11', 20),
+(3, 1, '2001-4-16', 5),
+(1, 3, '2001-3-28', 9),
+(4, 2, '2001-12-1', 139),
+(3, 3, '2001-6-22', 27),
+(2, 4, '2001-3-5', 13),
+(1, 5, '2001-5-19', 13),
+(5, 11, '2001-12-6', 33),
+(6, 7, '2001-3-11', 23),
+(5, 8, '2001-9-27', 11),
+(4, 4, '2001-1-11', 6),
+(1, 3, '2001-4-8', 2),
+(4, 4, '2001-10-17', 22),
+(4, 2, '2001-5-17', 23),
+(5, 3, '2001-9-6', 33),
+(1, 14, '2001-5-20', 61);
+GO
+
+INSERT INTO Wypozyczenie (Czytelnik_ID,Egzemplarz_ID,Data,Liczba_Dni) VALUES
+(6, 4, '2001-7-19', 24),
+(2, 4, '2001-7-8', 25),
+(2, 1, '2001-8-2', 44),
+(3, 4, '2001-3-1', 4),
+(4, 5, '2001-7-24', 66),
+(3, 5, '2001-10-24', 52),
+(4, 5, '2001-8-19', 33),
+(5, 1, '2001-2-21', 74),
+(5, 10, '2001-12-18', 10),
+(5, 7, '2001-3-28', 4),
+(2, 7, '2001-7-7', 17),
+(1, 7, '2001-12-11', 20),
+(3, 7, '2001-4-16', 5),
+(1, 7, '2001-3-28', 9),
+(4, 8, '2001-12-1', 139),
+(3, 8, '2001-6-22', 27),
+(2, 8, '2001-3-5', 13),
+(1, 8, '2001-5-19', 13),
+(5, 1, '2001-12-6', 33),
+(6, 9, '2001-3-11', 23),
+(5, 9, '2001-9-27', 11),
+(4, 9, '2001-1-11', 6),
+(1, 2, '2001-4-8', 2),
+(4, 2, '2001-10-17', 22),
+(4, 2, '2001-5-17', 23),
+(5, 1, '2001-9-6', 33),
+(1, 14, '2001-5-20', 61),
+(6, 1, '2001-7-19', 24),
+(2, 1, '2001-7-8', 25),
+(2, 1, '2001-8-2', 44),
+(3, 11, '2001-3-1', 4),
+(4, 11, '2001-7-24', 66),
+(3, 12, '2001-10-24', 52),
+(4, 12, '2001-8-19', 33),
+(5, 13, '2001-2-21', 74),
+(5, 10, '2001-12-18', 10),
+(5, 13, '2001-3-28', 4),
+(2, 13, '2001-7-7', 17),
+(1, 14, '2001-12-11', 20),
+(3, 14, '2001-4-16', 5),
+(1, 15, '2001-3-28', 9),
+(4, 15, '2001-12-1', 139),
+(3, 2, '2001-6-22', 27),
+(2, 2, '2001-3-5', 13),
+(1, 2, '2001-5-19', 13),
+(5, 1, '2001-12-6', 33),
+(6, 3, '2001-3-11', 23),
+(5, 3, '2001-9-27', 11),
+(4, 3, '2001-1-11', 6),
+(1, 3, '2001-4-8', 2),
+(4, 4, '2001-10-17', 22),
+(4, 5, '2001-5-17', 23),
+(5, 7, '2001-9-6', 33),
+(1, 8, '2001-5-20', 61);
+GO
+
+
+
+-- Zapytania --
+
+USE KPABD2;
+GO
+
+SET STATISTICS TIME ON
+GO
+
+SELECT DISTINCT c.PESEL, c.Nazwisko FROM Egzemplarz e
+JOIN Ksiazka k		ON e.Ksiazka_ID    = k.Ksiazka_ID
+JOIN Wypozyczenie w ON e.Egzemplarz_ID = w.Egzemplarz_ID
+JOIN Czytelnik c	ON c.Czytelnik_ID  = w.Czytelnik_ID
+GO
+
+SELECT c.PESEL, c.Nazwisko
+FROM Czytelnik c WHERE c.Czytelnik_ID IN
+(SELECT w.Czytelnik_ID FROM Wypozyczenie w
+JOIN Egzemplarz e ON e.Egzemplarz_ID = w.Egzemplarz_ID
+JOIN Ksiazka k	  ON e.Ksiazka_ID    = k.Ksiazka_ID)
+GO
+
+SELECT c.PESEL, c.Nazwisko
+FROM Czytelnik c WHERE c.Czytelnik_ID IN
+(SELECT w.Czytelnik_ID FROM Wypozyczenie w, Egzemplarz e, Ksiazka k WHERE e.Egzemplarz_ID = w.Egzemplarz_ID AND e.Ksiazka_ID = k.Ksiazka_ID)
+
+SET STATISTICS TIME OFF
+GO
+
+
+
+
+
+
+
+-- Zadanie 4 --------------------------------------
+
+USE AdventureWorksLT2019;
+Go
+
+SELECT * FROM SalesLT.Product WHERE ProductModelID = 11;
+
+-- Najpierw bez NONCLUSTERED INDEX, później z nim --
+
+DROP INDEX IF EXISTS SalesLT.Product.nclind;
+CREATE NONCLUSTERED INDEX nclind ON SalesLT.Product(ProductModelID);
+
+SELECT * FROM SalesLT.Product WHERE ProductModelID = 11;
+
+
+-- CLUSTERED ------
+
+USE KPABD2;
+Go
+
+CREATE Table Cars (Id INT, BrandName VARCHAR(100))
+GO
+
+INSERT INTO Cars VALUES(1,'Ford')
+INSERT INTO Cars VALUES(2,'Fiat')
+INSERT INTO Cars VALUES(3,'Mini')
+INSERT INTO Cars VALUES(4,'Jaguar')
+INSERT INTO Cars VALUES(5,'Kia')
+INSERT INTO Cars VALUES(6,'Nissan')
+INSERT INTO Cars VALUES(7,'BMW')
+INSERT INTO Cars VALUES(8,'Mercedes')
+INSERT INTO Cars VALUES(9,'Mazda')
+INSERT INTO Cars VALUES(10,'Volvo')
+INSERT INTO Cars VALUES(11,'Lexus')
+INSERT INTO Cars VALUES(12,'Buick')
+INSERT INTO Cars VALUES(13,'GMC')
+INSERT INTO Cars VALUES(14,'Honda')
+INSERT INTO Cars VALUES(15,'Lotus')
+INSERT INTO Cars VALUES(16,'Opel')
+INSERT INTO Cars VALUES(17,'Bentley')
+INSERT INTO Cars VALUES(18,'Dodge')
+INSERT INTO Cars VALUES(19,'Tesla')
+INSERT INTO Cars VALUES(20,'Porche')
+INSERT INTO Cars VALUES(21,'Ferrari')
+INSERT INTO Cars VALUES(22,'Audi')
+GO
+
+DROP INDEX IF EXISTS Cars.IX_001;
+CREATE UNIQUE CLUSTERED INDEX IX_001 ON Cars (Id);
+
+SELECT * FROM Cars WHERE Id = 14;
+
+
+
+-- COVERING -------
+
+USE AdventureWorksLT2019;
+Go
+
+SELECT Name, ProductNumber, ListPrice
+FROM SalesLT.Product
+WHERE ProductCategoryID > 20 AND ProductModelID > 15;
+
+-- Najpierw bez indeksu, potem z nim ----
+
+CREATE NONCLUSTERED INDEX CovIndex ON SalesLT.Product (ProductCategoryID, ProductModelID)
+INCLUDE (Name, ProductNumber, ListPrice)
+
+SELECT Name, ProductNumber, ListPrice
+FROM SalesLT.Product
+WHERE ProductCategoryID > 20 AND ProductModelID > 15;
+

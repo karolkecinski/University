@@ -1,0 +1,62 @@
+-- 1
+
+CREATE (Adam:Person {name:'Adam Nowak', born:1979})
+CREATE (Jan:Person {name:'Jan Kowalski', born:1980})
+
+CREATE (NowyFilm:Movie {title:'Nowy Film', released:2015, tagline:'ABCDEF'})
+CREATE (InnyFilm:Movie {title:'Inny Film', released: 1950, tagline:'To jest inny nowy film'})
+
+-- 2
+
+MATCH (x:Movie {title:'Inny Film'})
+SET x.length = 120
+RETURN x
+
+MATCH (y:Movie {title:'Inny Film'})
+SET y.budget = 10000000
+RETURN y
+
+-- 3
+
+CREATE
+(Adam:Person {name:'Adam Nowak'})-[:ACTED_IN {roles:['Pan Tadeusz']}]->(NowyFilm:Movie {title:'Nowy Film'}),
+(Jan:Person {name:'Jan Kowalski'})-[:ACTED_IN {roles:['Zbyszek']}]->(TheMatrix:Movie {title:'The Matrix'})
+
+-- 4
+
+MATCH (y:Movie {title:'Inny Film'})
+SET y.tagline = 'Zmieniony tagline'
+RETURN y
+
+-- 5
+
+MATCH (a)-[n:ACTED_IN]->(m) WHERE a.name=~'.*Adam.*' DELETE n;
+
+
+
+
+
+-- Zadanie 3
+
+-- 1
+
+MATCH (a:Person)-[n:ACTED_IN]->(m) WHERE a.name=~'.*' RETURN m LIMIT 20;
+
+-- 2
+
+MATCH (a:Person)-[n:ACTED_IN]->(m)<-[:DIRECTED]-(a) WHERE a.name=~'.*' RETURN m LIMIT 20;
+
+-- 3
+
+MATCH (a:Person) WHERE NOT (a)-[:ACTED_IN]->() RETURN a LIMIT 20;
+
+-- 4
+
+MATCH (a)-[n:ACTED_IN]->(m) WITH a, count(m) AS cnt WHERE cnt>3 RETURN a;
+
+-- 5
+
+MATCH (m)<-[n:ACTED_IN]-(a) WITH m, count(a) as cnt ORDER BY cnt DESC RETURN m, cnt;
+
+
+

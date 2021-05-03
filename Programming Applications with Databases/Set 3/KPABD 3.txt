@@ -1,0 +1,243 @@
+-- Zadanie 1
+
+USE KPABD3;
+GO
+
+DROP TABLE IF EXISTS Prices;
+GO
+
+DROP TABLE IF EXISTS Products;
+GO
+
+DROP TABLE IF EXISTS Rates;
+GO
+
+CREATE TABLE Products(
+	ID INT IDENTITY PRIMARY KEY,
+	ProductName VARCHAR(50) NOT NULL
+);
+GO
+
+CREATE TABLE Rates(
+	Currency CHAR(3) NOT NULL PRIMARY KEY,
+	PricePLN DECIMAL(10, 2)
+);
+GO
+
+CREATE TABLE Prices(
+	ProductID INT FOREIGN KEY REFERENCES Products(ID),
+	Currency CHAR(3) FOREIGN KEY REFERENCES Rates(Currency),
+	Price DECIMAL(10, 2)
+);
+GO
+
+INSERT INTO Products (ProductName) VALUES
+	('apple'),
+	('pear'),
+	('plum'),
+	('bread'),
+	('computer'),
+	('pen');
+GO
+
+INSERT INTO Rates VALUES
+	('PLN', 1.00),
+	('EUR', 4.50),
+	('USD', 4.00);
+GO
+
+INSERT INTO Prices VALUES
+	(1, 'PLN', 1.50),
+	(2, 'PLN', 2.00),
+	(3, 'PLN', 3.50),
+	(4, 'PLN', 11.99),
+	(5, 'PLN', 3000.00),
+	(6, 'PLN', 5.99),
+	(1, 'EUR', 0.33),
+	(2, 'EUR', 0.44),
+	(5, 'USD', 1000.00),
+	(4, 'USD', 0.50);
+GO
+
+CREATE OR ALTER PROCEDURE current_prices AS
+SELECT * FROM Prices ORDER BY ProductID ASC;
+GO
+
+EXEC current_prices;
+GO
+
+DECLARE j CURSOR FOR SELECT * FROM Prices;
+
+OPEN j;
+
+	DECLARE @Products_ID INT, 
+		@Currency CHAR(3), 
+		@Price DECIMAL(10, 2);
+
+	FETCH NEXT FROM j INTO @Products_ID, @Currency, @Price;
+
+	WHILE (@@FETCH_STATUS=0)
+	BEGIN
+		IF (@Currency NOT IN (SELECT Currency FROM Rates))
+		BEGIN
+			DELETE FROM Prices WHERE CURRENT OF j;
+			FETCH NEXT FROM j INTO @Products_ID, @Currency, @Price;
+			CONTINUE;
+		END
+
+		UPDATE Prices SET Price=
+			(SELECT Price FROM Prices WHERE ProductID=@Products_ID AND Currency='PLN') /
+			(SELECT PricePLN FROM Rates WHERE Currency=@Currency)
+		WHERE CURRENT OF j;
+
+		FETCH NEXT FROM j INTO @Products_ID, @Currency, @Price;
+	END
+
+CLOSE j;
+DEALLOCATE j;
+GO
+
+EXEC current_prices;
+GO
+
+
+
+
+
+-- Zadanie 3
+
+USE KPABD3;
+GO
+
+DROP TABLE IF EXISTS Cache
+
+DROP TABLE IF EXISTS History
+
+DROP TABLE IF EXISTS Parameters
+
+CREATE TABLE Cache (
+    ID INT IDENTITY, 
+    UrlAddress VARCHAR(200),
+    LastAccess DATETIME
+	CONSTRAINT ID_U PRIMARY KEY (ID),
+    CONSTRAINT UrlAddress_U UNIQUE (UrlAddress)
+);
+
+CREATE TABLE History (
+    ID INT IDENTITY PRIMARY KEY, 
+    UrlAddress VARCHAR(200) UNIQUE,
+    LastAccess DATETIME
+);
+
+CREATE TABLE Parameters (
+    Name VARCHAR(20) UNIQUE,
+    Value INT
+);
+
+INSERT INTO Parameters (Name, Value) VALUES
+('max_cache', 4)
+
+INSERT INTO Cache (UrlAddress, LastAccess) VALUES
+('https://facebook.com/', CONVERT(datetime, '27/03/2021 19:50:00', 103)),
+('https://google.com/', CONVERT(datetime, '27/03/2021 19:40:00', 103)),
+('https://netflix.com/', CONVERT(datetime, '27/03/2021 19:07:00', 103)),
+('https://coconut.com/', CONVERT(datetime, '27/03/2021 18:56:00', 103));
+
+INSERT INTO History (UrlAddress, LastAccess) VALUES
+('https://allegro.pl/', CONVERT(datetime, '27/03/2021 18:08:00', 103)),
+('https://olx.pl/', CONVERT(datetime, '27/03/2021 18:00:00', 103)),
+('https://home.pl/', CONVERT(datetime, '27/03/2021 17:36:00', 103));
+
+SELECT * FROM Parameters
+SELECT * FROM Cache
+SELECT * FROM History
+GO
+
+DROP trigger IF EXISTS inserterTrigger
+GO
+
+CREATE TRIGGER inserterTrigger ON Cache INSTEAD OF INSERT
+AS
+BEGIN
+    DECLARE data_in CURSOR FOR SELECT UrlAddress, LastAccess FROM INSERTED
+
+    DECLARE @UrlAddress VARCHAR(200), 
+			@LastAccess DATETIME,
+            @rows INT, 
+			@Max INT,
+            @counter INT = 0,
+            @ThrowingOut VARCHAR(200), 
+			@OldestLastAccess DATETIME
+
+    SELECT TOP 1 @Max = Value FROM Parameters;
+
+    OPEN data_in
+	FETCH NEXT from data_in into @UrlAddress, @LastAccess
+
+    WHILE (@@FETCH_STATUS = 0)
+    BEGIN
+        SET @counter = 0
+        SELECT @counter = COUNT(ID) 
+			FROM Cache 
+			WHERE UrlAddress = @UrlAddress
+        IF @counter = 1
+        BEGIN
+            UPDATE Cache         --Aktualizacja czasu
+				SET LastAccess = @LastAccess 
+				WHERE UrlAddress = @UrlAddress    
+        END
+        ELSE
+        BEGIN
+            SELECT @rows = COUNT(*) FROM Cache
+            IF @rows < @Max
+            BEGIN
+                INSERT INTO Cache VALUES (@UrlAddress, @LastAccess)   --Dodawanie do  Cache
+            END
+            ELSE
+            BEGIN
+                SELECT TOP 1 @ThrowingOut = UrlAddress, @OldestLastAccess = LastAccess 
+					FROM Cache 
+					ORDER BY LastAccess DESC
+
+                DELETE FROM Cache WHERE UrlAddress = @ThrowingOut   --Usuwamy go z Cache
+
+                SET @counter = 0
+                SELECT @counter = COUNT(ID) 
+					FROM History 
+					WHERE UrlAddress = @ThrowingOut
+
+                IF @counter = 1 --Znaleźliśmy go w historii -> aktualizujemy czas
+                BEGIN
+                    UPDATE History 
+						SET LastAccess = @OldestLastAccess 
+						WHERE UrlAddress = @ThrowingOut
+
+                    INSERT INTO Cache 
+						VALUES (@UrlAddress, @LastAccess)
+                END
+                ELSE --Dodajemy go do historii
+                BEGIN
+                    INSERT INTO History 
+						VALUES (@ThrowingOut, @OldestLastAccess)
+                    INSERT INTO Cache 
+						VALUES (@UrlAddress, @LastAccess)
+                END
+            END
+        END
+        FETCH NEXT from data_in into @UrlAddress, @LastAccess
+    END
+
+    CLOSE data_in
+    DEALLOCATE data_in
+END
+GO
+
+INSERT INTO Cache VALUES ('https://gazetawyborcza.pl/', CONVERT(datetime, '30/03/2021 10:00:01', 103))
+SELECT * FROM Cache
+SELECT * FROM History
+GO
+
+INSERT INTO Cache VALUES ('https://money.pl/', CONVERT(datetime, '30/03/2021 10:04:05', 103))
+SELECT * FROM Cache
+SELECT * FROM History
+GO

@@ -1,0 +1,188 @@
+-- Zadanie 1
+Połączyć się z MongoDB Compass można wpisując:
+mongodb://127.0.0.1:27017/?gssapiServiceName=mongodb
+
+My się połączyliśmy z konsoli mongo.exe
+cd C:\Program Files\MongoDB\Server\4.4\bin
+
+Wyświetlenie wszystkich baz:
+> show dbs
+
+
+
+-- Zadanie 2
+
+use KPABD
+db.createCollection("Ksiazki")
+db.createCollection("Czytelnicy")
+
+db.Ksiazki.insert({
+    _id: 1,
+    Tytul: "Pan Tadeusz",
+    Autor: "Adam Mickiewicz",
+    Rok_Wydania: 1830,
+    Cena: 80,
+    Egzemplarze: [
+        {
+            ISBN: "0001"
+        },
+	{
+            ISBN: "0002"
+        }
+    ]
+})
+
+db.Ksiazki.insert({
+    _id: 2,
+    Tytul: "Treny",
+    Autor: "Jan Kochanowski",
+    Rok_Wydania: 1500,
+    Cena: 20,
+    Egzemplarze: [
+        {
+            ISBN: "0003"
+        }
+    ]
+})
+
+db.Ksiazki.find().pretty()
+
+db.Czytelnicy.insert({
+    _id: 1,
+    PESEL: "11111111111",
+    Nazwisko: "Kowalski",
+    Miasto: "Bydgoszcz",
+    DataUrodzenia: new Date("1999-01-01"),
+    OstatnieWypozyczenie: new Date("2021-01-01"),
+    Wypozyczenia: [
+        {   
+            ISBN: "0002",
+            Data: new Date("2020-10-01"),
+            LiczbaDni: 10
+        },
+        {   
+            ISBN: "0001",
+            Data: new Date("2021-01-01"),
+            LiczbaDni: 30
+        }
+    ]
+})
+
+db.Czytelnicy.insert({
+    _id: 2,
+    PESEL: "22222222222",
+    Nazwisko: "Wojciechowski",
+    Miasto: "Wroclaw",
+    DataUrodzenia: new Date("1990-02-02"),
+    OstatnieWypozyczenie: new Date("2021-04-01"),
+    Wypozyczenia: [
+        {   
+            ISBN: "0001",
+            Data: new Date("2020-12-01"),
+            LiczbaDni: 14
+        },
+        {   
+            ISBN: "0003",
+            Data: new Date("2020-04-01"),
+            LiczbaDni: 5
+        }
+    ]
+})
+
+
+
+-- Zadanie 3
+
+db.runCommand({collMod: "Czytelnicy",
+validator: { $jsonSchema: {
+bsonType: "object",
+required: ["Nazwisko", "PESEL"],
+properties: {
+	PESEL: {
+		bsonType: "int",
+		minimum: 10000000000,
+		maximum: 99999999999,
+		description: "PESEL must be an eleven-digit number"
+	},
+	Nazwisko: {
+		bsonType: "string",
+		description: "must be a string and is required"
+	}
+}
+}
+}
+})
+
+db.Czytelnicy.insert({
+    _id: 3,
+    PESEL: "333",
+    Nazwisko: "Beczka",
+    Miasto: "Swornegacie",
+    DataUrodzenia: new Date("1990-02-02"),
+    OstatnieWypozyczenie: new Date("2021-04-01"),
+    Wypozyczenia: [
+        {   
+            ISBN: "0001",
+            Data: new Date("2020-12-01"),
+            LiczbaDni: 14
+        },
+        {   
+            ISBN: "0003",
+            Data: new Date("2020-04-01"),
+            LiczbaDni: 5
+        }
+    ]
+})
+
+
+
+
+
+-- Zadanie 4
+
+db.Czytelnicy.find().sort({PESEL: -1})
+
+const count = db.Czytelnicy.find().count();
+const skipCount = Math.ceil(count/2) - 1;
+db.Czytelnicy.find().sort({PESEL: -1}).skip(skipCount).limit(2);
+
+db.Ksiazki.find({Rok_Wydania: {$lt: 1600}})
+
+
+
+
+-- Zadanie 5
+
+Uruchom cmd jako administrator
+
+start "A" mongod --dbpath D:\Programy\MongoDB\db1 --port 10000 --replSet "demo"
+start "B" mongod --dbpath D:\Programy\MongoDB\db2 --port 20000 --replSet "demo"
+start "C" mongod --dbpath D:\Programy\MongoDB\db3 --port 30000 --replSet "demo"
+
+mongo --port 10000
+
+var rsConfig={_id: "demo", members: [{_id: 0, host: 'localhost:10000', priority:10}, {_id: 1, host: 'localhost:20000'}, {_id: 2, host: 'localhost:30000', arbiterOnly: true}]};
+rsConfig
+rs.initiate(rsConfig)
+
+db.createCollection("books")
+db.books.save({_id:1, title:"Mistrz i Małgorzata"})
+db.books.find()
+
+Otwieramy nową konsolę cmd
+cd C:\Program Files\MongoDB\Server\4.4\bin
+
+mongo --port=20000
+db.books.save({_id:2, title:"Wyznania gejszy"})
+db.books.find()
+db.setSecondaryOk()
+db.books.find()
+
+start "A" mongod --dbpath D:\Programy\MongoDB\db1 --port 10000 --replSet "demo"
+
+
+
+
+-- Zadanie 6
+
+// TODO

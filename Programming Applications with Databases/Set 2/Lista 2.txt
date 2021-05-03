@@ -1,0 +1,205 @@
+-- Zadanie 1
+
+USE KPABD2;
+GO
+
+DROP PROCEDURE IF EXISTS procedura
+GO
+
+CREATE PROCEDURE procedura @days INT AS
+BEGIN
+	SELECT 
+		c.PESEL, COUNT(w.Wypozyczenie_ID) AS LiczbaEgzemplarzy
+	FROM	
+		dbo.Czytelnik AS c,
+		dbo.Wypozyczenie AS w
+	WHERE
+		c.Czytelnik_ID = w.Czytelnik_ID AND
+		w.Liczba_Dni > @days
+	GROUP BY c.PESEL
+END
+GO
+
+DROP FUNCTION IF EXISTS funkcja
+GO
+
+CREATE FUNCTION funkcja(@days INT) RETURNS TABLE
+RETURN
+	SELECT 
+	c.PESEL, COUNT(w.Wypozyczenie_ID) AS LiczbaEgzemplarzy
+	FROM	
+		dbo.Czytelnik AS c,
+		dbo.Wypozyczenie AS w
+	WHERE
+		c.Czytelnik_ID = w.Czytelnik_ID AND
+		w.Liczba_Dni > @days
+	GROUP BY c.PESEL
+GO
+
+EXEC procedura @days = 10
+GO
+
+SELECT * FROM funkcja(10)
+GO
+
+
+
+
+
+-- Zadanie 2
+
+USE KPABD2;
+GO
+
+DROP TABLE IF EXISTS firstnames
+GO
+
+CREATE TABLE firstnames(id INT PRIMARY KEY, firstname CHAR(20))
+GO
+
+INSERT INTO firstnames VALUES(1, 'Adam')
+INSERT INTO firstnames VALUES(2, 'Jakub')
+INSERT INTO firstnames VALUES(3, 'Piotr')
+INSERT INTO firstnames VALUES(4, 'Sebastian')
+INSERT INTO firstnames VALUES(5, 'Karol')
+INSERT INTO firstnames VALUES(6, 'Aleksander')
+GO
+
+DROP TABLE IF EXISTS lastnames
+GO
+
+CREATE TABLE lastnames(id INT PRIMARY KEY, lastname CHAR(20))
+GO
+
+INSERT INTO lastnames VALUES(1, 'Nowak')
+INSERT INTO lastnames VALUES(2, 'Kowalski')
+INSERT INTO lastnames VALUES(3, 'Piotrowicz')
+INSERT INTO lastnames VALUES(4, 'Mucha')
+INSERT INTO lastnames VALUES(5, 'Jabłoński')
+INSERT INTO lastnames VALUES(6, 'Pietrucha')
+GO
+
+DROP PROCEDURE IF EXISTS procedura2
+GO
+
+CREATE PROCEDURE procedura2 @n INT AS
+BEGIN
+	DROP TABLE IF EXISTS fldata
+	CREATE TABLE fldata(firstname CHAR(20), lastname CHAR(20))
+	
+	DECLARE @iterator INT
+	SET @iterator = 1
+
+	DECLARE @limit		INT
+	DECLARE @fnamenum	INT
+	DECLARE @lnamenum INT
+
+	SET @fnamenum   = (
+		SELECT COUNT(id) 
+		FROM dbo.firstnames)
+
+	SET @lnamenum = (
+		SELECT COUNT(id) 
+		FROM dbo.lastnames)
+	
+	SET @limit = @fnamenum * @lnamenum
+
+
+	IF (@n > @limit)
+		BEGIN
+			;THROW 50001, 'Number exceeds limit of possible combinations', 1;
+		END
+
+	WHILE (@iterator <= @n)
+	BEGIN
+		DECLARE @firstname		CHAR(20)
+		DECLARE @lastname		CHAR(20)
+		SET @firstname = (SELECT TOP 1 firstname FROM firstnames ORDER BY NEWID())
+		SET @lastname = (SELECT TOP 1 lastname FROM lastnames ORDER BY NEWID())
+
+		IF NOT EXISTS (SELECT * FROM fldata WHERE firstname = @firstname AND lastname = @lastname)
+		BEGIN
+			INSERT INTO fldata VALUES(@firstname, @lastname)
+			SET @iterator = @iterator + 1
+		END
+	END
+
+	SELECT * FROM fldata
+END
+GO
+
+EXEC procedura2 @n = 8
+GO
+
+
+
+
+
+-- Zadanie 3
+
+USE KPABD2;
+GO
+
+DROP PROCEDURE IF EXISTS procedure3
+GO
+
+DROP TYPE IF EXISTS Readers
+GO
+
+CREATE TYPE Readers AS TABLE(czytelnik_id INT)
+GO
+
+CREATE PROCEDURE procedure3 @readers Readers READONLY AS
+BEGIN
+	SELECT 
+		readers.czytelnik_id, SUM(w.Liczba_Dni) AS suma_dni
+	FROM	
+		@readers AS readers,
+		dbo.Czytelnik AS c,
+		dbo.Wypozyczenie AS w
+	WHERE
+		c.Czytelnik_ID = w.Czytelnik_ID AND
+		c.Czytelnik_ID = readers.czytelnik_id
+	GROUP BY 
+		readers.czytelnik_id
+END
+GO
+
+DECLARE @czytelink_id Readers
+INSERT INTO @czytelink_id VALUES (1)
+INSERT INTO @czytelink_id VALUES (2)
+INSERT INTO @czytelink_id VALUES (3)
+
+EXEC procedure3 @czytelink_id
+GO
+
+
+
+
+
+-- Zadanie 4
+
+USE KPABD2;
+GO
+
+DECLARE @Autor VARCHAR(200) = 'Helen'
+DECLARE @Tytul VARCHAR(300) = 'Access'
+DECLARE @Rok INT --= 2006
+
+DECLARE @S1 VARCHAR(200) = '%' + @Tytul + '%'
+DECLARE @S2 VARCHAR(200) = '%' + @Autor + '%'
+
+DECLARE @QUERY NVARCHAR(4000) = '
+	SELECT COUNT(*) 
+		FROM Egzemplarz AS e JOIN Ksiazka AS k
+			ON e.Ksiazka_ID = k.Ksiazka_ID
+		WHERE Egzemplarz_ID > 0'
+
+IF(ISNULL(@Tytul, '') != '') SET @QUERY += ' AND Tytul LIKE @S1'
+IF(ISNULL(@Autor, '') != '') SET @QUERY += ' AND Autor LIKE @S2'
+IF(ISNULL(@Rok, '') != '') SET @QUERY += ' AND Rok_Wydania = @Rok'
+
+EXEC sp_executesql @QUERY, N'@Tytul VARCHAR(300), @Autor VARCHAR(200), @Rok INT, @S1 VARCHAR(200), @S2 VARCHAR(200)', @Tytul, @Autor, @Rok, @S1 = @S1, @S2 = @S2
+GO
+
+

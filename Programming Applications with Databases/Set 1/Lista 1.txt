@@ -1,0 +1,130 @@
+USE AdventureWorksLT2019;
+GO
+
+Zadanie 1
+
+SELECT DISTINCT City
+FROM SalesLT.Address JOIN SalesLT.SalesOrderHeader ON SalesLT.Address.AddressID = SalesLT.SalesOrderHeader.ShipToAddressID
+WHERE SalesOrderHeader.ShipDate <= GETDATE()
+ORDER BY City ;
+
+
+
+
+Zadanie 2
+
+SELECT ProductModel.Name, COUNT(Product.Name) AS Number_of_products
+FROM SalesLT.ProductModel JOIN SalesLT.Product ON SalesLT.ProductModel.ProductModelID = SalesLT.Product.ProductModelID
+GROUP BY ProductModel.Name
+HAVING COUNT(Product.Name)>1;
+
+
+
+Zadanie 3
+
+SELECT 
+    address.City, 
+    COUNT(clients_addr.CustomerID) AS "Liczba klientow",
+    COUNT(DISTINCT clients.SalesPerson) AS "Liczba obslugujacych"
+FROM 
+    [SalesLT].[Address] AS address, 
+    [SalesLT].[Customer] AS clients,
+    [SalesLT].[CustomerAddress] AS clients_addr
+WHERE
+    address.AddressID = clients_addr.AddressID 
+    AND clients.CustomerID = clients_addr.CustomerID
+GROUP BY address.City;
+
+
+
+Zadanie 4
+
+SELECT ProductCategoryID
+FROM SalesLT.ProductCategory
+WHERE ProductCategoryID not in (
+	SELECT DISTINCT ParentProductCategoryID 
+	FROM SalesLT.ProductCategory
+	WHERE ParentProductCategoryID IS NOT NULL
+)
+
+
+
+Zadanie 5
+
+SELECT FirstName, LastName, Sum(UnitPriceDiscount) AS "Saved money" 
+FROM SalesLT.Customer
+JOIN SalesLT.SalesOrderHeader ON SalesLT.SalesOrderHeader.CustomerID = SalesLT.Customer.CustomerID
+JOIN SalesLT.SalesOrderDetail ON SalesLT.SalesOrderDetail.SalesOrderID = SalesLT.SalesOrderHeader.SalesOrderID
+GROUP BY FirstName, LastName;
+
+
+
+
+zadanie 6
+
+ALTER TABLE SalesLT.Customer
+ADD CreditCardNumber VARCHAR(20) NOT NULL DEFAULT '0000-0000-0000-0000'
+
+
+
+
+Zadanie 7
+
+DROP TABLE M1;
+DROP TABLE M2;
+DROP TABLE S1;
+DROP TABLE S2;
+
+CREATE TABLE M1 (
+	K INT NOT NULL PRIMARY KEY,
+	V VARCHAR(20)
+);
+
+CREATE TABLE S1 (
+	K INT NOT NULL PRIMARY KEY,
+	MFK INT FOREIGN KEY REFERENCES M1(K),
+	V VARCHAR(20)
+);
+
+CREATE TABLE M2 (
+	K1 INT NOT NULL,
+	K2 INT NOT NULL,
+	V VARCHAR(20),
+	CONSTRAINT PrimKey PRIMARY KEY (K1, K2)
+);
+
+CREATE TABLE S2 (
+	K INT NOT NULL PRIMARY KEY,
+	MFK1 INT NOT NULL,
+	MFK2 INT NOT NULL ,
+	CONSTRAINT ForKey FOREIGN KEY (MFK1, MFK2) REFERENCES M2(K1, K2),
+	V VARCHAR(20)
+);
+
+INSERT INTO M1 (K, V)
+VALUES
+	(1, a),
+	(2, b),
+	(3, c);
+
+INSERT INTO S1 (K, MFK, V)
+VALUES
+	(6, 2, B),
+	(5, 2, BB),
+	(3, 3, C);
+
+INSERT INTO M2 (K1, K2, V)
+VALUES
+	(1, 1, aa),
+	(2, 1, ba),
+	(3, 2, cb);
+
+INSERT INTO S2 (K, MFK1, MFK2, V)
+VALUES
+	(4, 4, DD),
+	(2, 1, BB),
+	(1, 1, AA);
+
+ALTER TABLE S1
+MODIFY COLUMN MFK
+INT FOREIGN KEY REFERENCES M1(K) ON UPDATE CASCADE;
