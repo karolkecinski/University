@@ -1,0 +1,101 @@
+\documentclass{article}
+\usepackage{polski}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=0.5in]{geometry}
+\usepackage{amsfonts}
+
+\title{Algebra}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\paragraph{\Large{\textbf{Zadanie 5, Lista 3}}}
+
+\paragraph{Współczynniki wielomianów stopnia co najwyżej 7 nad ciałem \begin{math}\mathbb{R}_5\end{math} tworzą wektory o ośmiu współrzędnych:}
+
+\equation{W(x)=a_0x^0+a_1x^1+...+a_7x^7 \hspace{2.5cm} \overrightarrow{v}=(a_0,a_1, ... ,a_7)}
+
+\paragraph{Dodawanie i mnożenie wektorów działa tak jak dodawanie i mnożenie wielomianów:}
+\linespread{2}
+\equation{A(x)=a_3x^3 + a_5x^5, \hspace{1cm} B(x)=b_3x^3 + b_4x^4}
+\equation{\hspace{2cm S(x)=A(x) + B(x)=(a_3+b_3)x^3 + b_4x^4 + a_5x^5 \hspace{1cm} 2\cdot A(x)=2\cdot(a_3x^3 + a_5x^5)=2a_3x^3 + 2a_5x^5\hspace{0.8cm}}}
+
+\paragraph{Działamy w \begin{math}\mathbb{R}_5\end{math}, więc:}
+\equation{2x^3+4x^3=(6 \hspace{0.1cm}mod\hspace{0.1cm} 5) \cdot x^3=1\cdot x^3=x^3}
+
+\paragraph{Fakt 3.9:
+\normalfont Jeśli F : V → W jest przekształceniem liniowym oraz LIN(v_1, ... ,v_k) = $\mathbb{V}$ \hspace{0.1cm} to \hspace{0.1cm} Im(F) = LIN(F(v_1), ... ,F(v_k)).}
+\paragraph{\normalfont Skorzystamy z tego faktu do obliczenia obrazu ( Im(F) )}
+\paragraph{\begin{math}\mathbb{V}\end{math} jest przestrzenią wielomianów stopnia co najwyżej 7 nad ciałem \begin{math}\mathbb{R}_5\end{math}. \newline \normalfont Weźmy wektory standardowe \overrightarrow{e_1}, \overrightarrow{e_2}, ... ,  \overrightarrow{e_8}. Wtedy:\newline $\mathbb{V}$=LIN(\overrightarrow{e_1}, \overrightarrow{e_2}, ... ,  \overrightarrow{e_8})\newline Im(F)=LIN(F(\overrightarrow{e_1}), F(\overrightarrow{e_2}), ... ,  F(\overrightarrow{e_8}))}
+\paragraph{\hspace{5cm}\large\textbf{Z definicji przekształcenia: \hspace{5cm} \begin{math} 
+\newline 
+\hspace*{5cm}F(\overrightarrow{e_1})=0\newline
+\hspace*{5cm}F(\overrightarrow{e_2})=1\newline
+\hspace*{5cm}F(\overrightarrow{e_3})=2x+2\newline
+\hspace*{5cm}F(\overrightarrow{e_4})=3x^2+6x=3x^2+x\newline
+\hspace*{5cm}F(\overrightarrow{e_5})=4x^3+12x^4=4x^3+2x^4\newline
+\hspace*{5cm}F(\overrightarrow{e_6})=5x^4+20x^3=0\newline
+\hspace*{5cm}F(\overrightarrow{e_7})=6x^5+30x^4=x^5\newline
+\hspace*{5cm}F(\overrightarrow{e_8})=7x^6+42x^5=2x^6+2x^5\newline  \end{math}}}
+
+\paragraph{Definicja 2.1 (notatki):, B jest bazą przestrzeni liniowej $\mathbb{V}$, gdy LIN(B) = $\mathbb{V}$ oraz B jest liniowo niezależny. \newline Wektory niezależne ze zbioru \{\overrightarrow{e_1}, \overrightarrow{e_2}, ... ,  \overrightarrow{e_8})\} tworzą bazę $\mathbb{V}$. \newline Wyznaczymy ją przeprowadzając eliminację Gaussa:}
+
+\paragraph{
+$$
+\left| \begin{array}{cccccccc}
+0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & \\
+1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & \\
+2 & 2 & 0 & 0 & 0 & 0 & 0 & 0 & \\
+0 & 1 & 3 & 0 & 0 & 0 & 0 & 0 & \\
+0 & 0 & 2 & 4 & 0 & 0 & 0 & 0 & \\
+0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & \\
+0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & \\
+0 & 0 & 0 & 0 & 0 & 2 & 2 & 0 & \\
+\end{array} \right|
+\sim^1
+\left| \begin{array}{cccccccc}
+1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & \\
+2 & 2 & 0 & 0 & 0 & 0 & 0 & 0 & \\
+0 & 1 & 3 & 0 & 0 & 0 & 0 & 0 & \\
+0 & 0 & 2 & 4 & 0 & 0 & 0 & 0 & \\
+0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & \\
+0 & 0 & 0 & 0 & 0 & 2 & 2 & 0 & \\
+0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & \\
+0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & \\
+\end{array} \right|
+\sim^2
+\left| \begin{array}{cccccccc}
+1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & \\
+0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & \\
+0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & \\
+0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & \\
+0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & \\
+0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & \\
+0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & \\
+0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & \\
+\end{array} \right|
+$$
+}
+\paragraph{\begin{math}\sim^1:\end{math} Przeniesienie wierszy pustych na dół macierzy \newline
+\begin{math}\sim^2:\end{math} Odjęcie od siebie wierszy i podzielenie (aby doprowadzić do postaci z samymi jedynkami) }
+
+\paragraph{Stąd:
+\newline \normalfont
+Baza obrazu: \begin{math} \{1, x, x^2, x^3, x^5, x^6 \} \end{math} (odczytujemy niezerowe kolumny)    \hspace{0.2cm} \begin{math}dim(Im(F))=6\end{math} (6 elementów bazy)
+\newline 
+Baza jądra: \hspace{0.1cm} \begin{math} \{x^4, x^7 \} \end{math} (2 zerowe kolumny macierzy)
+\hspace{2.8cm}\begin{math}dim(ker(F))=2\end{math}    (2 elementy jądra)
+}
+
+\paragraph{Twierdzenie 3.10:
+\begin{center}
+\begin{math} dim(\mathbb{V}) = dim(Im(F)) + dim(ker(F)) \end{math} \end{center}
+\newline \begin{center}
+\begin{math}dim(\mathbb{V})=8=dim(Im(F)) + dim(ker(F)=6+2\end{math}\end{center}
+\newline \begin{center} \normalfont
+Co zgadza się z twierdzeniem 3.10\end{center}}
+
+\end{document}
