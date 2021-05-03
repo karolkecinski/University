@@ -1,0 +1,1 @@
+gcc main.c decimalio.c decimalio.h
