@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="Calendar.GUI">
+  <grid id="27dc6" binding="mainPanel" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="1217" height="621"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <tabbedpane id="dd1bd" binding="calendarTabbedPane">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="200" height="200"/>
+          </grid>
+        </constraints>
+        <properties>
+          <enabled value="true"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <scrollpane id="5a37d">
+            <constraints>
+              <tabbedpane title="Untitled"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <grid id="9f3fd" binding="monthsInYearTab" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="30" left="30" bottom="30" right="30"/>
+                <constraints/>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <grid id="1d01c" binding="currentYearPanel" custom-create="true" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="0" left="0" bottom="0" right="0"/>
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children/>
+                  </grid>
+                </children>
+              </grid>
+            </children>
+          </scrollpane>
+          <grid id="b7dd0" binding="daysInMonthTab" layout-manager="GridLayoutManager" row-count="1" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="30" left="30" bottom="30" right="30"/>
+            <constraints>
+              <tabbedpane title="Untitled"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="9b364" class="javax.swing.JList" binding="current" custom-create="true">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="2" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                    <preferred-size width="220" height="196"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <layoutOrientation value="0"/>
+                  <visibleRowCount value="6"/>
+                </properties>
+              </component>
+              <component id="949fe" class="javax.swing.JList" binding="next" custom-create="true">
+                <constraints>
+                  <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="6" hsize-policy="2" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                    <preferred-size width="180" height="196"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <layoutOrientation value="0"/>
+                  <visibleRowCount value="6"/>
+                </properties>
+              </component>
+              <component id="20f3e" class="javax.swing.JList" binding="previous" custom-create="true">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="2" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                    <preferred-size width="180" height="196"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <layoutOrientation value="0"/>
+                  <visibleRowCount value="6"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </tabbedpane>
+      <toolbar id="53497" binding="toolbar">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="-1" height="70"/>
+          </grid>
+        </constraints>
+        <properties>
+          <floatable value="false"/>
+          <inheritsPopupMenu value="false"/>
+          <margin top="10" left="10" bottom="10" right="10"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="5483a" class="javax.swing.JLabel">
+            <constraints/>
+            <properties>
+              <text value="Year: "/>
+            </properties>
+          </component>
+          <component id="37585" class="javax.swing.JSpinner" binding="yearSpinner" custom-create="true">
+            <constraints/>
+            <properties>
+              <maximumSize width="150" height="30"/>
+              <minimumSize width="120" height="25"/>
+              <preferredSize width="120" height="25"/>
+            </properties>
+          </component>
+          <component id="3de2b" class="javax.swing.JToolBar$Separator">
+            <constraints/>
+            <properties/>
+          </component>
+          <hspacer id="4f7b5">
+            <constraints/>
+          </hspacer>
+          <component id="39ced" class="javax.swing.JLabel">
+            <constraints/>
+            <properties>
+              <text value="Month: "/>
+            </properties>
+          </component>
+          <component id="aacf8" class="javax.swing.JScrollBar" binding="monthScrollBar">
+            <constraints/>
+            <properties>
+              <maximumSize width="400" height="32767"/>
+              <minimumSize width="400" height="5"/>
+              <preferredSize width="400" height="150"/>
+              <value value="1"/>
+              <valueIsAdjusting value="false"/>
+              <visibleAmount value="12"/>
+            </properties>
+          </component>
+        </children>
+      </toolbar>
+    </children>
+  </grid>
+</form>
