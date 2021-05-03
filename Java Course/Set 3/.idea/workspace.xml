@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d6916a5a-0b5a-4a5f-ad4a-588f15318063" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1jNooDk2NlKt2G7KnNCG9NSDKbf" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d6916a5a-0b5a-4a5f-ad4a-588f15318063" name="Default Changelist" comment="" />
+      <created>1603654085929</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1603654085929</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="249" y="0" key="#Project_Structure" timestamp="1603654149727">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="249" y="0" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1603654149727" />
+    <state x="447" y="70" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603798384857">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="447" y="70" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1603798384857" />
+    <state x="541" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1603654234113">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="541" y="214" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1603654234113" />
+    <state x="922" y="116" key="#com.intellij.ide.util.MemberChooser" timestamp="1603660441666">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="922" y="116" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1603660441666" />
+    <state x="209" y="33" key="new project wizard" timestamp="1604922963606">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="209" y="33" key="new project wizard/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1604922963605" />
+    <state x="723" y="190" key="run.anything.popup" timestamp="1603798396065">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="723" y="190" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1603798396065" />
+  </component>
+</project>
