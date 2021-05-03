@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>
+        Repetytorium z Metod Programowania (11.05.2020) - HackMD
+    </title>
+    <link rel="icon" type="image/png" href="https://hackmd.io/favicon.png">
+    <link rel="apple-touch-icon" href="https://hackmd.io/apple-touch-icon.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" integrity="sha256-3iu9jgsy9TpTwXKb7bNQzqWekRX7pPK+2OLj3R922fo=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.5.0/octicons.min.css" integrity="sha256-QiWfLIsCT02Sdwkogf6YMiQlj4NE84MKkzEMkZnMGdg=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.1/themes/prism.min.css" integrity="sha256-vtR0hSWRc3Tb26iuN2oZHt3KRUomwTufNIf5/4oeCyg=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/css/basic/emojify.min.css" integrity="sha256-UOrvMOsSDSrW6szVLe8ZDZezBxh5IoIfgTwdNDgTjiU=" crossorigin="anonymous" />
+    <style>
+        @charset "UTF-8";@import url(https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i|Source+Code+Pro:300,400,500|Source+Sans+Pro:300,300i,400,400i,600,600i|Source+Serif+Pro&subset=latin-ext);.hljs{display:block;background:#fff;padding:.5em;color:#333;overflow-x:auto}.hljs-comment,.hljs-meta{color:#969896}.hljs-emphasis,.hljs-quote,.hljs-string,.hljs-strong,.hljs-template-variable,.hljs-variable{color:#df5000}.hljs-keyword,.hljs-selector-tag,.hljs-type{color:#a71d5d}.hljs-attribute,.hljs-bullet,.hljs-literal,.hljs-number,.hljs-symbol{color:#0086b3}.hljs-built_in,.hljs-builtin-name{color:#005cc5}.hljs-name,.hljs-section{color:#63a35c}.hljs-tag{color:#333}.hljs-attr,.hljs-selector-attr,.hljs-selector-class,.hljs-selector-id,.hljs-selector-pseudo,.hljs-title{color:#795da3}.hljs-addition{color:#55a532;background-color:#eaffea}.hljs-deletion{color:#bd2c00;background-color:#ffecec}.hljs-link{text-decoration:underline}.markdown-body{font-size:16px;line-height:1.5;word-wrap:break-word}.markdown-body:after,.markdown-body:before{display:table;content:""}.markdown-body:after{clear:both}.markdown-body>:first-child{margin-top:0!important}.markdown-body>:last-child{margin-bottom:0!important}.markdown-body a:not([href]){color:inherit;text-decoration:none}.markdown-body .absent{color:#c00}.markdown-body .anchor{float:left;padding-right:4px;margin-left:-20px;line-height:1}.markdown-body .anchor:focus{outline:none}.markdown-body blockquote,.markdown-body dl,.markdown-body ol,.markdown-body p,.markdown-body pre,.markdown-body table,.markdown-body ul{margin-top:0;margin-bottom:16px}.markdown-body hr{height:.25em;padding:0;margin:24px 0;background-color:#e7e7e7;border:0}.markdown-body blockquote{font-size:16px;padding:0 1em;color:#777;border-left:.25em solid #ddd}.markdown-body blockquote>:first-child{margin-top:0}.markdown-body blockquote>:last-child{margin-bottom:0}.markdown-body kbd,.popover kbd{display:inline-block;padding:3px 5px;font-size:11px;line-height:10px;color:#555;vertical-align:middle;background-color:#fcfcfc;border:1px solid #ccc;border-bottom-color:#bbb;border-radius:3px;box-shadow:inset 0 -1px 0 #bbb}.markdown-body .loweralpha{list-style-type:lower-alpha}.markdown-body h1,.markdown-body h2,.markdown-body h3,.markdown-body h4,.markdown-body h5,.markdown-body h6{margin-top:24px;margin-bottom:16px;font-weight:600;line-height:1.25}.markdown-body h1 .octicon-link,.markdown-body h2 .octicon-link,.markdown-body h3 .octicon-link,.markdown-body h4 .octicon-link,.markdown-body h5 .octicon-link,.markdown-body h6 .octicon-link{color:#000;vertical-align:middle;visibility:hidden}.markdown-body h1:hover .anchor,.markdown-body h2:hover .anchor,.markdown-body h3:hover .anchor,.markdown-body h4:hover .anchor,.markdown-body h5:hover .anchor,.markdown-body h6:hover .anchor{text-decoration:none}.markdown-body h1:hover .anchor .octicon-link,.markdown-body h2:hover .anchor .octicon-link,.markdown-body h3:hover .anchor .octicon-link,.markdown-body h4:hover .anchor .octicon-link,.markdown-body h5:hover .anchor .octicon-link,.markdown-body h6:hover .anchor .octicon-link{visibility:visible}.markdown-body h1 code,.markdown-body h1 tt,.markdown-body h2 code,.markdown-body h2 tt,.markdown-body h3 code,.markdown-body h3 tt,.markdown-body h4 code,.markdown-body h4 tt,.markdown-body h5 code,.markdown-body h5 tt,.markdown-body h6 code,.markdown-body h6 tt{font-size:inherit}.markdown-body h1{font-size:2em}.markdown-body h1,.markdown-body h2{padding-bottom:.3em;border-bottom:1px solid #eee}.markdown-body h2{font-size:1.5em}.markdown-body h3{font-size:1.25em}.markdown-body h4{font-size:1em}.markdown-body h5{font-size:.875em}.markdown-body h6{font-size:.85em;color:#777}.markdown-body ol,.markdown-body ul{padding-left:2em}.markdown-body ol.no-list,.markdown-body ul.no-list{padding:0;list-style-type:none}.markdown-body ol ol,.markdown-body ol ul,.markdown-body ul ol,.markdown-body ul ul{margin-top:0;margin-bottom:0}.markdown-body li>p{margin-top:16px}.markdown-body li+li{padding-top:.25em}.markdown-body dl{padding:0}.markdown-body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}.markdown-body dl dd{padding:0 16px;margin-bottom:16px}.markdown-body table{display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}.markdown-body table th{font-weight:700}.markdown-body table td,.markdown-body table th{padding:6px 13px;border:1px solid #ddd}.markdown-body table tr{background-color:#fff;border-top:1px solid #ccc}.markdown-body table tr:nth-child(2n){background-color:#f8f8f8}.markdown-body img{max-width:100%;box-sizing:content-box;background-color:#fff}.markdown-body img[align=right]{padding-left:20px}.markdown-body img[align=left]{padding-right:20px}.markdown-body .emoji{max-width:none;vertical-align:text-top;background-color:transparent}.markdown-body span.frame{display:block;overflow:hidden}.markdown-body span.frame>span{display:block;float:left;width:auto;padding:7px;margin:13px 0 0;overflow:hidden;border:1px solid #ddd}.markdown-body span.frame span img{display:block;float:left}.markdown-body span.frame span span{display:block;padding:5px 0 0;clear:both;color:#333}.markdown-body span.align-center{display:block;overflow:hidden;clear:both}.markdown-body span.align-center>span{display:block;margin:13px auto 0;overflow:hidden;text-align:center}.markdown-body span.align-center span img{margin:0 auto;text-align:center}.markdown-body span.align-right{display:block;overflow:hidden;clear:both}.markdown-body span.align-right>span{display:block;margin:13px 0 0;overflow:hidden;text-align:right}.markdown-body span.align-right span img{margin:0;text-align:right}.markdown-body span.float-left{display:block;float:left;margin-right:13px;overflow:hidden}.markdown-body span.float-left span{margin:13px 0 0}.markdown-body span.float-right{display:block;float:right;margin-left:13px;overflow:hidden}.markdown-body span.float-right>span{display:block;margin:13px auto 0;overflow:hidden;text-align:right}.markdown-body code,.markdown-body tt{padding:0;padding-top:.2em;padding-bottom:.2em;margin:0;font-size:85%;background-color:rgba(0,0,0,.04);border-radius:3px}.markdown-body code:after,.markdown-body code:before,.markdown-body tt:after,.markdown-body tt:before{letter-spacing:-.2em;content:"\00a0"}.markdown-body code br,.markdown-body tt br{display:none}.markdown-body del code{text-decoration:inherit}.markdown-body pre{word-wrap:normal}.markdown-body pre>code{padding:0;margin:0;font-size:100%;word-break:normal;white-space:pre;background:transparent;border:0}.markdown-body .highlight{margin-bottom:16px}.markdown-body .highlight pre{margin-bottom:0;word-break:normal}.markdown-body .highlight pre,.markdown-body pre{padding:16px;overflow:auto;font-size:85%;line-height:1.45;background-color:#f7f7f7;border-radius:3px}.markdown-body pre code,.markdown-body pre tt{display:inline;max-width:auto;padding:0;margin:0;overflow:visible;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}.markdown-body pre code:after,.markdown-body pre code:before,.markdown-body pre tt:after,.markdown-body pre tt:before{content:normal}.markdown-body .csv-data td,.markdown-body .csv-data th{padding:5px;overflow:hidden;font-size:12px;line-height:1;text-align:left;white-space:nowrap}.markdown-body .csv-data .blob-line-num{padding:10px 8px 9px;text-align:right;background:#fff;border:0}.markdown-body .csv-data tr{border-top:0}.markdown-body .csv-data th{font-weight:700;background:#f8f8f8;border-top:0}.news .alert .markdown-body blockquote{padding:0 0 0 40px;border:0 none}.activity-tab .news .alert .commits,.activity-tab .news .markdown-body blockquote{padding-left:0}.task-list-item{list-style-type:none}.task-list-item label{font-weight:400}.task-list-item.enabled label{cursor:pointer}.task-list-item+.task-list-item{margin-top:3px}.task-list-item-checkbox{float:left;margin:.31em 0 .2em -1.3em!important;vertical-align:middle;cursor:default!important}.markdown-body{padding-top:40px;padding-bottom:40px;max-width:758px;overflow:visible!important}.markdown-body .emoji{vertical-align:top}.markdown-body pre{border:inherit!important}.markdown-body code{color:inherit!important}.markdown-body pre code .wrapper{display:-moz-inline-flex;display:-ms-inline-flex;display:-o-inline-flex;display:inline-flex}.markdown-body pre code .gutter{float:left;overflow:hidden;-webkit-user-select:none;user-select:none}.markdown-body pre code .gutter.linenumber{text-align:right;position:relative;display:inline-block;cursor:default;z-index:4;padding:0 8px 0 0;min-width:20px;box-sizing:content-box;color:#afafaf!important;border-right:3px solid #6ce26c!important}.markdown-body pre code .gutter.linenumber>span:before{content:attr(data-linenumber)}.markdown-body pre code .code{float:left;margin:0 0 0 16px}.markdown-body .gist .line-numbers{border-left:none;border-top:none;border-bottom:none}.markdown-body .gist .line-data{border:none}.markdown-body .gist table{border-spacing:0;border-collapse:inherit!important}.markdown-body code[data-gist-id]{background:none;padding:0}.markdown-body code[data-gist-id]:after,.markdown-body code[data-gist-id]:before{content:""}.markdown-body code[data-gist-id] .blob-num{border:unset}.markdown-body code[data-gist-id] table{overflow:unset;margin-bottom:unset}.markdown-body code[data-gist-id] table tr{background:unset}.markdown-body[dir=rtl] pre{direction:ltr}.markdown-body[dir=rtl] code{direction:ltr;unicode-bidi:embed}.markdown-body .alert>p{margin-bottom:0}.markdown-body pre.abc,.markdown-body pre.flow-chart,.markdown-body pre.graphviz,.markdown-body pre.mermaid,.markdown-body pre.sequence-diagram,.markdown-body pre.vega{text-align:center;background-color:inherit;border-radius:0;white-space:inherit;overflow:visible}.markdown-body pre.abc>code,.markdown-body pre.flow-chart>code,.markdown-body pre.graphviz>code,.markdown-body pre.mermaid>code,.markdown-body pre.sequence-diagram>code,.markdown-body pre.vega>code{text-align:left}.markdown-body pre.abc>svg,.markdown-body pre.flow-chart>svg,.markdown-body pre.graphviz>svg,.markdown-body pre.mermaid>svg,.markdown-body pre.sequence-diagram>svg,.markdown-body pre.vega>svg{max-width:100%;height:100%}.markdown-body pre>code.wrap{white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space:-o-pre-wrap;word-wrap:break-word}.markdown-body .alert>p,.markdown-body .alert>ul{margin-bottom:0}.markdown-body summary{display:list-item}.markdown-body summary:focus{outline:none}.markdown-body details summary{cursor:pointer}.markdown-body details:not([open])>:not(summary){display:none}.markdown-body figure{margin:1em 40px}.markdown-body .mark,.markdown-body mark{background-color:#fff1a7}.vimeo,.youtube{cursor:pointer;display:table;text-align:center;background-position:50%;background-repeat:no-repeat;background-size:contain;background-color:#000;overflow:hidden}.vimeo,.youtube{position:relative;width:100%}.youtube{padding-bottom:56.25%}.vimeo img{width:100%;object-fit:contain;z-index:0}.youtube img{object-fit:cover;z-index:0}.vimeo iframe,.youtube iframe,.youtube img{width:100%;height:100%;position:absolute;top:0;left:0}.vimeo iframe,.youtube iframe{vertical-align:middle;z-index:1}.vimeo .icon,.youtube .icon{position:absolute;height:auto;width:auto;top:50%;left:50%;transform:translate(-50%,-50%);color:#fff;opacity:.3;transition:opacity .2s;z-index:0}.vimeo:hover .icon,.youtube:hover .icon{opacity:.6;transition:opacity .2s}.slideshare .inner,.speakerdeck .inner{position:relative;width:100%}.slideshare .inner iframe,.speakerdeck .inner iframe{position:absolute;top:0;bottom:0;left:0;right:0;width:100%;height:100%}.MJX_Assistive_MathML{display:none}.ui-infobar{position:relative;z-index:2;max-width:760px;margin:25px auto -25px;color:#777}.toc .invisable-node{list-style-type:none}.ui-toc{position:fixed;bottom:20px;z-index:998}.ui-toc.both-mode{margin-left:8px}.ui-toc.both-mode .ui-toc-label{height:40px;padding:10px 4px;border-top-left-radius:0;border-bottom-left-radius:0}.ui-toc-label{background-color:#e6e6e6;border:none;color:#868686;transition:opacity .2s}.ui-toc .open .ui-toc-label{opacity:1;color:#fff;transition:opacity .2s}.ui-toc-label:focus{opacity:.3;background-color:#ccc;color:#000}.ui-toc-label:hover{opacity:1;background-color:#ccc;transition:opacity .2s}.ui-toc-dropdown{margin-top:20px;margin-bottom:20px;padding-left:10px;padding-right:10px;max-width:45vw;width:25vw;max-height:70vh;overflow:auto;text-align:inherit}.ui-toc-dropdown>.toc{max-height:calc(70vh - 100px);overflow:auto}.ui-toc-dropdown[dir=rtl] .nav{padding-right:0;letter-spacing:.0029em}.ui-toc-dropdown a{overflow:hidden;text-overflow:ellipsis;white-space:pre}.ui-toc-dropdown .nav>li>a{display:block;padding:4px 20px;font-size:13px;font-weight:500;color:#767676}.ui-toc-dropdown .nav>li:first-child:last-child > ul,.ui-toc-dropdown .toc.expand ul{display:block}.ui-toc-dropdown .nav>li>a:focus,.ui-toc-dropdown .nav>li>a:hover{padding-left:19px;color:#000;text-decoration:none;background-color:transparent;border-left:1px solid #000}.ui-toc-dropdown[dir=rtl] .nav>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav>li>a:hover{padding-right:19px;border-left:none;border-right:1px solid #000}.ui-toc-dropdown .nav>.active:focus>a,.ui-toc-dropdown .nav>.active:hover>a,.ui-toc-dropdown .nav>.active>a{padding-left:18px;font-weight:700;color:#000;background-color:transparent;border-left:2px solid #000}.ui-toc-dropdown[dir=rtl] .nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav>.active>a{padding-right:18px;border-left:none;border-right:2px solid #000}.ui-toc-dropdown .nav .nav{display:none;padding-bottom:10px}.ui-toc-dropdown .nav>.active>ul{display:block}.ui-toc-dropdown .nav .nav>li>a{padding-top:1px;padding-bottom:1px;padding-left:30px;font-size:12px;font-weight:400}.ui-toc-dropdown[dir=rtl] .nav .nav>li>a{padding-right:30px}.ui-toc-dropdown .nav .nav>li>ul>li>a{padding-top:1px;padding-bottom:1px;padding-left:40px;font-size:12px;font-weight:400}.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a{padding-right:40px}.ui-toc-dropdown .nav .nav>li>a:focus,.ui-toc-dropdown .nav .nav>li>a:hover{padding-left:29px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav .nav>li>a:hover{padding-right:29px}.ui-toc-dropdown .nav .nav>li>ul>li>a:focus,.ui-toc-dropdown .nav .nav>li>ul>li>a:hover{padding-left:39px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a:hover{padding-right:39px}.ui-toc-dropdown .nav .nav>.active:focus>a,.ui-toc-dropdown .nav .nav>.active:hover>a,.ui-toc-dropdown .nav .nav>.active>a{padding-left:28px;font-weight:500}.ui-toc-dropdown[dir=rtl] .nav .nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>a{padding-right:28px}.ui-toc-dropdown .nav .nav>.active>.nav>.active:focus>a,.ui-toc-dropdown .nav .nav>.active>.nav>.active:hover>a,.ui-toc-dropdown .nav .nav>.active>.nav>.active>a{padding-left:38px;font-weight:500}.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active>a{padding-right:38px}.markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif}html[lang^=ja] .markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ\ ゴシック,sans-serif}html[lang=zh-tw] .markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif}html[lang=zh-cn] .markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif}html .markdown-body[lang^=ja]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ\ ゴシック,sans-serif}html .markdown-body[lang=zh-tw]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif}html .markdown-body[lang=zh-cn]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif}html[lang^=ja] .ui-toc-dropdown{font-family:Source Sans Pro,Helvetica,Arial,Meiryo UI,MS PGothic,ＭＳ\ Ｐゴシック,sans-serif}html[lang=zh-tw] .ui-toc-dropdown{font-family:Source Sans Pro,Helvetica,Arial,Microsoft JhengHei UI,微軟正黑UI,sans-serif}html[lang=zh-cn] .ui-toc-dropdown{font-family:Source Sans Pro,Helvetica,Arial,Microsoft YaHei UI,微软雅黑UI,sans-serif}html .ui-toc-dropdown[lang^=ja]{font-family:Source Sans Pro,Helvetica,Arial,Meiryo UI,MS PGothic,ＭＳ\ Ｐゴシック,sans-serif}html .ui-toc-dropdown[lang=zh-tw]{font-family:Source Sans Pro,Helvetica,Arial,Microsoft JhengHei UI,微軟正黑UI,sans-serif}html .ui-toc-dropdown[lang=zh-cn]{font-family:Source Sans Pro,Helvetica,Arial,Microsoft YaHei UI,微软雅黑UI,sans-serif}.ui-affix-toc{position:fixed;top:0;max-width:15vw;max-height:70vh;overflow:auto}.back-to-top,.expand-toggle,.go-to-bottom{display:block;padding:4px 10px;margin-top:10px;margin-left:10px;font-size:12px;font-weight:500;color:#999}.back-to-top:focus,.back-to-top:hover,.expand-toggle:focus,.expand-toggle:hover,.go-to-bottom:focus,.go-to-bottom:hover{color:#563d7c;text-decoration:none}.back-to-top,.go-to-bottom{margin-top:0}.ui-user-icon{width:20px;height:20px;display:block;border-radius:3px;margin-top:2px;margin-bottom:2px;margin-right:5px;background-position:50%;background-repeat:no-repeat;background-size:cover}.ui-user-icon.small{width:18px;height:18px;display:inline-block;vertical-align:middle;margin:0 0 .2em}.ui-infobar>small>span{line-height:22px}.ui-infobar>small .dropdown{display:inline-block}.ui-infobar>small .dropdown a:focus,.ui-infobar>small .dropdown a:hover{text-decoration:none}.ui-published-note{color:#337ab7}.ui-published-note .fa{font-size:20px;vertical-align:top}.unselectable{-webkit-user-select:none;-o-user-select:none;user-select:none}.selectable{-webkit-user-select:text;-o-user-select:text;user-select:text}@media print{blockquote,div,img,pre,table{page-break-inside:avoid!important}a[href]:after{font-size:12px!important}}.markdown-body.slides{position:relative;z-index:1;color:#222}.markdown-body.slides:before{content:"";display:block;position:absolute;top:0;left:0;right:0;bottom:0;z-index:-1;background-color:currentColor;box-shadow:0 0 0 50vw}.markdown-body.slides section[data-markdown]{position:relative;margin-bottom:1.5em;background-color:#fff;text-align:center}.markdown-body.slides section[data-markdown] code{text-align:left}.markdown-body.slides section[data-markdown]:before{content:"";display:block;padding-bottom:56.23%}.markdown-body.slides section[data-markdown]>div:first-child{position:absolute;top:50%;left:1em;right:1em;transform:translateY(-50%);max-height:100%;overflow:hidden}.markdown-body.slides section[data-markdown]>ul{display:inline-block}.markdown-body.slides>section>section+section:after{content:"";position:absolute;top:-1.5em;right:1em;height:1.5em;border:3px solid #777}body{font-smoothing:subpixel-antialiased!important;-webkit-font-smoothing:subpixel-antialiased!important;-moz-osx-font-smoothing:auto!important;text-shadow:0 0 1em transparent,1px 1px 1.2px rgba(0,0,0,.004);-webkit-overflow-scrolling:touch;letter-spacing:.025em}.focus,:focus{outline:none!important}::-moz-focus-inner{border:0!important}body{font-family:Source Sans Pro,Helvetica,Arial,sans-serif}html[lang^=ja] body{font-family:Source Sans Pro,Helvetica,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ\ ゴシック,sans-serif}html[lang=zh-tw] body{font-family:Source Sans Pro,Helvetica,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif}html[lang=zh-cn] body{font-family:Source Sans Pro,Helvetica,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif}abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}abbr[data-original-title],abbr[title]{cursor:help}body.modal-open{overflow-y:auto;padding-right:0!important}
+    </style>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js" integrity="sha256-g6iAfvZp+nDQ2TdTR/VVKJf3bGro4ub5fvWSWVRi2NE=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.9/es5-shim.min.js" integrity="sha256-8E4Is26QH0bD52WoQpcB+R/tcWQtpzlCojrybUd7Mxo=" crossorigin="anonymous"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div id="doc" class="markdown-body container-fluid comment-inner comment-enabled" data-hard-breaks="true"><h1 id="Repetytorium-z-Metod-Programowania-11052020"><a class="anchor hidden-xs" href="#Repetytorium-z-Metod-Programowania-11052020" title="Repetytorium-z-Metod-Programowania-11052020"><span class="octicon octicon-link"></span></a><span>Repetytorium z Metod Programowania (11.05.2020)</span></h1><h2 id="Zadanie-12"><a class="anchor hidden-xs" href="#Zadanie-12" title="Zadanie-12"><span class="octicon octicon-link"></span></a><span>Zadanie 12</span></h2><h3 id="Pierwsze-podejście"><a class="anchor hidden-xs" href="#Pierwsze-podejście" title="Pierwsze-podejście"><span class="octicon octicon-link"></span></a><span>Pierwsze podejście</span></h3><p><span>Ten kawałek się nie zmienia:</span></p><pre><code class="racket hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span>
+<span data-linenumber="8"></span>
+<span data-linenumber="9"></span>
+<span data-linenumber="10"></span>
+<span data-linenumber="11"></span>
+<span data-linenumber="12"></span>
+<span data-linenumber="13"></span>
+<span data-linenumber="14"></span>
+<span data-linenumber="15"></span>
+<span data-linenumber="16"></span>
+<span data-linenumber="17"></span>
+<span data-linenumber="18"></span>
+<span data-linenumber="19"></span>
+<span data-linenumber="20"></span>
+<span data-linenumber="21"></span>
+<span data-linenumber="22"></span>
+<span data-linenumber="23"></span>
+<span data-linenumber="24"></span>
+<span data-linenumber="25"></span>
+<span data-linenumber="26"></span>
+<span data-linenumber="27"></span>
+<span data-linenumber="28"></span>
+<span data-linenumber="29"></span>
+<span data-linenumber="30"></span>
+<span data-linenumber="31"></span>
+<span data-linenumber="32"></span>
+<span data-linenumber="33"></span>
+<span data-linenumber="34"></span>
+<span data-linenumber="35"></span>
+<span data-linenumber="36"></span>
+<span data-linenumber="37"></span>
+<span data-linenumber="38"></span>
+<span data-linenumber="39"></span>
+<span data-linenumber="40"></span>
+<span data-linenumber="41"></span>
+<span data-linenumber="42"></span>
+<span data-linenumber="43"></span>
+<span data-linenumber="44"></span>
+<span data-linenumber="45"></span>
+<span data-linenumber="46"></span>
+<span data-linenumber="47"></span>
+<span data-linenumber="48"></span>
+<span data-linenumber="49"></span>
+<span data-linenumber="50"></span>
+<span data-linenumber="51"></span>
+<span data-linenumber="52"></span>
+<span data-linenumber="53"></span>
+<span data-linenumber="54"></span>
+<span data-linenumber="55"></span>
+<span data-linenumber="56"></span>
+<span data-linenumber="57"></span>
+<span data-linenumber="58"></span>
+<span data-linenumber="59"></span>
+<span data-linenumber="60"></span>
+<span data-linenumber="61"></span>
+<span data-linenumber="62"></span>
+<span data-linenumber="63"></span>
+<span data-linenumber="64"></span>
+<span data-linenumber="65"></span>
+<span data-linenumber="66"></span>
+<span data-linenumber="67"></span>
+<span data-linenumber="68"></span>
+<span data-linenumber="69"></span>
+<span data-linenumber="70"></span>
+<span data-linenumber="71"></span>
+<span data-linenumber="72"></span>
+<span data-linenumber="73"></span>
+<span data-linenumber="74"></span>
+<span data-linenumber="75"></span>
+<span data-linenumber="76"></span>
+<span data-linenumber="77"></span>
+<span data-linenumber="78"></span>
+<span data-linenumber="79"></span>
+<span data-linenumber="80"></span>
+<span data-linenumber="81"></span>
+<span data-linenumber="82"></span>
+<span data-linenumber="83"></span>
+<span data-linenumber="84"></span>
+<span data-linenumber="85"></span>
+<span data-linenumber="86"></span>
+<span data-linenumber="87"></span>
+<span data-linenumber="88"></span>
+<span data-linenumber="89"></span>
+<span data-linenumber="90"></span>
+<span data-linenumber="91"></span>
+<span data-linenumber="92"></span>
+<span data-linenumber="93"></span>
+<span data-linenumber="94"></span>
+<span data-linenumber="95"></span>
+<span data-linenumber="96"></span>
+<span data-linenumber="97"></span>
+<span data-linenumber="98"></span>
+<span data-linenumber="99"></span>
+<span data-linenumber="100"></span>
+<span data-linenumber="101"></span>
+<span data-linenumber="102"></span>
+<span data-linenumber="103"></span>
+<span data-linenumber="104"></span>
+<span data-linenumber="105"></span>
+<span data-linenumber="106"></span>
+<span data-linenumber="107"></span>
+<span data-linenumber="108"></span>
+<span data-linenumber="109"></span>
+<span data-linenumber="110"></span>
+<span data-linenumber="111"></span>
+<span data-linenumber="112"></span>
+<span data-linenumber="113"></span>
+<span data-linenumber="114"></span>
+<span data-linenumber="115"></span>
+<span data-linenumber="116"></span>
+<span data-linenumber="117"></span>
+<span data-linenumber="118"></span>
+<span data-linenumber="119"></span>
+<span data-linenumber="120"></span>
+<span data-linenumber="121"></span>
+<span data-linenumber="122"></span>
+<span data-linenumber="123"></span>
+<span data-linenumber="124"></span>
+<span data-linenumber="125"></span>
+<span data-linenumber="126"></span>
+<span data-linenumber="127"></span>
+<span data-linenumber="128"></span>
+<span data-linenumber="129"></span>
+<span data-linenumber="130"></span>
+<span data-linenumber="131"></span>
+<span data-linenumber="132"></span>
+<span data-linenumber="133"></span>
+<span data-linenumber="134"></span>
+<span data-linenumber="135"></span>
+<span data-linenumber="136"></span>
+<span data-linenumber="137"></span>
+<span data-linenumber="138"></span>
+<span data-linenumber="139"></span>
+<span data-linenumber="140"></span>
+<span data-linenumber="141"></span>
+<span data-linenumber="142"></span>
+<span data-linenumber="143"></span>
+<span data-linenumber="144"></span>
+<span data-linenumber="145"></span>
+<span data-linenumber="146"></span>
+<span data-linenumber="147"></span>
+<span data-linenumber="148"></span>
+<span data-linenumber="149"></span>
+<span data-linenumber="150"></span>
+<span data-linenumber="151"></span>
+<span data-linenumber="152"></span>
+<span data-linenumber="153"></span>
+<span data-linenumber="154"></span>
+<span data-linenumber="155"></span>
+<span data-linenumber="156"></span>
+<span data-linenumber="157"></span>
+<span data-linenumber="158"></span>
+<span data-linenumber="159"></span>
+<span data-linenumber="160"></span>
+<span data-linenumber="161"></span>
+<span data-linenumber="162"></span>
+<span data-linenumber="163"></span>
+<span data-linenumber="164"></span>
+<span data-linenumber="165"></span>
+<span data-linenumber="166"></span>
+<span data-linenumber="167"></span>
+<span data-linenumber="168"></span>
+<span data-linenumber="169"></span>
+<span data-linenumber="170"></span>
+<span data-linenumber="171"></span>
+<span data-linenumber="172"></span>
+<span data-linenumber="173"></span>
+<span data-linenumber="174"></span>
+<span data-linenumber="175"></span>
+<span data-linenumber="176"></span>
+<span data-linenumber="177"></span>
+<span data-linenumber="178"></span>
+<span data-linenumber="179"></span></div><div class="code"><span class="hljs-comment">#lang racket</span>
+
+; <span class="hljs-keyword">Do</span> programming.rkt dodajemy instrukcje
+
+; --------- ;
+; Wyrazenia ;
+; --------- ;
+
+(struct <span class="hljs-keyword">const</span>       (val)      <span class="hljs-comment">#:transparent)</span>
+(struct binop       (op l r)   <span class="hljs-comment">#:transparent)</span>
+(struct <span class="hljs-keyword">var</span>-expr    (id)       <span class="hljs-comment">#:transparent)</span>
+(struct let-expr    (id e1 e2) <span class="hljs-comment">#:transparent)</span>
+(struct letrec-expr (id e1 e2) <span class="hljs-comment">#:transparent)</span>
+(struct <span class="hljs-keyword">if</span>-expr     (eb et ef) <span class="hljs-comment">#:transparent)</span>
+(struct cons-expr   (e1 e2)    <span class="hljs-comment">#:transparent)</span>
+(struct car-expr    (e)        <span class="hljs-comment">#:transparent)</span>
+(struct cdr-expr    (e)        <span class="hljs-comment">#:transparent)</span>
+(struct <span class="hljs-keyword">null</span>-expr   ()         <span class="hljs-comment">#:transparent)</span>
+(struct <span class="hljs-keyword">null</span>?-expr  (e)        <span class="hljs-comment">#:transparent)</span>
+(struct app         (f e)      <span class="hljs-comment">#:transparent)</span>
+(struct lam         (id e)     <span class="hljs-comment">#:transparent)</span>
+
+(define (expr? e)
+  (match e
+    [(<span class="hljs-keyword">const</span> n) (<span class="hljs-keyword">or</span> (number? n) (boolean? n) (string? n))]
+    [(binop op l r) (<span class="hljs-keyword">and</span> (symbol? op) (expr? l) (expr? r))]
+    [(<span class="hljs-keyword">var</span>-expr x) (symbol? x)]
+    [(let-expr x e1 e2)
+     (<span class="hljs-keyword">and</span> (symbol? x) (expr? e1) (expr? e2))]
+    [(letrec-expr x e1 e2)
+     (<span class="hljs-keyword">and</span> (symbol? x) (expr? e1) (expr? e2))]
+    [(<span class="hljs-keyword">if</span>-expr eb et ef)
+     (<span class="hljs-keyword">and</span> (expr? eb) (expr? et) (expr? ef))]
+    [(cons-expr e1 e2) (<span class="hljs-keyword">and</span> (expr? e1) (expr? e2))]
+    [(car-expr e) (expr? e)]
+    [(cdr-expr e) (expr? e)]
+    [(<span class="hljs-keyword">null</span>-expr) <span class="hljs-keyword">true</span>]
+    [(<span class="hljs-keyword">null</span>?-expr e) (expr? e)]
+    [(app f e) (<span class="hljs-keyword">and</span> (expr? f) (expr? e))]
+    [(lam id e) (<span class="hljs-keyword">and</span> (symbol? id) (expr? e))]
+    [_ <span class="hljs-keyword">false</span>]))
+
+(define (parse q)
+  (cond
+    [(number? q) (<span class="hljs-keyword">const</span> q)]
+    [(eq? q <span class="hljs-string">'true)  (const true)]
+    [(eq? q '</span><span class="hljs-keyword">false</span>) (<span class="hljs-keyword">const</span> <span class="hljs-keyword">false</span>)]
+    [(eq? q <span class="hljs-string">'null)  (null-expr)]
+    [(string? q) (const q)]
+    [(symbol? q) (var-expr q)]
+    [(and (list? q) (eq? (length q) 2) (eq? (first q) '</span><span class="hljs-keyword">null</span>?))
+     (<span class="hljs-keyword">null</span>?-expr (parse (second q)))]
+    [(<span class="hljs-keyword">and</span> (<span class="hljs-keyword">list</span>? q) (eq? (length q) <span class="hljs-number">3</span>) (eq? (first q) <span class="hljs-string">'cons))
+     (cons-expr (parse (second q))
+                (parse (third q)))]
+    [(and (list? q) (eq? (length q) 2) (eq? (first q) '</span>car))
+     (car-expr (parse (second q)))]
+    [(<span class="hljs-keyword">and</span> (<span class="hljs-keyword">list</span>? q) (eq? (length q) <span class="hljs-number">2</span>) (eq? (first q) <span class="hljs-string">'cdr))
+     (cdr-expr (parse (second q)))]
+    [(and (list? q) (eq? (length q) 3) (eq? (first q) '</span>let))
+     (let-expr (first (second q))
+               (parse (second (second q)))
+               (parse (third q)))]
+    [(<span class="hljs-keyword">and</span> (<span class="hljs-keyword">list</span>? q) (eq? (length q) <span class="hljs-number">3</span>) (eq? (first q) <span class="hljs-string">'letrec))
+     (letrec-expr (first (second q))
+                  (parse (second (second q)))
+                  (parse (third q)))]
+    [(and (list? q) (eq? (length q) 4) (eq? (first q) '</span><span class="hljs-keyword">if</span>))
+     (<span class="hljs-keyword">if</span>-expr (parse (second q))
+              (parse (third q))
+              (parse (fourth q)))]
+    [(<span class="hljs-keyword">and</span> (<span class="hljs-keyword">list</span>? q) (eq? (length q) <span class="hljs-number">3</span>) (eq? (first q) <span class="hljs-string">'lambda))
+     (parse-lam (second q) (third q))]
+    [(and (list? q) (pair? q) (not (op-&gt;proc (car q))))
+     (parse-app q)]
+    [(and (list? q) (eq? (length q) 3) (symbol? (first q)))
+     (binop (first q)
+            (parse (second q))
+            (parse (third q)))]))
+
+(define (parse-app q)
+  (define (parse-app-accum q acc)
+    (cond [(= 1 (length q)) (app acc (parse (car q)))]
+          [else (parse-app-accum (cdr q) (app acc (parse (car q))))]))
+  (parse-app-accum (cdr q) (parse (car q))))
+
+(define (parse-lam pat e)
+  (cond [(= 1 (length pat))
+         (lam (car pat) (parse e))]
+        [else
+         (lam (car pat) (parse-lam (cdr pat) e))]))
+
+; ---------- ;
+; Srodowiska ;
+; ---------- ;
+
+(struct blackhole () #:transparent)
+(struct environ (xs) #:transparent)
+
+(define env-empty (environ null))
+(define (env-add x v env)
+  (environ (cons (mcons x v) (environ-xs env))))
+(define (env-lookup x env)
+  (define (assoc-lookup xs)
+    (cond [(null? xs) (error "Unknown identifier" x)]
+          [(eq? x (mcar (car xs)))
+             (match (mcdr (car xs))
+               [(blackhole) (error "Stuck forever in a black hole!")]
+               [x x])]
+          [else (assoc-lookup (cdr xs))]))
+  (assoc-lookup (environ-xs env)))
+(define (env-update! x v xs)
+  (define (assoc-update! xs)
+    (cond [(null? xs) (error "Unknown identifier" x)]
+          [(eq? x (mcar (car xs))) (set-mcdr! (car xs) v)]
+          [else (env-update! x v (cdr xs))]))
+  (assoc-update! (environ-xs xs)))
+(define (env-update x v xs)
+  (define (assoc-update xs)
+    (cond [(null? xs) (list (mcons x v))]
+          [(eq? x (mcar (car xs))) (cons (mcons x v) (cdr xs))]
+          [else (cons (car xs) (assoc-update (cdr xs)))]))
+  (environ (assoc-update (environ-xs xs))))
+
+; --------- ;
+; Ewaluacja ;
+; --------- ;
+
+(struct clo (id e env) #:transparent)
+
+(define (value? v)
+  (or (number? v)
+      (boolean? v)
+      (string? v)
+      (and (pair? v) (value? (car v)) (value? (cdr v)))
+      (null? v)
+      (clo? v)
+      (blackhole? v)))
+
+(define (op-&gt;proc op)
+  (match op ['</span>+ +] [<span class="hljs-string">'- -] ['</span>* *] [<span class="hljs-string">'/ /] ['</span>% modulo]
+            [<span class="hljs-string">'= =] ['</span>&gt; &gt;] [<span class="hljs-string">'&gt;= &gt;=] ['</span>&lt; &lt;] [<span class="hljs-string">'&lt;= &lt;=]
+            ['</span><span class="hljs-keyword">and</span> (lambda (x y) (<span class="hljs-keyword">and</span> x y))]
+            [<span class="hljs-string">'or  (lambda (x y) (or  x y))]
+            ['</span>eq? eq?]
+            [_ <span class="hljs-keyword">false</span>]))
+
+(define (<span class="hljs-keyword">eval</span>-env e env)
+  (match e
+    [(<span class="hljs-keyword">const</span> n) n]
+    [(binop op l r) ((op-&gt;proc op) (<span class="hljs-keyword">eval</span>-env l env)
+                                   (<span class="hljs-keyword">eval</span>-env r env))]
+    [(let-expr x e1 e2)
+     (<span class="hljs-keyword">eval</span>-env e2 (env-add x (<span class="hljs-keyword">eval</span>-env e1 env) env))]
+    [(letrec-expr x e1 e2)
+     (let* ([<span class="hljs-keyword">new</span>-env (env-add x (blackhole) env)]
+            [v (<span class="hljs-keyword">eval</span>-env e1 <span class="hljs-keyword">new</span>-env)])
+       (begin
+          (env-update! x v <span class="hljs-keyword">new</span>-env)
+          (<span class="hljs-keyword">eval</span>-env e2 <span class="hljs-keyword">new</span>-env)))]
+    [(<span class="hljs-keyword">var</span>-expr x) (env-lookup x env)]
+    [(<span class="hljs-keyword">if</span>-expr eb et ef) (<span class="hljs-keyword">if</span> (<span class="hljs-keyword">eval</span>-env eb env)
+                            (<span class="hljs-keyword">eval</span>-env et env)
+                            (<span class="hljs-keyword">eval</span>-env ef env))]
+    [(cons-expr e1 e2) (cons (<span class="hljs-keyword">eval</span>-env e1 env)
+                             (<span class="hljs-keyword">eval</span>-env e2 env))]
+    [(car-expr e) (car (<span class="hljs-keyword">eval</span>-env e env))]
+    [(cdr-expr e) (cdr (<span class="hljs-keyword">eval</span>-env e env))]
+    [(<span class="hljs-keyword">null</span>-expr) <span class="hljs-keyword">null</span>]
+    [(<span class="hljs-keyword">null</span>?-expr e) (<span class="hljs-keyword">null</span>? (<span class="hljs-keyword">eval</span>-env e env))]
+    [(lam x e) (clo x e env)]
+    [(app f e)
+     (let ([vf (<span class="hljs-keyword">eval</span>-env f env)]
+           [ve (<span class="hljs-keyword">eval</span>-env e env)])
+       (match vf [(clo x body fun-env)
+                  (<span class="hljs-keyword">eval</span>-env body (env-add x ve fun-env))]))]))
+
+(define (<span class="hljs-keyword">eval</span> e) (<span class="hljs-keyword">eval</span>-env e env-<span class="hljs-keyword">empty</span>))
+
+</div></div></code></pre><p><span>Dodajemy do parsera instrukcję </span><code>break</code></p><pre><code class="racket hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="180"></span>
+<span data-linenumber="181"></span>
+<span data-linenumber="182"></span>
+<span data-linenumber="183"></span>
+<span data-linenumber="184"></span>
+<span data-linenumber="185"></span>
+<span data-linenumber="186"></span>
+<span data-linenumber="187"></span>
+<span data-linenumber="188"></span>
+<span data-linenumber="189"></span>
+<span data-linenumber="190"></span>
+<span data-linenumber="191"></span>
+<span data-linenumber="192"></span>
+<span data-linenumber="193"></span>
+<span data-linenumber="194"></span>
+<span data-linenumber="195"></span>
+<span data-linenumber="196"></span>
+<span data-linenumber="197"></span>
+<span data-linenumber="198"></span>
+<span data-linenumber="199"></span>
+<span data-linenumber="200"></span>
+<span data-linenumber="201"></span>
+<span data-linenumber="202"></span>
+<span data-linenumber="203"></span>
+<span data-linenumber="204"></span>
+<span data-linenumber="205"></span>
+<span data-linenumber="206"></span>
+<span data-linenumber="207"></span>
+<span data-linenumber="208"></span>
+<span data-linenumber="209"></span>
+<span data-linenumber="210"></span>
+<span data-linenumber="211"></span>
+<span data-linenumber="212"></span>
+<span data-linenumber="213"></span>
+<span data-linenumber="214"></span>
+<span data-linenumber="215"></span>
+<span data-linenumber="216"></span>
+<span data-linenumber="217"></span>
+<span data-linenumber="218"></span>
+<span data-linenumber="219"></span></div><div class="code">(<span class="hljs-name">struct</span> skip   ()         #:transparent)
+(<span class="hljs-name">struct</span> assign (<span class="hljs-name">x</span> e)      #:transparent)
+(<span class="hljs-name">struct</span> if-cmd (<span class="hljs-name">eb</span> ct cf) #:transparent)
+(<span class="hljs-name">struct</span> while  (<span class="hljs-name">eb</span> cb)    #:transparent)
+(<span class="hljs-name">struct</span> comp   (<span class="hljs-name">c1</span> c2)    #:transparent)
+(<span class="hljs-name">struct</span> break  ()         #:transparent)
+
+(<span class="hljs-name">define</span> (<span class="hljs-name">cmd?</span> c)
+  (<span class="hljs-name">match</span> c
+    [(<span class="hljs-name">skip</span>) <span class="hljs-literal">true</span>]
+    [(<span class="hljs-name">assign</span> x e) (<span class="hljs-name"><span class="hljs-builtin-name">and</span></span> (<span class="hljs-name"><span class="hljs-builtin-name">symbol?</span></span> x) (<span class="hljs-name">expr?</span> e))]
+    [(<span class="hljs-name">if-cmd</span> eb ct cf) (<span class="hljs-name"><span class="hljs-builtin-name">and</span></span> (<span class="hljs-name">expr?</span> eb) (<span class="hljs-name">cmd?</span> ct) (<span class="hljs-name">cmd?</span> cf))]
+    [(<span class="hljs-name"><span class="hljs-builtin-name">while</span></span> eb ct) (<span class="hljs-name"><span class="hljs-builtin-name">and</span></span> (<span class="hljs-name">expr?</span> eb) (<span class="hljs-name">cmd?</span> ct))]
+    [(<span class="hljs-name">break</span>) <span class="hljs-literal">true</span>]
+    [else <span class="hljs-literal">false</span>]))
+
+(<span class="hljs-name">define</span> (<span class="hljs-name">parse-while</span> q)
+  (<span class="hljs-name"><span class="hljs-builtin-name">cond</span></span>
+    [(<span class="hljs-name">eq?</span> q 'skip) (<span class="hljs-name">skip</span>)]
+    [(<span class="hljs-name">eq?</span> q 'break) (<span class="hljs-name">break</span>)] <span class="hljs-comment">; &lt;------------ !!!</span>
+    [(<span class="hljs-name">null?</span> q) (<span class="hljs-name">skip</span>)]
+    [(<span class="hljs-name"><span class="hljs-builtin-name">and</span></span> (<span class="hljs-name"><span class="hljs-builtin-name">list?</span></span> q) (<span class="hljs-name"><span class="hljs-builtin-name">=</span></span> (<span class="hljs-name">length</span> q) <span class="hljs-number">3</span>) (<span class="hljs-name">eq?</span> (<span class="hljs-name"><span class="hljs-builtin-name">second</span></span> q) ':=))
+     (<span class="hljs-name">assign</span> (<span class="hljs-name"><span class="hljs-builtin-name">first</span></span> q)
+             (<span class="hljs-name">parse</span> (<span class="hljs-name">third</span> q)))]
+    [(<span class="hljs-name"><span class="hljs-builtin-name">and</span></span> (<span class="hljs-name"><span class="hljs-builtin-name">list?</span></span> q) (<span class="hljs-name"><span class="hljs-builtin-name">=</span></span> (<span class="hljs-name">length</span> q) <span class="hljs-number">4</span>) (<span class="hljs-name">eq?</span> (<span class="hljs-name">car</span> q) 'if))
+     (<span class="hljs-name">if-cmd</span> (<span class="hljs-name">parse</span> (<span class="hljs-name"><span class="hljs-builtin-name">second</span></span> q))
+             (<span class="hljs-name">parse-while</span> (<span class="hljs-name">third</span> q))
+             (<span class="hljs-name">parse-while</span> (<span class="hljs-name">fourth</span> q)))]
+     [(<span class="hljs-name"><span class="hljs-builtin-name">and</span></span> (<span class="hljs-name"><span class="hljs-builtin-name">list?</span></span> q) (<span class="hljs-name"><span class="hljs-builtin-name">=</span></span> (<span class="hljs-name">length</span> q) <span class="hljs-number">3</span>) (<span class="hljs-name">eq?</span> (<span class="hljs-name">car</span> q) 'while))
+      (<span class="hljs-name"><span class="hljs-builtin-name">while</span></span> (<span class="hljs-name">parse</span> (<span class="hljs-name"><span class="hljs-builtin-name">second</span></span> q))
+             (<span class="hljs-name">parse-while</span> (<span class="hljs-name">third</span> q)))]
+     [(<span class="hljs-name"><span class="hljs-builtin-name">and</span></span> (<span class="hljs-name"><span class="hljs-builtin-name">list?</span></span> q) (<span class="hljs-name"><span class="hljs-builtin-name">=</span></span> (<span class="hljs-name">length</span> q) <span class="hljs-number">2</span>))
+      (<span class="hljs-name"><span class="hljs-builtin-name">comp</span></span> (<span class="hljs-name">parse-while</span> (<span class="hljs-name"><span class="hljs-builtin-name">first</span></span> q))
+            (<span class="hljs-name">parse-while</span> (<span class="hljs-name"><span class="hljs-builtin-name">second</span></span> q)))]
+     [(<span class="hljs-name"><span class="hljs-builtin-name">and</span></span> (<span class="hljs-name"><span class="hljs-builtin-name">list?</span></span> q) (<span class="hljs-name"><span class="hljs-builtin-name">&gt;</span></span> (<span class="hljs-name">len</span>
+gth q) <span class="hljs-number">2</span>))
+      (<span class="hljs-name"><span class="hljs-builtin-name">comp</span></span> (<span class="hljs-name">parse-while</span> (<span class="hljs-name"><span class="hljs-builtin-name">first</span></span> q))
+            (<span class="hljs-name">parse-while</span> (<span class="hljs-name">cdr</span> q)))]
+     [else (<span class="hljs-name">error</span> <span class="hljs-string">"while parse error"</span>)]))
+     
+</div></div></code></pre><p><span>Pomysł jest prosty: ewaluator instrukcji zwraca nie tylko nowy stan pamięci, ale również informację, czy wykonanie zostało przerwane instrukcją break. Jeżeli zostało przerwane, do dalsze instrukcje nie są pomijane tak długo, aż opuścimy jakąś pętlę. Niestety taka zmiana jest dość globalna i wymaga przerobienia ewaluatora w każdym miejscu w następujący sposób:</span></p><ol>
+<li><span>zawsze trzeba zwracać parę stan pamięci + wartość boole’owska mówiąca o tym czy wykonanie jest przerwane,</span></li>
+<li><span>jeśli stan z jednej instrukcji przepływa do następnej, to trzeba sprawdzić, czy w pierszej nastąpiła instrukcja break (zobacz przypadek dla złożenia instrukcji).</span></li>
+</ol><pre><code class="racket hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="220"></span>
+<span data-linenumber="221"></span>
+<span data-linenumber="222"></span>
+<span data-linenumber="223"></span>
+<span data-linenumber="224"></span>
+<span data-linenumber="225"></span>
+<span data-linenumber="226"></span>
+<span data-linenumber="227"></span>
+<span data-linenumber="228"></span>
+<span data-linenumber="229"></span>
+<span data-linenumber="230"></span>
+<span data-linenumber="231"></span>
+<span data-linenumber="232"></span>
+<span data-linenumber="233"></span>
+<span data-linenumber="234"></span>
+<span data-linenumber="235"></span>
+<span data-linenumber="236"></span>
+<span data-linenumber="237"></span>
+<span data-linenumber="238"></span>
+<span data-linenumber="239"></span>
+<span data-linenumber="240"></span>
+<span data-linenumber="241"></span>
+<span data-linenumber="242"></span>
+<span data-linenumber="243"></span>
+<span data-linenumber="244"></span>
+<span data-linenumber="245"></span>
+<span data-linenumber="246"></span>
+<span data-linenumber="247"></span>
+<span data-linenumber="248"></span>
+<span data-linenumber="249"></span>
+<span data-linenumber="250"></span>
+<span data-linenumber="251"></span>
+<span data-linenumber="252"></span>
+<span data-linenumber="253"></span>
+<span data-linenumber="254"></span>
+<span data-linenumber="255"></span>
+<span data-linenumber="256"></span>
+<span data-linenumber="257"></span>
+<span data-linenumber="258"></span></div><div class="code">(<span class="hljs-name">define</span> (<span class="hljs-name">eval-while</span> e env)
+  (<span class="hljs-name">match</span> e
+    [(<span class="hljs-name">skip</span>) (<span class="hljs-name"><span class="hljs-builtin-name">cons</span></span> env #f)]
+    [(<span class="hljs-name">assign</span> x e)
+     (<span class="hljs-name"><span class="hljs-builtin-name">cons</span></span>
+       (<span class="hljs-name">env-update</span> x (<span class="hljs-name">eval-env</span> e env) env)
+       #f)]
+    [(<span class="hljs-name">break</span>) (<span class="hljs-name"><span class="hljs-builtin-name">cons</span></span> env #t)]
+    [(<span class="hljs-name">if-cmd</span> eb ct cf)
+     (<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> (<span class="hljs-name">eval-env</span> eb env)
+         (<span class="hljs-name">eval-while</span> ct env)
+         (<span class="hljs-name">eval-while</span> cf env))]
+    [(<span class="hljs-name"><span class="hljs-builtin-name">while</span></span> eb cb)
+     (<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> (<span class="hljs-name">eval-env</span> eb env)
+         (<span class="hljs-name"><span class="hljs-builtin-name">let</span></span> [(<span class="hljs-name">r1</span> (<span class="hljs-name">eval-while</span> cb env))] <span class="hljs-comment">; ewaluujemy ciało</span>
+           (<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> (<span class="hljs-name">cdr</span> r1) <span class="hljs-comment">; sprawdzamy, czy zostało przerwane</span>
+               (<span class="hljs-name"><span class="hljs-builtin-name">cons</span></span> (<span class="hljs-name">car</span> r1) #f)<span class="hljs-comment">; jeśli tak, to opuszczamy pętle (i kasujemy informację o przerwaniu)</span>
+               (<span class="hljs-name">eval-while</span> e (<span class="hljs-name">car</span> r1)))) <span class="hljs-comment">; jeśli nie, to kręcimy się dalej.</span>
+         (<span class="hljs-name"><span class="hljs-builtin-name">cons</span></span> env #f))]
+     [(<span class="hljs-name"><span class="hljs-builtin-name">comp</span></span> c1 c2) 
+       (<span class="hljs-name"><span class="hljs-builtin-name">let</span></span> [(<span class="hljs-name">r1</span> (<span class="hljs-name">eval-while</span> c1 env))] <span class="hljs-comment">; ewaluujemy c1</span>
+         (<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> (<span class="hljs-name">cdr</span> r1)
+             r1 <span class="hljs-comment">; jeśli zostało przerwane, to pomijamy c2</span>
+             (<span class="hljs-name">eval-while</span> c2 (<span class="hljs-name">car</span> r1))))]))
+
+<span class="hljs-comment">; zakladamy, ze program startuje z pamiecia w ktorej</span>
+<span class="hljs-comment">; aktwna jest zmienna t</span>
+(<span class="hljs-name">define</span> WHILE_FACT
+  '{(<span class="hljs-name">i</span> <span class="hljs-symbol">:=</span> <span class="hljs-number">1</span>)
+    (<span class="hljs-name"><span class="hljs-builtin-name">while</span></span> (<span class="hljs-name"><span class="hljs-builtin-name">&gt;</span></span> t <span class="hljs-number">0</span>)
+      {(<span class="hljs-name">i</span> <span class="hljs-symbol">:=</span> (<span class="hljs-name"><span class="hljs-builtin-name">*</span></span> i t))
+       (<span class="hljs-name">t</span> <span class="hljs-symbol">:=</span> (<span class="hljs-name"><span class="hljs-builtin-name">-</span></span> t <span class="hljs-number">1</span>))})})
+
+(<span class="hljs-name">define</span> (<span class="hljs-name">fact</span> n)
+  (<span class="hljs-name">let*</span> ([init-env  (<span class="hljs-name">env-add</span> 't n env-empty)]
+         [final-env
+           (<span class="hljs-name">car</span> (<span class="hljs-name">eval-while</span> (<span class="hljs-name">parse-while</span> WHILE_FACT) init-env))])
+    (<span class="hljs-name">env-lookup</span> 'i final-env)))
+    
+</div></div></code></pre><h3 id="Drugie-podejście"><a class="anchor hidden-xs" href="#Drugie-podejście" title="Drugie-podejście"><span class="octicon octicon-link"></span></a><span>Drugie podejście</span></h3><p><span>Nasze drugie podejście będzie oparte na programowaniu z kontynuacjami. Napiszemy nasz interpreter korzystają z techiki </span><em><span>CPS</span></em><span>u (ang. </span><em><span>Continuation passing style</span></em><span>), która choć nie jest najwygodniejsza, to ma potężne możliwości wyrażania programów o nietrywialnym przepływie sterowania.</span></p><p><span>Centralną ideą </span><em><span>CPS</span></em><span>u jest to, że funkcje nie zwracają swojej wartości, tylko przekazują ją dalej do innej funkcji zwanej </span><em><span>kontynuacją</span></em><span>.</span></p><div class="alert alert-info">
+<p><strong><span>Uwaga odnoście nomenklatury</span></strong><br>
+<span>Terminu </span><em><span>kontynuacja</span></em><span> (ang. </span><em><span>continuation</span></em><span>) używa się w środowisku osób zajmujących się programowaniem funkcyjnym albo teorią języków programowania. W świecie wielu przemysłowych języków programowania, np. JavaScript ta sama koncepcja kryje się pod nazwą </span><em><span>callback</span></em><span>. Jest wiele powodów dla których preferuję termin </span><em><span>kontynuacja</span></em><span>. Jeden z nich znajduje się na jednej z uliczek odchodzących od ul. Świdnickiej.</span></p>
+</div><p><span>Rozważmy prosty przykład. Rekurencyjną funkcję liczącą silnię normalnie napisalibyśmy tak:</span></p><pre><code class="racket hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span></div><div class="code">(<span class="hljs-name">define</span> (<span class="hljs-name">fact</span> n)
+  (<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> (<span class="hljs-name"><span class="hljs-builtin-name">=</span></span> n <span class="hljs-number">0</span>) <span class="hljs-comment">; Jeśli n jest równe 0</span>
+      <span class="hljs-number">1</span>       <span class="hljs-comment">; to zwróć 1</span>
+      (<span class="hljs-name"><span class="hljs-builtin-name">*</span></span> n (<span class="hljs-name">fact</span> (<span class="hljs-name"><span class="hljs-builtin-name">-</span></span> n <span class="hljs-number">1</span>))))) <span class="hljs-comment">; wpp. policz silnię z n-1, a wynik pomnóż przez n i zwróć.</span>
+</div></div></code></pre><p><span>Ta sama silnia w </span><em><span>CPSie</span></em><span> przyjmuje dodatkowy parametr </span><code>k</code><span>, zwany </span><em><span>kontynuacją</span></em><span>. Kontynuacja jest funkcją, której należy przekazać wynik.</span></p><pre><code class="racket hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span></div><div class="code">(<span class="hljs-name">define</span> (<span class="hljs-name">fact-cps</span> n k)
+  (<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> (<span class="hljs-name"><span class="hljs-builtin-name">=</span></span> n <span class="hljs-number">0</span>) <span class="hljs-comment">; Jeśli n jest równe 0</span>
+      (<span class="hljs-name">k</span> <span class="hljs-number">1</span>)   <span class="hljs-comment">; to zwróć 1</span>
+      (<span class="hljs-name">fact-cps</span> (<span class="hljs-name"><span class="hljs-builtin-name">-</span></span> n <span class="hljs-number">1</span>) (<span class="hljs-name">lambda</span> (<span class="hljs-name">x</span>) <span class="hljs-comment">; wpp. policz silnię z n-1,</span>
+        (<span class="hljs-name">k</span> (<span class="hljs-name"><span class="hljs-builtin-name">*</span></span> n x)))))) <span class="hljs-comment">; a wynik pomnóż przez n i zwróć</span>
+</div></div></code></pre><p><span>Tak w wierszu 3 chcemy zwrócić 1, więc przekazujemy 1 do kontynuacji </span><code>k</code><span>.</span><br>
+<span>Druga gałąź wyrażenia warunkowego jest ciekawsza:</span><br>
+<span>wywołujemy się rekurencyjnie, ale funkcja </span><code>fact-cps</code><span> nie zwraca wyniku – trzeba jej przekazać odpowiednią kontynuację </span><code>(lambda (x) (k (* n x)))</code><span>,</span><br>
+<span>która pomnoży wynik przez n i przekaże dalej do </span><code>k</code><span>.</span><br>
+<span>Zwykłą definicję silni możemy odzyskać poprzez przekazanie kontynuacji identycznościowej.</span></p><pre><code class="racket hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="6"></span>
+<span data-linenumber="7"></span></div><div class="code">(<span class="hljs-name">define</span> (<span class="hljs-name">fact</span> n)
+  (<span class="hljs-name">fact-cps</span> n (<span class="hljs-name">lambda</span> (<span class="hljs-name">x</span>) x)))
+</div></div></code></pre><p><span>Ale po co tyle zachodu? Kontynuacja przecież opisuje to co program zrobi z wynikiem. W normalnych programach ta inforamacja jest przechowywana niejawnie gdzieś na stosie wywołań funkcji i nie musimy nią sobie zawracać głowy. Okazuje się, że jeśli kontynuację programu uczynimy zwykłymi danymi, to program zyskuje wielką moc: może manipulować własną kontynuacją! Np. może nie użyć swojej kontynuacji (to tak jak by nie wrócił do miejsca wywołania), albo jej użyć kilka razy (to tak jak wejść do pokoju, by wyjść z niego dwa razy). Rozważmy następny przykład. Napiszmy funkcję, która mnoży wszystkie elementy podanej listy.</span></p><pre><code class="racket hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span></div><div class="code">(<span class="hljs-name">define</span> (<span class="hljs-name">mult-list</span> xs)
+  (<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> (<span class="hljs-name">null?</span> xs)
+      <span class="hljs-number">1</span>
+      (<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> (<span class="hljs-name"><span class="hljs-builtin-name">=</span></span> (<span class="hljs-name">car</span> xs) <span class="hljs-number">0</span>)
+          <span class="hljs-number">0</span>
+          (<span class="hljs-name"><span class="hljs-builtin-name">*</span></span> (<span class="hljs-name">car</span> xs) (<span class="hljs-name">mult-list</span> (<span class="hljs-name">cdr</span> xs))))))
+</div></div></code></pre><p><span>Normalnie napisalibyśmy ją iteracyjnie, ale dla celów demonstracyjnych zrobiłem to rekurencyjnie. Zrobiłem też drobną optymalizację: jeśli funkcja napotka 0, to od razu zwraca 0, bez wykonywania dalszym mnożeń. Ale czy to oznacza, że jeśli na liście wystąpi 0, to nie wykonamy żadnych mnożeń? Rozważmy wywołanie</span></p><pre><code>(mult-list (list 1 2 3 4 5 0 8 9))
+</code></pre><p><span>Gdy napotkamy 0, to nie dotkniemy liczb 8 i 9, ale to zero i tak pomnożymy przez 5, potem 4, potem 3, itd. A gdybyśmy napisali ten program w </span><em><span>CPS</span></em><span>ie?</span></p><pre><code class="racket hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span></div><div class="code">(<span class="hljs-name">define</span> (<span class="hljs-name">mult-list-cps</span> xs cont)
+  (<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> (<span class="hljs-name">null?</span> xs)
+      (<span class="hljs-name">cont</span> <span class="hljs-number">1</span>) <span class="hljs-comment">; Zwróć 1</span>
+      (<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> (<span class="hljs-name"><span class="hljs-builtin-name">=</span></span> (<span class="hljs-name">car</span> xs) <span class="hljs-number">0</span>)
+          (<span class="hljs-name">cont</span> <span class="hljs-number">0</span>) <span class="hljs-comment">; Zwróć 0</span>
+          (<span class="hljs-name">mult-list-cps</span> (<span class="hljs-name">cdr</span> xs) (<span class="hljs-name">lambda</span> (<span class="hljs-name">x</span>) <span class="hljs-comment">; Wywołaj się rekurencyjnie</span>
+            (<span class="hljs-name">cont</span> (<span class="hljs-name"><span class="hljs-builtin-name">*</span></span> (<span class="hljs-name">car</span> xs) x))))))) <span class="hljs-comment">; Pomnóż wynik i zwróć.</span>
+</div></div></code></pre><p><span>Jeszcze nic nie zyskaliśmy. No, prawie, bo zyskaliśmy władzę: to my teraz decydujemy, co się stanie z wynikiem. Gdy zwracamy 0, to wcale nie musimy go przekazać do kontynuacji </span><code>cont</code><span>. Możemy użyć przecież innej kontynuacji, tylko której? Przeróbmy program tak, by przyjmował dwie kontynuacje: jedną do której będziemy przekazywać zero, i drugą do której przekażemy pozostałe wyniki.</span></p><pre><code class="racket hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span>
+<span data-linenumber="8"></span></div><div class="code">(<span class="hljs-name">define</span> (<span class="hljs-name">mult-list-cps2</span> xs zero-cont cont)
+  (<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> (<span class="hljs-name">null?</span> xs)
+      (<span class="hljs-name">cont</span> <span class="hljs-number">1</span>) <span class="hljs-comment">; Zwróć 1 (do kontynuacji cont)</span>
+      (<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> (<span class="hljs-name"><span class="hljs-builtin-name">=</span></span> (<span class="hljs-name">car</span> xs) <span class="hljs-number">0</span>)
+          (<span class="hljs-name">zero-cont</span> <span class="hljs-number">0</span>) <span class="hljs-comment">; Zwróć 0 (do kontynuacji zero-cont)</span>
+          (<span class="hljs-name">mult-list-cps2</span> (<span class="hljs-name">cdr</span> xs) zero-cont (<span class="hljs-name">lambda</span> (<span class="hljs-name">x</span>) <span class="hljs-comment">; Wywołaj się rekurencyjnie</span>
+            (<span class="hljs-name">cont</span> (<span class="hljs-name"><span class="hljs-builtin-name">*</span></span> (<span class="hljs-name">car</span> xs) x))))))) <span class="hljs-comment">; Pomnóż wynik i zwróć.</span>
+            
+</div></div></code></pre><p><span>Teraz jest lepiej. Gdy napotkamy zero, to wynik przekazujemy do innej kontynuacji, która nie zawiera tych wszystkich mnożeń przez poprzednie elementy listy (popatrz na to, z jakimi kontynuacjami wołamy się rekurencyjnie). Pozostaje dalej pytanie, skąd wziąć&nbsp;kontynuacje </span><code>zero-cont</code><span>? Dla całej listy może być to ta sama kontynuacja co </span><code>cont</code><span>, choć w dalszych wywołaniach rekurencyjnych zaczną się one różnić.</span></p><pre><code class="racket hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="9"></span>
+<span data-linenumber="10"></span></div><div class="code">(<span class="hljs-name">define</span> (<span class="hljs-name">mult-list-cps</span> xs cont)
+  (<span class="hljs-name">mult-list-cps2</span> xs cont cont))
+</div></div></code></pre><p><span>No dobra. Przejdźmy teraz do rozwiązania zadania. Zauważmy, że problem zaimplementowania instrukcji </span><code>break</code><span> jest podobny do naszej optymalizacji mnożenia przez zero: gdy napotkamy instrukcję </span><code>break</code><span>, chcemy pominąć wiele obliczeń, które normalnie byśmy wykonali. Napiszemy nasz ewaluator w </span><em><span>CPS</span></em><span>ie, ale tak, że przyjmie dwie kontynuacje: kontynuację sukcesu </span><code>cont</code><span>, która opisuje co zrobić jeśli program wykona się normalnie oraz kontynuację porażki </span><code>break-cont</code><span> która opisuje co zrobić, gdy napotkamy na instrukcję </span><code>break</code><span>. Obie kontynuacje przyjmują nowy stan pamięci (środowisko).</span></p><pre><code class="racket hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span>
+<span data-linenumber="8"></span>
+<span data-linenumber="9"></span>
+<span data-linenumber="10"></span>
+<span data-linenumber="11"></span>
+<span data-linenumber="12"></span>
+<span data-linenumber="13"></span>
+<span data-linenumber="14"></span>
+<span data-linenumber="15"></span>
+<span data-linenumber="16"></span>
+<span data-linenumber="17"></span>
+<span data-linenumber="18"></span>
+<span data-linenumber="19"></span></div><div class="code">(<span class="hljs-name">define</span> (<span class="hljs-name">eval-while</span> e env break-cont cont)
+  (<span class="hljs-name">match</span> e
+    [(<span class="hljs-name">skip</span>)       (<span class="hljs-name">cont</span> env)]
+    [(<span class="hljs-name">assign</span> x e)
+     (<span class="hljs-name">cont</span> (<span class="hljs-name">env-update</span> x (<span class="hljs-name">eval-env</span> e env) env))]
+    [(<span class="hljs-name">break</span>) (<span class="hljs-name">break-cont</span> env)] <span class="hljs-comment">; podobne do skip, ale używamy innej kontynuacji.</span>
+    [(<span class="hljs-name">if-cmd</span> eb ct cf)
+     (<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> (<span class="hljs-name">eval-env</span> eb env)
+         (<span class="hljs-name">eval-while</span> ct env break-cont cont)
+         (<span class="hljs-name">eval-while</span> cf env break-cont cont))]
+    [(<span class="hljs-name"><span class="hljs-builtin-name">while</span></span> eb cb)
+     (<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> (<span class="hljs-name">eval-env</span> eb env)
+         (<span class="hljs-name">eval-while</span> cb env cont (<span class="hljs-name">lambda</span> (<span class="hljs-name">env2</span>)
+            (<span class="hljs-name">eval-while</span> e env2 break-cont cont)))
+         (<span class="hljs-name">cont</span> env))]
+     [(<span class="hljs-name"><span class="hljs-builtin-name">comp</span></span> c1 c2)
+      (<span class="hljs-name">eval-while</span> c1 env  break-cont (<span class="hljs-name">lambda</span> (<span class="hljs-name">env2</span>) <span class="hljs-comment">; wykonaj c1</span>
+      (<span class="hljs-name">eval-while</span> c2 env2 break-cont cont)))])) <span class="hljs-comment">; a potem c2</span>
+
+</div></div></code></pre><p><span>Zauważmy, że w przypadku ewaluacji ciała pętli (wiersz 13) kontynuacja porażki jest taka sama jak kontynuacja sukcesu całej pętli (</span><code>cont</code><span>). Oznacza to, że gdy w pętli napotkamy na instrukcję </span><code>break</code><span> to od razu wyskoczymy poza pętlę.</span></p><p><span>Pozostaje tylko uruchomić ewaluator z odpowiednimi kontynuacjami początkowymi. Początkowa kontynuacja sukcesu jest kontynuacją identycznościową, a początkowa kontynuacja porażki, to kontynuacja, która zgłasza błąd. Może być ona wywołana tylko, gdy napotkamy instrukcję </span><code>break</code><span> poza pętlą – wchodząc do pętli podmieniamy kontynuację porażki.</span></p><pre><code class="racket hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="20"></span>
+<span data-linenumber="21"></span>
+<span data-linenumber="22"></span>
+<span data-linenumber="23"></span></div><div class="code">(<span class="hljs-name">define</span> (<span class="hljs-name">eval-while-main</span> e env)
+  (<span class="hljs-name">eval-while</span> e env
+    (<span class="hljs-name">lambda</span> (<span class="hljs-name">env2</span>) (<span class="hljs-name">error</span> <span class="hljs-string">"no loop to break"</span>))
+    (<span class="hljs-name">lambda</span> (<span class="hljs-name">env2</span>) env2)))
+</div></div></code></pre><h2 id="Zadanie-8"><a class="anchor hidden-xs" href="#Zadanie-8" title="Zadanie-8"><span class="octicon octicon-link"></span></a><span>Zadanie 8</span></h2><h3 id="Intuicja"><a class="anchor hidden-xs" href="#Intuicja" title="Intuicja"><span class="octicon octicon-link"></span></a><span>Intuicja</span></h3><p><span>Intuicja stojąca za rozwiązaniem jest następująca: widząc definicję wzajemnie rekurencyjną </span><code>letrec*</code><span> tworzymy rekurencyjną krotkę wartości.</span></p><pre><code>(letrec* [('x e1) ('y e2) ('z e3)] e)
+</code></pre><p><span>tłumaczymy do</span></p><pre><code>(letrec ('k (list e1 e2 e3)) e)
+</code></pre><p><span>gdzie </span><code>'k</code><span> jest świeżym symbolem. Ale co stało się ze zmiennymi </span><code>'x</code><span>, </span><code>'y</code><span> i </span><code>'z</code><span>? Nigdzie ich nie wiążemy, a wyrażenia </span><code>e1</code><span>, </span><code>e2</code><span>, </span><code>e3</code><span>, </span><code>e</code><span> dalej się do nich odwołują. Trzeba jeszcze </span><em><span>podstawić</span></em><span> za zmienne </span><code>'x</code><span>, </span><code>'y</code><span> i </span><code>'z</code><span> odpowiednio wyrażenie, które liczy odpowiednio pierwszy, drugi i trzeci element krotki </span><code>'k</code><span>.</span></p><pre><code>(letrec
+  ('k (list
+        (subst e1 ('x (first 'k)) ('y (second 'k)) ('z (third 'k)))
+        (subst e2 ('x (first 'k)) ('y (second 'k)) ('z (third 'k)))
+        (subst e3 ('x (first 'k)) ('y (second 'k)) ('z (third 'k)))))
+  (subst e ('x (first 'k)) ('y (second 'k)) ('z (third 'k))))
+</code></pre><p><span>Przy czym ważne jest, by ten napis dobrze rozumieć. Operacje </span><code>letrec*</code><span>, </span><code>list</code><span>, </span><code>first</code><span>, </span><code>second</code><span> oraz</span><code>third</code><span> są operacjami z naszego języka, a </span><code>subst</code><span> jest operacją z metajęzyka, tzn. Racketową funkcją, która przekształca składnię abstrakcyjną. I właściwie na tym polega trudność tego zadania: nie pogubić się, co żyje w którym języku.</span></p><h3 id="Rozwiązanie"><a class="anchor hidden-xs" href="#Rozwiązanie" title="Rozwiązanie"><span class="octicon octicon-link"></span></a><span>Rozwiązanie</span></h3><p><span>Na początek parser</span></p><pre><code class="racket hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span>
+<span data-linenumber="8"></span>
+<span data-linenumber="9"></span></div><div class="code">(<span class="hljs-name">define</span> (<span class="hljs-name">parse</span> q)
+  (<span class="hljs-name"><span class="hljs-builtin-name">cond</span></span>
+     ...
+     
+     [(<span class="hljs-name"><span class="hljs-builtin-name">and</span></span> (<span class="hljs-name"><span class="hljs-builtin-name">list?</span></span> q) (<span class="hljs-name">eq?</span> (<span class="hljs-name">length</span> q) <span class="hljs-number">3</span>) (<span class="hljs-name">eq?</span> (<span class="hljs-name"><span class="hljs-builtin-name">first</span></span> q) 'letrec*'))
+       (<span class="hljs-name">parse-letrec*</span> (<span class="hljs-name"><span class="hljs-builtin-name">second</span></span> q) (<span class="hljs-name">third</span> q))]
+                  
+      ...))
+
+</div></div></code></pre><p><span>i standardowa definicja podstawienia (podobna to tych, które już widzieliśmy). Być może przy tej definicji warto zwrócić uwagę na dwa szczegóły.</span></p><ol>
+<li><span>Nasze podstawienie to równoczesne podstawienie wielu zmiennych za jedną. Co podstawić za którą zmienną jest opisane w liście asocjacyjnej </span><code>sub</code></li>
+<li><span>Gdy podstawienie napotyka wiązanie zmiennych, to automatycznie przenazywa zmienną związaną na nową, wygenerowaną przez procedurę </span><code>(gensym)</code><span>. W ten sposób łatwo unikniemy problemy przechwycenia zmiennej.</span></li>
+</ol><pre><code class="racket hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="10"></span>
+<span data-linenumber="11"></span>
+<span data-linenumber="12"></span>
+<span data-linenumber="13"></span>
+<span data-linenumber="14"></span>
+<span data-linenumber="15"></span>
+<span data-linenumber="16"></span>
+<span data-linenumber="17"></span>
+<span data-linenumber="18"></span>
+<span data-linenumber="19"></span>
+<span data-linenumber="20"></span>
+<span data-linenumber="21"></span>
+<span data-linenumber="22"></span>
+<span data-linenumber="23"></span>
+<span data-linenumber="24"></span>
+<span data-linenumber="25"></span>
+<span data-linenumber="26"></span>
+<span data-linenumber="27"></span></div><div class="code">(<span class="hljs-name">define</span> (<span class="hljs-name">subst-add</span> x e sub)
+  (<span class="hljs-name"><span class="hljs-builtin-name">cons</span></span> (<span class="hljs-name"><span class="hljs-builtin-name">cons</span></span> x e) sub))
+
+(<span class="hljs-name">define</span> (<span class="hljs-name">subst-lookup</span> x sub)
+  (<span class="hljs-name"><span class="hljs-builtin-name">cond</span></span>
+    [(<span class="hljs-name">null?</span> sub)        (<span class="hljs-name">var-expr</span> x)]
+    [(<span class="hljs-name">eq?</span> x (<span class="hljs-name">caar</span> sub)) (<span class="hljs-name">cdar</span> sub)]
+    [else               (<span class="hljs-name">subst-lookup</span> x (<span class="hljs-name">cdr</span> sub))]))
+
+(<span class="hljs-name">define</span> (<span class="hljs-name">subst</span> sub e)
+  (<span class="hljs-name">match</span> e
+    [(<span class="hljs-name">var-expr</span> x) (<span class="hljs-name">subst-lookup</span> sub x)]
+    [(<span class="hljs-name">let-expr</span> x e1 e2)
+      (<span class="hljs-name"><span class="hljs-builtin-name">let</span></span> [(<span class="hljs-name">y</span> (<span class="hljs-name"><span class="hljs-builtin-name">gensym</span></span>))]
+        (<span class="hljs-name">let-expr</span> y (<span class="hljs-name">subst</span> sub e1)
+                    (<span class="hljs-name">subst</span> (<span class="hljs-name">sub-add</span> x (<span class="hljs-name">var-expr</span> y)) e2)))]
+    ...))
+
+</div></div></code></pre><p><span>Teraz czas na właściwą definicję. Wymaga ona kilku definicji pomocniczych.</span></p><pre><code class="racket hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="28"></span>
+<span data-linenumber="29"></span>
+<span data-linenumber="30"></span>
+<span data-linenumber="31"></span>
+<span data-linenumber="32"></span>
+<span data-linenumber="33"></span>
+<span data-linenumber="34"></span>
+<span data-linenumber="35"></span>
+<span data-linenumber="36"></span>
+<span data-linenumber="37"></span>
+<span data-linenumber="38"></span>
+<span data-linenumber="39"></span>
+<span data-linenumber="40"></span>
+<span data-linenumber="41"></span>
+<span data-linenumber="42"></span>
+<span data-linenumber="43"></span>
+<span data-linenumber="44"></span>
+<span data-linenumber="45"></span>
+<span data-linenumber="46"></span>
+<span data-linenumber="47"></span>
+<span data-linenumber="48"></span>
+<span data-linenumber="49"></span>
+<span data-linenumber="50"></span>
+<span data-linenumber="51"></span>
+<span data-linenumber="52"></span>
+<span data-linenumber="53"></span>
+<span data-linenumber="54"></span>
+<span data-linenumber="55"></span></div><div class="code">(<span class="hljs-name">define</span> (<span class="hljs-name">parse-letrec*</span> defs body)
+  <span class="hljs-comment">; Generujemy świeży symbol -- nazwę krotki</span>
+  (<span class="hljs-name">define</span> lr-var (<span class="hljs-name"><span class="hljs-builtin-name">gensym</span></span>))
+  <span class="hljs-comment">; Zamienia listę wyrażeń, na wyrażenie</span>
+  <span class="hljs-comment">; wyliczające się do listy</span>
+  (<span class="hljs-name">define</span> (<span class="hljs-name">mk-list</span> xs)
+    (<span class="hljs-name">foldr</span> cons-expr null-expr xs))
+  <span class="hljs-comment">; tworzy wyrażenie licząse i-ty element krotki</span>
+  <span class="hljs-comment">; opisanej wyrażeniem x</span>
+  (<span class="hljs-name">define</span> (<span class="hljs-name">mk-ith</span> i x)
+    (<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> (<span class="hljs-name"><span class="hljs-builtin-name">=</span></span> <span class="hljs-number">0</span> i)
+        (<span class="hljs-name">car-expr</span> x)
+        (<span class="hljs-name">mk-ith</span> (<span class="hljs-name"><span class="hljs-builtin-name">-</span></span> i <span class="hljs-number">1</span>) (<span class="hljs-name">cdr-expr</span> x))))
+  <span class="hljs-comment">; tworzy odpowiednie podstawienie --</span>
+  <span class="hljs-comment">; argument dla funkcji subst</span>
+  (<span class="hljs-name">define</span> (<span class="hljs-name">mk-subst</span> defs i)
+    (<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> (<span class="hljs-name">null?</span> defs)
+        null
+        (<span class="hljs-name"><span class="hljs-builtin-name">cons</span></span>
+          (<span class="hljs-name"><span class="hljs-builtin-name">cons</span></span> (<span class="hljs-name">caar</span> defs) (<span class="hljs-name">mk-ith</span> i (<span class="hljs-name">var-expr</span> lr-var)))
+          (<span class="hljs-name">mk-subst</span> (<span class="hljs-name">cdr</span> defs) (<span class="hljs-name"><span class="hljs-builtin-name">+</span></span> i <span class="hljs-number">1</span>)))))
+  (<span class="hljs-name">let*</span> (
+    [sub (<span class="hljs-name">mk-subst</span> defs <span class="hljs-number">0</span>)]
+    [lr-defs (<span class="hljs-name">mk-list</span> (<span class="hljs-name"><span class="hljs-builtin-name">map</span></span> 
+         (<span class="hljs-name">lambda</span> (<span class="hljs-name"><span class="hljs-builtin-name">def</span></span>) (<span class="hljs-name">subst</span> sub (<span class="hljs-name">parse</span> (<span class="hljs-name">cdr</span> def))))
+         defs))]
+    [lr-body (<span class="hljs-name">subst</span> sub (<span class="hljs-name">parse</span> body)])
+  (<span class="hljs-name">letrec-expr</span> lr-var lr-defs lr-body)))
+</div></div></code></pre></div>
+    <div class="ui-toc dropup unselectable hidden-print" style="display:none;">
+        <div class="pull-right dropdown">
+            <a id="tocLabel" class="ui-toc-label btn btn-default" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" title="Table of content">
+                <i class="fa fa-bars"></i>
+            </a>
+            <ul id="ui-toc" class="ui-toc-dropdown dropdown-menu" aria-labelledby="tocLabel">
+                <div class="toc"><ul class="nav">
+<li class=""><a href="#Repetytorium-z-Metod-Programowania-11052020" title="Repetytorium z Metod Programowania (11.05.2020)">Repetytorium z Metod Programowania (11.05.2020)</a><ul class="nav">
+<li><a href="#Zadanie-12" title="Zadanie 12">Zadanie 12</a><ul class="nav">
+<li><a href="#Pierwsze-podejście" title="Pierwsze podejście">Pierwsze podejście</a></li>
+<li><a href="#Drugie-podejście" title="Drugie podejście">Drugie podejście</a></li>
+</ul>
+</li>
+<li><a href="#Zadanie-8" title="Zadanie 8">Zadanie 8</a><ul class="nav">
+<li><a href="#Intuicja" title="Intuicja">Intuicja</a></li>
+<li><a href="#Rozwiązanie" title="Rozwiązanie">Rozwiązanie</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div><div class="toc-menu"><a class="expand-toggle" href="#">Expand all</a><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a></div>
+            </ul>
+        </div>
+    </div>
+    <div id="ui-toc-affix" class="ui-affix-toc ui-toc-dropdown unselectable hidden-print" data-spy="affix" style="top:17px;display:none;" null null>
+        <div class="toc"><ul class="nav">
+<li class=""><a href="#Repetytorium-z-Metod-Programowania-11052020" title="Repetytorium z Metod Programowania (11.05.2020)">Repetytorium z Metod Programowania (11.05.2020)</a><ul class="nav">
+<li><a href="#Zadanie-12" title="Zadanie 12">Zadanie 12</a><ul class="nav">
+<li><a href="#Pierwsze-podejście" title="Pierwsze podejście">Pierwsze podejście</a></li>
+<li><a href="#Drugie-podejście" title="Drugie podejście">Drugie podejście</a></li>
+</ul>
+</li>
+<li><a href="#Zadanie-8" title="Zadanie 8">Zadanie 8</a><ul class="nav">
+<li><a href="#Intuicja" title="Intuicja">Intuicja</a></li>
+<li><a href="#Rozwiązanie" title="Rozwiązanie">Rozwiązanie</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div><div class="toc-menu"><a class="expand-toggle" href="#">Expand all</a><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gist-embed/2.6.0/gist-embed.min.js" integrity="sha256-KyF2D6xPIJUW5sUDSs93vWyZm+1RzIpKCexxElmxl8g=" crossorigin="anonymous" defer></script>
+    <script>
+        var markdown = $(".markdown-body");
+        //smooth all hash trigger scrolling
+        function smoothHashScroll() {
+            var hashElements = $("a[href^='#']").toArray();
+            for (var i = 0; i < hashElements.length; i++) {
+                var element = hashElements[i];
+                var $element = $(element);
+                var hash = element.hash;
+                if (hash) {
+                    $element.on('click', function (e) {
+                        // store hash
+                        var hash = this.hash;
+                        if ($(hash).length <= 0) return;
+                        // prevent default anchor click behavior
+                        e.preventDefault();
+                        // animate
+                        $('body, html').stop(true, true).animate({
+                            scrollTop: $(hash).offset().top
+                        }, 100, "linear", function () {
+                            // when done, add hash to url
+                            // (default click behaviour)
+                            window.location.hash = hash;
+                        });
+                    });
+                }
+            }
+        }
+
+        smoothHashScroll();
+        var toc = $('.ui-toc');
+        var tocAffix = $('.ui-affix-toc');
+        var tocDropdown = $('.ui-toc-dropdown');
+        //toc
+        tocDropdown.click(function (e) {
+            e.stopPropagation();
+        });
+
+        var enoughForAffixToc = true;
+
+        function generateScrollspy() {
+            $(document.body).scrollspy({
+                target: ''
+            });
+            $(document.body).scrollspy('refresh');
+            if (enoughForAffixToc) {
+                toc.hide();
+                tocAffix.show();
+            } else {
+                tocAffix.hide();
+                toc.show();
+            }
+            $(document.body).scroll();
+        }
+
+        function windowResize() {
+            //toc right
+            var paddingRight = parseFloat(markdown.css('padding-right'));
+            var right = ($(window).width() - (markdown.offset().left + markdown.outerWidth() - paddingRight));
+            toc.css('right', right + 'px');
+            //affix toc left
+            var newbool;
+            var rightMargin = (markdown.parent().outerWidth() - markdown.outerWidth()) / 2;
+            //for ipad or wider device
+            if (rightMargin >= 133) {
+                newbool = true;
+                var affixLeftMargin = (tocAffix.outerWidth() - tocAffix.width()) / 2;
+                var left = markdown.offset().left + markdown.outerWidth() - affixLeftMargin;
+                tocAffix.css('left', left + 'px');
+            } else {
+                newbool = false;
+            }
+            if (newbool != enoughForAffixToc) {
+                enoughForAffixToc = newbool;
+                generateScrollspy();
+            }
+        }
+        $(window).resize(function () {
+            windowResize();
+        });
+        $(document).ready(function () {
+            windowResize();
+            generateScrollspy();
+        });
+
+        //remove hash
+        function removeHash() {
+            window.location.hash = '';
+        }
+
+        var backtotop = $('.back-to-top');
+        var gotobottom = $('.go-to-bottom');
+
+        backtotop.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (scrollToTop)
+                scrollToTop();
+            removeHash();
+        });
+        gotobottom.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (scrollToBottom)
+                scrollToBottom();
+            removeHash();
+        });
+
+        var toggle = $('.expand-toggle');
+        var tocExpand = false;
+
+        checkExpandToggle();
+        toggle.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            tocExpand = !tocExpand;
+            checkExpandToggle();
+        })
+
+        function checkExpandToggle () {
+            var toc = $('.ui-toc-dropdown .toc');
+            var toggle = $('.expand-toggle');
+            if (!tocExpand) {
+                toc.removeClass('expand');
+                toggle.text('Expand all');
+            } else {
+                toc.addClass('expand');
+                toggle.text('Collapse all');
+            }
+        }
+
+        function scrollToTop() {
+            $('body, html').stop(true, true).animate({
+                scrollTop: 0
+            }, 100, "linear");
+        }
+
+        function scrollToBottom() {
+            $('body, html').stop(true, true).animate({
+                scrollTop: $(document.body)[0].scrollHeight
+            }, 100, "linear");
+        }
+    </script>
+</body>
+
+</html>

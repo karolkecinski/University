@@ -1,0 +1,36 @@
+#lang racket
+
+;; to jest komentarz, interpreter ignoruje go
+;; komentarz rozpoczęty średnikiem kończy się ze znakiem nowego wiersza
+
+(define (average z y)
+  (/ (+ z y) 2))
+
+(define (square x)
+  (* x x))
+
+(define (dist x y)
+  (abs (- x y)))
+
+(define (abs x)
+  (if (< x 0)
+      (- x)
+      x))
+
+(define (sqrt x)
+  ;; lokalne definicje
+  ;; poprawianie przybliżenia
+  (define (improve guess)
+    (average guess (/ x guess)))
+  ;; sprawdzanie czy przybliżenie jest wystarczająco dobre
+  (define (good-enough? g)
+    (< (dist x (square g))
+       0.0001))
+  ;; procedura iterująca poprawianie przybliżenia aż
+  ;; osiągniemy wystarczająco dobre przybliżenie
+  (define (iter guess)
+    (if (good-enough? guess)
+        guess
+        (iter (improve guess))))
+  
+  (iter 1.0))

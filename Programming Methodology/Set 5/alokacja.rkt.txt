@@ -1,0 +1,282 @@
+#lang racket
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Dodatkowe materiały o alokacji, nieużytkach i procedurach        ;;
+;; wieloargumentowych                                               ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; 1. Procedury o nieznanej liczbie argumentów
+
+;; Struktura formy lambda którą widzieliśmy dotychczas wyglądała
+;; następująco:
+;;   (lambda (x1 x2 ... xn) e)
+
+;; Zauważmy że lista parametrów formalnych x1, x2, ... xn faktycznie
+;; przypomina listę w zapisie racketowym. Nie jest to przypadkiem:
+;; możemy myśleć że procedury które przyjmują dowolnie dużo argumentów
+;; przyjmują *listę* swoich argumentów (która, jak to lista, może mieć
+;; dowolnie mało lub dowolnie dużo elementów). Dla listy wystarczy
+;; oczywiście jeden parametr formalny — ale forma (lambda (x) e) jest
+;; już zajęta na procedury stricte jednoargumentowe. Dla procedur
+;; przyjmujących dowolnie wiele argumentów możemy za to *uogólnić*
+;; strukturę procedury lambda i pozwolić przyjąć — zamiast listy nazw —
+;; po prostu jedną nazwę, w następującej postaci:
+;;   (lambda x e)
+;; Najprostszym przykładem takiej procedury jest procedura list,
+;; konstruująca listę zawierającą (dowolnie dużo) danych
+;; argumentów. Jej definicja może wyglądać następująco:
+
+(define list
+  (lambda xs xs))
+
+;; Zwróćmy uwagę na drobną, ale znaczącą różnicę między procedurami
+;; list i identity:
+
+(define identity
+  (lambda (x) x))
+
+;; W przypadku identity struktura formy lambda mówi że "lista
+;; argumentów" musi być dokładnie jednoelementowa; w przypadku list —
+;; może być dowolna.
+
+;; Z powyższą definicją procedury list są dwa problemy: po pierwsze,
+;; straciliśmy cały wygodny cukier syntaktyczny do definicji procedur;
+;; po drugie — i ważniejsze — nie dla każdej funkcji każda liczba
+;; argumentów ma sens. Przykładowo, o ile + i * działają dla dowolnej
+;; liczby argumentów, - i / wymagają co najmniej jednego! Wydaje się
+;; że wygodnie byłoby pozwolić na wyrażenie tego rodzaju wzorców — i
+;; faktycznie, Racket na to pozwala: w tym celu uogólniamy jeszcze
+;; bardziej postać listy parametrów formalnych w definicji lambdy:
+;; nowa postać wygląda jak ciąg par (lub lista niewłaściwa):
+;;   (lambda (x1 x2 ... xn . x) e)
+;; jest funkcją przyjmującą co najmniej n argumentów: argumenty 1-n
+;; mają nazwy odpowiednio x1–xn, zaś reszta argumentów zostaje
+;; przekazana procedurze jako lista o nazwie x. Ta "notacja z kropką"
+;; pozwala nam również na uogólnienie cukru składniowego, pozwalając
+;; na przykład na taką, bardziej czytelną definicję procedury list:
+
+(define (list2 . xs)
+  xs)
+
+;; Zwróćmy uwagę, że parametr po kropce jest wystąpieniem wiążącym dla
+;; odpowiedniej zmiennej, tak samo jak wszystkie pozostałe parametry
+;; formalne. Spróbujmy teraz użyć nowych konstrukcji, żeby zdefiniować
+;; wieloargumentową wersję procedury append — nazwijmy ją append*
+;; (choć w bibliotece standardowej to zwykły append jest
+;; wieloargumentowy), i operację odejmowania zachowującą się tak jak
+;; biblioteczna (przyjmując dwuargumentowe odejmowanie za dane).
+
+(define (append xs ys)
+  (if (null? xs)
+      ys
+      (cons (car xs)
+            (append (cdr xs) ys))))
+
+;; "spłaszczanie" listy list
+(define (concat xss)
+  (if (null? xss)
+      null
+      (append (car xss)
+              (concat (cdr xss)))))
+
+(define (append* . xss)     ; argumenty appenda powinny być listami,
+  (concat xss))             ; więc xss jest listą list
+
+;; Zauważmy, że ze względu na to że *mamy* dostępne procedury
+;; wieloargumentowe, Racket nie dostarcza procedury concat w
+;; bibliotece: ostatecznie append* nie różnił się od niego niczym poza
+;; formatem argumentów. Co zatem zrobić jeśli mamy faktyczną listę
+;; argumentów i chcemy wywołać procedurę wieloargumentową z elementami
+;; listy? Naturalnym kandydatem wydawałaby się — niezajęta przez nic
+;; innego — składnia (append . xss), ale byłoby to proszenie się o
+;; błędy, zwłaszcza w dynamicznie typowanym języku. Dlatego zamiast
+;; takiej składni, Racket dostarcza dodatkową procedurę wbudowaną,
+;; apply, przyjmującą dwa argumenty: procedurę i listę argumentów, i
+;; wywołującą procedurę z tymi argumentami. Czyli, w szczególności:
+;;   (concat xss) ≡ (apply append* xss)
+;; Teraz możemy zdefiniować odejmowanie następująco:
+
+(define (minus a . bs)
+  (if (null? bs)
+      (- 0 a)              ; używamy dwuargumentowego -
+      (- a (apply + bs)))) ; i wieloargumentowego +, sumując elementy
+                           ; odejmowane
+
+;; Podobnie możemy też uogólnić definicję procedury map tak, aby mogła
+;; przyjąć procedurę n-argumentową i n list (równych długości) i
+;; zaaplikować f do elementów na tych samych indeksach, tworząc listę
+;; wyników. Zauważmy, że podobnie jak w przypadku appenda i tak musimy
+;; zacząć od wersji standardowej:
+
+(define (map f xs)
+  (if (null? xs)
+      null
+      (cons (f (car xs))
+            (map f (cdr xs)))))
+
+(define (map* f xs . xss) ; potrzebujemy przynajmniej jednej listy!
+  (define (go xss)
+    (if (null? (car xss)) ; żeby wiedzieć kiedy skończyć
+        null
+        (cons (apply f (map car xss))
+              (go (cdr xss)))))
+  (go (cons xs xss)))     ; używamy go tak jak concat w definicji append*
+
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; 2. Alokacja i nieużytki
+
+;; Zauważmy że nasza definicja procedury map (dwuargumentowej) nie
+;; jest "ogonowa", a więc generowany przez nią proces będzie
+;; rekurencyjny. Możemy spróbować napisać iteracyjną wersję:
+
+(define (rmap f xs)
+  (define (it xs ys)
+    (if (null? xs)
+        ys
+        (it (cdr xs) (cons (f (car xs)) ys))))
+  (it xs null))
+
+;; Okazuje się jednak, że wygeneruje ona listę wyników w odwrotnej
+;; kolejności! Nie powinno to być zaskakujące, biorąc pod uwagę jak
+;; blisko procedurze pomocniczej it do procedury pomocniczej w
+;; definicji reverse'a:
+
+(define (reverse xs)
+  (define (rev-app xs ys)
+    (if (null? xs)
+        ys
+        (rev-app (cdr xs) (cons (car xs) ys))))
+  (rev-app xs null))
+
+;; Cała różnica sprowadza się do wywołania f. Możemy się jednak nie
+;; poddawać, i odwrócić otrzymaną listę, dostając:
+
+(define (map2 f xs)
+  (reverse (rmap f xs)))
+
+;; Teraz generowany proces będzie iteracyjny: zarówno reverse jak i
+;; rmap generują procesy iteracyjne. Pytanie jednak czy zwiększyło to
+;; efektywność naszego programu.
+
+;; Żeby odpowiedzieć na to pytanie musimy zastanowić się co dzieje się
+;; gdy wołamy procedurę cons. Jak wiemy, cons *tworzy* parę
+;; zawierającą jego argumenty. Kluczowym jest tu słowo — tworzy. Każde
+;; wywołanie cons-a musi zbudować *nową* parę. Jak wiemy z diagramów
+;; pudełkowych w podręczniku, nie oznacza to wcale duplikowania
+;; *całych* danych. Jeśli obliczymy wartość wyrażenia
+;;   (cons (car v) (cdr v))
+;; gdzie v jest pewną parą, wynikiem będzie nowa para (w pewnym sensie
+;; — nowa komórka pamięci) ale jej elementy będą *dokładnie* tymi
+;; samymi obiektami co elementy v.
+
+;; Racket daje nam możliwość sprawdzenia czy elementy są identyczne:
+;; służy do tego procedura eq?, której używaliśmy do porównywania
+;; symboli. Możemy zatem sprawdzić powyższe stwierdzenie:
+
+(let* ((v (cons (cons 1 2) (cons 3 4)))
+       (w (cons (car v) (cdr v))))
+  (begin
+    (displayln (eq? v w))
+    (displayln (eq? (car v) (car w)))
+    (displayln (eq? (cdr v) (cdr w)))
+    (displayln (equal? v w))))
+
+;; Procedura equal?, użyta w ostatnim teście, nie sprawdza czy
+;; argumenty są identyczne, ale czy mają tę samą strukturę — stąd dla
+;; v i w zwróciła prawdę. Zazwyczaj kiedy chcemy porównać wartości
+;; mamy na myśli equal? (lub coś jeszcze bardziej ogólnego); eq?
+;; powinniśmy używać co najwyżej jako optymalizacji. Wyjątkiem jest
+;; sytuacja kiedy przynajmniej jedna z danych jest symbolem: symbole
+;; są equal? wtedy i tylko wtedy gdy są eq?, stąd preferujemy szybko
+;; działające eq?.
+
+;; Wróćmy teraz do kwestii efektywności naszych definicji
+;; map. Wydawałoby się, że wersja iteracyjna powinna być lepsza, gdyż
+;; nie musi tak dużo zarządzać rosnącym kontekstem w którym wykonujemy
+;; obliczenia. Jednak zauważmy, że *zarówno* rmap jak i reverse tworzą
+;; nowe komórki pamięci. Oznacza to że w czasie wykonania map2
+;; będziemy musieli stworzyć 2n nowych komórek pamięci (gdzie n jest
+;; długością listy), z których połowa nie będzie częścią
+;; wyniku. Pamięć zaalokowaną przez procedurę która nie jest częścią
+;; danych wejściowych (siłą rzeczy) ani częścią wyniku nazywamy
+;; *nieużytkami*, którymi musi się zająć system zarządzania pamięcią
+;; naszego języka.
+
+;; Nie jest zatem jasne a priori, która definicja jest bardziej
+;; efektywna. W praktyce, w większości implementacji języków
+;; programowania *w sytuacjach takich jak map* bardziej efektywna jest
+;; definicja nieogonowa, zwłaszcza dla relatywnie krótkich list —
+;; głównie dlatego że zarządzanie kontekstem ewaluacji jest
+;; łatwiejszym zadaniem niż "nieuporządkowaną" pamięcią. Dobrą zasadą
+;; wydaje się natomiast żeby w przypadkach wątpliwych wybierać
+;; implementację bardziej czytelną — w tym przypadku niewątpliwie map.
+
+;; Spójrzmy na inny przykład, dwie definicje procedury spłaszczającej
+;; drzewo binarne:
+
+(define (tagged-tuple tag size x)
+  (and (list? x)
+       (pair? x)
+       (eq? tag (car x))
+       (= size (length (cdr x)))))
+
+(define (leaf? x)
+  (eq? x 'leaf))
+
+(define leaf 'leaf)
+
+(define (node? x)
+  (tagged-tuple 'node 3 x))
+
+(define (node-val x)
+  (cadr x))
+
+(define (node-left x)
+  (caddr x))
+
+(define (node-right x)
+  (cadddr x))
+
+(define (node v l r)
+  (list 'node v l r))
+
+(define (tree? t)
+  (or (leaf? t)
+      (and (node? t)
+           (tree? (node-left t))
+           (tree? (node-right t)))))
+
+(define (flatten t)
+  (if (leaf? t)
+      null
+      (append (flatten (node-left t))
+              (cons (node-val t)
+                    (flatten (node-right t))))))
+
+(define (flatten-acc t)
+  (define (flat-app t xs)
+    (if (leaf? t)
+        xs
+        (flat-app (node-left t)
+                  (cons (node-val t)
+                        (flat-app (node-right t) xs)))))
+  (flat-app t null))
+
+;; Tym razem struktura wywołań rekurencyjnych obydwu procedur jest
+;; bardzo podobna — odpowiada strukturze samego drzewa. Jednak o ile
+;; flatten-acc nie generuje nieużytków (zauważmy że każdy element jest
+;; dołączany do listy wynikowej dokładnie raz), to samo nie jest
+;; prawdą jeśli chodzi o flatten. Lista stworzona przez wywołanie
+;; (flatten (node-left t)) jest pierwszym argumentem appenda, co
+;; oznacza że append musi po niej przejść i dołączyć jej elementy do
+;; drugiej z list — tworząc nowe komórki pamięci. W konsekwencji ta
+;; lista nie jest częścią wyniku (ani danych wejściowych) i staje się
+;; nieużytkiem! Co ważne, nie oznacza to że append generuje nieużytki:
+;; wszystkie komórki pamięci które alokuje są częścią *jego*
+;; wyniku. Jednak miejsca w których używamy tego rodzaju procedur
+;; (zwłaszcza na obiektach nie będących częścią danych wejściowych) są
+;; dobrymi podejrzanymi o generowanie nieużytków.

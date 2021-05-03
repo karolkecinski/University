@@ -1,0 +1,137 @@
+#lang racket
+
+(define (fact n)
+  (if (= n 0)
+      1
+      (* n (fact (- n 1)))))
+
+(define (fact-iter n p i)
+  (if (> i n)
+      p
+      (fact-iter n (* p i) (+ i 1))))
+
+(define (fact-it n)
+  (fact-iter n 1 1))
+
+
+(define (cube x)
+  (* x x x))
+
+(define (sum-nats a b)
+  (if (> a b)
+      0
+      (+ a (sum-nats (+ a 1) b))))
+
+(define (sum-odd-cubes a b)
+  (if (> a b)
+      0
+      (+ (cube a) (sum-odd-cubes (+ a 2) b))))
+
+;; "odcukrzona" definicja sum-pi
+;; zwykle użycie form pochodnych (takich jak cond czy define dla funkcji)
+;; jest dużo wygodniejsze niż bazowych (takich jak if, czy define+lambda)
+;; jednocześnie wystarczy że znamy sposób obliczania i strukturę wiązania
+;; zmiennych prostszych form żeby łatwo odtworzyć ją dla form pochodnych
+(define sum-pi
+  (lambda (a b)
+    (if (> a b)
+        0.0
+        (+ (/ 1 a (+ a 2))
+           (sum-pi (+ a 4) b)))))
+
+;; uogólniona definicja sumy szeregu: zwróć uwagę że argumenty val i next
+;; specyfikujemy jako jednoargumentowe procedury
+(define (sum val next start end)
+  (if (> start end)
+      0
+      (+ (val start)
+         (sum val next (next start) end))))
+
+(define (identity x)
+  x)
+
+(define (inc x)
+  (+ x 1))
+
+(define (close-to? x y)
+  (< (abs (- x y)) 0.00001))
+
+(define (average x y)
+  (/ (+ x y) 2))
+
+;; obliczenie punktu stałego funkcji rzeczywistej przez iterację (może się zapętlić)
+(define (fixed-point s f)
+  (if (close-to? s (f s))
+      s
+      (fixed-point (f s) f)))
+
+(let ((fp (fixed-point 1.0 cos)))
+  ;; display/displayln pozwalają nam wypisać wartości na ekran
+  (display "Punkt stały funkcji cosinus w okolicy 1: ")
+  (displayln fp)
+  (close-to? fp (cos fp)))
+
+;; żeby znaleźć wartość pierwiastka z dwóch należy rozwiązać równanie 2 = x * x
+;; można myśleć że wystarczy w tym celu znaleźć punkt stały transformacji x ↦ 2 / x
+;; ale obliczenie (fixed-point 1.0 (lambda (x) (/ 2 x))) zapętla się:
+;; oscylujemy między wartościami 1 i 2
+
+;; NB: tu zrobiliśmy błąd na wykładzie: wzięliśmy funkcję x ↦ 2 / (x * x) i
+;; obliczyliśmy (poprawnie) wartość pierwiastka sześciennego z 2
+
+;; żeby przerwać oscylację, możemy zastosować tłumienie z uśrednianiem:
+(define (average-damp f)
+  (lambda (x)
+    (average x (f x))))
+
+;; teraz możemy obliczyć wartość pierwiastka z dwóch:
+(let* ((transform (lambda (x) (/ 2 x)))
+       (fp (fixed-point 1.0 (average-damp transform))))
+  (display "Przybliżona wartość pierwiastka z dwóch: ")
+  (displayln fp)
+  (close-to? 2 (* fp fp)))
+
+;; w ten sposób możemy zdefiniować również pierwiastkowanie jako procedurę:
+;; zwróć uwagę na zmienną x, której wolne wystąpienie w definicji operacji
+;; (która sama jest argumentem average-damp) związane jest w definicji sqrt!
+(define (sqrt x)
+  (let ((op (lambda (y) (/ x y))))
+    (fixed-point 1.0 (average-damp op))))
+
+;; dodatkowe przykłady:
+
+;; obliczanie pochodnej funkcji z definicji przyjmując dx za "odpowiednio małą"
+;; wartość (zamiast "prawdziwej" granicy)
+(define (deriv f)
+  (let ((dx 0.000001))
+    (lambda (x) (/ (- (f (+ x dx)) (f x)) dx))))
+
+
+;; przekształcenie Newtona: x ↦ x - f(x) / f'(x)
+;; klasyczna metoda numeryczna pozwala obliczyć miejsce zerowe f
+;; jako punkt stały tej transformacji
+(define (newton-transform f)
+  (lambda (x)
+    (- x
+       (/ (f x)
+          ((deriv f) x)))))
+
+(define (newtons-method f x)
+  (fixed-point x (newton-transform f)))
+
+;; zastosowania
+(define pi (newtons-method sin 3.0))
+
+(define (sqrt-nm x)
+  (newtons-method (lambda (y) (- x (* y y))) 1.0))
+
+;; możemy wyabstrahować wzorzec widoczny w definicjach sqrt: znaleźć punkt stały
+;; pewnej funkcji *przy użyciu* danej transformacji
+;; argumentem fix-point-of-transform jest procedura przetwarzająca procedury w procedury!
+(define (fixed-point-of-transform transform f x)
+  (fixed-point x (transform f)))
+
+(let ((sqrt2 (fixed-point-of-transform average-damp (lambda (x) (/ 2 x)) 1.0)))
+  (close-to? sqrt2 (sqrt 2)))
+
+
