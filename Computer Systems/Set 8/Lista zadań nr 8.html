@@ -1,0 +1,1165 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>
+        Lista zadań nr 8 - HackMD
+    </title>
+    <link rel="icon" type="image/png" href="https://hackmd.io/favicon.png">
+    <link rel="apple-touch-icon" href="https://hackmd.io/apple-touch-icon.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" integrity="sha256-3iu9jgsy9TpTwXKb7bNQzqWekRX7pPK+2OLj3R922fo=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.5.0/octicons.min.css" integrity="sha256-QiWfLIsCT02Sdwkogf6YMiQlj4NE84MKkzEMkZnMGdg=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.1/themes/prism.min.css" integrity="sha256-vtR0hSWRc3Tb26iuN2oZHt3KRUomwTufNIf5/4oeCyg=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/css/basic/emojify.min.css" integrity="sha256-UOrvMOsSDSrW6szVLe8ZDZezBxh5IoIfgTwdNDgTjiU=" crossorigin="anonymous" />
+    <style>
+        @charset "UTF-8";@import url(https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i|Source+Code+Pro:300,400,500|Source+Sans+Pro:300,300i,400,400i,600,600i|Source+Serif+Pro&subset=latin-ext);.hljs{display:block;background:#fff;padding:.5em;color:#333;overflow-x:auto}.hljs-comment,.hljs-meta{color:#969896}.hljs-emphasis,.hljs-quote,.hljs-string,.hljs-strong,.hljs-template-variable,.hljs-variable{color:#df5000}.hljs-keyword,.hljs-selector-tag,.hljs-type{color:#a71d5d}.hljs-attribute,.hljs-bullet,.hljs-literal,.hljs-number,.hljs-symbol{color:#0086b3}.hljs-built_in,.hljs-builtin-name{color:#005cc5}.hljs-name,.hljs-section{color:#63a35c}.hljs-tag{color:#333}.hljs-attr,.hljs-selector-attr,.hljs-selector-class,.hljs-selector-id,.hljs-selector-pseudo,.hljs-title{color:#795da3}.hljs-addition{color:#55a532;background-color:#eaffea}.hljs-deletion{color:#bd2c00;background-color:#ffecec}.hljs-link{text-decoration:underline}.markdown-body{font-size:16px;line-height:1.5;word-wrap:break-word}.markdown-body:after,.markdown-body:before{display:table;content:""}.markdown-body:after{clear:both}.markdown-body>:first-child{margin-top:0!important}.markdown-body>:last-child{margin-bottom:0!important}.markdown-body a:not([href]){color:inherit;text-decoration:none}.markdown-body .absent{color:#c00}.markdown-body .anchor{float:left;padding-right:4px;margin-left:-20px;line-height:1}.markdown-body .anchor:focus{outline:none}.markdown-body blockquote,.markdown-body dl,.markdown-body ol,.markdown-body p,.markdown-body pre,.markdown-body table,.markdown-body ul{margin-top:0;margin-bottom:16px}.markdown-body hr{height:.25em;padding:0;margin:24px 0;background-color:#e7e7e7;border:0}.markdown-body blockquote{font-size:16px;padding:0 1em;color:#777;border-left:.25em solid #ddd}.markdown-body blockquote>:first-child{margin-top:0}.markdown-body blockquote>:last-child{margin-bottom:0}.markdown-body kbd,.popover kbd{display:inline-block;padding:3px 5px;font-size:11px;line-height:10px;color:#555;vertical-align:middle;background-color:#fcfcfc;border:1px solid #ccc;border-bottom-color:#bbb;border-radius:3px;box-shadow:inset 0 -1px 0 #bbb}.markdown-body .loweralpha{list-style-type:lower-alpha}.markdown-body h1,.markdown-body h2,.markdown-body h3,.markdown-body h4,.markdown-body h5,.markdown-body h6{margin-top:24px;margin-bottom:16px;font-weight:600;line-height:1.25}.markdown-body h1 .octicon-link,.markdown-body h2 .octicon-link,.markdown-body h3 .octicon-link,.markdown-body h4 .octicon-link,.markdown-body h5 .octicon-link,.markdown-body h6 .octicon-link{color:#000;vertical-align:middle;visibility:hidden}.markdown-body h1:hover .anchor,.markdown-body h2:hover .anchor,.markdown-body h3:hover .anchor,.markdown-body h4:hover .anchor,.markdown-body h5:hover .anchor,.markdown-body h6:hover .anchor{text-decoration:none}.markdown-body h1:hover .anchor .octicon-link,.markdown-body h2:hover .anchor .octicon-link,.markdown-body h3:hover .anchor .octicon-link,.markdown-body h4:hover .anchor .octicon-link,.markdown-body h5:hover .anchor .octicon-link,.markdown-body h6:hover .anchor .octicon-link{visibility:visible}.markdown-body h1 code,.markdown-body h1 tt,.markdown-body h2 code,.markdown-body h2 tt,.markdown-body h3 code,.markdown-body h3 tt,.markdown-body h4 code,.markdown-body h4 tt,.markdown-body h5 code,.markdown-body h5 tt,.markdown-body h6 code,.markdown-body h6 tt{font-size:inherit}.markdown-body h1{font-size:2em}.markdown-body h1,.markdown-body h2{padding-bottom:.3em;border-bottom:1px solid #eee}.markdown-body h2{font-size:1.5em}.markdown-body h3{font-size:1.25em}.markdown-body h4{font-size:1em}.markdown-body h5{font-size:.875em}.markdown-body h6{font-size:.85em;color:#777}.markdown-body ol,.markdown-body ul{padding-left:2em}.markdown-body ol.no-list,.markdown-body ul.no-list{padding:0;list-style-type:none}.markdown-body ol ol,.markdown-body ol ul,.markdown-body ul ol,.markdown-body ul ul{margin-top:0;margin-bottom:0}.markdown-body li>p{margin-top:16px}.markdown-body li+li{padding-top:.25em}.markdown-body dl{padding:0}.markdown-body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}.markdown-body dl dd{padding:0 16px;margin-bottom:16px}.markdown-body table{display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}.markdown-body table th{font-weight:700}.markdown-body table td,.markdown-body table th{padding:6px 13px;border:1px solid #ddd}.markdown-body table tr{background-color:#fff;border-top:1px solid #ccc}.markdown-body table tr:nth-child(2n){background-color:#f8f8f8}.markdown-body img{max-width:100%;box-sizing:content-box;background-color:#fff}.markdown-body img[align=right]{padding-left:20px}.markdown-body img[align=left]{padding-right:20px}.markdown-body .emoji{max-width:none;vertical-align:text-top;background-color:transparent}.markdown-body span.frame{display:block;overflow:hidden}.markdown-body span.frame>span{display:block;float:left;width:auto;padding:7px;margin:13px 0 0;overflow:hidden;border:1px solid #ddd}.markdown-body span.frame span img{display:block;float:left}.markdown-body span.frame span span{display:block;padding:5px 0 0;clear:both;color:#333}.markdown-body span.align-center{display:block;overflow:hidden;clear:both}.markdown-body span.align-center>span{display:block;margin:13px auto 0;overflow:hidden;text-align:center}.markdown-body span.align-center span img{margin:0 auto;text-align:center}.markdown-body span.align-right{display:block;overflow:hidden;clear:both}.markdown-body span.align-right>span{display:block;margin:13px 0 0;overflow:hidden;text-align:right}.markdown-body span.align-right span img{margin:0;text-align:right}.markdown-body span.float-left{display:block;float:left;margin-right:13px;overflow:hidden}.markdown-body span.float-left span{margin:13px 0 0}.markdown-body span.float-right{display:block;float:right;margin-left:13px;overflow:hidden}.markdown-body span.float-right>span{display:block;margin:13px auto 0;overflow:hidden;text-align:right}.markdown-body code,.markdown-body tt{padding:0;padding-top:.2em;padding-bottom:.2em;margin:0;font-size:85%;background-color:rgba(0,0,0,.04);border-radius:3px}.markdown-body code:after,.markdown-body code:before,.markdown-body tt:after,.markdown-body tt:before{letter-spacing:-.2em;content:"\00a0"}.markdown-body code br,.markdown-body tt br{display:none}.markdown-body del code{text-decoration:inherit}.markdown-body pre{word-wrap:normal}.markdown-body pre>code{padding:0;margin:0;font-size:100%;word-break:normal;white-space:pre;background:transparent;border:0}.markdown-body .highlight{margin-bottom:16px}.markdown-body .highlight pre{margin-bottom:0;word-break:normal}.markdown-body .highlight pre,.markdown-body pre{padding:16px;overflow:auto;font-size:85%;line-height:1.45;background-color:#f7f7f7;border-radius:3px}.markdown-body pre code,.markdown-body pre tt{display:inline;max-width:auto;padding:0;margin:0;overflow:visible;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}.markdown-body pre code:after,.markdown-body pre code:before,.markdown-body pre tt:after,.markdown-body pre tt:before{content:normal}.markdown-body .csv-data td,.markdown-body .csv-data th{padding:5px;overflow:hidden;font-size:12px;line-height:1;text-align:left;white-space:nowrap}.markdown-body .csv-data .blob-line-num{padding:10px 8px 9px;text-align:right;background:#fff;border:0}.markdown-body .csv-data tr{border-top:0}.markdown-body .csv-data th{font-weight:700;background:#f8f8f8;border-top:0}.news .alert .markdown-body blockquote{padding:0 0 0 40px;border:0 none}.activity-tab .news .alert .commits,.activity-tab .news .markdown-body blockquote{padding-left:0}.task-list-item{list-style-type:none}.task-list-item label{font-weight:400}.task-list-item.enabled label{cursor:pointer}.task-list-item+.task-list-item{margin-top:3px}.task-list-item-checkbox{float:left;margin:.31em 0 .2em -1.3em!important;vertical-align:middle;cursor:default!important}.markdown-body{padding-top:40px;padding-bottom:40px;max-width:758px;overflow:visible!important}.markdown-body .emoji{vertical-align:top}.markdown-body pre{border:inherit!important}.markdown-body code{color:inherit!important}.markdown-body pre code .wrapper{display:-moz-inline-flex;display:-ms-inline-flex;display:-o-inline-flex;display:inline-flex}.markdown-body pre code .gutter{float:left;overflow:hidden;-webkit-user-select:none;user-select:none}.markdown-body pre code .gutter.linenumber{text-align:right;position:relative;display:inline-block;cursor:default;z-index:4;padding:0 8px 0 0;min-width:20px;box-sizing:content-box;color:#afafaf!important;border-right:3px solid #6ce26c!important}.markdown-body pre code .gutter.linenumber>span:before{content:attr(data-linenumber)}.markdown-body pre code .code{float:left;margin:0 0 0 16px}.markdown-body .gist .line-numbers{border-left:none;border-top:none;border-bottom:none}.markdown-body .gist .line-data{border:none}.markdown-body .gist table{border-spacing:0;border-collapse:inherit!important}.markdown-body code[data-gist-id]{background:none;padding:0}.markdown-body code[data-gist-id]:after,.markdown-body code[data-gist-id]:before{content:""}.markdown-body code[data-gist-id] .blob-num{border:unset}.markdown-body code[data-gist-id] table{overflow:unset;margin-bottom:unset}.markdown-body code[data-gist-id] table tr{background:unset}.markdown-body[dir=rtl] pre{direction:ltr}.markdown-body[dir=rtl] code{direction:ltr;unicode-bidi:embed}.markdown-body .alert>p{margin-bottom:0}.markdown-body pre.abc,.markdown-body pre.flow-chart,.markdown-body pre.graphviz,.markdown-body pre.mermaid,.markdown-body pre.sequence-diagram,.markdown-body pre.vega{text-align:center;background-color:inherit;border-radius:0;white-space:inherit;overflow:visible}.markdown-body pre.abc>code,.markdown-body pre.flow-chart>code,.markdown-body pre.graphviz>code,.markdown-body pre.mermaid>code,.markdown-body pre.sequence-diagram>code,.markdown-body pre.vega>code{text-align:left}.markdown-body pre.abc>svg,.markdown-body pre.flow-chart>svg,.markdown-body pre.graphviz>svg,.markdown-body pre.mermaid>svg,.markdown-body pre.sequence-diagram>svg,.markdown-body pre.vega>svg{max-width:100%;height:100%}.markdown-body pre>code.wrap{white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space:-o-pre-wrap;word-wrap:break-word}.markdown-body .alert>p,.markdown-body .alert>ul{margin-bottom:0}.markdown-body summary{display:list-item}.markdown-body summary:focus{outline:none}.markdown-body details summary{cursor:pointer}.markdown-body details:not([open])>:not(summary){display:none}.markdown-body figure{margin:1em 40px}.markdown-body .mark,.markdown-body mark{background-color:#fff1a7}.vimeo,.youtube{cursor:pointer;display:table;text-align:center;background-position:50%;background-repeat:no-repeat;background-size:contain;background-color:#000;overflow:hidden}.vimeo,.youtube{position:relative;width:100%}.youtube{padding-bottom:56.25%}.vimeo img{width:100%;object-fit:contain;z-index:0}.youtube img{object-fit:cover;z-index:0}.vimeo iframe,.youtube iframe,.youtube img{width:100%;height:100%;position:absolute;top:0;left:0}.vimeo iframe,.youtube iframe{vertical-align:middle;z-index:1}.vimeo .icon,.youtube .icon{position:absolute;height:auto;width:auto;top:50%;left:50%;transform:translate(-50%,-50%);color:#fff;opacity:.3;transition:opacity .2s;z-index:0}.vimeo:hover .icon,.youtube:hover .icon{opacity:.6;transition:opacity .2s}.slideshare .inner,.speakerdeck .inner{position:relative;width:100%}.slideshare .inner iframe,.speakerdeck .inner iframe{position:absolute;top:0;bottom:0;left:0;right:0;width:100%;height:100%}.MJX_Assistive_MathML{display:none}.ui-infobar{position:relative;z-index:2;max-width:760px;margin:25px auto -25px;padding:0 15px;color:#777}.toc .invisable-node{list-style-type:none}.ui-toc{position:fixed;bottom:20px;z-index:998}.ui-toc-label{opacity:.3;background-color:#ccc;border:none;transition:opacity .2s}.ui-toc .open .ui-toc-label{opacity:1;color:#fff;transition:opacity .2s}.ui-toc-label:focus{opacity:.3;background-color:#ccc;color:#000}.ui-toc-label:hover{opacity:1;background-color:#ccc;transition:opacity .2s}.ui-toc-dropdown{margin-top:23px;margin-bottom:20px;padding-left:10px;padding-right:10px;max-width:45vw;width:25vw;max-height:70vh;overflow:auto;text-align:inherit}.ui-toc-dropdown>.toc{max-height:calc(70vh - 100px);overflow:auto}.ui-toc-dropdown[dir=rtl] .nav{padding-right:0;letter-spacing:.0029em}.ui-toc-dropdown a{overflow:hidden;text-overflow:ellipsis;white-space:pre}.ui-toc-dropdown .nav>li>a{display:block;padding:4px 20px;font-size:13px;font-weight:500;color:#767676}.ui-toc-dropdown .nav>li:first-child:last-child > ul,.ui-toc-dropdown .toc.expand ul{display:block}.ui-toc-dropdown .nav>li>a:focus,.ui-toc-dropdown .nav>li>a:hover{padding-left:19px;color:#000;text-decoration:none;background-color:transparent;border-left:1px solid #000}.ui-toc-dropdown[dir=rtl] .nav>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav>li>a:hover{padding-right:19px;border-left:none;border-right:1px solid #000}.ui-toc-dropdown .nav>.active:focus>a,.ui-toc-dropdown .nav>.active:hover>a,.ui-toc-dropdown .nav>.active>a{padding-left:18px;font-weight:700;color:#000;background-color:transparent;border-left:2px solid #000}.ui-toc-dropdown[dir=rtl] .nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav>.active>a{padding-right:18px;border-left:none;border-right:2px solid #000}.ui-toc-dropdown .nav .nav{display:none;padding-bottom:10px}.ui-toc-dropdown .nav>.active>ul{display:block}.ui-toc-dropdown .nav .nav>li>a{padding-top:1px;padding-bottom:1px;padding-left:30px;font-size:12px;font-weight:400}.ui-toc-dropdown[dir=rtl] .nav .nav>li>a{padding-right:30px}.ui-toc-dropdown .nav .nav>li>ul>li>a{padding-top:1px;padding-bottom:1px;padding-left:40px;font-size:12px;font-weight:400}.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a{padding-right:40px}.ui-toc-dropdown .nav .nav>li>a:focus,.ui-toc-dropdown .nav .nav>li>a:hover{padding-left:29px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav .nav>li>a:hover{padding-right:29px}.ui-toc-dropdown .nav .nav>li>ul>li>a:focus,.ui-toc-dropdown .nav .nav>li>ul>li>a:hover{padding-left:39px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a:hover{padding-right:39px}.ui-toc-dropdown .nav .nav>.active:focus>a,.ui-toc-dropdown .nav .nav>.active:hover>a,.ui-toc-dropdown .nav .nav>.active>a{padding-left:28px;font-weight:500}.ui-toc-dropdown[dir=rtl] .nav .nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>a{padding-right:28px}.ui-toc-dropdown .nav .nav>.active>.nav>.active:focus>a,.ui-toc-dropdown .nav .nav>.active>.nav>.active:hover>a,.ui-toc-dropdown .nav .nav>.active>.nav>.active>a{padding-left:38px;font-weight:500}.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active>a{padding-right:38px}.markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif}html[lang^=ja] .markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ\ ゴシック,sans-serif}html[lang=zh-tw] .markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif}html[lang=zh-cn] .markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif}html .markdown-body[lang^=ja]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ\ ゴシック,sans-serif}html .markdown-body[lang=zh-tw]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif}html .markdown-body[lang=zh-cn]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif}html[lang^=ja] .ui-toc-dropdown{font-family:Source Sans Pro,Helvetica,Arial,Meiryo UI,MS PGothic,ＭＳ\ Ｐゴシック,sans-serif}html[lang=zh-tw] .ui-toc-dropdown{font-family:Source Sans Pro,Helvetica,Arial,Microsoft JhengHei UI,微軟正黑UI,sans-serif}html[lang=zh-cn] .ui-toc-dropdown{font-family:Source Sans Pro,Helvetica,Arial,Microsoft YaHei UI,微软雅黑UI,sans-serif}html .ui-toc-dropdown[lang^=ja]{font-family:Source Sans Pro,Helvetica,Arial,Meiryo UI,MS PGothic,ＭＳ\ Ｐゴシック,sans-serif}html .ui-toc-dropdown[lang=zh-tw]{font-family:Source Sans Pro,Helvetica,Arial,Microsoft JhengHei UI,微軟正黑UI,sans-serif}html .ui-toc-dropdown[lang=zh-cn]{font-family:Source Sans Pro,Helvetica,Arial,Microsoft YaHei UI,微软雅黑UI,sans-serif}.ui-affix-toc{position:fixed;top:0;max-width:15vw;max-height:70vh;overflow:auto}.back-to-top,.expand-toggle,.go-to-bottom{display:block;padding:4px 10px;margin-top:10px;margin-left:10px;font-size:12px;font-weight:500;color:#999}.back-to-top:focus,.back-to-top:hover,.expand-toggle:focus,.expand-toggle:hover,.go-to-bottom:focus,.go-to-bottom:hover{color:#563d7c;text-decoration:none}.back-to-top,.go-to-bottom{margin-top:0}.ui-user-icon{width:20px;height:20px;display:block;border-radius:3px;margin-top:2px;margin-bottom:2px;margin-right:5px;background-position:50%;background-repeat:no-repeat;background-size:cover}.ui-user-icon.small{width:18px;height:18px;display:inline-block;vertical-align:middle;margin:0 0 .2em}.ui-infobar>small>span{line-height:22px}.ui-infobar>small .dropdown{display:inline-block}.ui-infobar>small .dropdown a:focus,.ui-infobar>small .dropdown a:hover{text-decoration:none}.ui-published-note{color:#337ab7}.ui-published-note .fa{font-size:20px;vertical-align:top}.unselectable{-webkit-user-select:none;-o-user-select:none;user-select:none}@media print{blockquote,div,img,pre,table{page-break-inside:avoid!important}a[href]:after{font-size:12px!important}}.markdown-body.slides{position:relative;z-index:1;color:#222}.markdown-body.slides:before{content:"";display:block;position:absolute;top:0;left:0;right:0;bottom:0;z-index:-1;background-color:currentColor;box-shadow:0 0 0 50vw}.markdown-body.slides section[data-markdown]{position:relative;margin-bottom:1.5em;background-color:#fff;text-align:center}.markdown-body.slides section[data-markdown] code{text-align:left}.markdown-body.slides section[data-markdown]:before{content:"";display:block;padding-bottom:56.23%}.markdown-body.slides section[data-markdown]>div:first-child{position:absolute;top:50%;left:1em;right:1em;transform:translateY(-50%);max-height:100%;overflow:hidden}.markdown-body.slides section[data-markdown]>ul{display:inline-block}.markdown-body.slides>section>section+section:after{content:"";position:absolute;top:-1.5em;right:1em;height:1.5em;border:3px solid #777}body{font-smoothing:subpixel-antialiased!important;-webkit-font-smoothing:subpixel-antialiased!important;-moz-osx-font-smoothing:auto!important;text-shadow:0 0 1em transparent,1px 1px 1.2px rgba(0,0,0,.004);-webkit-overflow-scrolling:touch;letter-spacing:.025em}.focus,:focus{outline:none!important}::-moz-focus-inner{border:0!important}body{font-family:Source Sans Pro,Helvetica,Arial,sans-serif}html[lang^=ja] body{font-family:Source Sans Pro,Helvetica,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ\ ゴシック,sans-serif}html[lang=zh-tw] body{font-family:Source Sans Pro,Helvetica,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif}html[lang=zh-cn] body{font-family:Source Sans Pro,Helvetica,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif}abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}abbr[data-original-title],abbr[title]{cursor:help}body.modal-open{overflow-y:auto;padding-right:0!important}
+    </style>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js" integrity="sha256-g6iAfvZp+nDQ2TdTR/VVKJf3bGro4ub5fvWSWVRi2NE=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.9/es5-shim.min.js" integrity="sha256-8E4Is26QH0bD52WoQpcB+R/tcWQtpzlCojrybUd7Mxo=" crossorigin="anonymous"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div id="doc" class="markdown-body container-fluid comment-enabled" data-hard-breaks="true"><h1 id="Lista-zadań-nr-8"><a class="anchor hidden-xs" href="#Lista-zadań-nr-8" title="Lista-zadań-nr-8"><span class="octicon octicon-link"></span></a>Lista zadań nr 8</h1><p>Zajęcia w grupie PPo, dnia 04.05.2020, godz. 14:00–16:00</p><h2 id="Deklaracje"><a class="anchor hidden-xs" href="#Deklaracje" title="Deklaracje"><span class="octicon octicon-link"></span></a>Deklaracje</h2><table>
+<thead>
+<tr>
+<th></th>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+<th>5</th>
+<th>6</th>
+<th>7</th>
+<th>8</th>
+<th>9</th>
+<th>10</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Dawid Dieu</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Paweł Drzycimski</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Wojciech Goska</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Bartłomiej Grochowski</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Jakub Grodzicki</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Hanna Kamraj</td>
+<td>1</td>
+<td>-</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Marek Kochanowski</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Zofia Kochutek</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Sebastian Kondraciuk</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Paulina Landkocz</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Mateusz Markiewicz</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Julia Nowogrodzka</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Krzysztof Nyczka</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Marek Padlewski</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Jakub Przydatek</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Szymon Rysz</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Mateusz Sidło</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Michał Symoszyn</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Katarzyna Polak</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+</tr>
+</tbody>
+</table><h2 id="Rozwiązania"><a class="anchor hidden-xs" href="#Rozwiązania" title="Rozwiązania"><span class="octicon octicon-link"></span></a>Rozwiązania</h2><h3 id="Zadanie-1"><a class="anchor hidden-xs" href="#Zadanie-1" title="Zadanie-1"><span class="octicon octicon-link"></span></a>Zadanie 1</h3><div class="alert alert-info">
+<p>Rozwiązuje: Marek Padlewski</p>
+</div><ul>
+<li>tag - pierwsze 8 bitów adresu</li>
+<li>indeks - kolejne dwa bity adresu</li>
+<li>offset - ostatnie dwa bity adresu</li>
+</ul><p>Stan pamięci podręcznej:<br>
+<img src="https://i.imgur.com/Pq9SWJg.png" alt=""></p><table>
+<thead>
+<tr>
+<th>Adres</th>
+<th>Trafienie?</th>
+<th>Wartość</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>832</td>
+<td>Tak</td>
+<td>CC</td>
+</tr>
+<tr>
+<td>835</td>
+<td>Nie</td>
+<td>…</td>
+</tr>
+<tr>
+<td>FFD</td>
+<td>Tak</td>
+<td>C0</td>
+</tr>
+</tbody>
+</table><h3 id="Zadanie-2"><a class="anchor hidden-xs" href="#Zadanie-2" title="Zadanie-2"><span class="octicon octicon-link"></span></a>Zadanie 2</h3><div class="alert alert-info">
+<p>Rozwiązuje: Hanna Kamraj</p>
+</div><p>Rozważmy <strong>pamięć podręczną z mapowaniem bezpośrednim adresowaną bajtowo</strong>. Używamy adresów 32-bitowych o następującym formacie: (tag, index, offset) = (addr31…10, addr9…5, addr4…0).<br>
+• Jaki jest rozmiar bloku w 32-bitowych słowach?<br>
+• Ile wierszy ma nasza pamięć podręczna?<br>
+• Jaki jest stosunek liczby bitów składujących dane do liczby bitów składujących metadane?</p><p>W <strong>bezpośrednim mapowaniu</strong> konkretny blok pamięci głównej może być mapowany tylko na jedną konkretną linię pamięci podręcznej (one line per set). Zaletami takiego mapowania są prostota konstrukcji i szybkie wyszukiwanie informacji. Wadą jest konieczność wczytywania całych stron z pamięci głównej i zastępowania nimi pamięci podręcznej w przypadku, gdy wymagane jest pobranie informacji z linijek innej strony, nawet jeżeli wiadomo, że za chwilę będzie trzeba się z powrotem odwołać do danych ze strony wcześniejszej.</p><p>s - bitowy indentyfikator bloku<br>
+w - bitowy indentyfikator słowa<br>
+r - bitowy indentyfikator wiersza<br>
+Długość adresu = (s + w) bitów<br>
+Liczba adresowalnych jednostek = 2^(s+w) słów lub bajtów<br>
+Rozmiar bloku = 2^w słów lub bajtów<br>
+Liczba wierszy w cache’u = m = 2^r<br>
+Liczba bloków w pamięci głównej = 2^(s + w)/2^w = 2^s<br>
+Rozmiar znacznika = (s – r) bitów</p><p>Jaki jest rozmiar bloku w 32-bitowych słowach?<br>
+32 bajty<br>
+Ile wierszy ma nasza pamięć podręczna?<br>
+32<br>
+Jaki jest stosunek liczby bitów składujących dane do liczby bitów składujących metadane?</p><p>W jednej lini:</p><ul>
+<li>tag (22bity)</li>
+<li>bit <em>valid</em> (1 bit)</li>
+<li>dane (1 blok = <span class="mathjax"><span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-1-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><msup><mn>2</mn><mn>5</mn></msup></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-1" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-2" class="mjx-mrow"><span id="MJXc-Node-3" class="mjx-msubsup"><span class="mjx-base"><span id="MJXc-Node-4" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">2</span></span></span><span class="mjx-sup" style="font-size: 70.7%; vertical-align: 0.591em; padding-left: 0px; padding-right: 0.071em;"><span id="MJXc-Node-5" class="mjx-mn" style=""><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">5</span></span></span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mn>2</mn><mn>5</mn></msup></math></span></span><script type="math/tex" id="MathJax-Element-1">2^5</script></span> bajtów = 256 bitów)</li>
+</ul><p>256 / 23 <span class="mathjax"><span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-2-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mo>&amp;#x2248;</mo></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-6" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-7" class="mjx-mrow"><span id="MJXc-Node-8" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.224em; padding-bottom: 0.335em;">≈</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>≈</mo></math></span></span><script type="math/tex" id="MathJax-Element-2">\approx</script></span> 11</p><h3 id="Zadanie-3"><a class="anchor hidden-xs" href="#Zadanie-3" title="Zadanie-3"><span class="octicon octicon-link"></span></a>Zadanie 3</h3><div class="alert alert-info">
+<p>Rozwiązuje: Dawid Dieu</p>
+</div><p>Rozważmy pamięć podręczną z poprzedniego zadania. Mamy następującą sekwencję odwołań do słów pamięci (liczby w systemie dziesiętnym):</p><center>
+04 16 132 232 160 1024 28 140 3100 180 2180
+</center><p>Załóż, że na początku pamięć podręczna jest pusta. Jak wiele bloków zostało zastąpionych? Jaka jest efektywność pamięci podręcznej (liczba trafień procentowo)? Podaj zawartość pamięci podręcznej po wykonaniu powyższych odwołań – każdy ważny wpis wypisz jako krotkę (tag, index, . . . ). Dla każdego chybienia wskaż, czy jest ono przymusowe (ang. compulsory miss) czy też kolizji na danym adresie (ang. conflict miss).</p><table>
+<thead>
+<tr>
+<th>Adres dziesiętny</th>
+<th>(tag, index, offset)</th>
+<th>hit or miss</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td><code>00 00000 00000</code></td>
+<td>Compulsory miss</td>
+</tr>
+<tr>
+<td>4</td>
+<td><code>00 00000 00100</code></td>
+<td>Hit</td>
+</tr>
+<tr>
+<td>16</td>
+<td><code>00 ‭00000 10000</code>‬</td>
+<td>Hit</td>
+</tr>
+<tr>
+<td>132</td>
+<td><code>0‭0 00100 00100‬</code></td>
+<td>Compulsory miss</td>
+</tr>
+<tr>
+<td>232</td>
+<td><code>0‭0 00111 01000</code>‬</td>
+<td>Compulsory miss</td>
+</tr>
+<tr>
+<td>160</td>
+<td><code>00 00101 00000‬</code></td>
+<td>Compulsory miss</td>
+</tr>
+<tr>
+<td>1024</td>
+<td>‭<code>01 00000 00000</code>‬</td>
+<td>Conflict miss, bo w cache’u 0 jest cos z tagiem 0</td>
+</tr>
+<tr>
+<td>28</td>
+<td><code>00 00‭000 11100</code>‬</td>
+<td>Conflict miss, bo przed chwilą tag 0 zastąpiliśmy tagiem 1</td>
+</tr>
+<tr>
+<td>140</td>
+<td>‭<code>00 00100 01100</code>‬</td>
+<td>Hit bo załadowaliśmy coś w zapytaniu z adresem 132</td>
+</tr>
+<tr>
+<td>3100</td>
+<td>‭<code>11 00000 11100</code>‬</td>
+<td>Conflict miss, jest tam tag 0</td>
+</tr>
+<tr>
+<td>180</td>
+<td><code>‭00 00101 10100‬</code></td>
+<td>Hit, bo załadowane w 160</td>
+</tr>
+<tr>
+<td>2180</td>
+<td><code>‭‭10 00100 00100</code>‬</td>
+<td>Conflict miss, bo w 140 zaladowaliśmy tag 0</td>
+</tr>
+</tbody>
+</table><br><table>
+<thead>
+<tr>
+<th>Index</th>
+<th>Tag</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>00000</td>
+<td>11</td>
+</tr>
+<tr>
+<td>00100</td>
+<td>10</td>
+</tr>
+<tr>
+<td>00101</td>
+<td>00</td>
+</tr>
+<tr>
+<td>00111</td>
+<td>00</td>
+</tr>
+</tbody>
+</table><p><strong>Efektywność: <span class="mathjax"><span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-3-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mfrac><mn>4</mn><mn>12</mn></mfrac></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-9" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-10" class="mjx-mrow"><span id="MJXc-Node-11" class="mjx-mfrac"><span class="mjx-box MJXc-stacked" style="width: 0.849em; padding: 0px 0.12em;"><span class="mjx-numerator" style="font-size: 70.7%; width: 1.2em; top: -1.319em;"><span id="MJXc-Node-12" class="mjx-mn" style=""><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">4</span></span></span><span class="mjx-denominator" style="font-size: 70.7%; width: 1.2em; bottom: -0.6em;"><span id="MJXc-Node-13" class="mjx-mn" style=""><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">12</span></span></span><span class="mjx-line" style="border-bottom: 1.3px solid; top: -0.285em; width: 0.849em;"></span></span><span class="mjx-vsize" style="height: 1.357em; vertical-align: -0.425em;"></span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>4</mn><mn>12</mn></mfrac></math></span></span><script type="math/tex" id="MathJax-Element-3">\frac{4}{12}</script></span></strong></p><h3 id="Zadanie-4"><a class="anchor hidden-xs" href="#Zadanie-4" title="Zadanie-4"><span class="octicon octicon-link"></span></a>Zadanie 4</h3><div class="alert alert-info">
+<p>Rozwiązuje: Marek Kochanowski</p>
+</div><p>Powtórz poprzednie zadanie dla następujących organizacji pamięci podręcznej:</p><ul>
+<li>
+<p>sekcyjno-skojarzeniowa 3-drożna, bloki długości dwóch słów, liczba bloków 24, <strong>polityka wymiany LRU</strong>,</p>
+<p>E = 3<br>
+B = 2<br>
+b = 1<br>
+S = 24 bloki / 3 (wiersze na blok) = 8 zbiorów<br>
+s = 3</p>
+<p><strong>Polityka LRU</strong> (ang. <em>Least recently used</em>) - polityka wybierania elementów do nadpisania w pamięci podręcznej polegająca na podmianie tych wartości, które były odczytywane najdawniej</p>
+<table>
+<thead>
+<tr>
+<th>Znacznik</th>
+<th>Indeks</th>
+<th>Offset</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>28 bitów</td>
+<td>3 bity</td>
+<td>1 bit</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Adres</th>
+<th>Znacznik</th>
+<th>Indeks</th>
+<th>Offset</th>
+<th>Trafienie?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>0</strong> (0000 0000 0000)</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><em>przymusowe chybienie</em>, zapis do cache</td>
+</tr>
+<tr>
+<td><strong>4</strong> (0000 0000 0100)</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td><em>przymusowe chybienie</em>, zapis do cache</td>
+</tr>
+<tr>
+<td><strong>16</strong> (0000 0001 0000)</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td><em>przymusowe chybienie</em>, zapis do cache</td>
+</tr>
+<tr>
+<td><strong>132</strong> (0000 1000 0100)</td>
+<td>8</td>
+<td>2</td>
+<td>0</td>
+<td><em>przymusowe chybienie</em>, zapis do cache</td>
+</tr>
+<tr>
+<td><strong>232</strong> (0000 1110 1000)</td>
+<td>14</td>
+<td>4</td>
+<td>0</td>
+<td><em>przymusowe chybienie</em>, zapis do cache</td>
+</tr>
+<tr>
+<td><strong>160</strong> (0000 1010 0000)</td>
+<td>10</td>
+<td>0</td>
+<td>0</td>
+<td><em>przymusowe chybienie</em>, zapis do cache</td>
+</tr>
+<tr>
+<td><strong>1024</strong> (0100 0000 0000)</td>
+<td>64</td>
+<td>0</td>
+<td>0</td>
+<td><em>konflikt</em>, nadpisanie (0, 0, 0) przez (64, 0, 0) [LRU]</td>
+</tr>
+<tr>
+<td><strong>28</strong> (0000 0001 1100)</td>
+<td>1</td>
+<td>6</td>
+<td>0</td>
+<td><em>przymusowe chybienie</em>, zapis do cache</td>
+</tr>
+<tr>
+<td><strong>140</strong> (0000 1000 1100)</td>
+<td>8</td>
+<td>6</td>
+<td>0</td>
+<td><em>przymusowe chybienie</em>, zapis do cache</td>
+</tr>
+<tr>
+<td><strong>3100</strong> (1100 0001 1100‬)</td>
+<td>193</td>
+<td>6</td>
+<td>0</td>
+<td><em>przymusowe chybienie</em>, zapis do cache</td>
+</tr>
+<tr>
+<td><strong>180</strong> (0000 1011 0100)</td>
+<td>11</td>
+<td>4</td>
+<td>0</td>
+<td><em>przymusowe chybienie</em>, zapis do cache</td>
+</tr>
+<tr>
+<td><strong>2180</strong> (1000 1000 0100)</td>
+<td>136</td>
+<td>4</td>
+<td>0</td>
+<td><em>przymusowe chybienie</em>, zapis do cache</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>w pełni asocjacyjna, bloki długości słowa, liczba bloków 8, polityka wymiany LRU.</p>
+<p>S = 1<br>
+s = 0<br>
+E = 8<br>
+B = 1<br>
+b = 0</p>
+<table>
+<thead>
+<tr>
+<th>Znacznik</th>
+<th>Indeks</th>
+<th>Offset</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>32 bity</td>
+<td>0 bitów</td>
+<td>0 bitów</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Adres</th>
+<th>Znacznik</th>
+<th>Indeks</th>
+<th>Offset</th>
+<th>Trafienie?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>0</strong> (0000 0000 0000)</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td><em>przymusowe chybienie</em>, zapis do cache</td>
+</tr>
+<tr>
+<td><strong>4</strong> (0000 0000 0100)</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td><em>przymusowe chybienie</em>, zapis do cache</td>
+</tr>
+<tr>
+<td><strong>16</strong> (0000 0001 0000)</td>
+<td>16</td>
+<td>0</td>
+<td>0</td>
+<td><em>przymusowe chybienie</em>, zapis do cache</td>
+</tr>
+<tr>
+<td><strong>132</strong> (0000 1000 0100)</td>
+<td>132</td>
+<td>0</td>
+<td>0</td>
+<td><em>przymusowe chybienie</em>, zapis do cache</td>
+</tr>
+<tr>
+<td><strong>232</strong> (0000 1110 1000)</td>
+<td>232</td>
+<td>0</td>
+<td>0</td>
+<td><em>przymusowe chybienie</em>, zapis do cache</td>
+</tr>
+<tr>
+<td><strong>160</strong> (0000 1010 0000)</td>
+<td>160</td>
+<td>0</td>
+<td>0</td>
+<td><em>przymusowe chybienie</em>, zapis do cache</td>
+</tr>
+<tr>
+<td><strong>1024</strong> (0100 0000 0000)</td>
+<td>1024</td>
+<td>0</td>
+<td>0</td>
+<td><em>przymusowe chybienie</em>, zapis do cache</td>
+</tr>
+<tr>
+<td><strong>28</strong> (0000 0001 1100)</td>
+<td>28</td>
+<td>0</td>
+<td>0</td>
+<td><em>przymusowe chybienie</em>, zapis do cache</td>
+</tr>
+<tr>
+<td><strong>140</strong> (0000 1000 1100)</td>
+<td>140</td>
+<td>0</td>
+<td>0</td>
+<td><em>konflikt</em>, nadpisanie (0, 0, 0) przez (140, 0, 0)</td>
+</tr>
+<tr>
+<td><strong>3100</strong> (1100 0001 1100‬)</td>
+<td>3100</td>
+<td>0</td>
+<td>0</td>
+<td><em>konflikt</em>, nadpisanie (4, 0, 0) przez (3100, 0, 0)</td>
+</tr>
+<tr>
+<td><strong>180</strong> (0000 1011 0100)</td>
+<td>180</td>
+<td>0</td>
+<td>0</td>
+<td><em>konflikt</em>, nadpisanie (16, 0, 0) przez (180, 0, 0)</td>
+</tr>
+<tr>
+<td><strong>2180</strong> (1000 1000 0100)</td>
+<td>2180</td>
+<td>0</td>
+<td>0</td>
+<td><em>konflikt</em>, nadpisanie (16, 0, 0) przez (2180, 0, 0)</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul><h3 id="Zadanie-5"><a class="anchor hidden-xs" href="#Zadanie-5" title="Zadanie-5"><span class="octicon octicon-link"></span></a>Zadanie 5</h3><div class="alert alert-info">
+<p>Rozwiązuje: Zofia Kochutek</p>
+</div><p><img src="https://i.imgur.com/WZ8PvhT.png" alt=""></p><p><img src="https://i.imgur.com/M6fgQJd.png" alt=""></p><p><img src="https://i.imgur.com/DKSZk7f.png" alt=""></p><p><img src="https://i.imgur.com/pMoxUIb.png" alt=""></p><p><img src="https://i.imgur.com/NpplATb.png" alt=""></p><p>dwupoziomowa pamięć podręczna: L1 i L2<br>
+write miss: chcemy napisać na adres, którego nie ma w L1<br>
+Korzystamy z write-allocate.<br>
+Ładujemy odpowiadający blok z niższego poziomu i aktualizujemy L1.<br>
+Korzystamy z write back, będziemy nadpisywać wszystkie poziomy, dopiero gdy wpis będzie usuwany z L1.</p><p>Zapisujemy na adres A.</p><ol>
+<li>Adres A jest w L1:<br>
+aktualizujemy A w L1 i ustawiamy dirty bit na 1</li>
+<li>Adresu A nie ma w L1:
+<ul>
+<li>wczytujemy blok z niższego poziomu<br>
+Czy pamięć podręczna jest całkowicie wypełniona?<br>
+Tak: (TODO)<br>
+należy wybrać jakiś blok do napisania (np. zgodnie z polityką LRU),<br>
+następnie jeśli jego dirty bit jest ustawiony, to należy przekazać go do niższych poziomów, aby zaauktualizowały one swoje dane,<br>
+następnie nadpisujemy usunięty blok<br>
+Nie:<br>
+znajdujemy wolny blok i wpisujemy tam zawartość A, ustawiamy dirty bit na 1, usuwamy A z L2</li>
+</ul>
+</li>
+</ol><h3 id="Zadanie-6"><a class="anchor hidden-xs" href="#Zadanie-6" title="Zadanie-6"><span class="octicon octicon-link"></span></a>Zadanie 6</h3><div class="alert alert-info">
+<p>Rozwiązuje: Paweł Drzycimski</p>
+</div><p>Wiemy, że im większa pamięć podręczna tym dłuższy czas dostępu do niej.</p><p>Załóżmy, że dostęp do pamięci głównej trwa 70ns,<br>
+a dostępy do pamięci stanowią 36% wszystkich instrukcji.<br>
+Rozważmy system z pamięcią podręczną o następującej strukturze:<br>
+L1 – 2 KiB,<br>
+współczynnik chybień 8.0%,<br>
+czas dostępu 0.66ns (1 cykl procesora);<br>
+L2 – 1 MiB,<br>
+współczynnik chybień 0.5%,<br>
+czas dostępu 5.62ns.</p><p>Odpowiedz na pytania</p><ol>
+<li>
+<p>Jaki jest średni czas dostępu do pamięci dla procesora tylko z cache L1, a jaki dla procesora z L1 i L2?</p>
+<ul>
+<li>tylko L1<br>
+<span class="mathjax"><span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-4-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><msub><mi>t</mi><mn>1</mn></msub><mo>=</mo><mn>0.66</mn><mi>n</mi><mi>s</mi><mo>+</mo><mfrac><mn>2</mn><mn>25</mn></mfrac><mo>&amp;#x22C5;</mo><mn>70</mn><mi>n</mi><mi>s</mi><mo>=</mo><mn>6</mn><mo>,</mo><mn>26</mn><mi>n</mi><mi>s</mi><mo>&amp;#x2248;</mo><mn>9</mn><mo>,</mo><mn>48</mn></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-14" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-15" class="mjx-mrow"><span id="MJXc-Node-16" class="mjx-msubsup"><span class="mjx-base"><span id="MJXc-Node-17" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.39em; padding-bottom: 0.279em;">t</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-18" class="mjx-mn" style=""><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">1</span></span></span></span><span id="MJXc-Node-19" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.058em; padding-bottom: 0.335em;">=</span></span><span id="MJXc-Node-20" class="mjx-mn MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">0.66</span></span><span id="MJXc-Node-21" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">n</span></span><span id="MJXc-Node-22" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">s</span></span><span id="MJXc-Node-23" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.279em; padding-bottom: 0.445em;">+</span></span><span id="MJXc-Node-24" class="mjx-mfrac MJXc-space2"><span class="mjx-box MJXc-stacked" style="width: 0.849em; padding: 0px 0.12em;"><span class="mjx-numerator" style="font-size: 70.7%; width: 1.2em; top: -1.308em;"><span id="MJXc-Node-25" class="mjx-mn" style=""><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">2</span></span></span><span class="mjx-denominator" style="font-size: 70.7%; width: 1.2em; bottom: -0.622em;"><span id="MJXc-Node-26" class="mjx-mn" style=""><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">25</span></span></span><span class="mjx-line" style="border-bottom: 1.3px solid; top: -0.285em; width: 0.849em;"></span></span><span class="mjx-vsize" style="height: 1.365em; vertical-align: -0.44em;"></span></span><span id="MJXc-Node-27" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.003em; padding-bottom: 0.335em;">⋅</span></span><span id="MJXc-Node-28" class="mjx-mn MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">70</span></span><span id="MJXc-Node-29" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">n</span></span><span id="MJXc-Node-30" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">s</span></span><span id="MJXc-Node-31" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.058em; padding-bottom: 0.335em;">=</span></span><span id="MJXc-Node-32" class="mjx-mn MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">6</span></span><span id="MJXc-Node-33" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-34" class="mjx-mn MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">26</span></span><span id="MJXc-Node-35" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">n</span></span><span id="MJXc-Node-36" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">s</span></span><span id="MJXc-Node-37" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.224em; padding-bottom: 0.335em;">≈</span></span><span id="MJXc-Node-38" class="mjx-mn MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">9</span></span><span id="MJXc-Node-39" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-40" class="mjx-mn MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">48</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>t</mi><mn>1</mn></msub><mo>=</mo><mn>0.66</mn><mi>n</mi><mi>s</mi><mo>+</mo><mfrac><mn>2</mn><mn>25</mn></mfrac><mo>⋅</mo><mn>70</mn><mi>n</mi><mi>s</mi><mo>=</mo><mn>6</mn><mo>,</mo><mn>26</mn><mi>n</mi><mi>s</mi><mo>≈</mo><mn>9</mn><mo>,</mo><mn>48</mn></math></span></span><script type="math/tex" id="MathJax-Element-4">t_1 = 0.66ns + \frac{2}{25} \cdot 70ns = 6,26ns \approx 9,48</script></span> (cyklów)</li>
+<li>L1 i L2<br>
+<span class="mathjax"><span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-5-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><msub><mi>t</mi><mn>2</mn></msub><mo>=</mo><mn>0.66</mn><mi>n</mi><mi>s</mi><mo>+</mo><mfrac><mn>2</mn><mn>25</mn></mfrac><mo>&amp;#x22C5;</mo><mo stretchy=&quot;false&quot;>(</mo><mn>5.62</mn><mi>n</mi><mi>s</mi><mo>+</mo><mfrac><mn>5</mn><mn>1000</mn></mfrac><mo>&amp;#x22C5;</mo><mn>70</mn><mi>n</mi><mi>s</mi><mo stretchy=&quot;false&quot;>)</mo><mo>=</mo><mn>1</mn><mo>,</mo><mn>1376</mn><mi>n</mi><mi>s</mi><mo>&amp;#x2248;</mo><mn>1</mn><mo>,</mo><mn>72</mn></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-41" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-42" class="mjx-mrow"><span id="MJXc-Node-43" class="mjx-msubsup"><span class="mjx-base"><span id="MJXc-Node-44" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.39em; padding-bottom: 0.279em;">t</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-45" class="mjx-mn" style=""><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">2</span></span></span></span><span id="MJXc-Node-46" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.058em; padding-bottom: 0.335em;">=</span></span><span id="MJXc-Node-47" class="mjx-mn MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">0.66</span></span><span id="MJXc-Node-48" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">n</span></span><span id="MJXc-Node-49" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">s</span></span><span id="MJXc-Node-50" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.279em; padding-bottom: 0.445em;">+</span></span><span id="MJXc-Node-51" class="mjx-mfrac MJXc-space2"><span class="mjx-box MJXc-stacked" style="width: 0.849em; padding: 0px 0.12em;"><span class="mjx-numerator" style="font-size: 70.7%; width: 1.2em; top: -1.308em;"><span id="MJXc-Node-52" class="mjx-mn" style=""><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">2</span></span></span><span class="mjx-denominator" style="font-size: 70.7%; width: 1.2em; bottom: -0.622em;"><span id="MJXc-Node-53" class="mjx-mn" style=""><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">25</span></span></span><span class="mjx-line" style="border-bottom: 1.3px solid; top: -0.285em; width: 0.849em;"></span></span><span class="mjx-vsize" style="height: 1.365em; vertical-align: -0.44em;"></span></span><span id="MJXc-Node-54" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.003em; padding-bottom: 0.335em;">⋅</span></span><span id="MJXc-Node-55" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">(</span></span><span id="MJXc-Node-56" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">5.62</span></span><span id="MJXc-Node-57" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">n</span></span><span id="MJXc-Node-58" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">s</span></span><span id="MJXc-Node-59" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.279em; padding-bottom: 0.445em;">+</span></span><span id="MJXc-Node-60" class="mjx-mfrac MJXc-space2"><span class="mjx-box MJXc-stacked" style="width: 1.556em; padding: 0px 0.12em;"><span class="mjx-numerator" style="font-size: 70.7%; width: 2.2em; top: -1.33em;"><span id="MJXc-Node-61" class="mjx-mn" style=""><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">5</span></span></span><span class="mjx-denominator" style="font-size: 70.7%; width: 2.2em; bottom: -0.622em;"><span id="MJXc-Node-62" class="mjx-mn" style=""><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">1000</span></span></span><span class="mjx-line" style="border-bottom: 1.3px solid; top: -0.285em; width: 1.556em;"></span></span><span class="mjx-vsize" style="height: 1.38em; vertical-align: -0.44em;"></span></span><span id="MJXc-Node-63" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.003em; padding-bottom: 0.335em;">⋅</span></span><span id="MJXc-Node-64" class="mjx-mn MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">70</span></span><span id="MJXc-Node-65" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">n</span></span><span id="MJXc-Node-66" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">s</span></span><span id="MJXc-Node-67" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">)</span></span><span id="MJXc-Node-68" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.058em; padding-bottom: 0.335em;">=</span></span><span id="MJXc-Node-69" class="mjx-mn MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">1</span></span><span id="MJXc-Node-70" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-71" class="mjx-mn MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">1376</span></span><span id="MJXc-Node-72" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">n</span></span><span id="MJXc-Node-73" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">s</span></span><span id="MJXc-Node-74" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.224em; padding-bottom: 0.335em;">≈</span></span><span id="MJXc-Node-75" class="mjx-mn MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">1</span></span><span id="MJXc-Node-76" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-77" class="mjx-mn MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">72</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>t</mi><mn>2</mn></msub><mo>=</mo><mn>0.66</mn><mi>n</mi><mi>s</mi><mo>+</mo><mfrac><mn>2</mn><mn>25</mn></mfrac><mo>⋅</mo><mo stretchy="false">(</mo><mn>5.62</mn><mi>n</mi><mi>s</mi><mo>+</mo><mfrac><mn>5</mn><mn>1000</mn></mfrac><mo>⋅</mo><mn>70</mn><mi>n</mi><mi>s</mi><mo stretchy="false">)</mo><mo>=</mo><mn>1</mn><mo>,</mo><mn>1376</mn><mi>n</mi><mi>s</mi><mo>≈</mo><mn>1</mn><mo>,</mo><mn>72</mn></math></span></span><script type="math/tex" id="MathJax-Element-5">t_2 = 0.66ns + \frac{2}{25} \cdot (5.62ns + \frac{5}{1000} \cdot 70ns) = 1,1376ns \approx 1,72</script></span> (cyklów)</li>
+</ul>
+</li>
+<li>
+<p>Zakładając, że procesor charakteryzuje się współczynnikiem CPI (ang.cycles per instruction) równym 1.0 (bez wykonywania dostępów do pamięci), oblicz CPI dla procesora tylko z cache L1 i dla procesora z L1 i L2.</p>
+<ul>
+<li>tylko L1<br>
+<span class="mathjax"><span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-6-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mi>C</mi><mi>P</mi><mi>I</mi><mo>=</mo><mn>1</mn><mo>+</mo><msub><mi>t</mi><mn>1</mn></msub><mo>&amp;#x22C5;</mo><mn>36</mn><mi mathvariant=&quot;normal&quot;>&amp;#x0025;</mi><mo>=</mo><mn>4</mn><mo>,</mo><mn>4128</mn></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-78" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-79" class="mjx-mrow"><span id="MJXc-Node-80" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.501em; padding-bottom: 0.279em; padding-right: 0.045em;">C</span></span><span id="MJXc-Node-81" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.445em; padding-bottom: 0.279em; padding-right: 0.109em;">P</span></span><span id="MJXc-Node-82" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.445em; padding-bottom: 0.279em; padding-right: 0.064em;">I</span></span><span id="MJXc-Node-83" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.058em; padding-bottom: 0.335em;">=</span></span><span id="MJXc-Node-84" class="mjx-mn MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">1</span></span><span id="MJXc-Node-85" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.279em; padding-bottom: 0.445em;">+</span></span><span id="MJXc-Node-86" class="mjx-msubsup MJXc-space2"><span class="mjx-base"><span id="MJXc-Node-87" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.39em; padding-bottom: 0.279em;">t</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-88" class="mjx-mn" style=""><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">1</span></span></span></span><span id="MJXc-Node-89" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.003em; padding-bottom: 0.335em;">⋅</span></span><span id="MJXc-Node-90" class="mjx-mn MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">36</span></span><span id="MJXc-Node-91" class="mjx-mi"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.39em;">%</span></span><span id="MJXc-Node-92" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.058em; padding-bottom: 0.335em;">=</span></span><span id="MJXc-Node-93" class="mjx-mn MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">4</span></span><span id="MJXc-Node-94" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-95" class="mjx-mn MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">4128</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>C</mi><mi>P</mi><mi>I</mi><mo>=</mo><mn>1</mn><mo>+</mo><msub><mi>t</mi><mn>1</mn></msub><mo>⋅</mo><mn>36</mn><mi mathvariant="normal">%</mi><mo>=</mo><mn>4</mn><mo>,</mo><mn>4128</mn></math></span></span><script type="math/tex" id="MathJax-Element-6">CPI = 1 + t_1 \cdot 36\% = 4,4128</script></span></li>
+<li>L1 i L2<br>
+<span class="mathjax"><span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-7-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mi>C</mi><mi>P</mi><mi>I</mi><mo>=</mo><mn>1</mn><mo>+</mo><msub><mi>t</mi><mn>2</mn></msub><mo>&amp;#x22C5;</mo><mn>36</mn><mi mathvariant=&quot;normal&quot;>&amp;#x0025;</mi><mo>=</mo><mn>1</mn><mo>,</mo><mn>6192</mn></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-96" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-97" class="mjx-mrow"><span id="MJXc-Node-98" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.501em; padding-bottom: 0.279em; padding-right: 0.045em;">C</span></span><span id="MJXc-Node-99" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.445em; padding-bottom: 0.279em; padding-right: 0.109em;">P</span></span><span id="MJXc-Node-100" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.445em; padding-bottom: 0.279em; padding-right: 0.064em;">I</span></span><span id="MJXc-Node-101" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.058em; padding-bottom: 0.335em;">=</span></span><span id="MJXc-Node-102" class="mjx-mn MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">1</span></span><span id="MJXc-Node-103" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.279em; padding-bottom: 0.445em;">+</span></span><span id="MJXc-Node-104" class="mjx-msubsup MJXc-space2"><span class="mjx-base"><span id="MJXc-Node-105" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.39em; padding-bottom: 0.279em;">t</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-106" class="mjx-mn" style=""><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">2</span></span></span></span><span id="MJXc-Node-107" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.003em; padding-bottom: 0.335em;">⋅</span></span><span id="MJXc-Node-108" class="mjx-mn MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">36</span></span><span id="MJXc-Node-109" class="mjx-mi"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.39em;">%</span></span><span id="MJXc-Node-110" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.058em; padding-bottom: 0.335em;">=</span></span><span id="MJXc-Node-111" class="mjx-mn MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">1</span></span><span id="MJXc-Node-112" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-113" class="mjx-mn MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">6192</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>C</mi><mi>P</mi><mi>I</mi><mo>=</mo><mn>1</mn><mo>+</mo><msub><mi>t</mi><mn>2</mn></msub><mo>⋅</mo><mn>36</mn><mi mathvariant="normal">%</mi><mo>=</mo><mn>1</mn><mo>,</mo><mn>6192</mn></math></span></span><script type="math/tex" id="MathJax-Element-7">CPI = 1 + t_2 \cdot 36\% = 1,6192</script></span></li>
+</ul>
+</li>
+</ol><h3 id="Zadanie-7"><a class="anchor hidden-xs" href="#Zadanie-7" title="Zadanie-7"><span class="octicon octicon-link"></span></a>Zadanie 7</h3><div class="alert alert-info">
+<p>Rozwiązuje: Sebastian Kondraciuk</p>
+</div><p>Dla  czterodrożnej  sekcyjno-skojarzeniowej  pamięci  podręcznej  chcemy  zaimplementować  politykę wymiany LRU. Masz do dyspozycji dodatkowe ceil(log2(4!)) bitów na zbiór. Nie można modyfikować zawartości linii w zbiorze, ani zamieniać elementów kolejnością. Jak wyznaczyć kandydata do usunięcia ze zbioru? Jak  aktualizować  informacje  zawarte  w  dodatkowych  bitach  przy  wykonywaniu  dostępów  do  elementów zbioru?</p><p>4-way z LRU, czyli musimy pamiętać z czego najdawniej korzystaliśmy. Mamy na to 5 bitów. Są 4 linie, więc są numerowane 0,1,2,3, więc na zapis 1 lini potrzebujemy 2 bity.</p><p>Będziemy to zapisywać na 5 bitach w następujący sposób:</p><table>
+<thead>
+<tr>
+<th>Najdawniej używny</th>
+<th>Prawie najdawniej używany</th>
+<th>Pozostałe nie są w kolejności leksykograficznej?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2 bity</td>
+<td>2 bity</td>
+<td>1 bit</td>
+</tr>
+</tbody>
+</table><p>np:</p><table>
+<thead>
+<tr>
+<th>Najdawniej używny</th>
+<th>Prawie najdawniej używany</th>
+<th>Pozostałe nie są w kolejności leksykograficznej?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>01</td>
+<td>11</td>
+<td>1</td>
+</tr>
+</tbody>
+</table><p>oznacza, że najdawniej używana była linia 1, prawie najdawniej linia 3, następnie linia 2, a ostanio używana była linia 0.</p><p>Zapis w postaci B:<br>
+B[0:2] = last<br>
+B[2:4] = prev<br>
+B[4] = czy_w_kolejności(prev prev, first)</p><p>Aktualizowanie:</p><ol>
+<li>jeśli użyta została wartość ostatnio używana:<br>
+pass</li>
+<li>jeśli użyta została wartość przedostatnio używana:<br>
+xor ostatniego bitu i 1</li>
+<li>jeśli użyta została wartość prawie najdłużej nieużywana:
+<ul>
+<li>pod tą wartość przypisujemy wartość przedostatnio używaną</li>
+<li>pod ostatni bit ustawiamy wartość logiczną teraz_użyta &lt; ostatnio_używana</li>
+</ul>
+</li>
+<li>jeśli użyta zostawa wartość najdłużej nieużywana:
+<ul>
+<li>pod tą wartość przypisujemy prawie najdłużej nieużywaną</li>
+<li>pod wartość prawie najdłużej nieużywaną przypisujemy wartość przedostatnio używaną</li>
+<li>pod ostatni bit ustawiamy wartość logiczną teraz_użyta &lt; ostatnio_używana</li>
+</ul>
+</li>
+</ol><h3 id="Zadanie-8"><a class="anchor hidden-xs" href="#Zadanie-8" title="Zadanie-8"><span class="octicon octicon-link"></span></a>Zadanie 8</h3><div class="alert alert-info">
+<p>Rozwiązuje: Jakub Przydatek</p>
+</div><p>Dany jest następujący kod oraz założenia co do sposobu jego wykonania.</p><pre><code class="c hljs"><span class="token number">1</span> <span class="token keyword">int</span> x<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">128</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token number">2</span> <span class="token keyword">int</span> i<span class="token punctuation">;</span>
+<span class="token number">3</span> <span class="token keyword">int</span> sum <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token number">4</span>
+<span class="token number">5</span> <span class="token keyword">for</span> <span class="token punctuation">(</span>i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">128</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+<span class="token number">6</span> sum <span class="token operator">+</span><span class="token operator">=</span> x<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">*</span> x<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token number">7</span> <span class="token punctuation">}</span>
+</code></pre><p><strong>• sizeof(int) = 4<br>
+• Tablica x znajduje się w pamięci pod adresem 0x0<br>
+• Pamięć podręczna jest początkowo pusta<br>
+• Dostępy do pamięci dotyczą jedynie elementów tablicy x. Wszystkie pozostałe zmienne     kompilator umieścił w rejestrach. Pamięć podręczna nie przechowuje instrukcji.</strong></p><p>Oblicz współczynniki chybień przy wykonaniu tego kodu dla każdego z poniższych wariantów:</p><h3 id="Pamięć-podręczna-ma-512-bajtów-mapowanie-bezpośrednie-rozmiar-bloku-16-bajtów"><a class="anchor hidden-xs" href="#Pamięć-podręczna-ma-512-bajtów-mapowanie-bezpośrednie-rozmiar-bloku-16-bajtów" title="Pamięć-podręczna-ma-512-bajtów-mapowanie-bezpośrednie-rozmiar-bloku-16-bajtów"><span class="octicon octicon-link"></span></a>Pamięć podręczna ma 512 bajtów, mapowanie bezpośrednie, rozmiar bloku 16 bajtów</h3><p>s = log<sub>2</sub>(512/16/1) = 5<br>
+B = 2<sup>b</sup><br>
+B = 16<br>
+b = 4<br>
+tag|index|offset<br>
+…0|00000|0000</p><p>Przeprowadźmy obserwajcę dla pierwszych 2 wywołań</p><p><strong>i = 0</strong><br>
+x[0][0] = adres 0 <code>0 00000 0000</code>, compulsory miss.  Wczyta elementy które mają postać <code>0 00000 abcd</code> do index = 0  (czyli w tym wypadku <code>0000, 0100, 1000, 1100</code>)</p><p>x[1][0] = adres 512 <code>‭1 00000 0000‬</code>, conflict miss, bo w index = 0 zapisane jest x[0][0], a x[1][0] i x[0][0] maja różne tagi. Wczytuje rzeczy mające postać <code>1 00000 abcd</code>.</p><p><strong>i = 1</strong><br>
+x[0][1] = adres 4 <code>0 00000 0100</code>, conflict miss, bo tam jest x[1][0]<br>
+ponownie wczyta <code>0 00000 abcd</code><br>
+x[1][1] = adres 516 <code>1 00000 0100‬</code>, conflict miss bo w index = 0 były elementy z x[0][1] wczyta elementy w postaci <code>1 00000 abcd‬</code></p><p><strong>i = 4</strong><br>
+x[0][4] = 16 <code>0 00001 0000</code> compulsory miss<br>
+x[1][4] = 528<code>‭1 00001 0000‬</code> conflict miss<br>
+widać, że sytuacja będzie się powtarzać dla każdego i.</p><p><strong>Współczynnik chybień: 100%</strong></p><h3 id="Jak-powyżej-z-tym-że-rozmiar-pamięci-podręcznej-to-1024-bajtów"><a class="anchor hidden-xs" href="#Jak-powyżej-z-tym-że-rozmiar-pamięci-podręcznej-to-1024-bajtów" title="Jak-powyżej-z-tym-że-rozmiar-pamięci-podręcznej-to-1024-bajtów"><span class="octicon octicon-link"></span></a>Jak powyżej, z tym że rozmiar pamięci podręcznej to 1024 bajtów</h3><p>s = log<sub>2</sub>(1024/16/1) = 6<br>
+B = 2<sup>b</sup><br>
+B = 16<br>
+b = 4<br>
+tag|index|offset<br>
+…0|000000|0000</p><p>Przeprowadźmy obserwację dla kilku pierwszych wywołań</p><p><strong>i = 0</strong></p><p>x[0][0] = adres 0  <code>0 000000 0000</code> odwołujemy się do tego elementu, ale compulsory miss<br>
+wczyta elementy do indeksu = 0 w postaci <code>0 000000 abcd</code></p><p>x[1][0] = adres 512<code>‭‭0 100000 0000‬‬</code> odwłoujemy się, ale compulsory miss<br>
+wczyta do indeksu <code>100000</code> elementy w postaci <code>‭‭0 100000 abcd‬‬</code></p><p><strong>i = 1</strong></p><p>x[0][1] = adres 4  <code>0 000000 0100</code> trafienie</p><p>x[1][1] = adres 516  ‭<code>0 100000 0100‬</code> trafienie</p><p>dla i = 2 oraz i = 3 będziemy mieć trafienia, ale pokażmy co się stanie dla i = 4</p><p><strong>i = 4</strong><br>
+x[0][4] = adres 16 <code>0 000001 0000</code> w tym miejscu compulsory miss, adres nie mieści się na 4 bitach i przeskakuje na indeks wyżej<br>
+Załaduje do indeksu 1 elementy w postaci <code>0 000001 abcd</code></p><p>x[1][4] = adres 528  <code>‭0 100001 0000‬</code> w tym miejscu compulsory miss, liczba jedności i dziesiątek przestała się miesić na 4 bitach i zwiększyła indeks<br>
+Na indeksie <code>100001</code> wczyta elementy w postaci <code>‭0 100001 abcd‬</code><br>
+Tak więc, zauważamy, że co 4 wywołania mamy 2 razy miss ze względu na zmianę indeksu.</p><p><strong>Współczynnik chybień: 25%</strong></p><h3 id="Pamięć-podręczna-ma-512-bajtów-jest-dwudrożna-sekcyjno-skojarzeniowa-używa-polityki-zastępowania-LRU-rozmiar-bloku-to-16-bajtów"><a class="anchor hidden-xs" href="#Pamięć-podręczna-ma-512-bajtów-jest-dwudrożna-sekcyjno-skojarzeniowa-używa-polityki-zastępowania-LRU-rozmiar-bloku-to-16-bajtów" title="Pamięć-podręczna-ma-512-bajtów-jest-dwudrożna-sekcyjno-skojarzeniowa-używa-polityki-zastępowania-LRU-rozmiar-bloku-to-16-bajtów"><span class="octicon octicon-link"></span></a>Pamięć podręczna ma 512 bajtów, jest dwudrożna, sekcyjno-skojarzeniowa, używa polityki zastępowania LRU, rozmiar bloku to 16 bajtów</h3><p>s = log<sub>2</sub>(512/16/2) = 4<br>
+B = 2<sup>b</sup><br>
+B = 16<br>
+b = 4<br>
+tag|index|offset<br>
+…0|0000|0000</p><p>Przeprowadźmy obserwajcę dla pierwszych 2 wywołań</p><p><strong>i = 0</strong></p><p>x[0][0] = adres 0  <code>0 0000 0000</code> odwołujemy się do tego elementu, ale compulsory miss<br>
+Wczyta do 1 bloku indeksu 0 elementy w postaci <code>0 0000 abcd</code></p><p>x[1][0] = adres 512  <code>‭10 0000 0000‬</code> odwłoujemy się, ale compulsory miss bo drugi blok nie został jeszcze zapisany<br>
+Wczyta do 2 bloku indeksu 0 elementy w postaci <code>10 0000 abcd</code></p><p>x[0][i] są zapisane w jednym bloku a x[1][i] w drugim</p><p><strong>i = 1</strong></p><p>x[0][1] = adres 4  <code>0 0000 0100</code> hit</p><p>x[1][1] = adres 516  ‭<code>10 0000 0100‬</code> hit</p><p>Taka sama sytuacja dla i = 2 oraz i = 3, sprawdźmy i = 4</p><p>x[0][4] = adres 16 <code>0 0001 0000</code> compulsory miss, adres przestał się mieścić na 4 bitach i przeskoczył na jeden wyżej<br>
+Wczyta do 1 bloku indeksu 1 elementy w postaci <code>0 0001 abcd</code></p><p>x[1][4] = adres 528  <code>‭10 0001 0000‬</code> compulsory miss, ten sam scenariusz co wyżej<br>
+Wczyta do 2 bloku indeksu 1 elementy w postaci <code>10 0001 abcd</code></p><p>Dzięki 2 blokom na sekcje:<br>
+Przy pierwszym wywołaniu 100% compulsory miss. Przy 3 kolejnych 0%.</p><p><strong>Współczynnik chybień: 25%</strong></p><h3 id="Zadanie-9"><a class="anchor hidden-xs" href="#Zadanie-9" title="Zadanie-9"><span class="octicon octicon-link"></span></a>Zadanie 9</h3><div class="alert alert-info">
+<p>Rozwiązuje: Mateusz Sidło</p>
+</div><p>Pracujesz  nad  programem  wyświetlającym  animacje  na  ekranie  o  rozmiarze  640x480  pikseli. Komputer dysponuje 32KB pamięci podręcznej z mapowaniem bezpośrednim, o rozmiarze bloku 8 bajtów.Używasz następujących struktur danych.</p><pre><code class="cpp hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span>
+<span data-linenumber="8"></span>
+<span data-linenumber="9"></span>
+<span data-linenumber="10"></span>
+<span data-linenumber="11"></span></div><div class="code"><span class="token keyword">struct</span> pixel <span class="token punctuation">{</span>
+<span class="token keyword">char</span> r<span class="token punctuation">;</span>
+<span class="token keyword">char</span> g<span class="token punctuation">;</span>
+<span class="token keyword">char</span> b<span class="token punctuation">;</span>
+<span class="token keyword">char</span> a<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">struct</span> pixel buffer<span class="token punctuation">[</span><span class="token number">480</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">640</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token keyword">int</span> i<span class="token punctuation">,</span> j<span class="token punctuation">;</span>
+<span class="token keyword">char</span> <span class="token operator">*</span>cptr<span class="token punctuation">;</span>
+<span class="token keyword">int</span> <span class="token operator">*</span>iptr<span class="token punctuation">;</span>
+</div></div></code></pre><p>Zakładamy, że <code>sizeof(char) = 1</code>, <code>sizeof(int) = 4</code>, tablica <code>buffer</code> znajduje się w pamięci pod adresem 0x0,  pamięć  podręczna  jest  początkowo  pusta.  Ponadto,  dostępy  do  pamięci  dotyczą  jedynie  elementów tablicy <code>buffer</code>. Wszystkie pozostałe zmienne kompilator umieścił w rejestrach. Pamięć podręczna działa wtrybie write-back write-allocate. Jaki jest współczynnik trafień przy wykonaniu poniższego kodu?</p><pre><code class="cpp hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span>
+<span data-linenumber="8"></span></div><div class="code"><span class="token keyword">for</span> <span class="token punctuation">(</span>j <span class="token operator">=</span> <span class="token number">639</span><span class="token punctuation">;</span> j <span class="token operator">&gt;=</span> <span class="token number">0</span><span class="token punctuation">;</span> j<span class="token operator">--</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span>i <span class="token operator">=</span> <span class="token number">479</span><span class="token punctuation">;</span> i <span class="token operator">&gt;=</span> <span class="token number">0</span><span class="token punctuation">;</span> i<span class="token operator">--</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        buffer<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">.</span>r <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+        buffer<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">.</span>g <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+        buffer<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">.</span>b <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+        buffer<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">.</span>a <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</div></div></code></pre><p><span class="mathjax"><span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-8-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mn>8</mn><mo>=</mo><msup><mn>2</mn><mn>3</mn></msup></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-114" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-115" class="mjx-mrow"><span id="MJXc-Node-116" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">8</span></span><span id="MJXc-Node-117" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.058em; padding-bottom: 0.335em;">=</span></span><span id="MJXc-Node-118" class="mjx-msubsup MJXc-space3"><span class="mjx-base"><span id="MJXc-Node-119" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">2</span></span></span><span class="mjx-sup" style="font-size: 70.7%; vertical-align: 0.591em; padding-left: 0px; padding-right: 0.071em;"><span id="MJXc-Node-120" class="mjx-mn" style=""><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">3</span></span></span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>8</mn><mo>=</mo><msup><mn>2</mn><mn>3</mn></msup></math></span></span><script type="math/tex" id="MathJax-Element-8">8=2^3</script></span> – 3 bity offset<br>
+<span class="mathjax"><span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-9-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mfrac><mrow><mn>32</mn><mi>k</mi><mi>B</mi></mrow><mrow><mn>8</mn><mi>B</mi></mrow></mfrac><mo>=</mo><mn>4096</mn><mo>=</mo><msup><mn>2</mn><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mn>12</mn></mrow></msup></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-121" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-122" class="mjx-mrow"><span id="MJXc-Node-123" class="mjx-mfrac"><span class="mjx-box MJXc-stacked" style="width: 1.754em; padding: 0px 0.12em;"><span class="mjx-numerator" style="font-size: 70.7%; width: 2.48em; top: -1.358em;"><span id="MJXc-Node-124" class="mjx-mrow" style=""><span id="MJXc-Node-125" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">32</span></span><span id="MJXc-Node-126" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.445em; padding-bottom: 0.279em;">k</span></span><span id="MJXc-Node-127" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.445em; padding-bottom: 0.279em;">B</span></span></span></span><span class="mjx-denominator" style="font-size: 70.7%; width: 2.48em; bottom: -0.639em;"><span id="MJXc-Node-128" class="mjx-mrow" style=""><span id="MJXc-Node-129" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">8</span></span><span id="MJXc-Node-130" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.445em; padding-bottom: 0.279em;">B</span></span></span></span><span class="mjx-line" style="border-bottom: 1.3px solid; top: -0.285em; width: 1.754em;"></span></span><span class="mjx-vsize" style="height: 1.412em; vertical-align: -0.452em;"></span></span><span id="MJXc-Node-131" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.058em; padding-bottom: 0.335em;">=</span></span><span id="MJXc-Node-132" class="mjx-mn MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">4096</span></span><span id="MJXc-Node-133" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.058em; padding-bottom: 0.335em;">=</span></span><span id="MJXc-Node-134" class="mjx-msubsup MJXc-space3"><span class="mjx-base"><span id="MJXc-Node-135" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">2</span></span></span><span class="mjx-sup" style="font-size: 70.7%; vertical-align: 0.591em; padding-left: 0px; padding-right: 0.071em;"><span id="MJXc-Node-136" class="mjx-texatom" style=""><span id="MJXc-Node-137" class="mjx-mrow"><span id="MJXc-Node-138" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">12</span></span></span></span></span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>32</mn><mi>k</mi><mi>B</mi></mrow><mrow><mn>8</mn><mi>B</mi></mrow></mfrac><mo>=</mo><mn>4096</mn><mo>=</mo><msup><mn>2</mn><mrow class="MJX-TeXAtom-ORD"><mn>12</mn></mrow></msup></math></span></span><script type="math/tex" id="MathJax-Element-9">\frac{32kB}{8B}=4096=2^{12}</script></span> – 12 bitów indeks</p><pre><code class="c hljs">buffer<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>r <span class="token operator">--</span><span class="token operator">&gt;</span><span class="token number">0.</span><span class="token punctuation">.</span><span class="token number">.0</span> <span class="token number">000000000000</span> <span class="token number">000</span>   Miss
+buffer<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>g <span class="token operator">--</span><span class="token operator">&gt;</span><span class="token number">0.</span><span class="token punctuation">.</span><span class="token number">.0</span> <span class="token number">000000000000</span> <span class="token number">001</span>   Hit
+buffer<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>b <span class="token operator">--</span><span class="token operator">&gt;</span><span class="token number">0.</span><span class="token punctuation">.</span><span class="token number">.0</span> <span class="token number">000000000000</span> <span class="token number">010</span>   Hit
+buffer<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>a <span class="token operator">--</span><span class="token operator">&gt;</span><span class="token number">0.</span><span class="token punctuation">.</span><span class="token number">.0</span> <span class="token number">000000000000</span> <span class="token number">011</span>   Hit
+
+buffer<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>r <span class="token operator">--</span><span class="token operator">&gt;</span><span class="token number">0.</span><span class="token punctuation">.</span><span class="token number">.0</span> <span class="token number">000101000000</span> <span class="token number">000</span>   Miss
+buffer<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>g <span class="token operator">--</span><span class="token operator">&gt;</span><span class="token number">0.</span><span class="token punctuation">.</span><span class="token number">.0</span> <span class="token number">000101000000</span> <span class="token number">001</span>   Hit
+buffer<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>b <span class="token operator">--</span><span class="token operator">&gt;</span><span class="token number">0.</span><span class="token punctuation">.</span><span class="token number">.0</span> <span class="token number">000101000000</span> <span class="token number">010</span>   Hit
+buffer<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>a <span class="token operator">--</span><span class="token operator">&gt;</span><span class="token number">0.</span><span class="token punctuation">.</span><span class="token number">.0</span> <span class="token number">000101000000</span> <span class="token number">011</span>   Hit
+
+buffer<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>r <span class="token operator">--</span><span class="token operator">&gt;</span><span class="token number">0.</span><span class="token punctuation">.</span><span class="token number">.0</span> <span class="token number">001010000000</span> <span class="token number">000</span>   Miss
+buffer<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>g <span class="token operator">--</span><span class="token operator">&gt;</span><span class="token number">0.</span><span class="token punctuation">.</span><span class="token number">.0</span> <span class="token number">001010000000</span> <span class="token number">001</span>   Hit
+buffer<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>b <span class="token operator">--</span><span class="token operator">&gt;</span><span class="token number">0.</span><span class="token punctuation">.</span><span class="token number">.0</span> <span class="token number">001010000000</span> <span class="token number">010</span>   Hit
+buffer<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>a <span class="token operator">--</span><span class="token operator">&gt;</span><span class="token number">0.</span><span class="token punctuation">.</span><span class="token number">.0</span> <span class="token number">001010000000</span> <span class="token number">011</span>   Hit
+
+buffer<span class="token punctuation">[</span><span class="token number">4</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>r <span class="token operator">--</span><span class="token operator">&gt;</span><span class="token number">0.</span><span class="token punctuation">.</span><span class="token number">.0</span> <span class="token number">010100000000</span> <span class="token number">000</span>   Miss
+buffer<span class="token punctuation">[</span><span class="token number">4</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>g <span class="token operator">--</span><span class="token operator">&gt;</span><span class="token number">0.</span><span class="token punctuation">.</span><span class="token number">.0</span> <span class="token number">010100000000</span> <span class="token number">001</span>   Hit
+buffer<span class="token punctuation">[</span><span class="token number">4</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>b <span class="token operator">--</span><span class="token operator">&gt;</span><span class="token number">0.</span><span class="token punctuation">.</span><span class="token number">.0</span> <span class="token number">010100000000</span> <span class="token number">010</span>   Hit
+buffer<span class="token punctuation">[</span><span class="token number">4</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>a <span class="token operator">--</span><span class="token operator">&gt;</span><span class="token number">0.</span><span class="token punctuation">.</span><span class="token number">.0</span> <span class="token number">010100000000</span> <span class="token number">011</span>   Hit
+
+buffer<span class="token punctuation">[</span><span class="token number">8</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>r <span class="token operator">--</span><span class="token operator">&gt;</span><span class="token number">0.</span><span class="token punctuation">.</span><span class="token number">.0</span> <span class="token number">101000000000</span> <span class="token number">000</span>   Miss
+buffer<span class="token punctuation">[</span><span class="token number">8</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>g <span class="token operator">--</span><span class="token operator">&gt;</span><span class="token number">0.</span><span class="token punctuation">.</span><span class="token number">.0</span> <span class="token number">101000000000</span> <span class="token number">001</span>   Hit
+buffer<span class="token punctuation">[</span><span class="token number">8</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>b <span class="token operator">--</span><span class="token operator">&gt;</span><span class="token number">0.</span><span class="token punctuation">.</span><span class="token number">.0</span> <span class="token number">101000000000</span> <span class="token number">010</span>   Hit
+buffer<span class="token punctuation">[</span><span class="token number">8</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>a <span class="token operator">--</span><span class="token operator">&gt;</span><span class="token number">0.</span><span class="token punctuation">.</span><span class="token number">.0</span> <span class="token number">101000000000</span> <span class="token number">011</span>   Hit
+
+buffer<span class="token punctuation">[</span><span class="token number">64</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>r <span class="token operator">--</span><span class="token operator">&gt;</span><span class="token number">0.</span><span class="token punctuation">.</span><span class="token number">.0101</span> <span class="token number">000000000000</span> <span class="token number">000</span>   Miss
+buffer<span class="token punctuation">[</span><span class="token number">64</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>g <span class="token operator">--</span><span class="token operator">&gt;</span><span class="token number">0.</span><span class="token punctuation">.</span><span class="token number">.0101</span> <span class="token number">000000000000</span> <span class="token number">001</span>   Hit
+buffer<span class="token punctuation">[</span><span class="token number">64</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>b <span class="token operator">--</span><span class="token operator">&gt;</span><span class="token number">0.</span><span class="token punctuation">.</span><span class="token number">.0101</span> <span class="token number">000000000000</span> <span class="token number">010</span>   Hit
+buffer<span class="token punctuation">[</span><span class="token number">64</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>a <span class="token operator">--</span><span class="token operator">&gt;</span><span class="token number">0.</span><span class="token punctuation">.</span><span class="token number">.0101</span> <span class="token number">000000000000</span> <span class="token number">011</span>   Hit
+
+buffer<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">.</span>r <span class="token operator">--</span><span class="token operator">&gt;</span><span class="token number">0.</span><span class="token punctuation">.</span><span class="token number">.0</span> <span class="token number">000000000000</span> <span class="token number">100</span>   Miss
+buffer<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">.</span>g <span class="token operator">--</span><span class="token operator">&gt;</span><span class="token number">0.</span><span class="token punctuation">.</span><span class="token number">.0</span> <span class="token number">000000000000</span> <span class="token number">101</span>   Hit
+buffer<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">.</span>b <span class="token operator">--</span><span class="token operator">&gt;</span><span class="token number">0.</span><span class="token punctuation">.</span><span class="token number">.0</span> <span class="token number">000000000000</span> <span class="token number">110</span>   Hit
+buffer<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">.</span>a <span class="token operator">--</span><span class="token operator">&gt;</span><span class="token number">0.</span><span class="token punctuation">.</span><span class="token number">.0</span> <span class="token number">000000000000</span> <span class="token number">111</span>   Hit
+
+</code></pre><p>Trafienia 75%</p><h3 id="Zadanie-10"><a class="anchor hidden-xs" href="#Zadanie-10" title="Zadanie-10"><span class="octicon octicon-link"></span></a>Zadanie 10</h3><div class="alert alert-info">
+<p>Rozwiązuje: Bartłomiej Grochowski</p>
+</div><pre><code class="c hljs"><span class="token comment">// 1</span>
+<span class="token keyword">char</span> <span class="token operator">*</span>cptr <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token keyword">char</span> <span class="token operator">*</span><span class="token punctuation">)</span>buffer<span class="token punctuation">;</span>
+<span class="token keyword">while</span> <span class="token punctuation">(</span>cptr <span class="token operator">&lt;</span> <span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token keyword">char</span> <span class="token operator">*</span><span class="token punctuation">)</span> buffer<span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">640</span> <span class="token operator">*</span> <span class="token number">480</span> <span class="token operator">*</span> <span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token operator">*</span>cptr <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    cptr<span class="token operator">++</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 2</span>
+<span class="token keyword">int</span> <span class="token operator">*</span>iptr <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token keyword">int</span> <span class="token operator">*</span><span class="token punctuation">)</span>buffer<span class="token punctuation">;</span>
+<span class="token keyword">while</span> <span class="token punctuation">(</span>iptr <span class="token operator">&lt;</span> <span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token keyword">int</span> <span class="token operator">*</span><span class="token punctuation">)</span>buffer <span class="token operator">+</span> <span class="token number">640</span><span class="token operator">*</span><span class="token number">480</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token operator">*</span>iptr <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    iptr<span class="token operator">++</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre><p>Kod 1:</p><ul>
+<li>idziemy co bajt</li>
+<li>jeden MISS - wczytujemy blok (8 bajtow)</li>
+<li>raz nie trafiamy, kolejne 7 mamy za darmo</li>
+<li>współczynnik trafień: 87.5%</li>
+</ul><p>Kod 2:</p><ul>
+<li>idziemy co 4 bajty</li>
+<li>jeden MISS - wczytujemy blok (8 bajtow)</li>
+<li>raz nie trafiamy, kolejny mamy za darmo</li>
+<li>wspolczynnik trafien: 50%</li>
+</ul><p>Wydaje się, że pierwszy kod jest lepszy, pod względem trafialności do cache’a.<br>
+Ale z drugiej strony pierwszy kod ma 4 razy więcej iteracji!</p><p>Policzmy czasy dla kodu 1 i kodu 2, przy czym zakładamy, że:<br>
+odczyt z cache: 1ns,<br>
+inkrementacja: 1ns,<br>
+porownanie dla ifa: 1ns,<br>
+odczyt z pamieci: 70ns,</p><p>Kod 1:<br>
+680 * 480 * 4 = 1228800 iteracje<br>
+1/8 z nich to 72ns, 7/8 z nich to 3ns<br>
+Time1 = 1228800/8 * 72 + 7*1228800/8 * 3 = 14284800ns = 14ms</p><p>Kod 2:<br>
+640 * 480 = 307200<br>
+1/2 z nich to 72ns, 1/2 z nich to 3ns<br>
+Time2 = 307200/2 * 72 + 307200/2 * 3 = 11520000ns = 11ms</p><p>Wniosek: Mimo tego, że kod 1 ma większą trafialność w cache,<br>
+to przez to, że ma dużo więcej iteracji, trwa dłużej.</p></div>
+    <div class="ui-toc dropup unselectable hidden-print" style="display:none;">
+        <div class="pull-right dropdown">
+            <a id="tocLabel" class="ui-toc-label btn btn-default" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" title="Table of content">
+                <i class="fa fa-bars"></i>
+            </a>
+            <ul id="ui-toc" class="ui-toc-dropdown dropdown-menu" aria-labelledby="tocLabel">
+                <div class="toc"><ul class="nav">
+<li class=""><a href="#Lista-zadań-nr-8" title="Lista zadań nr 8">Lista zadań nr 8</a><ul class="nav">
+<li><a href="#Deklaracje" title="Deklaracje">Deklaracje</a></li>
+<li><a href="#Rozwiązania" title="Rozwiązania">Rozwiązania</a><ul class="nav">
+<li><a href="#Zadanie-1" title="Zadanie 1">Zadanie 1</a></li>
+<li><a href="#Zadanie-2" title="Zadanie 2">Zadanie 2</a></li>
+<li><a href="#Zadanie-3" title="Zadanie 3">Zadanie 3</a></li>
+<li><a href="#Zadanie-4" title="Zadanie 4">Zadanie 4</a></li>
+<li><a href="#Zadanie-5" title="Zadanie 5">Zadanie 5</a></li>
+<li><a href="#Zadanie-6" title="Zadanie 6">Zadanie 6</a></li>
+<li><a href="#Zadanie-7" title="Zadanie 7">Zadanie 7</a></li>
+<li><a href="#Zadanie-8" title="Zadanie 8">Zadanie 8</a></li>
+<li><a href="#Pamięć-podręczna-ma-512-bajtów-mapowanie-bezpośrednie-rozmiar-bloku-16-bajtów" title="Pamięć podręczna ma 512 bajtów, mapowanie bezpośrednie, rozmiar bloku 16 bajtów">Pamięć podręczna ma 512 bajtów, mapowanie bezpośrednie, rozmiar bloku 16 bajtów</a></li>
+<li><a href="#Jak-powyżej-z-tym-że-rozmiar-pamięci-podręcznej-to-1024-bajtów" title="Jak powyżej, z tym że rozmiar pamięci podręcznej to 1024 bajtów">Jak powyżej, z tym że rozmiar pamięci podręcznej to 1024 bajtów</a></li>
+<li><a href="#Pamięć-podręczna-ma-512-bajtów-jest-dwudrożna-sekcyjno-skojarzeniowa-używa-polityki-zastępowania-LRU-rozmiar-bloku-to-16-bajtów" title="Pamięć podręczna ma 512 bajtów, jest dwudrożna, sekcyjno-skojarzeniowa, używa polityki zastępowania LRU, rozmiar bloku to 16 bajtów">Pamięć podręczna ma 512 bajtów, jest dwudrożna, sekcyjno-skojarzeniowa, używa polityki zastępowania LRU, rozmiar bloku to 16 bajtów</a></li>
+<li><a href="#Zadanie-9" title="Zadanie 9">Zadanie 9</a></li>
+<li><a href="#Zadanie-10" title="Zadanie 10">Zadanie 10</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div><div class="toc-menu"><a class="expand-toggle" href="#">Expand all</a><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a></div>
+            </ul>
+        </div>
+    </div>
+    <div id="ui-toc-affix" class="ui-affix-toc ui-toc-dropdown unselectable hidden-print" data-spy="affix" style="top:17px;display:none;" null null>
+        <div class="toc"><ul class="nav">
+<li class=""><a href="#Lista-zadań-nr-8" title="Lista zadań nr 8">Lista zadań nr 8</a><ul class="nav">
+<li><a href="#Deklaracje" title="Deklaracje">Deklaracje</a></li>
+<li><a href="#Rozwiązania" title="Rozwiązania">Rozwiązania</a><ul class="nav">
+<li><a href="#Zadanie-1" title="Zadanie 1">Zadanie 1</a></li>
+<li><a href="#Zadanie-2" title="Zadanie 2">Zadanie 2</a></li>
+<li><a href="#Zadanie-3" title="Zadanie 3">Zadanie 3</a></li>
+<li><a href="#Zadanie-4" title="Zadanie 4">Zadanie 4</a></li>
+<li><a href="#Zadanie-5" title="Zadanie 5">Zadanie 5</a></li>
+<li><a href="#Zadanie-6" title="Zadanie 6">Zadanie 6</a></li>
+<li><a href="#Zadanie-7" title="Zadanie 7">Zadanie 7</a></li>
+<li><a href="#Zadanie-8" title="Zadanie 8">Zadanie 8</a></li>
+<li><a href="#Pamięć-podręczna-ma-512-bajtów-mapowanie-bezpośrednie-rozmiar-bloku-16-bajtów" title="Pamięć podręczna ma 512 bajtów, mapowanie bezpośrednie, rozmiar bloku 16 bajtów">Pamięć podręczna ma 512 bajtów, mapowanie bezpośrednie, rozmiar bloku 16 bajtów</a></li>
+<li><a href="#Jak-powyżej-z-tym-że-rozmiar-pamięci-podręcznej-to-1024-bajtów" title="Jak powyżej, z tym że rozmiar pamięci podręcznej to 1024 bajtów">Jak powyżej, z tym że rozmiar pamięci podręcznej to 1024 bajtów</a></li>
+<li><a href="#Pamięć-podręczna-ma-512-bajtów-jest-dwudrożna-sekcyjno-skojarzeniowa-używa-polityki-zastępowania-LRU-rozmiar-bloku-to-16-bajtów" title="Pamięć podręczna ma 512 bajtów, jest dwudrożna, sekcyjno-skojarzeniowa, używa polityki zastępowania LRU, rozmiar bloku to 16 bajtów">Pamięć podręczna ma 512 bajtów, jest dwudrożna, sekcyjno-skojarzeniowa, używa polityki zastępowania LRU, rozmiar bloku to 16 bajtów</a></li>
+<li><a href="#Zadanie-9" title="Zadanie 9">Zadanie 9</a></li>
+<li><a href="#Zadanie-10" title="Zadanie 10">Zadanie 10</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div><div class="toc-menu"><a class="expand-toggle" href="#">Expand all</a><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gist-embed/2.6.0/gist-embed.min.js" integrity="sha256-KyF2D6xPIJUW5sUDSs93vWyZm+1RzIpKCexxElmxl8g=" crossorigin="anonymous" defer></script>
+    <script>
+        var markdown = $(".markdown-body");
+        //smooth all hash trigger scrolling
+        function smoothHashScroll() {
+            var hashElements = $("a[href^='#']").toArray();
+            for (var i = 0; i < hashElements.length; i++) {
+                var element = hashElements[i];
+                var $element = $(element);
+                var hash = element.hash;
+                if (hash) {
+                    $element.on('click', function (e) {
+                        // store hash
+                        var hash = this.hash;
+                        if ($(hash).length <= 0) return;
+                        // prevent default anchor click behavior
+                        e.preventDefault();
+                        // animate
+                        $('body, html').stop(true, true).animate({
+                            scrollTop: $(hash).offset().top
+                        }, 100, "linear", function () {
+                            // when done, add hash to url
+                            // (default click behaviour)
+                            window.location.hash = hash;
+                        });
+                    });
+                }
+            }
+        }
+
+        smoothHashScroll();
+        var toc = $('.ui-toc');
+        var tocAffix = $('.ui-affix-toc');
+        var tocDropdown = $('.ui-toc-dropdown');
+        //toc
+        tocDropdown.click(function (e) {
+            e.stopPropagation();
+        });
+
+        var enoughForAffixToc = true;
+
+        function generateScrollspy() {
+            $(document.body).scrollspy({
+                target: ''
+            });
+            $(document.body).scrollspy('refresh');
+            if (enoughForAffixToc) {
+                toc.hide();
+                tocAffix.show();
+            } else {
+                tocAffix.hide();
+                toc.show();
+            }
+            $(document.body).scroll();
+        }
+
+        function windowResize() {
+            //toc right
+            var paddingRight = parseFloat(markdown.css('padding-right'));
+            var right = ($(window).width() - (markdown.offset().left + markdown.outerWidth() - paddingRight));
+            toc.css('right', right + 'px');
+            //affix toc left
+            var newbool;
+            var rightMargin = (markdown.parent().outerWidth() - markdown.outerWidth()) / 2;
+            //for ipad or wider device
+            if (rightMargin >= 133) {
+                newbool = true;
+                var affixLeftMargin = (tocAffix.outerWidth() - tocAffix.width()) / 2;
+                var left = markdown.offset().left + markdown.outerWidth() - affixLeftMargin;
+                tocAffix.css('left', left + 'px');
+            } else {
+                newbool = false;
+            }
+            if (newbool != enoughForAffixToc) {
+                enoughForAffixToc = newbool;
+                generateScrollspy();
+            }
+        }
+        $(window).resize(function () {
+            windowResize();
+        });
+        $(document).ready(function () {
+            windowResize();
+            generateScrollspy();
+        });
+
+        //remove hash
+        function removeHash() {
+            window.location.hash = '';
+        }
+
+        var backtotop = $('.back-to-top');
+        var gotobottom = $('.go-to-bottom');
+
+        backtotop.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (scrollToTop)
+                scrollToTop();
+            removeHash();
+        });
+        gotobottom.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (scrollToBottom)
+                scrollToBottom();
+            removeHash();
+        });
+
+        var toggle = $('.expand-toggle');
+        var tocExpand = false;
+
+        checkExpandToggle();
+        toggle.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            tocExpand = !tocExpand;
+            checkExpandToggle();
+        })
+
+        function checkExpandToggle () {
+            var toc = $('.ui-toc-dropdown .toc');
+            var toggle = $('.expand-toggle');
+            if (!tocExpand) {
+                toc.removeClass('expand');
+                toggle.text('Expand all');
+            } else {
+                toc.addClass('expand');
+                toggle.text('Collapse all');
+            }
+        }
+
+        function scrollToTop() {
+            $('body, html').stop(true, true).animate({
+                scrollTop: 0
+            }, 100, "linear");
+        }
+
+        function scrollToBottom() {
+            $('body, html').stop(true, true).animate({
+                scrollTop: $(document.body)[0].scrollHeight
+            }, 100, "linear");
+        }
+    </script>
+</body>
+
+</html>

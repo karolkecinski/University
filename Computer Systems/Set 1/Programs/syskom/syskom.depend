@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1583328151 source:c:\users\dell\desktop\syk\syskom\main.c
+	<stdio.h>
+	<stdlib.h>
+

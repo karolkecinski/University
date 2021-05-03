@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>
+        Lista ćwiczeniowa nr 2 - HackMD
+    </title>
+    <link rel="icon" type="image/png" href="https://hackmd.io/favicon.png">
+    <link rel="apple-touch-icon" href="https://hackmd.io/apple-touch-icon.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" integrity="sha256-3iu9jgsy9TpTwXKb7bNQzqWekRX7pPK+2OLj3R922fo=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.5.0/octicons.min.css" integrity="sha256-QiWfLIsCT02Sdwkogf6YMiQlj4NE84MKkzEMkZnMGdg=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.1/themes/prism.min.css" integrity="sha256-vtR0hSWRc3Tb26iuN2oZHt3KRUomwTufNIf5/4oeCyg=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/css/basic/emojify.min.css" integrity="sha256-UOrvMOsSDSrW6szVLe8ZDZezBxh5IoIfgTwdNDgTjiU=" crossorigin="anonymous" />
+    <style>
+        @charset "UTF-8";@import url(https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i|Source+Code+Pro:300,400,500|Source+Sans+Pro:300,300i,400,400i,600,600i|Source+Serif+Pro&subset=latin-ext);.hljs{display:block;background:#fff;padding:.5em;color:#333;overflow-x:auto}.hljs-comment,.hljs-meta{color:#969896}.hljs-emphasis,.hljs-quote,.hljs-string,.hljs-strong,.hljs-template-variable,.hljs-variable{color:#df5000}.hljs-keyword,.hljs-selector-tag,.hljs-type{color:#a71d5d}.hljs-attribute,.hljs-bullet,.hljs-literal,.hljs-number,.hljs-symbol{color:#0086b3}.hljs-built_in,.hljs-builtin-name{color:#005cc5}.hljs-name,.hljs-section{color:#63a35c}.hljs-tag{color:#333}.hljs-attr,.hljs-selector-attr,.hljs-selector-class,.hljs-selector-id,.hljs-selector-pseudo,.hljs-title{color:#795da3}.hljs-addition{color:#55a532;background-color:#eaffea}.hljs-deletion{color:#bd2c00;background-color:#ffecec}.hljs-link{text-decoration:underline}.markdown-body{font-size:16px;line-height:1.5;word-wrap:break-word}.markdown-body:after,.markdown-body:before{display:table;content:""}.markdown-body:after{clear:both}.markdown-body>:first-child{margin-top:0!important}.markdown-body>:last-child{margin-bottom:0!important}.markdown-body a:not([href]){color:inherit;text-decoration:none}.markdown-body .absent{color:#c00}.markdown-body .anchor{float:left;padding-right:4px;margin-left:-20px;line-height:1}.markdown-body .anchor:focus{outline:none}.markdown-body blockquote,.markdown-body dl,.markdown-body ol,.markdown-body p,.markdown-body pre,.markdown-body table,.markdown-body ul{margin-top:0;margin-bottom:16px}.markdown-body hr{height:.25em;padding:0;margin:24px 0;background-color:#e7e7e7;border:0}.markdown-body blockquote{font-size:16px;padding:0 1em;color:#777;border-left:.25em solid #ddd}.markdown-body blockquote>:first-child{margin-top:0}.markdown-body blockquote>:last-child{margin-bottom:0}.markdown-body kbd,.popover kbd{display:inline-block;padding:3px 5px;font-size:11px;line-height:10px;color:#555;vertical-align:middle;background-color:#fcfcfc;border:1px solid #ccc;border-bottom-color:#bbb;border-radius:3px;box-shadow:inset 0 -1px 0 #bbb}.markdown-body .loweralpha{list-style-type:lower-alpha}.markdown-body h1,.markdown-body h2,.markdown-body h3,.markdown-body h4,.markdown-body h5,.markdown-body h6{margin-top:24px;margin-bottom:16px;font-weight:600;line-height:1.25}.markdown-body h1 .octicon-link,.markdown-body h2 .octicon-link,.markdown-body h3 .octicon-link,.markdown-body h4 .octicon-link,.markdown-body h5 .octicon-link,.markdown-body h6 .octicon-link{color:#000;vertical-align:middle;visibility:hidden}.markdown-body h1:hover .anchor,.markdown-body h2:hover .anchor,.markdown-body h3:hover .anchor,.markdown-body h4:hover .anchor,.markdown-body h5:hover .anchor,.markdown-body h6:hover .anchor{text-decoration:none}.markdown-body h1:hover .anchor .octicon-link,.markdown-body h2:hover .anchor .octicon-link,.markdown-body h3:hover .anchor .octicon-link,.markdown-body h4:hover .anchor .octicon-link,.markdown-body h5:hover .anchor .octicon-link,.markdown-body h6:hover .anchor .octicon-link{visibility:visible}.markdown-body h1 code,.markdown-body h1 tt,.markdown-body h2 code,.markdown-body h2 tt,.markdown-body h3 code,.markdown-body h3 tt,.markdown-body h4 code,.markdown-body h4 tt,.markdown-body h5 code,.markdown-body h5 tt,.markdown-body h6 code,.markdown-body h6 tt{font-size:inherit}.markdown-body h1{font-size:2em}.markdown-body h1,.markdown-body h2{padding-bottom:.3em;border-bottom:1px solid #eee}.markdown-body h2{font-size:1.5em}.markdown-body h3{font-size:1.25em}.markdown-body h4{font-size:1em}.markdown-body h5{font-size:.875em}.markdown-body h6{font-size:.85em;color:#777}.markdown-body ol,.markdown-body ul{padding-left:2em}.markdown-body ol.no-list,.markdown-body ul.no-list{padding:0;list-style-type:none}.markdown-body ol ol,.markdown-body ol ul,.markdown-body ul ol,.markdown-body ul ul{margin-top:0;margin-bottom:0}.markdown-body li>p{margin-top:16px}.markdown-body li+li{padding-top:.25em}.markdown-body dl{padding:0}.markdown-body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}.markdown-body dl dd{padding:0 16px;margin-bottom:16px}.markdown-body table{display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}.markdown-body table th{font-weight:700}.markdown-body table td,.markdown-body table th{padding:6px 13px;border:1px solid #ddd}.markdown-body table tr{background-color:#fff;border-top:1px solid #ccc}.markdown-body table tr:nth-child(2n){background-color:#f8f8f8}.markdown-body img{max-width:100%;box-sizing:content-box;background-color:#fff}.markdown-body img[align=right]{padding-left:20px}.markdown-body img[align=left]{padding-right:20px}.markdown-body .emoji{max-width:none;vertical-align:text-top;background-color:transparent}.markdown-body span.frame{display:block;overflow:hidden}.markdown-body span.frame>span{display:block;float:left;width:auto;padding:7px;margin:13px 0 0;overflow:hidden;border:1px solid #ddd}.markdown-body span.frame span img{display:block;float:left}.markdown-body span.frame span span{display:block;padding:5px 0 0;clear:both;color:#333}.markdown-body span.align-center{display:block;overflow:hidden;clear:both}.markdown-body span.align-center>span{display:block;margin:13px auto 0;overflow:hidden;text-align:center}.markdown-body span.align-center span img{margin:0 auto;text-align:center}.markdown-body span.align-right{display:block;overflow:hidden;clear:both}.markdown-body span.align-right>span{display:block;margin:13px 0 0;overflow:hidden;text-align:right}.markdown-body span.align-right span img{margin:0;text-align:right}.markdown-body span.float-left{display:block;float:left;margin-right:13px;overflow:hidden}.markdown-body span.float-left span{margin:13px 0 0}.markdown-body span.float-right{display:block;float:right;margin-left:13px;overflow:hidden}.markdown-body span.float-right>span{display:block;margin:13px auto 0;overflow:hidden;text-align:right}.markdown-body code,.markdown-body tt{padding:0;padding-top:.2em;padding-bottom:.2em;margin:0;font-size:85%;background-color:rgba(0,0,0,.04);border-radius:3px}.markdown-body code:after,.markdown-body code:before,.markdown-body tt:after,.markdown-body tt:before{letter-spacing:-.2em;content:"\00a0"}.markdown-body code br,.markdown-body tt br{display:none}.markdown-body del code{text-decoration:inherit}.markdown-body pre{word-wrap:normal}.markdown-body pre>code{padding:0;margin:0;font-size:100%;word-break:normal;white-space:pre;background:transparent;border:0}.markdown-body .highlight{margin-bottom:16px}.markdown-body .highlight pre{margin-bottom:0;word-break:normal}.markdown-body .highlight pre,.markdown-body pre{padding:16px;overflow:auto;font-size:85%;line-height:1.45;background-color:#f7f7f7;border-radius:3px}.markdown-body pre code,.markdown-body pre tt{display:inline;max-width:auto;padding:0;margin:0;overflow:visible;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}.markdown-body pre code:after,.markdown-body pre code:before,.markdown-body pre tt:after,.markdown-body pre tt:before{content:normal}.markdown-body .csv-data td,.markdown-body .csv-data th{padding:5px;overflow:hidden;font-size:12px;line-height:1;text-align:left;white-space:nowrap}.markdown-body .csv-data .blob-line-num{padding:10px 8px 9px;text-align:right;background:#fff;border:0}.markdown-body .csv-data tr{border-top:0}.markdown-body .csv-data th{font-weight:700;background:#f8f8f8;border-top:0}.news .alert .markdown-body blockquote{padding:0 0 0 40px;border:0 none}.activity-tab .news .alert .commits,.activity-tab .news .markdown-body blockquote{padding-left:0}.task-list-item{list-style-type:none}.task-list-item label{font-weight:400}.task-list-item.enabled label{cursor:pointer}.task-list-item+.task-list-item{margin-top:3px}.task-list-item-checkbox{float:left;margin:.31em 0 .2em -1.3em!important;vertical-align:middle;cursor:default!important}.markdown-body{padding-top:40px;padding-bottom:40px;max-width:758px;overflow:visible!important}.markdown-body .emoji{vertical-align:top}.markdown-body pre{border:inherit!important}.markdown-body code{color:inherit!important}.markdown-body pre code .wrapper{display:-moz-inline-flex;display:-ms-inline-flex;display:-o-inline-flex;display:inline-flex}.markdown-body pre code .gutter{float:left;overflow:hidden;-webkit-user-select:none;user-select:none}.markdown-body pre code .gutter.linenumber{text-align:right;position:relative;display:inline-block;cursor:default;z-index:4;padding:0 8px 0 0;min-width:20px;box-sizing:content-box;color:#afafaf!important;border-right:3px solid #6ce26c!important}.markdown-body pre code .gutter.linenumber>span:before{content:attr(data-linenumber)}.markdown-body pre code .code{float:left;margin:0 0 0 16px}.markdown-body .gist .line-numbers{border-left:none;border-top:none;border-bottom:none}.markdown-body .gist .line-data{border:none}.markdown-body .gist table{border-spacing:0;border-collapse:inherit!important}.markdown-body code[data-gist-id]{background:none;padding:0}.markdown-body code[data-gist-id]:after,.markdown-body code[data-gist-id]:before{content:""}.markdown-body code[data-gist-id] .blob-num{border:unset}.markdown-body code[data-gist-id] table{overflow:unset;margin-bottom:unset}.markdown-body code[data-gist-id] table tr{background:unset}.markdown-body[dir=rtl] pre{direction:ltr}.markdown-body[dir=rtl] code{direction:ltr;unicode-bidi:embed}.markdown-body .alert>p{margin-bottom:0}.markdown-body pre.abc,.markdown-body pre.flow-chart,.markdown-body pre.graphviz,.markdown-body pre.mermaid,.markdown-body pre.sequence-diagram,.markdown-body pre.vega{text-align:center;background-color:inherit;border-radius:0;white-space:inherit}.markdown-body pre.abc>code,.markdown-body pre.flow-chart>code,.markdown-body pre.graphviz>code,.markdown-body pre.mermaid>code,.markdown-body pre.sequence-diagram>code,.markdown-body pre.vega>code{text-align:left}.markdown-body pre.abc>svg,.markdown-body pre.flow-chart>svg,.markdown-body pre.graphviz>svg,.markdown-body pre.mermaid>svg,.markdown-body pre.sequence-diagram>svg,.markdown-body pre.vega>svg{max-width:100%;height:100%}.markdown-body pre>code.wrap{white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space:-o-pre-wrap;word-wrap:break-word}.markdown-body .alert>p,.markdown-body .alert>ul{margin-bottom:0}.markdown-body summary{display:list-item}.markdown-body summary:focus{outline:none}.markdown-body details summary{cursor:pointer}.markdown-body details:not([open])>:not(summary){display:none}.markdown-body figure{margin:1em 40px}.markdown-body .mark,.markdown-body mark{background-color:#fff1a7}.vimeo,.youtube{cursor:pointer;display:table;text-align:center;background-position:50%;background-repeat:no-repeat;background-size:contain;background-color:#000;overflow:hidden}.vimeo,.youtube{position:relative;width:100%}.youtube{padding-bottom:56.25%}.vimeo img{width:100%;object-fit:contain;z-index:0}.youtube img{object-fit:cover;z-index:0}.vimeo iframe,.youtube iframe,.youtube img{width:100%;height:100%;position:absolute;top:0;left:0}.vimeo iframe,.youtube iframe{vertical-align:middle;z-index:1}.vimeo .icon,.youtube .icon{position:absolute;height:auto;width:auto;top:50%;left:50%;transform:translate(-50%,-50%);color:#fff;opacity:.3;transition:opacity .2s;z-index:0}.vimeo:hover .icon,.youtube:hover .icon{opacity:.6;transition:opacity .2s}.slideshare .inner,.speakerdeck .inner{position:relative;width:100%}.slideshare .inner iframe,.speakerdeck .inner iframe{position:absolute;top:0;bottom:0;left:0;right:0;width:100%;height:100%}.MJX_Assistive_MathML{display:none}.ui-infobar{position:relative;z-index:2;max-width:760px;margin:25px auto -25px;padding:0 15px;color:#777}.toc .invisable-node{list-style-type:none}.ui-toc{position:fixed;bottom:20px;z-index:998}.ui-toc-label{opacity:.3;background-color:#ccc;border:none;transition:opacity .2s}.ui-toc .open .ui-toc-label{opacity:1;color:#fff;transition:opacity .2s}.ui-toc-label:focus{opacity:.3;background-color:#ccc;color:#000}.ui-toc-label:hover{opacity:1;background-color:#ccc;transition:opacity .2s}.ui-toc-dropdown{margin-top:23px;margin-bottom:20px;padding-left:10px;padding-right:10px;max-width:45vw;width:25vw;max-height:70vh;overflow:auto;text-align:inherit}.ui-toc-dropdown>.toc{max-height:calc(70vh - 100px);overflow:auto}.ui-toc-dropdown[dir=rtl] .nav{padding-right:0;letter-spacing:.0029em}.ui-toc-dropdown a{overflow:hidden;text-overflow:ellipsis;white-space:pre}.ui-toc-dropdown .nav>li>a{display:block;padding:4px 20px;font-size:13px;font-weight:500;color:#767676}.ui-toc-dropdown .nav>li:first-child:last-child > ul,.ui-toc-dropdown .toc.expand ul{display:block}.ui-toc-dropdown .nav>li>a:focus,.ui-toc-dropdown .nav>li>a:hover{padding-left:19px;color:#000;text-decoration:none;background-color:transparent;border-left:1px solid #000}.ui-toc-dropdown[dir=rtl] .nav>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav>li>a:hover{padding-right:19px;border-left:none;border-right:1px solid #000}.ui-toc-dropdown .nav>.active:focus>a,.ui-toc-dropdown .nav>.active:hover>a,.ui-toc-dropdown .nav>.active>a{padding-left:18px;font-weight:700;color:#000;background-color:transparent;border-left:2px solid #000}.ui-toc-dropdown[dir=rtl] .nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav>.active>a{padding-right:18px;border-left:none;border-right:2px solid #000}.ui-toc-dropdown .nav .nav{display:none;padding-bottom:10px}.ui-toc-dropdown .nav>.active>ul{display:block}.ui-toc-dropdown .nav .nav>li>a{padding-top:1px;padding-bottom:1px;padding-left:30px;font-size:12px;font-weight:400}.ui-toc-dropdown[dir=rtl] .nav .nav>li>a{padding-right:30px}.ui-toc-dropdown .nav .nav>li>ul>li>a{padding-top:1px;padding-bottom:1px;padding-left:40px;font-size:12px;font-weight:400}.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a{padding-right:40px}.ui-toc-dropdown .nav .nav>li>a:focus,.ui-toc-dropdown .nav .nav>li>a:hover{padding-left:29px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav .nav>li>a:hover{padding-right:29px}.ui-toc-dropdown .nav .nav>li>ul>li>a:focus,.ui-toc-dropdown .nav .nav>li>ul>li>a:hover{padding-left:39px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a:hover{padding-right:39px}.ui-toc-dropdown .nav .nav>.active:focus>a,.ui-toc-dropdown .nav .nav>.active:hover>a,.ui-toc-dropdown .nav .nav>.active>a{padding-left:28px;font-weight:500}.ui-toc-dropdown[dir=rtl] .nav .nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>a{padding-right:28px}.ui-toc-dropdown .nav .nav>.active>.nav>.active:focus>a,.ui-toc-dropdown .nav .nav>.active>.nav>.active:hover>a,.ui-toc-dropdown .nav .nav>.active>.nav>.active>a{padding-left:38px;font-weight:500}.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active>a{padding-right:38px}.markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif}html[lang^=ja] .markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ\ ゴシック,sans-serif}html[lang=zh-tw] .markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif}html[lang=zh-cn] .markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif}html .markdown-body[lang^=ja]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ\ ゴシック,sans-serif}html .markdown-body[lang=zh-tw]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif}html .markdown-body[lang=zh-cn]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif}html[lang^=ja] .ui-toc-dropdown{font-family:Source Sans Pro,Helvetica,Arial,Meiryo UI,MS PGothic,ＭＳ\ Ｐゴシック,sans-serif}html[lang=zh-tw] .ui-toc-dropdown{font-family:Source Sans Pro,Helvetica,Arial,Microsoft JhengHei UI,微軟正黑UI,sans-serif}html[lang=zh-cn] .ui-toc-dropdown{font-family:Source Sans Pro,Helvetica,Arial,Microsoft YaHei UI,微软雅黑UI,sans-serif}html .ui-toc-dropdown[lang^=ja]{font-family:Source Sans Pro,Helvetica,Arial,Meiryo UI,MS PGothic,ＭＳ\ Ｐゴシック,sans-serif}html .ui-toc-dropdown[lang=zh-tw]{font-family:Source Sans Pro,Helvetica,Arial,Microsoft JhengHei UI,微軟正黑UI,sans-serif}html .ui-toc-dropdown[lang=zh-cn]{font-family:Source Sans Pro,Helvetica,Arial,Microsoft YaHei UI,微软雅黑UI,sans-serif}.ui-affix-toc{position:fixed;top:0;max-width:15vw;max-height:70vh;overflow:auto}.back-to-top,.expand-toggle,.go-to-bottom{display:block;padding:4px 10px;margin-top:10px;margin-left:10px;font-size:12px;font-weight:500;color:#999}.back-to-top:focus,.back-to-top:hover,.expand-toggle:focus,.expand-toggle:hover,.go-to-bottom:focus,.go-to-bottom:hover{color:#563d7c;text-decoration:none}.back-to-top,.go-to-bottom{margin-top:0}.ui-user-icon{width:20px;height:20px;display:block;border-radius:3px;margin-top:2px;margin-bottom:2px;margin-right:5px;background-position:50%;background-repeat:no-repeat;background-size:cover}.ui-user-icon.small{width:18px;height:18px;display:inline-block;vertical-align:middle;margin:0 0 .2em}.ui-infobar>small>span{line-height:22px}.ui-infobar>small .dropdown{display:inline-block}.ui-infobar>small .dropdown a:focus,.ui-infobar>small .dropdown a:hover{text-decoration:none}.ui-published-note{color:#337ab7}.ui-published-note .fa{font-size:20px;vertical-align:top}.unselectable{-webkit-user-select:none;-o-user-select:none;user-select:none}@media print{blockquote,div,img,pre,table{page-break-inside:avoid!important}a[href]:after{font-size:12px!important}}.markdown-body.slides{position:relative;z-index:1;color:#222}.markdown-body.slides:before{content:"";display:block;position:absolute;top:0;left:0;right:0;bottom:0;z-index:-1;background-color:currentColor;box-shadow:0 0 0 50vw}.markdown-body.slides section[data-markdown]{position:relative;margin-bottom:1.5em;background-color:#fff;text-align:center}.markdown-body.slides section[data-markdown] code{text-align:left}.markdown-body.slides section[data-markdown]:before{content:"";display:block;padding-bottom:56.23%}.markdown-body.slides section[data-markdown]>div:first-child{position:absolute;top:50%;left:1em;right:1em;transform:translateY(-50%);max-height:100%;overflow:hidden}.markdown-body.slides section[data-markdown]>ul{display:inline-block}.markdown-body.slides>section>section+section:after{content:"";position:absolute;top:-1.5em;right:1em;height:1.5em;border:3px solid #777}body{font-smoothing:subpixel-antialiased!important;-webkit-font-smoothing:subpixel-antialiased!important;-moz-osx-font-smoothing:auto!important;text-shadow:0 0 1em transparent,1px 1px 1.2px rgba(0,0,0,.004);-webkit-overflow-scrolling:touch;letter-spacing:.025em}.focus,:focus{outline:none!important}::-moz-focus-inner{border:0!important}body{font-family:Source Sans Pro,Helvetica,Arial,sans-serif}html[lang^=ja] body{font-family:Source Sans Pro,Helvetica,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ\ ゴシック,sans-serif}html[lang=zh-tw] body{font-family:Source Sans Pro,Helvetica,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif}html[lang=zh-cn] body{font-family:Source Sans Pro,Helvetica,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif}abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}abbr[data-original-title],abbr[title]{cursor:help}body.modal-open{overflow-y:auto;padding-right:0!important}
+    </style>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js" integrity="sha256-g6iAfvZp+nDQ2TdTR/VVKJf3bGro4ub5fvWSWVRi2NE=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.9/es5-shim.min.js" integrity="sha256-8E4Is26QH0bD52WoQpcB+R/tcWQtpzlCojrybUd7Mxo=" crossorigin="anonymous"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div id="doc" class="markdown-body container-fluid comment-enabled" data-hard-breaks="true" style="position: relative;"><h1 id="Lista-ćwiczeniowa-nr-2"><a class="anchor hidden-xs" href="#Lista-ćwiczeniowa-nr-2" title="Lista-ćwiczeniowa-nr-2"><span class="octicon octicon-link"></span></a>Lista ćwiczeniowa nr 2</h1><div class="alert alert-info">
+<p>grupa PWit, środa 8-10</p>
+</div><div class="alert alert-success">
+<p>Link do audio/wideo-konferencji:</p>
+<p>…</p>
+</div><h2 id="Deklaracje"><a class="anchor hidden-xs" href="#Deklaracje" title="Deklaracje"><span class="octicon octicon-link"></span></a>Deklaracje</h2><div class="alert alert-info">
+<p>Studenci wypełniają poniższą tabelkę przed rozpoczęciem zajęć. Student ma obowiązek zapoznać się&nbsp;wcześniej ze składnią&nbsp;języka Markdown!</p>
+</div><p>Gotowość rozwiązania zadania należy wyrazić poprzez postawienie X w odpowiedniej kolumnie! Jeśli kogoś nie ma na liście to proszę dopisać się pod spodem.</p><table>
+<thead>
+<tr>
+<th></th>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+<th>5</th>
+<th>6</th>
+<th>7</th>
+<th>8</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Maksymilian DeBeściak</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>Paweł	Bajgrowicz</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>Przemysław Czerwiński</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Antoni	Dąbrowski</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Alicja	Danilczuk</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>Agnieszka	Jonak</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Agata Kasprzak</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>Karol	Kęciński</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>Błażej	Korasiak</td>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Józef	Kowalewicz</td>
+<td>x</td>
+<td></td>
+<td>x</td>
+<td>x</td>
+<td></td>
+<td>x</td>
+<td></td>
+<td>x</td>
+</tr>
+<tr>
+<td>Jakub	Mendyk</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>Barbara	Piasecka</td>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Damian	Ratajski</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Aleksandra Stępniewska</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Karol	Stuła</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>Daniel	Wiczołek</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Patryk	Wilusz</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>Mateusz	Zając</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+</tr>
+</tbody>
+</table><h2 id="Rozwiązania-30-minut"><a class="anchor hidden-xs" href="#Rozwiązania-30-minut" title="Rozwiązania-30-minut"><span class="octicon octicon-link"></span></a>Rozwiązania (30 minut)</h2><div class="alert alert-info">
+<p>Na początku zajęć prowadzący przypisuje studentów do zadań. W ciągu 30 minut student ma obowiązek uzupełnić rozwiązanie zadania. Jeśli zadanie wymaga posłużenia się&nbsp;diagramem, to można wkleić jego zdjęcie.  Prowadzący może zlecić przygotowanie rozwiązania danego zadania więcej niż jednej osobie.</p>
+</div><div class="alert alert-warning">
+<p>Zamieszczanie zdjęć gotowych rozwiązań jest niedozwolone chyba, że prowadzący na to pozwoli.</p>
+</div><div class="alert alert-danger">
+<p>Udostępnianie gotowych rozwiązań studentom z innych grup ćwiczeniowych jest niedozwolone!</p>
+</div><h3 id="Zadanie-1"><a class="anchor hidden-xs" href="#Zadanie-1" title="Zadanie-1"><span class="octicon octicon-link"></span></a>Zadanie 1</h3><blockquote>
+<p><small><i class="fa fa-user"></i> Piotr Witkowski</small> Podpunkty 1-3 rozwiązuje p. Antoni Dąbrowski, podpunkty 4-6 rozwiązuje p Aleksandra Stępniewska, podpunkty 7-9 rozwiązuje p. Mateusz Zając.</p>
+</blockquote><p>Czy poniższe wyrażenia zawsze obliczą się do prawdy dla dwóch dowolnych wartości zmiennych x i y typu int32_t? Jeśli nie to podaj wartości, które prowadzą do obliczenia fałszu.</p><ol>
+<li><code>(x &gt; 0) || (x - 1 &lt; 0)</code></li>
+</ol><pre><code class="wrap hljs">Nie. Dla x = -2^31 wyrażenie (x &gt; 0) jest fałszywe. Natomiast x - 1 = -2^31 -1 = (int32_t) 2^31 - 1, zatem również nie spełnia zdania (x - 1 &lt; 0).
+</code></pre><ol start="2">
+<li><code>(x &amp; 7) != 7 || (x &lt;&lt; 29 &lt; 0)</code></li>
+</ol><pre><code class="wrap hljs">To się zgadza. Pierwszy warunek nie jest spełniony, jedynie gdy na ostatnich trzech pozycjach w zapisie binarnym x ma jedynki, wtedy operacja (x &lt;&lt; 29) zwróci 0b111000...0, zatem w reprezentacji int32_t liczbę ujemną, spełniającą drugi warunek.  
+</code></pre><ol start="3">
+<li><code>(x * x) &gt;= 0</code></li>
+</ol><pre><code class="wrap hljs">Nie. Dla x z przedziału otwartego (2^15.5, 2^16) badane wyrażenie nie będzie spełnione. Jest tak ponieważ, maksymalny zakres typu int32_t dla liczb z tego przedziału zostanie przekroczony tylko raz. Dla dolnej granicy przedziału otrzymamy liczbę bliską INT32_T_MIN, dla górnej granicy liczbę 0.
+
+</code></pre><blockquote>
+<p><small><i class="fa fa-user"></i> Piotr Witkowski</small><br>
+int32_t x, wynik;<br>
+x = 63245;</p>
+<p>wynik =  (int32_t) (x * x) &gt;= (int32_t) 0;</p>
+<p>printf(“Wynik %d | x = %d”, wynik , (x * x));</p>
+</blockquote><pre><code>
+    int32_t x;
+
+    x = 63245;
+    printf("Wynik %d | x = %d", (int32_t) (x * x) &gt;= (int32_t) 0, (x * x));
+    Wynik 1 | x = -295037271
+    
+    Using built-in specs.
+    COLLECT_GCC=gcc
+    COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/8/lto-wrapper
+    OFFLOAD_TARGET_NAMES=nvptx-none
+    OFFLOAD_TARGET_DEFAULT=1
+    Target: x86_64-linux-gnu
+    Configured with: ../src/configure -v --with-pkgversion='Ubuntu 8.3.0-6ubuntu1' --with-bugurl=file:///usr/share/doc/gcc-8/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-8 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+    Thread model: posix
+    gcc version 8.3.0 (Ubuntu 8.3.0-6ubuntu1)
+4.   ``x &lt; 0 || -x &lt;= 0``
+```!
+Tak. |INT32_T_MAX|&lt;|INT32_T_MIN| zatem:
+jeśli x&lt;0 to spełniony jest  pierwszy warunek alternatywy (x&gt;0) czyli Prawda
+jeśli x&gt;=0 to (-x)&lt;=0 i z pewnośćia x nie przekroczy zakresu,, bo najwieksza mozliwa dodatnia liczba w typie int32_t po pzemnżeniu przez (-1) zmiesci się w jest wieksza (mniej ujemna) od najmniejszej możliwej do zapisania liczby w tym typie.
+</code></pre><ol start="5">
+<li><code> x &gt; 0 || -x &gt;= 0</code></li>
+</ol><pre><code class="wrap hljs">Nie. Dla x=INT32_T_MIN  x&lt;0 zatem pierwszy warunek (x&gt;0) zwraca fałsz.
+teoretycznie (-x)&gt;0, ale |INT_MIN|&gt;|INT_MAX| zatem jeśli najbardziej ujemna liczbe przemnożymy przez (-1) to przekroczy ona zakres typu int32_t i znowu stanie się ujemna, drugi warnek (-x&gt;=0) zwraca fałsz
+fałsz v fałsz = fałśz
+</code></pre><ol start="6">
+<li><code>(x | -x) &gt;&gt; 31 == -1</code></li>
+</ol><pre><code class="wrap hljs">Nie. Dla x=0 (x | -x)&gt;&gt;31==0 
+</code></pre><ol start="7">
+<li><code>((uint32_t)x) &gt;&gt; 3 == ((uint32_t)x)/8</code></li>
+</ol><pre><code>Tak. Przesunięcia bitowe i dzielenie działają tak samo dla liczb bez znaku 
+(nie jak w przypadku liczb ze znakiem).
+</code></pre><ol start="8">
+<li><code>x &gt;&gt; 3 == x/8</code></li>
+</ol><pre><code>Nie. Dla liczb ze znakiem przesunięcie w prawo uzupełnia nowe
+pozycje (z lewej strony) skopiowanym bitem znaku.
+Wyrażenie będzie zwracało fałsz dla ujemnych liczb nieparzystych 
+(ze względu na zaokrąglenie przy dzieleniu).
+</code></pre><ol start="9">
+<li><code>x + y == (uint32_t)y + (uint32_t)x</code></li>
+</ol><pre><code>Tak. Po lewej stronie mamy dodawanie zmiennych ze znakiem,
+po prawej zmiennych bez znaku. Jednak przy porównaniu
+(==) konwertujemy zmienne ze znakiem na zmienne bez znaku. 
+Nie zmienia się reprezentacja bitowa liczby,
+zmienia się jedynie jej interpretacja. 
+</code></pre><h3 id="Zadanie-2"><a class="anchor hidden-xs" href="#Zadanie-2" title="Zadanie-2"><span class="octicon octicon-link"></span></a>Zadanie 2</h3><blockquote>
+<p><small><i class="fa fa-user"></i> Piotr Witkowski</small> Zadanie rozwiązuje p. Paweł Bajgrowicz.</p>
+</blockquote><p>Podaj wyrażenie zawierające wyłącznie zmienne x i y, którego<br>
+wartością logiczną jest wynik porównania x &lt; y dla liczb (a) bez~znaku (b) ze~znakiem.</p><pre><code class="cpp hljs"><span class="token comment">/*
+    Prosty sposób na sprawdzenie czy x&lt;y to obliczenie x - y, 
+    gdy ta wartość&amp;nbsp;jest ujemna, to y jest większy, wpp. nie jest 
+    większy.
+    Niestety w ten sposób możemy uzyskać overflow np. INT_MIN - 4
+    da nam liczbę dodatnią, a w tym przypadku x &lt; y, więc mamy błąd.
+    Rozwiązaniem jest podzielenie wartości x i y przez 2.
+    To tworzy kolejny problem, ponieważ tracimy bity jedynki w x i y.
+    Przypadki:
+    a) x nie zawiera 1 i y nie zawiera 1: nic nie robimy, 
+       ponieważ nic nie tracimy
+    b) x nie zawiera 1 i y zawiera 1: odejmujemy od różnicy (~x &amp; y &amp; 1), 
+       ponieważ w tej sytuacji y 
+       mogło być większe od x, ale straciliśmy bit który o tym przesądzał.
+       Dokładniej (x &gt;&gt; 1) - (y &gt;&gt; 1) będzie równe 0, a my odejmiemy od tego 1
+       i dostaniemy -1
+    c) x zawiera 1 i y nie zawiera 1: nic nie robimy, ponieważ wtedy
+       jeśli (x &gt;&gt; 1) - (y &gt;&gt; 1) będzie równe 0, to i tak  x&gt;y
+    d) x zawiera 1 i y zawiera 1: nic nie robimy, ponieważ wtedy
+       jeśli (x &gt;&gt; 1) - (y &gt;&gt; 1) będzie równe 0, to x=y
+    
+    Następnie przesuwamy bit znaku o 31 i jeśli mamy ujemną to w operacji &amp; 
+    da nam 1. 
+       
+*/</span>
+
+<span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">(</span>x <span class="token operator">&gt;&gt;</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">-</span> <span class="token punctuation">(</span>y <span class="token operator">&gt;&gt;</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">-</span> <span class="token punctuation">(</span><span class="token operator">~</span>x <span class="token operator">&amp;</span> y <span class="token operator">&amp;</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">&gt;&gt;</span> <span class="token number">31</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span> <span class="token number">1</span>
+</code></pre><blockquote>
+<p><small><i class="fa fa-user"></i> Przemysław Czerwiński</small> “Niestety w ten sposób możemy uzyskać overflow np. INT_MIN+1 - INT_MIN+5 da nam liczbę dodatnią, a w tym przypadku x &lt; y, więc mamy błąd.”<br>
+W tym przypadku nie ma over/underflowu ani wynik nie jest dodatni – wynik to -4.<br>
+Edit: Teraz jest już ok.</p>
+</blockquote><h3 id="Zadanie-3"><a class="anchor hidden-xs" href="#Zadanie-3" title="Zadanie-3"><span class="octicon octicon-link"></span></a>Zadanie 3</h3><blockquote>
+<p><small><i class="fa fa-user"></i> Piotr Witkowski</small> Zadanie rozwiązuje p. Patryk Wilusz.</p>
+</blockquote><p>Podaj fragment kodu, który oblicza funkcję:<br>
+<span class="mathjax"><span class="MathJax_Preview" style="color: inherit;"></span><span class="mjx-chtml MJXc-display" style="text-align: center;"><span id="MathJax-Element-544-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; display=&quot;block&quot;><mi>a</mi><mi>b</mi><mi>s</mi><mo stretchy=&quot;false&quot;>(</mo><mi>x</mi><mo stretchy=&quot;false&quot;>)</mo><mo>=</mo><mrow><mo>{</mo><mtable columnalign=&quot;left left&quot; rowspacing=&quot;.2em&quot; columnspacing=&quot;1em&quot; displaystyle=&quot;false&quot;><mtr><mtd><mi>x</mi></mtd><mtd><mtext>dla&amp;#xA0;</mtext><mi>x</mi><mo>&amp;#x2265;</mo><mn>0</mn></mtd></mtr><mtr><mtd><mo>&amp;#x2212;</mo><mi>x</mi></mtd><mtd><mtext>dla&amp;#xA0;</mtext><mi>x</mi><mo>&amp;lt;</mo><mn>0</mn></mtd></mtr></mtable><mo fence=&quot;true&quot; stretchy=&quot;true&quot; symmetric=&quot;true&quot;></mo></mrow></math>" role="presentation" style="font-size: 113%; text-align: center; position: relative;"><span id="MJXc-Node-11534" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-11535" class="mjx-mrow"><span id="MJXc-Node-11536" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">a</span></span><span id="MJXc-Node-11537" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.445em; padding-bottom: 0.279em;">b</span></span><span id="MJXc-Node-11538" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">s</span></span><span id="MJXc-Node-11539" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">(</span></span><span id="MJXc-Node-11540" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">x</span></span><span id="MJXc-Node-11541" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">)</span></span><span id="MJXc-Node-11542" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.058em; padding-bottom: 0.335em;">=</span></span><span id="MJXc-Node-11543" class="mjx-mrow MJXc-space3"><span id="MJXc-Node-11544" class="mjx-mo"><span class="mjx-char MJXc-TeX-size3-R" style="padding-top: 1.22em; padding-bottom: 1.22em;">{</span></span><span id="MJXc-Node-11545" class="mjx-mtable" style="vertical-align: -0.85em; padding: 0px 0.167em;"><span class="mjx-table"><span id="MJXc-Node-11546" class="mjx-mtr" style="height: 1.1em;"><span id="MJXc-Node-11547" class="mjx-mtd" style="padding: 0px 0.5em 0px 0px; text-align: left; width: 1.35em;"><span id="MJXc-Node-11548" class="mjx-mrow" style="margin-top: -0.2em;"><span id="MJXc-Node-11549" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">x</span></span><span class="mjx-strut"></span></span></span><span id="MJXc-Node-11550" class="mjx-mtd" style="padding: 0px 0px 0px 0.5em; text-align: left; width: 3.99em;"><span id="MJXc-Node-11551" class="mjx-mrow" style="margin-top: -0.2em;"><span id="MJXc-Node-11552" class="mjx-mtext"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">dla&nbsp;</span></span><span id="MJXc-Node-11553" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">x</span></span><span id="MJXc-Node-11554" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.335em; padding-bottom: 0.501em;">≥</span></span><span id="MJXc-Node-11555" class="mjx-mn MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">0</span></span><span class="mjx-strut"></span></span></span></span><span id="MJXc-Node-11556" class="mjx-mtr" style="height: 1.1em;"><span id="MJXc-Node-11557" class="mjx-mtd" style="padding: 0.1em 0.5em 0px 0px; text-align: left;"><span id="MJXc-Node-11558" class="mjx-mrow" style="margin-top: -0.2em;"><span id="MJXc-Node-11559" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.279em; padding-bottom: 0.445em;">−</span></span><span id="MJXc-Node-11560" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">x</span></span><span class="mjx-strut"></span></span></span><span id="MJXc-Node-11561" class="mjx-mtd" style="padding: 0.1em 0px 0px 0.5em; text-align: left;"><span id="MJXc-Node-11562" class="mjx-mrow" style="margin-top: -0.2em;"><span id="MJXc-Node-11563" class="mjx-mtext"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">dla&nbsp;</span></span><span id="MJXc-Node-11564" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">x</span></span><span id="MJXc-Node-11565" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.279em; padding-bottom: 0.39em;">&lt;</span></span><span id="MJXc-Node-11566" class="mjx-mn MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">0</span></span><span class="mjx-strut"></span></span></span></span></span></span><span id="MJXc-Node-11567" class="mjx-mo" style="width: 0.12em;"></span></span></span></span><span class="MJX_Assistive_MathML MJX_Assistive_MathML_Block" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mi>a</mi><mi>b</mi><mi>s</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mrow><mo>{</mo><mtable columnalign="left left" rowspacing=".2em" columnspacing="1em" displaystyle="false"><mtr><mtd><mi>x</mi></mtd><mtd><mtext>dla&nbsp;</mtext><mi>x</mi><mo>≥</mo><mn>0</mn></mtd></mtr><mtr><mtd><mo>−</mo><mi>x</mi></mtd><mtd><mtext>dla&nbsp;</mtext><mi>x</mi><mo>&lt;</mo><mn>0</mn></mtd></mtr></mtable><mo fence="true" stretchy="true" symmetric="true"></mo></mrow></math></span></span></span><script type="math/tex; mode=display" id="MathJax-Element-544">
+ abs(x) = 
+  \begin{cases} 
+   x & \text{dla } x \geq 0 \\
+   -x & \text{dla } x < 0
+  \end{cases}
+</script></span><br>
+Skorzystaj z następującej własności: jeśli b jest wartością logiczną,<br>
+to wyrażenie <code>b ? x : y</code> można przetłumaczyć do <code>b * x + !b * y</code>.</p><pre><code class="cpp hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span></div><div class="code">y <span class="token operator">=</span> x <span class="token operator">&gt;&gt;</span> <span class="token number">31</span>
+<span class="token keyword">return</span> <span class="token punctuation">(</span>x <span class="token operator">^</span> y<span class="token punctuation">)</span> <span class="token operator">-</span> y
+</div></div></code></pre><p><strong>Dla dodatniego x:</strong><br>
+y = 0<br>
+x ^ y = x<br>
+x - 0 = x</p><p><strong>Dla x = 0:</strong><br>
+y = 0<br>
+x ^ y = 0<br>
+0 - 0 = 0</p><p><strong>Dla ujemnego x:</strong><br>
+W U2 int32_t liczba ujemna to -2<sup>31</sup> + z (gdzie z jest z zakresu od 0 do 2^31 - 1) =&gt; ~z = 2<sup>31</sup> - 1 - z</p><p>x = -2^31 + z<br>
+-x = 0 + ~z + 1 = 0 + (2<sup>31</sup> - 1 - z) + 1 = 2^31 - z</p><p>y = -1<br>
+x ^ y = -x - 1<br>
+(-x -1) - (-1) = -x</p><h3 id="Zadanie-4"><a class="anchor hidden-xs" href="#Zadanie-4" title="Zadanie-4"><span class="octicon octicon-link"></span></a>Zadanie 4</h3><blockquote>
+<p><small><i class="fa fa-user"></i> Piotr Witkowski</small> Zadanie rozwiązuje p. Józef Kowalewicz.</p>
+</blockquote><p>Podaj fragment kodu, który oblicza funkcję:<br>
+<span class="mathjax"><span class="MathJax_Preview" style="color: inherit;"></span><span class="mjx-chtml MJXc-display" style="text-align: center;"><span id="MathJax-Element-545-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; display=&quot;block&quot;><mi>s</mi><mi>i</mi><mi>g</mi><mi>n</mi><mo stretchy=&quot;false&quot;>(</mo><mi>x</mi><mo stretchy=&quot;false&quot;>)</mo><mo>=</mo><mrow><mo>{</mo><mtable columnalign=&quot;left left&quot; rowspacing=&quot;.2em&quot; columnspacing=&quot;1em&quot; displaystyle=&quot;false&quot;><mtr><mtd><mo>&amp;#x2212;</mo><mn>1</mn></mtd><mtd><mtext>dla&amp;#xA0;</mtext><mi>x</mi><mo>&amp;lt;</mo><mn>0</mn></mtd></mtr><mtr><mtd><mn>0</mn></mtd><mtd><mtext>dla&amp;#xA0;</mtext><mi>x</mi><mo>=</mo><mn>0</mn></mtd></mtr><mtr><mtd><mn>1</mn></mtd><mtd><mtext>dla&amp;#xA0;</mtext><mi>x</mi><mo>&amp;gt;</mo><mn>0</mn></mtd></mtr></mtable><mo fence=&quot;true&quot; stretchy=&quot;true&quot; symmetric=&quot;true&quot;></mo></mrow></math>" role="presentation" style="font-size: 113%; text-align: center; position: relative;"><span id="MJXc-Node-11568" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-11569" class="mjx-mrow"><span id="MJXc-Node-11570" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">s</span></span><span id="MJXc-Node-11571" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.445em; padding-bottom: 0.279em;">i</span></span><span id="MJXc-Node-11572" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.501em; padding-right: 0.003em;">g</span></span><span id="MJXc-Node-11573" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">n</span></span><span id="MJXc-Node-11574" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">(</span></span><span id="MJXc-Node-11575" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">x</span></span><span id="MJXc-Node-11576" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">)</span></span><span id="MJXc-Node-11577" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.058em; padding-bottom: 0.335em;">=</span></span><span id="MJXc-Node-11578" class="mjx-mrow MJXc-space3"><span id="MJXc-Node-11579" class="mjx-mo" style="vertical-align: -0.526em;"><span class="mjx-delim-v"><span class="mjx-char MJXc-TeX-size4-R" style="padding-top: 0.666em; padding-bottom: 0.279em; margin-bottom: -0.194em;">⎧</span><span class="mjx-char MJXc-TeX-size4-R" style="padding-top: 0.943em; padding-bottom: 0.943em;">⎨</span><span class="mjx-char MJXc-TeX-size4-R" style="margin-top: -0.412em; padding-bottom: 1.164em;">⎩</span></span></span><span id="MJXc-Node-11580" class="mjx-mtable" style="vertical-align: -1.45em; padding: 0px 0.167em;"><span class="mjx-table"><span id="MJXc-Node-11581" class="mjx-mtr" style="height: 1.1em;"><span id="MJXc-Node-11582" class="mjx-mtd" style="padding: 0px 0.5em 0px 0px; text-align: left; width: 1.278em;"><span id="MJXc-Node-11583" class="mjx-mrow" style="margin-top: -0.2em;"><span id="MJXc-Node-11584" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.279em; padding-bottom: 0.445em;">−</span></span><span id="MJXc-Node-11585" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">1</span></span><span class="mjx-strut"></span></span></span><span id="MJXc-Node-11586" class="mjx-mtd" style="padding: 0px 0px 0px 0.5em; text-align: left; width: 3.99em;"><span id="MJXc-Node-11587" class="mjx-mrow" style="margin-top: -0.2em;"><span id="MJXc-Node-11588" class="mjx-mtext"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">dla&nbsp;</span></span><span id="MJXc-Node-11589" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">x</span></span><span id="MJXc-Node-11590" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.279em; padding-bottom: 0.39em;">&lt;</span></span><span id="MJXc-Node-11591" class="mjx-mn MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">0</span></span><span class="mjx-strut"></span></span></span></span><span id="MJXc-Node-11592" class="mjx-mtr" style="height: 1.2em;"><span id="MJXc-Node-11593" class="mjx-mtd" style="padding: 0.1em 0.5em 0px 0px; text-align: left;"><span id="MJXc-Node-11594" class="mjx-mrow" style="margin-top: -0.2em;"><span id="MJXc-Node-11595" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">0</span></span><span class="mjx-strut"></span></span></span><span id="MJXc-Node-11596" class="mjx-mtd" style="padding: 0.1em 0px 0px 0.5em; text-align: left;"><span id="MJXc-Node-11597" class="mjx-mrow" style="margin-top: -0.2em;"><span id="MJXc-Node-11598" class="mjx-mtext"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">dla&nbsp;</span></span><span id="MJXc-Node-11599" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">x</span></span><span id="MJXc-Node-11600" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.058em; padding-bottom: 0.335em;">=</span></span><span id="MJXc-Node-11601" class="mjx-mn MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">0</span></span><span class="mjx-strut"></span></span></span></span><span id="MJXc-Node-11602" class="mjx-mtr" style="height: 1.1em;"><span id="MJXc-Node-11603" class="mjx-mtd" style="padding: 0.1em 0.5em 0px 0px; text-align: left;"><span id="MJXc-Node-11604" class="mjx-mrow" style="margin-top: -0.2em;"><span id="MJXc-Node-11605" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">1</span></span><span class="mjx-strut"></span></span></span><span id="MJXc-Node-11606" class="mjx-mtd" style="padding: 0.1em 0px 0px 0.5em; text-align: left;"><span id="MJXc-Node-11607" class="mjx-mrow" style="margin-top: -0.2em;"><span id="MJXc-Node-11608" class="mjx-mtext"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">dla&nbsp;</span></span><span id="MJXc-Node-11609" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">x</span></span><span id="MJXc-Node-11610" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.279em; padding-bottom: 0.39em;">&gt;</span></span><span id="MJXc-Node-11611" class="mjx-mn MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">0</span></span><span class="mjx-strut"></span></span></span></span></span></span><span id="MJXc-Node-11612" class="mjx-mo" style="width: 0.12em;"></span></span></span></span><span class="MJX_Assistive_MathML MJX_Assistive_MathML_Block" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mi>s</mi><mi>i</mi><mi>g</mi><mi>n</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mrow><mo>{</mo><mtable columnalign="left left" rowspacing=".2em" columnspacing="1em" displaystyle="false"><mtr><mtd><mo>−</mo><mn>1</mn></mtd><mtd><mtext>dla&nbsp;</mtext><mi>x</mi><mo>&lt;</mo><mn>0</mn></mtd></mtr><mtr><mtd><mn>0</mn></mtd><mtd><mtext>dla&nbsp;</mtext><mi>x</mi><mo>=</mo><mn>0</mn></mtd></mtr><mtr><mtd><mn>1</mn></mtd><mtd><mtext>dla&nbsp;</mtext><mi>x</mi><mo>&gt;</mo><mn>0</mn></mtd></mtr></mtable><mo fence="true" stretchy="true" symmetric="true"></mo></mrow></math></span></span></span><script type="math/tex; mode=display" id="MathJax-Element-545">
+ sign(x) = 
+  \begin{cases} 
+   -1 & \text{dla } x < 0 \\
+   0 & \text{dla } x = 0 \\
+   1 & \text{dla } x > 0
+  \end{cases}
+</script></span></p><pre><code>uint32_t y=-x
+(x&gt;&gt;31)|(y&gt;&gt;31)
+</code></pre><p><strong>x=0</strong><br>
+x&gt;&gt;31=0 (przesunięcie arytmetyczne)<br>
+y&gt;&gt;31=0 (przesunięcie logiczne)<br>
+(x&gt;&gt;31)|(y&gt;&gt;31)=0<br>
+<strong>x&gt;0</strong><br>
+x&gt;&gt;31=0<br>
+y&gt;&gt;31=1<br>
+(x&gt;&gt;31)|(y&gt;&gt;31)=1<br>
+<strong>x&lt;0</strong><br>
+x&gt;&gt;31=-1<br>
+y&gt;&gt;31=0<br>
+(x&gt;&gt;31)|(y&gt;&gt;31)=-1</p><blockquote>
+<p><small><i class="fa fa-user"></i> Przemysław Czerwiński</small> W jaki sposób w C można explicite wywołać przesunięcie arytmetyczne/logiczne, bez castowania (bo jeśli dobrze rozumiem, castowanie nie jest wśród dozwolonych operacji)?<br>
+<small><i class="fa fa-user"></i> Józef Kowalewicz</small> już ok?<br>
+<small><i class="fa fa-user"></i> Przemysław Czerwiński</small> Faktycznie, nie pomyślałem, że można po prostu zadeklarować nową zmienną z innym typem i wtedy castowanie odbędzie się domyślnie.</p>
+</blockquote><blockquote>
+<p><small><i class="fa fa-user"></i> Piotr Witkowski</small> Alternatywnie, bez deklaracji zmiennej y typu uint32_t:</p>
+<pre><code> (x &gt;&gt; 31) &amp; 1
+</code></pre>
+</blockquote><h3 id="Zadanie-5"><a class="anchor hidden-xs" href="#Zadanie-5" title="Zadanie-5"><span class="octicon octicon-link"></span></a>Zadanie 5</h3><blockquote>
+<p><small><i class="fa fa-user"></i> Piotr Witkowski</small> Zadanie rozwiązuje p. Alicja Danilczuk.</p>
+</blockquote><p>Uzupełnij ciało funkcji zadeklarowanej poniżej.</p><pre><code>/* Jeśli suma x+y mieści się w typie int32_t (nie powoduje
+ nadmiaru/niedomiaru) zwróć 1, w p.p. 0*/
+int tadd_ok(int32_t x, int32_t y);
+</code></pre><p>Jeśli x, y i suma są tego samego znaku to nie mamy niedomiaru ani nadmiaru czyli 1<br>
+Jeśli x, y mają te same znaki a ich suma inny to mamy nadmiar lub niedomiar czyli 0<br>
+Jeśli x ma ten sam znak co suma a y inny to nie ma nadmiaru ani niedomiaru czyli 1.</p><pre><code class="cpp hljs">s<span class="token operator">=</span> x<span class="token operator">+</span>y 
+<span class="token keyword">return</span> <span class="token keyword">unsigned</span><span class="token punctuation">(</span><span class="token punctuation">(</span>s<span class="token operator">^</span>x<span class="token punctuation">)</span> <span class="token operator">&amp;</span> <span class="token punctuation">(</span>s<span class="token operator">^</span>y<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token operator">&gt;&gt;</span><span class="token number">31</span>
+
+</code></pre><p>Innymi słowy, żeby wystąpił nadmiar/niedomiar s musi mieć inny znak od x i y</p><h3 id="Zadanie-6"><a class="anchor hidden-xs" href="#Zadanie-6" title="Zadanie-6"><span class="octicon octicon-link"></span></a>Zadanie 6</h3><blockquote>
+<p><small><i class="fa fa-user"></i> Piotr Witkowski</small> Zadanie rozwiązuje p. Agnieszka Jonak.</p>
+</blockquote><p>Uzupełnij ciało funkcji zadeklarowanej poniżej.</p><pre><code>/* Jeśli x zawiera nieparzystą liczbę jedynek zwróć 1, w p.p. 0 */
+ int32_t odd_ones(uint32_t x);
+</code></pre><p>Na początku sprawdzamy czy para bitów zawiera parzystą czy nieparzystą liczbę jedynek, czyli przesuwamy naszą liczbę x o jeden bit w prawo i porównujemy bity w orginalnym x i w przesuniętym.<br>
+Uzyskujemy 1 dla nieparzystej liczby i 0 dla parzystej (tak działa operator <strong>^</strong>). Zapisujemy te informację w prawym bicie.<br>
+Później porównujemy tak pary stojące obok siebie (prawe bity par), następnie 4, później 8 i na końcu 16.<br>
+Możemy zauważyć, że interesujące nas bity, które mówią o parzystości przesuwają się coraz bardziej na prawo, zatem po ostatniej operacji bit informujący nas o parzystości jedynek w liczbie będzie ostatni.</p><pre><code>int32_t odd_ones(uint32_t x) {
+    x = (x &gt;&gt; 1) ^ x;
+    x = (x &gt;&gt; 2) ^ x;
+    x = (x &gt;&gt; 4) ^ x;
+    x = (x &gt;&gt; 8) ^ x;
+    x = (x &gt;&gt; 16) ^ x;
+    return x &amp; 1;
+}
+</code></pre><h3 id="Zadanie-7"><a class="anchor hidden-xs" href="#Zadanie-7" title="Zadanie-7"><span class="octicon octicon-link"></span></a>Zadanie 7</h3><blockquote>
+<p><small><i class="fa fa-user"></i> Piotr Witkowski</small> Zadanie rozwiązuje p. Jakub Mendyk.</p>
+</blockquote><p>Standard IEEE 754-2008 definiuje liczby zmiennopozycyjne o szerokości 16-bitów. Oblicz ręcznie <span class="mathjax"><span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-674-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mn>3.984375</mn><mo>&amp;#x22C5;</mo><msup><mn>10</mn><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mo>&amp;#x2212;</mo><mn>1</mn></mrow></msup><mo>+</mo><mn>3.4375</mn><mo>&amp;#x22C5;</mo><msup><mn>10</mn><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mo>&amp;#x2212;</mo><mn>1</mn></mrow></msup><mo>+</mo><mn>1.771</mn><mo>&amp;#x22C5;</mo><msup><mn>10</mn><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mn>3</mn></mrow></msup></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-12046" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-12047" class="mjx-mrow"><span id="MJXc-Node-12048" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">3.984375</span></span><span id="MJXc-Node-12049" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.003em; padding-bottom: 0.335em;">⋅</span></span><span id="MJXc-Node-12050" class="mjx-msubsup MJXc-space2"><span class="mjx-base"><span id="MJXc-Node-12051" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">10</span></span></span><span class="mjx-sup" style="font-size: 70.7%; vertical-align: 0.591em; padding-left: 0px; padding-right: 0.071em;"><span id="MJXc-Node-12052" class="mjx-texatom" style=""><span id="MJXc-Node-12053" class="mjx-mrow"><span id="MJXc-Node-12054" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.279em; padding-bottom: 0.445em;">−</span></span><span id="MJXc-Node-12055" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">1</span></span></span></span></span></span><span id="MJXc-Node-12056" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.279em; padding-bottom: 0.445em;">+</span></span><span id="MJXc-Node-12057" class="mjx-mn MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">3.4375</span></span><span id="MJXc-Node-12058" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.003em; padding-bottom: 0.335em;">⋅</span></span><span id="MJXc-Node-12059" class="mjx-msubsup MJXc-space2"><span class="mjx-base"><span id="MJXc-Node-12060" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">10</span></span></span><span class="mjx-sup" style="font-size: 70.7%; vertical-align: 0.591em; padding-left: 0px; padding-right: 0.071em;"><span id="MJXc-Node-12061" class="mjx-texatom" style=""><span id="MJXc-Node-12062" class="mjx-mrow"><span id="MJXc-Node-12063" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.279em; padding-bottom: 0.445em;">−</span></span><span id="MJXc-Node-12064" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">1</span></span></span></span></span></span><span id="MJXc-Node-12065" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.279em; padding-bottom: 0.445em;">+</span></span><span id="MJXc-Node-12066" class="mjx-mn MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">1.771</span></span><span id="MJXc-Node-12067" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.003em; padding-bottom: 0.335em;">⋅</span></span><span id="MJXc-Node-12068" class="mjx-msubsup MJXc-space2"><span class="mjx-base"><span id="MJXc-Node-12069" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">10</span></span></span><span class="mjx-sup" style="font-size: 70.7%; vertical-align: 0.591em; padding-left: 0px; padding-right: 0.071em;"><span id="MJXc-Node-12070" class="mjx-texatom" style=""><span id="MJXc-Node-12071" class="mjx-mrow"><span id="MJXc-Node-12072" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">3</span></span></span></span></span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>3.984375</mn><mo>⋅</mo><msup><mn>10</mn><mrow class="MJX-TeXAtom-ORD"><mo>−</mo><mn>1</mn></mrow></msup><mo>+</mo><mn>3.4375</mn><mo>⋅</mo><msup><mn>10</mn><mrow class="MJX-TeXAtom-ORD"><mo>−</mo><mn>1</mn></mrow></msup><mo>+</mo><mn>1.771</mn><mo>⋅</mo><msup><mn>10</mn><mrow class="MJX-TeXAtom-ORD"><mn>3</mn></mrow></msup></math></span></span><script type="math/tex" id="MathJax-Element-674">3.984375 \cdot 10^{-1} + 3.4375 \cdot 10^{-1} + 1.771 \cdot 10^{3}</script></span> używając liczb w tym formacie. Zapisz wynik binarnie i dziesiętnie. Czy wynik się zmieni jeśli najpierw wykonamy drugie dodawanie?</p><p>UWAGA! Domyślną&nbsp;metodą zaokrąglania w obliczeniach zmiennoprzecinkowych jest <em>round-to-even</em>.</p><h4 id="Rozwiązanie"><a class="anchor hidden-xs" href="#Rozwiązanie" title="Rozwiązanie"><span class="octicon octicon-link"></span></a>Rozwiązanie</h4><p>Liczba zmiennopozycyjna 16-bitowa w standardzie IEEE 754-2008 składa się z 1 bitu znaku, 5 bitowego wykładnika oraz 10 bitowej mantysy. Bias wykładnika wynosi 15.</p><ol>
+<li>Konwersja</li>
+</ol><p>Zacznijmy od zamiany liczb do postaci właściwej dla rozważanego sposobu zapisu liczb zmiennoprzecinkowych.</p><p><span class="mathjax"><span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-675-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><msub><mn>3.984375</mn><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mn>10</mn></mrow></msub><mo>&amp;#x22C5;</mo><msup><mn>10</mn><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mo>&amp;#x2212;</mo><mn>1</mn></mrow></msup><mo>=</mo><msub><mn>0.3984375</mn><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mn>10</mn></mrow></msub><mo>=</mo><msub><mn>0.0110011</mn><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mn>2</mn></mrow></msub><mo>=</mo><msub><mn>1.10011</mn><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mn>2</mn></mrow></msub><mo>&amp;#x22C5;</mo><msup><mn>2</mn><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mo>&amp;#x2212;</mo><mn>2</mn></mrow></msup></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-12073" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-12074" class="mjx-mrow"><span id="MJXc-Node-12075" class="mjx-msubsup"><span class="mjx-base"><span id="MJXc-Node-12076" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">3.984375</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-12077" class="mjx-texatom" style=""><span id="MJXc-Node-12078" class="mjx-mrow"><span id="MJXc-Node-12079" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">10</span></span></span></span></span></span><span id="MJXc-Node-12080" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.003em; padding-bottom: 0.335em;">⋅</span></span><span id="MJXc-Node-12081" class="mjx-msubsup MJXc-space2"><span class="mjx-base"><span id="MJXc-Node-12082" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">10</span></span></span><span class="mjx-sup" style="font-size: 70.7%; vertical-align: 0.591em; padding-left: 0px; padding-right: 0.071em;"><span id="MJXc-Node-12083" class="mjx-texatom" style=""><span id="MJXc-Node-12084" class="mjx-mrow"><span id="MJXc-Node-12085" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.279em; padding-bottom: 0.445em;">−</span></span><span id="MJXc-Node-12086" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">1</span></span></span></span></span></span><span id="MJXc-Node-12087" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.058em; padding-bottom: 0.335em;">=</span></span><span id="MJXc-Node-12088" class="mjx-msubsup MJXc-space3"><span class="mjx-base"><span id="MJXc-Node-12089" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">0.3984375</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-12090" class="mjx-texatom" style=""><span id="MJXc-Node-12091" class="mjx-mrow"><span id="MJXc-Node-12092" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">10</span></span></span></span></span></span><span id="MJXc-Node-12093" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.058em; padding-bottom: 0.335em;">=</span></span><span id="MJXc-Node-12094" class="mjx-msubsup MJXc-space3"><span class="mjx-base"><span id="MJXc-Node-12095" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">0.0110011</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-12096" class="mjx-texatom" style=""><span id="MJXc-Node-12097" class="mjx-mrow"><span id="MJXc-Node-12098" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">2</span></span></span></span></span></span><span id="MJXc-Node-12099" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.058em; padding-bottom: 0.335em;">=</span></span><span id="MJXc-Node-12100" class="mjx-msubsup MJXc-space3"><span class="mjx-base"><span id="MJXc-Node-12101" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">1.10011</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-12102" class="mjx-texatom" style=""><span id="MJXc-Node-12103" class="mjx-mrow"><span id="MJXc-Node-12104" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">2</span></span></span></span></span></span><span id="MJXc-Node-12105" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.003em; padding-bottom: 0.335em;">⋅</span></span><span id="MJXc-Node-12106" class="mjx-msubsup MJXc-space2"><span class="mjx-base"><span id="MJXc-Node-12107" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">2</span></span></span><span class="mjx-sup" style="font-size: 70.7%; vertical-align: 0.591em; padding-left: 0px; padding-right: 0.071em;"><span id="MJXc-Node-12108" class="mjx-texatom" style=""><span id="MJXc-Node-12109" class="mjx-mrow"><span id="MJXc-Node-12110" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.279em; padding-bottom: 0.445em;">−</span></span><span id="MJXc-Node-12111" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">2</span></span></span></span></span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mn>3.984375</mn><mrow class="MJX-TeXAtom-ORD"><mn>10</mn></mrow></msub><mo>⋅</mo><msup><mn>10</mn><mrow class="MJX-TeXAtom-ORD"><mo>−</mo><mn>1</mn></mrow></msup><mo>=</mo><msub><mn>0.3984375</mn><mrow class="MJX-TeXAtom-ORD"><mn>10</mn></mrow></msub><mo>=</mo><msub><mn>0.0110011</mn><mrow class="MJX-TeXAtom-ORD"><mn>2</mn></mrow></msub><mo>=</mo><msub><mn>1.10011</mn><mrow class="MJX-TeXAtom-ORD"><mn>2</mn></mrow></msub><mo>⋅</mo><msup><mn>2</mn><mrow class="MJX-TeXAtom-ORD"><mo>−</mo><mn>2</mn></mrow></msup></math></span></span><script type="math/tex" id="MathJax-Element-675">3.984375_{10} \cdot 10^{-1} = 0.3984375_{10} = 0.0110011_{2} = 1.10011_{2} \cdot 2^{-2}</script></span></p><p><span class="mathjax"><span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-754-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>=</mo><mn>0.5</mn><mo>,</mo><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>=</mo><mn>0.25</mn><mo>,</mo><mfrac><mn>1</mn><mn>8</mn></mfrac><mo>=</mo><mn>0.125</mn><mo>,</mo><mfrac><mn>1</mn><mn>16</mn></mfrac><mo>=</mo><mn>0.0625</mn><mo>,</mo><mo>.</mo><mo>.</mo><mo>.</mo></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-14503" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-14504" class="mjx-mrow"><span id="MJXc-Node-14505" class="mjx-mfrac"><span class="mjx-box MJXc-stacked" style="width: 0.495em; padding: 0px 0.12em;"><span class="mjx-numerator" style="font-size: 70.7%; width: 0.7em; top: -1.308em;"><span id="MJXc-Node-14506" class="mjx-mn" style=""><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">1</span></span></span><span class="mjx-denominator" style="font-size: 70.7%; width: 0.7em; bottom: -0.6em;"><span id="MJXc-Node-14507" class="mjx-mn" style=""><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">2</span></span></span><span class="mjx-line" style="border-bottom: 1.3px solid; top: -0.285em; width: 0.495em;"></span></span><span class="mjx-vsize" style="height: 1.349em; vertical-align: -0.425em;"></span></span><span id="MJXc-Node-14508" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.058em; padding-bottom: 0.335em;">=</span></span><span id="MJXc-Node-14509" class="mjx-mn MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">0.5</span></span><span id="MJXc-Node-14510" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-14511" class="mjx-mfrac MJXc-space1"><span class="mjx-box MJXc-stacked" style="width: 0.495em; padding: 0px 0.12em;"><span class="mjx-numerator" style="font-size: 70.7%; width: 0.7em; top: -1.308em;"><span id="MJXc-Node-14512" class="mjx-mn" style=""><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">1</span></span></span><span class="mjx-denominator" style="font-size: 70.7%; width: 0.7em; bottom: -0.611em;"><span id="MJXc-Node-14513" class="mjx-mn" style=""><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">4</span></span></span><span class="mjx-line" style="border-bottom: 1.3px solid; top: -0.285em; width: 0.495em;"></span></span><span class="mjx-vsize" style="height: 1.357em; vertical-align: -0.432em;"></span></span><span id="MJXc-Node-14514" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.058em; padding-bottom: 0.335em;">=</span></span><span id="MJXc-Node-14515" class="mjx-mn MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">0.25</span></span><span id="MJXc-Node-14516" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-14517" class="mjx-mfrac MJXc-space1"><span class="mjx-box MJXc-stacked" style="width: 0.495em; padding: 0px 0.12em;"><span class="mjx-numerator" style="font-size: 70.7%; width: 0.7em; top: -1.308em;"><span id="MJXc-Node-14518" class="mjx-mn" style=""><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">1</span></span></span><span class="mjx-denominator" style="font-size: 70.7%; width: 0.7em; bottom: -0.622em;"><span id="MJXc-Node-14519" class="mjx-mn" style=""><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">8</span></span></span><span class="mjx-line" style="border-bottom: 1.3px solid; top: -0.285em; width: 0.495em;"></span></span><span class="mjx-vsize" style="height: 1.365em; vertical-align: -0.44em;"></span></span><span id="MJXc-Node-14520" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.058em; padding-bottom: 0.335em;">=</span></span><span id="MJXc-Node-14521" class="mjx-mn MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">0.125</span></span><span id="MJXc-Node-14522" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-14523" class="mjx-mfrac MJXc-space1"><span class="mjx-box MJXc-stacked" style="width: 0.849em; padding: 0px 0.12em;"><span class="mjx-numerator" style="font-size: 70.7%; width: 1.2em; top: -1.308em;"><span id="MJXc-Node-14524" class="mjx-mn" style=""><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">1</span></span></span><span class="mjx-denominator" style="font-size: 70.7%; width: 1.2em; bottom: -0.622em;"><span id="MJXc-Node-14525" class="mjx-mn" style=""><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">16</span></span></span><span class="mjx-line" style="border-bottom: 1.3px solid; top: -0.285em; width: 0.849em;"></span></span><span class="mjx-vsize" style="height: 1.365em; vertical-align: -0.44em;"></span></span><span id="MJXc-Node-14526" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.058em; padding-bottom: 0.335em;">=</span></span><span id="MJXc-Node-14527" class="mjx-mn MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">0.0625</span></span><span id="MJXc-Node-14528" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-14529" class="mjx-mo MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.335em;">.</span></span><span id="MJXc-Node-14530" class="mjx-mo MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.335em;">.</span></span><span id="MJXc-Node-14531" class="mjx-mo MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.335em;">.</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>=</mo><mn>0.5</mn><mo>,</mo><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>=</mo><mn>0.25</mn><mo>,</mo><mfrac><mn>1</mn><mn>8</mn></mfrac><mo>=</mo><mn>0.125</mn><mo>,</mo><mfrac><mn>1</mn><mn>16</mn></mfrac><mo>=</mo><mn>0.0625</mn><mo>,</mo><mo>.</mo><mo>.</mo><mo>.</mo></math></span></span><script type="math/tex" id="MathJax-Element-754">\frac{1}{2} = 0.5, \frac{1}{4} = 0.25, \frac{1}{8} = 0.125, \frac{1}{16} = 0.0625, ...</script></span></p><p><span class="mathjax"><span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-748-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mn>0.3984375</mn><mo>=</mo><mn>0</mn><mo>&amp;#x2217;</mo><mo stretchy=&quot;false&quot;>(</mo><mn>1</mn><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mo>/</mo></mrow><mn>2</mn><mo stretchy=&quot;false&quot;>)</mo><mo>+</mo><mn>1</mn><mo>&amp;#x2217;</mo><mo stretchy=&quot;false&quot;>(</mo><mn>1</mn><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mo>/</mo></mrow><mn>4</mn><mo stretchy=&quot;false&quot;>)</mo><mo>+</mo><mn>1</mn><mo>&amp;#x2217;</mo><mo stretchy=&quot;false&quot;>(</mo><mn>1</mn><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mo>/</mo></mrow><mn>8</mn><mo stretchy=&quot;false&quot;>)</mo><mo>+</mo><mo>.</mo><mo>.</mo><mo>.</mo></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-14466" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-14467" class="mjx-mrow"><span id="MJXc-Node-14468" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">0.3984375</span></span><span id="MJXc-Node-14469" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.058em; padding-bottom: 0.335em;">=</span></span><span id="MJXc-Node-14470" class="mjx-mn MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">0</span></span><span id="MJXc-Node-14471" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.169em; padding-bottom: 0.335em;">∗</span></span><span id="MJXc-Node-14472" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">(</span></span><span id="MJXc-Node-14473" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">1</span></span><span id="MJXc-Node-14474" class="mjx-texatom"><span id="MJXc-Node-14475" class="mjx-mrow"><span id="MJXc-Node-14476" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">/</span></span></span></span><span id="MJXc-Node-14477" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">2</span></span><span id="MJXc-Node-14478" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">)</span></span><span id="MJXc-Node-14479" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.279em; padding-bottom: 0.445em;">+</span></span><span id="MJXc-Node-14480" class="mjx-mn MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">1</span></span><span id="MJXc-Node-14481" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.169em; padding-bottom: 0.335em;">∗</span></span><span id="MJXc-Node-14482" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">(</span></span><span id="MJXc-Node-14483" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">1</span></span><span id="MJXc-Node-14484" class="mjx-texatom"><span id="MJXc-Node-14485" class="mjx-mrow"><span id="MJXc-Node-14486" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">/</span></span></span></span><span id="MJXc-Node-14487" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">4</span></span><span id="MJXc-Node-14488" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">)</span></span><span id="MJXc-Node-14489" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.279em; padding-bottom: 0.445em;">+</span></span><span id="MJXc-Node-14490" class="mjx-mn MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">1</span></span><span id="MJXc-Node-14491" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.169em; padding-bottom: 0.335em;">∗</span></span><span id="MJXc-Node-14492" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">(</span></span><span id="MJXc-Node-14493" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">1</span></span><span id="MJXc-Node-14494" class="mjx-texatom"><span id="MJXc-Node-14495" class="mjx-mrow"><span id="MJXc-Node-14496" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">/</span></span></span></span><span id="MJXc-Node-14497" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">8</span></span><span id="MJXc-Node-14498" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">)</span></span><span id="MJXc-Node-14499" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.279em; padding-bottom: 0.445em;">+</span></span><span id="MJXc-Node-14500" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.335em;">.</span></span><span id="MJXc-Node-14501" class="mjx-mo MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.335em;">.</span></span><span id="MJXc-Node-14502" class="mjx-mo MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.335em;">.</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>0.3984375</mn><mo>=</mo><mn>0</mn><mo>∗</mo><mo stretchy="false">(</mo><mn>1</mn><mrow class="MJX-TeXAtom-ORD"><mo>/</mo></mrow><mn>2</mn><mo stretchy="false">)</mo><mo>+</mo><mn>1</mn><mo>∗</mo><mo stretchy="false">(</mo><mn>1</mn><mrow class="MJX-TeXAtom-ORD"><mo>/</mo></mrow><mn>4</mn><mo stretchy="false">)</mo><mo>+</mo><mn>1</mn><mo>∗</mo><mo stretchy="false">(</mo><mn>1</mn><mrow class="MJX-TeXAtom-ORD"><mo>/</mo></mrow><mn>8</mn><mo stretchy="false">)</mo><mo>+</mo><mo>.</mo><mo>.</mo><mo>.</mo></math></span></span><script type="math/tex" id="MathJax-Element-748">0.3984375 = 0*(1/2) + 1*(1/4) + 1*(1/8) + ...</script></span></p><blockquote>
+<p>[name = Piotr Witkowski]<br>
+0.398 (*2) | 0<br>
+0.796 (*2)| 1<br>
+0.592 (*2)| 1<br>
+0.184 | 0<br>
+0.368 …<br>
+0.398 =_2 0.0110…</p>
+</blockquote><p>Ta liczba w formacie 16-bitowym IEEE 754-2008 zostałaby zapisana następująco</p><table>
+<thead>
+<tr>
+<th>15</th>
+<th>14</th>
+<th>13</th>
+<th>12</th>
+<th>11</th>
+<th>10</th>
+<th>9</th>
+<th>8</th>
+<th>7</th>
+<th>6</th>
+<th>5</th>
+<th>4</th>
+<th>3</th>
+<th>2</th>
+<th>1</th>
+<th>0</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>+/- </td><td colspan="5">wykładnik</td><td colspan="10">mantysa</td></tr>
+<tr><td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+</tbody>
+</table><p>Podobnie postępujemy z pozostałymi liczbami:</p><p><span class="mathjax"><span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-676-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><msub><mn>3.4375</mn><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mn>10</mn></mrow></msub><mo>&amp;#x22C5;</mo><msup><mn>10</mn><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mo>&amp;#x2212;</mo><mn>1</mn></mrow></msup><mo>=</mo><msub><mn>0.34375</mn><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mn>10</mn></mrow></msub><mo>=</mo><msub><mn>0.01011</mn><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mn>2</mn></mrow></msub><mo>=</mo><msub><mn>1.011</mn><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mn>2</mn></mrow></msub><mo>&amp;#x22C5;</mo><msup><mn>2</mn><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mo>&amp;#x2212;</mo><mn>2</mn></mrow></msup></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-12112" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-12113" class="mjx-mrow"><span id="MJXc-Node-12114" class="mjx-msubsup"><span class="mjx-base"><span id="MJXc-Node-12115" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">3.4375</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-12116" class="mjx-texatom" style=""><span id="MJXc-Node-12117" class="mjx-mrow"><span id="MJXc-Node-12118" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">10</span></span></span></span></span></span><span id="MJXc-Node-12119" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.003em; padding-bottom: 0.335em;">⋅</span></span><span id="MJXc-Node-12120" class="mjx-msubsup MJXc-space2"><span class="mjx-base"><span id="MJXc-Node-12121" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">10</span></span></span><span class="mjx-sup" style="font-size: 70.7%; vertical-align: 0.591em; padding-left: 0px; padding-right: 0.071em;"><span id="MJXc-Node-12122" class="mjx-texatom" style=""><span id="MJXc-Node-12123" class="mjx-mrow"><span id="MJXc-Node-12124" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.279em; padding-bottom: 0.445em;">−</span></span><span id="MJXc-Node-12125" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">1</span></span></span></span></span></span><span id="MJXc-Node-12126" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.058em; padding-bottom: 0.335em;">=</span></span><span id="MJXc-Node-12127" class="mjx-msubsup MJXc-space3"><span class="mjx-base"><span id="MJXc-Node-12128" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">0.34375</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-12129" class="mjx-texatom" style=""><span id="MJXc-Node-12130" class="mjx-mrow"><span id="MJXc-Node-12131" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">10</span></span></span></span></span></span><span id="MJXc-Node-12132" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.058em; padding-bottom: 0.335em;">=</span></span><span id="MJXc-Node-12133" class="mjx-msubsup MJXc-space3"><span class="mjx-base"><span id="MJXc-Node-12134" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">0.01011</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-12135" class="mjx-texatom" style=""><span id="MJXc-Node-12136" class="mjx-mrow"><span id="MJXc-Node-12137" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">2</span></span></span></span></span></span><span id="MJXc-Node-12138" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.058em; padding-bottom: 0.335em;">=</span></span><span id="MJXc-Node-12139" class="mjx-msubsup MJXc-space3"><span class="mjx-base"><span id="MJXc-Node-12140" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">1.011</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-12141" class="mjx-texatom" style=""><span id="MJXc-Node-12142" class="mjx-mrow"><span id="MJXc-Node-12143" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">2</span></span></span></span></span></span><span id="MJXc-Node-12144" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.003em; padding-bottom: 0.335em;">⋅</span></span><span id="MJXc-Node-12145" class="mjx-msubsup MJXc-space2"><span class="mjx-base"><span id="MJXc-Node-12146" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">2</span></span></span><span class="mjx-sup" style="font-size: 70.7%; vertical-align: 0.591em; padding-left: 0px; padding-right: 0.071em;"><span id="MJXc-Node-12147" class="mjx-texatom" style=""><span id="MJXc-Node-12148" class="mjx-mrow"><span id="MJXc-Node-12149" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.279em; padding-bottom: 0.445em;">−</span></span><span id="MJXc-Node-12150" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">2</span></span></span></span></span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mn>3.4375</mn><mrow class="MJX-TeXAtom-ORD"><mn>10</mn></mrow></msub><mo>⋅</mo><msup><mn>10</mn><mrow class="MJX-TeXAtom-ORD"><mo>−</mo><mn>1</mn></mrow></msup><mo>=</mo><msub><mn>0.34375</mn><mrow class="MJX-TeXAtom-ORD"><mn>10</mn></mrow></msub><mo>=</mo><msub><mn>0.01011</mn><mrow class="MJX-TeXAtom-ORD"><mn>2</mn></mrow></msub><mo>=</mo><msub><mn>1.011</mn><mrow class="MJX-TeXAtom-ORD"><mn>2</mn></mrow></msub><mo>⋅</mo><msup><mn>2</mn><mrow class="MJX-TeXAtom-ORD"><mo>−</mo><mn>2</mn></mrow></msup></math></span></span><script type="math/tex" id="MathJax-Element-676">3.4375_{10} \cdot 10^{-1} = 0.34375_{10} = 0.01011_{2} = 1.011_{2} \cdot 2^{-2}</script></span><br>
+<span class="mathjax"><span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-677-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><msub><mn>1.771</mn><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mn>10</mn></mrow></msub><mo>&amp;#x22C5;</mo><msup><mn>10</mn><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mn>3</mn></mrow></msup><mo>=</mo><msub><mn>11011101011</mn><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mn>2</mn></mrow></msub><mo>=</mo><msub><mn>1.1011101011</mn><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mn>2</mn></mrow></msub><mo>&amp;#x22C5;</mo><msup><mn>2</mn><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mn>10</mn></mrow></msup></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-12151" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-12152" class="mjx-mrow"><span id="MJXc-Node-12153" class="mjx-msubsup"><span class="mjx-base"><span id="MJXc-Node-12154" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">1.771</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-12155" class="mjx-texatom" style=""><span id="MJXc-Node-12156" class="mjx-mrow"><span id="MJXc-Node-12157" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">10</span></span></span></span></span></span><span id="MJXc-Node-12158" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.003em; padding-bottom: 0.335em;">⋅</span></span><span id="MJXc-Node-12159" class="mjx-msubsup MJXc-space2"><span class="mjx-base"><span id="MJXc-Node-12160" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">10</span></span></span><span class="mjx-sup" style="font-size: 70.7%; vertical-align: 0.591em; padding-left: 0px; padding-right: 0.071em;"><span id="MJXc-Node-12161" class="mjx-texatom" style=""><span id="MJXc-Node-12162" class="mjx-mrow"><span id="MJXc-Node-12163" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">3</span></span></span></span></span></span><span id="MJXc-Node-12164" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.058em; padding-bottom: 0.335em;">=</span></span><span id="MJXc-Node-12165" class="mjx-msubsup MJXc-space3"><span class="mjx-base"><span id="MJXc-Node-12166" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">11011101011</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-12167" class="mjx-texatom" style=""><span id="MJXc-Node-12168" class="mjx-mrow"><span id="MJXc-Node-12169" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">2</span></span></span></span></span></span><span id="MJXc-Node-12170" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.058em; padding-bottom: 0.335em;">=</span></span><span id="MJXc-Node-12171" class="mjx-msubsup MJXc-space3"><span class="mjx-base"><span id="MJXc-Node-12172" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">1.1011101011</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-12173" class="mjx-texatom" style=""><span id="MJXc-Node-12174" class="mjx-mrow"><span id="MJXc-Node-12175" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">2</span></span></span></span></span></span><span id="MJXc-Node-12176" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.003em; padding-bottom: 0.335em;">⋅</span></span><span id="MJXc-Node-12177" class="mjx-msubsup MJXc-space2"><span class="mjx-base"><span id="MJXc-Node-12178" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">2</span></span></span><span class="mjx-sup" style="font-size: 70.7%; vertical-align: 0.591em; padding-left: 0px; padding-right: 0.071em;"><span id="MJXc-Node-12179" class="mjx-texatom" style=""><span id="MJXc-Node-12180" class="mjx-mrow"><span id="MJXc-Node-12181" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">10</span></span></span></span></span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mn>1.771</mn><mrow class="MJX-TeXAtom-ORD"><mn>10</mn></mrow></msub><mo>⋅</mo><msup><mn>10</mn><mrow class="MJX-TeXAtom-ORD"><mn>3</mn></mrow></msup><mo>=</mo><msub><mn>11011101011</mn><mrow class="MJX-TeXAtom-ORD"><mn>2</mn></mrow></msub><mo>=</mo><msub><mn>1.1011101011</mn><mrow class="MJX-TeXAtom-ORD"><mn>2</mn></mrow></msub><mo>⋅</mo><msup><mn>2</mn><mrow class="MJX-TeXAtom-ORD"><mn>10</mn></mrow></msup></math></span></span><script type="math/tex" id="MathJax-Element-677">1.771_{10} \cdot 10^{3} = 11011101011_{2} = 1.1011101011_{2} \cdot 2^{10}</script></span></p><p>Należy sprawdzić czy:</p><ul>
+<li>część ułamkowa mieści się w 10-bitowej mantysie (tak, w szczególności ostatnia liczba w całości wypełnia mantysę)</li>
+<li>wykładnik zawiera się w przedziale -14…15 (tak)</li>
+</ul><ol start="2">
+<li>Obliczenia</li>
+</ol><p>Dodawanie liczb zmiennoprzecinkowych odbywa się przez zrówanie położeń separatora części całkowitej i ułamkowej, wykonanie działania bez stratnie (dokładnie) i ostatecznie konwersji do używanego formatu.</p><p><span class="mathjax"><span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-678-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mo stretchy=&quot;false&quot;>(</mo><msub><mn>1.10011</mn><mn>2</mn></msub><mo>&amp;#x22C5;</mo><msup><mn>2</mn><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mo>&amp;#x2212;</mo><mn>2</mn></mrow></msup><mo>+</mo><msub><mn>1.011</mn><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mn>2</mn></mrow></msub><mo>&amp;#x22C5;</mo><msup><mn>2</mn><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mo>&amp;#x2212;</mo><mn>2</mn></mrow></msup><mo stretchy=&quot;false&quot;>)</mo><mo>+</mo><msub><mn>1.1011101011</mn><mn>2</mn></msub><mo>&amp;#x22C5;</mo><msup><mn>2</mn><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mn>10</mn></mrow></msup><mo>=</mo></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-12182" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-12183" class="mjx-mrow"><span id="MJXc-Node-12184" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">(</span></span><span id="MJXc-Node-12185" class="mjx-msubsup"><span class="mjx-base"><span id="MJXc-Node-12186" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">1.10011</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-12187" class="mjx-mn" style=""><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">2</span></span></span></span><span id="MJXc-Node-12188" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.003em; padding-bottom: 0.335em;">⋅</span></span><span id="MJXc-Node-12189" class="mjx-msubsup MJXc-space2"><span class="mjx-base"><span id="MJXc-Node-12190" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">2</span></span></span><span class="mjx-sup" style="font-size: 70.7%; vertical-align: 0.591em; padding-left: 0px; padding-right: 0.071em;"><span id="MJXc-Node-12191" class="mjx-texatom" style=""><span id="MJXc-Node-12192" class="mjx-mrow"><span id="MJXc-Node-12193" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.279em; padding-bottom: 0.445em;">−</span></span><span id="MJXc-Node-12194" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">2</span></span></span></span></span></span><span id="MJXc-Node-12195" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.279em; padding-bottom: 0.445em;">+</span></span><span id="MJXc-Node-12196" class="mjx-msubsup MJXc-space2"><span class="mjx-base"><span id="MJXc-Node-12197" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">1.011</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-12198" class="mjx-texatom" style=""><span id="MJXc-Node-12199" class="mjx-mrow"><span id="MJXc-Node-12200" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">2</span></span></span></span></span></span><span id="MJXc-Node-12201" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.003em; padding-bottom: 0.335em;">⋅</span></span><span id="MJXc-Node-12202" class="mjx-msubsup MJXc-space2"><span class="mjx-base"><span id="MJXc-Node-12203" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">2</span></span></span><span class="mjx-sup" style="font-size: 70.7%; vertical-align: 0.591em; padding-left: 0px; padding-right: 0.071em;"><span id="MJXc-Node-12204" class="mjx-texatom" style=""><span id="MJXc-Node-12205" class="mjx-mrow"><span id="MJXc-Node-12206" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.279em; padding-bottom: 0.445em;">−</span></span><span id="MJXc-Node-12207" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">2</span></span></span></span></span></span><span id="MJXc-Node-12208" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">)</span></span><span id="MJXc-Node-12209" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.279em; padding-bottom: 0.445em;">+</span></span><span id="MJXc-Node-12210" class="mjx-msubsup MJXc-space2"><span class="mjx-base"><span id="MJXc-Node-12211" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">1.1011101011</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-12212" class="mjx-mn" style=""><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">2</span></span></span></span><span id="MJXc-Node-12213" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.003em; padding-bottom: 0.335em;">⋅</span></span><span id="MJXc-Node-12214" class="mjx-msubsup MJXc-space2"><span class="mjx-base"><span id="MJXc-Node-12215" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">2</span></span></span><span class="mjx-sup" style="font-size: 70.7%; vertical-align: 0.591em; padding-left: 0px; padding-right: 0.071em;"><span id="MJXc-Node-12216" class="mjx-texatom" style=""><span id="MJXc-Node-12217" class="mjx-mrow"><span id="MJXc-Node-12218" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">10</span></span></span></span></span></span><span id="MJXc-Node-12219" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.058em; padding-bottom: 0.335em;">=</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo stretchy="false">(</mo><msub><mn>1.10011</mn><mn>2</mn></msub><mo>⋅</mo><msup><mn>2</mn><mrow class="MJX-TeXAtom-ORD"><mo>−</mo><mn>2</mn></mrow></msup><mo>+</mo><msub><mn>1.011</mn><mrow class="MJX-TeXAtom-ORD"><mn>2</mn></mrow></msub><mo>⋅</mo><msup><mn>2</mn><mrow class="MJX-TeXAtom-ORD"><mo>−</mo><mn>2</mn></mrow></msup><mo stretchy="false">)</mo><mo>+</mo><msub><mn>1.1011101011</mn><mn>2</mn></msub><mo>⋅</mo><msup><mn>2</mn><mrow class="MJX-TeXAtom-ORD"><mn>10</mn></mrow></msup><mo>=</mo></math></span></span><script type="math/tex" id="MathJax-Element-678">(1.10011_2 \cdot 2^{-2} + 1.011_{2} \cdot 2^{-2}) + 1.1011101011_2 \cdot 2^{10}=</script></span><br>
+<span class="mathjax"><span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-679-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mo>=</mo><msub><mn>1.011111</mn><mn>2</mn></msub><mo>&amp;#x22C5;</mo><msup><mn>2</mn><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mo>&amp;#x2212;</mo><mn>1</mn></mrow></msup><mo>+</mo><msub><mn>1.1011101011</mn><mn>2</mn></msub><mo>&amp;#x22C5;</mo><msup><mn>2</mn><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mn>10</mn></mrow></msup></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-12220" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-12221" class="mjx-mrow"><span id="MJXc-Node-12222" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.058em; padding-bottom: 0.335em;">=</span></span><span id="MJXc-Node-12223" class="mjx-msubsup MJXc-space3"><span class="mjx-base"><span id="MJXc-Node-12224" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">1.011111</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-12225" class="mjx-mn" style=""><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">2</span></span></span></span><span id="MJXc-Node-12226" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.003em; padding-bottom: 0.335em;">⋅</span></span><span id="MJXc-Node-12227" class="mjx-msubsup MJXc-space2"><span class="mjx-base"><span id="MJXc-Node-12228" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">2</span></span></span><span class="mjx-sup" style="font-size: 70.7%; vertical-align: 0.591em; padding-left: 0px; padding-right: 0.071em;"><span id="MJXc-Node-12229" class="mjx-texatom" style=""><span id="MJXc-Node-12230" class="mjx-mrow"><span id="MJXc-Node-12231" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.279em; padding-bottom: 0.445em;">−</span></span><span id="MJXc-Node-12232" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">1</span></span></span></span></span></span><span id="MJXc-Node-12233" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.279em; padding-bottom: 0.445em;">+</span></span><span id="MJXc-Node-12234" class="mjx-msubsup MJXc-space2"><span class="mjx-base"><span id="MJXc-Node-12235" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">1.1011101011</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-12236" class="mjx-mn" style=""><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">2</span></span></span></span><span id="MJXc-Node-12237" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.003em; padding-bottom: 0.335em;">⋅</span></span><span id="MJXc-Node-12238" class="mjx-msubsup MJXc-space2"><span class="mjx-base"><span id="MJXc-Node-12239" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">2</span></span></span><span class="mjx-sup" style="font-size: 70.7%; vertical-align: 0.591em; padding-left: 0px; padding-right: 0.071em;"><span id="MJXc-Node-12240" class="mjx-texatom" style=""><span id="MJXc-Node-12241" class="mjx-mrow"><span id="MJXc-Node-12242" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">10</span></span></span></span></span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>=</mo><msub><mn>1.011111</mn><mn>2</mn></msub><mo>⋅</mo><msup><mn>2</mn><mrow class="MJX-TeXAtom-ORD"><mo>−</mo><mn>1</mn></mrow></msup><mo>+</mo><msub><mn>1.1011101011</mn><mn>2</mn></msub><mo>⋅</mo><msup><mn>2</mn><mrow class="MJX-TeXAtom-ORD"><mn>10</mn></mrow></msup></math></span></span><script type="math/tex" id="MathJax-Element-679">=1.011111_2 \cdot 2^{-1} + 1.1011101011_2 \cdot 2^{10}</script></span><br>
+<span class="mathjax"><span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-680-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mo>=</mo><msub><mn>11011101011.0110011</mn><mn>2</mn></msub></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-12243" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-12244" class="mjx-mrow"><span id="MJXc-Node-12245" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.058em; padding-bottom: 0.335em;">=</span></span><span id="MJXc-Node-12246" class="mjx-msubsup MJXc-space3"><span class="mjx-base"><span id="MJXc-Node-12247" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">11011101011.0110011</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-12248" class="mjx-mn" style=""><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">2</span></span></span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>=</mo><msub><mn>11011101011.0110011</mn><mn>2</mn></msub></math></span></span><script type="math/tex" id="MathJax-Element-680">=11011101011.0110011_2</script></span></p><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th>.</th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>0</td>
+<td>.</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>+</td>
+<td>0</td>
+<td>.</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>=</td>
+<td>0</td>
+<td>.</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+</tbody>
+</table><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th>.</th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>.</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>+</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>.</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>=</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>.</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>G</td>
+<td>.</td>
+<td>R</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+</tr>
+</tbody>
+</table><p>Mantysa mieści jednak tylko 10-bitów - musimy dokonać zaokrąglenia. Bity G (ostatni w mantysie) wynosi 1, R (pierwszy poza) wynosi 1 zatem zaokrąglenie wykonamy w górę.</p><p>Gdyby zmienić koleność dodawania<br>
+<span class="mathjax"><span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-732-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><msub><mn>1.10011</mn><mn>2</mn></msub><mo>&amp;#x22C5;</mo><msup><mn>2</mn><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mo>&amp;#x2212;</mo><mn>2</mn></mrow></msup><mo>+</mo><mo stretchy=&quot;false&quot;>(</mo><msub><mn>1.011</mn><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mn>2</mn></mrow></msub><mo>&amp;#x22C5;</mo><msup><mn>2</mn><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mo>&amp;#x2212;</mo><mn>2</mn></mrow></msup><mo>+</mo><msub><mn>1.1011101011</mn><mn>2</mn></msub><mo>&amp;#x22C5;</mo><msup><mn>2</mn><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mn>10</mn></mrow></msup><mo stretchy=&quot;false&quot;>)</mo></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-14097" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-14098" class="mjx-mrow"><span id="MJXc-Node-14099" class="mjx-msubsup"><span class="mjx-base"><span id="MJXc-Node-14100" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">1.10011</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-14101" class="mjx-mn" style=""><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">2</span></span></span></span><span id="MJXc-Node-14102" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.003em; padding-bottom: 0.335em;">⋅</span></span><span id="MJXc-Node-14103" class="mjx-msubsup MJXc-space2"><span class="mjx-base"><span id="MJXc-Node-14104" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">2</span></span></span><span class="mjx-sup" style="font-size: 70.7%; vertical-align: 0.591em; padding-left: 0px; padding-right: 0.071em;"><span id="MJXc-Node-14105" class="mjx-texatom" style=""><span id="MJXc-Node-14106" class="mjx-mrow"><span id="MJXc-Node-14107" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.279em; padding-bottom: 0.445em;">−</span></span><span id="MJXc-Node-14108" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">2</span></span></span></span></span></span><span id="MJXc-Node-14109" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.279em; padding-bottom: 0.445em;">+</span></span><span id="MJXc-Node-14110" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">(</span></span><span id="MJXc-Node-14111" class="mjx-msubsup"><span class="mjx-base"><span id="MJXc-Node-14112" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">1.011</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-14113" class="mjx-texatom" style=""><span id="MJXc-Node-14114" class="mjx-mrow"><span id="MJXc-Node-14115" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">2</span></span></span></span></span></span><span id="MJXc-Node-14116" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.003em; padding-bottom: 0.335em;">⋅</span></span><span id="MJXc-Node-14117" class="mjx-msubsup MJXc-space2"><span class="mjx-base"><span id="MJXc-Node-14118" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">2</span></span></span><span class="mjx-sup" style="font-size: 70.7%; vertical-align: 0.591em; padding-left: 0px; padding-right: 0.071em;"><span id="MJXc-Node-14119" class="mjx-texatom" style=""><span id="MJXc-Node-14120" class="mjx-mrow"><span id="MJXc-Node-14121" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.279em; padding-bottom: 0.445em;">−</span></span><span id="MJXc-Node-14122" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">2</span></span></span></span></span></span><span id="MJXc-Node-14123" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.279em; padding-bottom: 0.445em;">+</span></span><span id="MJXc-Node-14124" class="mjx-msubsup MJXc-space2"><span class="mjx-base"><span id="MJXc-Node-14125" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">1.1011101011</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-14126" class="mjx-mn" style=""><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">2</span></span></span></span><span id="MJXc-Node-14127" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.003em; padding-bottom: 0.335em;">⋅</span></span><span id="MJXc-Node-14128" class="mjx-msubsup MJXc-space2"><span class="mjx-base"><span id="MJXc-Node-14129" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">2</span></span></span><span class="mjx-sup" style="font-size: 70.7%; vertical-align: 0.591em; padding-left: 0px; padding-right: 0.071em;"><span id="MJXc-Node-14130" class="mjx-texatom" style=""><span id="MJXc-Node-14131" class="mjx-mrow"><span id="MJXc-Node-14132" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">10</span></span></span></span></span></span><span id="MJXc-Node-14133" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">)</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mn>1.10011</mn><mn>2</mn></msub><mo>⋅</mo><msup><mn>2</mn><mrow class="MJX-TeXAtom-ORD"><mo>−</mo><mn>2</mn></mrow></msup><mo>+</mo><mo stretchy="false">(</mo><msub><mn>1.011</mn><mrow class="MJX-TeXAtom-ORD"><mn>2</mn></mrow></msub><mo>⋅</mo><msup><mn>2</mn><mrow class="MJX-TeXAtom-ORD"><mo>−</mo><mn>2</mn></mrow></msup><mo>+</mo><msub><mn>1.1011101011</mn><mn>2</mn></msub><mo>⋅</mo><msup><mn>2</mn><mrow class="MJX-TeXAtom-ORD"><mn>10</mn></mrow></msup><mo stretchy="false">)</mo></math></span></span><script type="math/tex" id="MathJax-Element-732">1.10011_2 \cdot 2^{-2} + (1.011_{2} \cdot 2^{-2} + 1.1011101011_2 \cdot 2^{10})</script></span><br>
+pierwsze dodawania przebiegłoby następująco:</p><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th>.</th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>.</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>+</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>.</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>=</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>.</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>G</td>
+<td>.</td>
+<td>R</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+</tr>
+</tbody>
+</table><p>W tej sytuacji G = 1, R = 0, S = 1 – wykonujemy zaokrąglenie w dół.</p><h3 id="Zadanie-8"><a class="anchor hidden-xs" href="#Zadanie-8" title="Zadanie-8"><span class="octicon octicon-link"></span></a>Zadanie 8</h3><blockquote>
+<p><small><i class="fa fa-user"></i> Piotr Witkowski</small> Podpunkty 1-4 rozwiązuje p. Karol Kęciński, podpunkty 5-6 rozwiązuje  p.  Józef Kowalewicz, podpunkty 7-8 rozwiązuje  p. Karol Stuła.</p>
+</blockquote><p>Załóżmy, że zmienne x, f i d są odpowiednio typów int32_t, float i double. Ich wartości są dowolne, ale f i d nie mogą równać się <span class="mathjax"><span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-681-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mo>+</mo><mi mathvariant=&quot;normal&quot;>&amp;#x221E;</mi></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-12249" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-12250" class="mjx-mrow"><span id="MJXc-Node-12251" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.279em; padding-bottom: 0.445em;">+</span></span><span id="MJXc-Node-12252" class="mjx-mi"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.169em; padding-bottom: 0.335em;">∞</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>+</mo><mi mathvariant="normal">∞</mi></math></span></span><script type="math/tex" id="MathJax-Element-681">+\infty</script></span>, <span class="mathjax"><span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-682-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mo>&amp;#x2212;</mo><mi mathvariant=&quot;normal&quot;>&amp;#x221E;</mi></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-12253" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-12254" class="mjx-mrow"><span id="MJXc-Node-12255" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.279em; padding-bottom: 0.445em;">−</span></span><span id="MJXc-Node-12256" class="mjx-mi"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.169em; padding-bottom: 0.335em;">∞</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>−</mo><mi mathvariant="normal">∞</mi></math></span></span><script type="math/tex" id="MathJax-Element-682">-\infty</script></span> lub NaN. Czy każde z poniższych wyrażeń zostanie obliczone do~prawdy? Jeśli nie to podaj wartości zmiennych, dla których wyrażenie zostanie obliczone do~fałszu.</p><ol>
+<li><code>x == (int32_t)(double) x</code></li>
+<li><code>x == (int32_t)(float) x</code></li>
+<li><code>d == (double)(float) d</code></li>
+<li><code>f == (float)(double) f</code></li>
+<li><code>f == -(-f)</code></li>
+<li><code>1.0 / 2 == 1 / 2.0</code></li>
+<li><code>d * d &gt;= 0.0</code></li>
+<li><code>(f + d) - f == d</code></li>
+</ol><h4 id="Rozwiązania"><a class="anchor hidden-xs" href="#Rozwiązania" title="Rozwiązania"><span class="octicon octicon-link"></span></a>Rozwiązania:</h4><ol>
+<li>True</li>
+<li>False, błąd konwersji typów (float ma mniejszą precyzję niż int32_t więc potrzeba double; przykład -&gt; 16777217 != (int32_t)(float)16777217;<br>
+(int32_t)(float)16777217=16777216)</li>
+<li>False, float nie pomieści double; (double)(float)16777217.000000=16777216.000000)</li>
+<li>True</li>
+<li>True</li>
+<li>True</li>
+<li>Tak, aczkolwiek może to zostać przepełnione do +infinity</li>
+<li>Nie, na przykład gdy f jakąś bardzo dużą liczbą np. 1e19, a d = 1.0 to f+d byłoby zaokrąglone 1e19 więc wtedy (f+d)-f = 0 ale po drugiej stronie mielibyśmy 1 więc fałsz</li>
+</ol><h2 id="Konsultacje-60-minut"><a class="anchor hidden-xs" href="#Konsultacje-60-minut" title="Konsultacje-60-minut"><span class="octicon octicon-link"></span></a>Konsultacje (60 minut)</h2><div class="alert alert-info">
+<p>W trakcie konsultacji prowadzący udostępnia kartę przeglądarki z bieżącym dokumentem w wideokonferencji. Moderuje dyskusję według własnego uznania, na przykład:</p>
+<ul>
+<li>kieruje dodatkowe pytania do osób, które dostarczyły rozwiązania,</li>
+<li>wymaga uzupełnienia rozwiązania przez autora lub wybraną osobę,</li>
+<li>umożliwia studentom zadawanie pytań,</li>
+<li>odpowiada na pytania w komentarzach.</li>
+</ul>
+</div></div>
+    <div class="ui-toc dropup unselectable hidden-print" style="display:none;">
+        <div class="pull-right dropdown">
+            <a id="tocLabel" class="ui-toc-label btn btn-default" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" title="Table of content">
+                <i class="fa fa-bars"></i>
+            </a>
+            <ul id="ui-toc" class="ui-toc-dropdown dropdown-menu" aria-labelledby="tocLabel">
+                <div class="toc"><ul class="nav">
+<li class=""><a href="#Lista-ćwiczeniowa-nr-2" title="Lista ćwiczeniowa nr 2">Lista ćwiczeniowa nr 2</a><ul class="nav">
+<li><a href="#Deklaracje" title="Deklaracje">Deklaracje</a></li>
+<li class=""><a href="#Rozwiązania-30-minut" title="Rozwiązania (30 minut)">Rozwiązania (30 minut)</a><ul class="nav">
+<li><a href="#Zadanie-1" title="Zadanie 1">Zadanie 1</a></li>
+<li><a href="#Zadanie-2" title="Zadanie 2">Zadanie 2</a></li>
+<li><a href="#Zadanie-3" title="Zadanie 3">Zadanie 3</a></li>
+<li><a href="#Zadanie-4" title="Zadanie 4">Zadanie 4</a></li>
+<li><a href="#Zadanie-5" title="Zadanie 5">Zadanie 5</a></li>
+<li><a href="#Zadanie-6" title="Zadanie 6">Zadanie 6</a></li>
+<li><a href="#Zadanie-7" title="Zadanie 7">Zadanie 7</a></li>
+<li class=""><a href="#Zadanie-8" title="Zadanie 8">Zadanie 8</a></li>
+</ul>
+</li>
+<li><a href="#Konsultacje-60-minut" title="Konsultacje (60 minut)">Konsultacje (60 minut)</a></li>
+</ul>
+</li>
+</ul>
+</div><div class="toc-menu"><a class="expand-toggle" href="#">Expand all</a><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a></div>
+            </ul>
+        </div>
+    </div>
+    <div id="ui-toc-affix" class="ui-affix-toc ui-toc-dropdown unselectable hidden-print" data-spy="affix" style="top:17px;display:none;" null null>
+        <div class="toc"><ul class="nav">
+<li class=""><a href="#Lista-ćwiczeniowa-nr-2" title="Lista ćwiczeniowa nr 2">Lista ćwiczeniowa nr 2</a><ul class="nav">
+<li><a href="#Deklaracje" title="Deklaracje">Deklaracje</a></li>
+<li class=""><a href="#Rozwiązania-30-minut" title="Rozwiązania (30 minut)">Rozwiązania (30 minut)</a><ul class="nav">
+<li><a href="#Zadanie-1" title="Zadanie 1">Zadanie 1</a></li>
+<li><a href="#Zadanie-2" title="Zadanie 2">Zadanie 2</a></li>
+<li><a href="#Zadanie-3" title="Zadanie 3">Zadanie 3</a></li>
+<li><a href="#Zadanie-4" title="Zadanie 4">Zadanie 4</a></li>
+<li><a href="#Zadanie-5" title="Zadanie 5">Zadanie 5</a></li>
+<li><a href="#Zadanie-6" title="Zadanie 6">Zadanie 6</a></li>
+<li><a href="#Zadanie-7" title="Zadanie 7">Zadanie 7</a></li>
+<li class=""><a href="#Zadanie-8" title="Zadanie 8">Zadanie 8</a></li>
+</ul>
+</li>
+<li><a href="#Konsultacje-60-minut" title="Konsultacje (60 minut)">Konsultacje (60 minut)</a></li>
+</ul>
+</li>
+</ul>
+</div><div class="toc-menu"><a class="expand-toggle" href="#">Expand all</a><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gist-embed/2.6.0/gist-embed.min.js" integrity="sha256-KyF2D6xPIJUW5sUDSs93vWyZm+1RzIpKCexxElmxl8g=" crossorigin="anonymous" defer></script>
+    <script>
+        var markdown = $(".markdown-body");
+        //smooth all hash trigger scrolling
+        function smoothHashScroll() {
+            var hashElements = $("a[href^='#']").toArray();
+            for (var i = 0; i < hashElements.length; i++) {
+                var element = hashElements[i];
+                var $element = $(element);
+                var hash = element.hash;
+                if (hash) {
+                    $element.on('click', function (e) {
+                        // store hash
+                        var hash = this.hash;
+                        if ($(hash).length <= 0) return;
+                        // prevent default anchor click behavior
+                        e.preventDefault();
+                        // animate
+                        $('body, html').stop(true, true).animate({
+                            scrollTop: $(hash).offset().top
+                        }, 100, "linear", function () {
+                            // when done, add hash to url
+                            // (default click behaviour)
+                            window.location.hash = hash;
+                        });
+                    });
+                }
+            }
+        }
+
+        smoothHashScroll();
+        var toc = $('.ui-toc');
+        var tocAffix = $('.ui-affix-toc');
+        var tocDropdown = $('.ui-toc-dropdown');
+        //toc
+        tocDropdown.click(function (e) {
+            e.stopPropagation();
+        });
+
+        var enoughForAffixToc = true;
+
+        function generateScrollspy() {
+            $(document.body).scrollspy({
+                target: ''
+            });
+            $(document.body).scrollspy('refresh');
+            if (enoughForAffixToc) {
+                toc.hide();
+                tocAffix.show();
+            } else {
+                tocAffix.hide();
+                toc.show();
+            }
+            $(document.body).scroll();
+        }
+
+        function windowResize() {
+            //toc right
+            var paddingRight = parseFloat(markdown.css('padding-right'));
+            var right = ($(window).width() - (markdown.offset().left + markdown.outerWidth() - paddingRight));
+            toc.css('right', right + 'px');
+            //affix toc left
+            var newbool;
+            var rightMargin = (markdown.parent().outerWidth() - markdown.outerWidth()) / 2;
+            //for ipad or wider device
+            if (rightMargin >= 133) {
+                newbool = true;
+                var affixLeftMargin = (tocAffix.outerWidth() - tocAffix.width()) / 2;
+                var left = markdown.offset().left + markdown.outerWidth() - affixLeftMargin;
+                tocAffix.css('left', left + 'px');
+            } else {
+                newbool = false;
+            }
+            if (newbool != enoughForAffixToc) {
+                enoughForAffixToc = newbool;
+                generateScrollspy();
+            }
+        }
+        $(window).resize(function () {
+            windowResize();
+        });
+        $(document).ready(function () {
+            windowResize();
+            generateScrollspy();
+        });
+
+        //remove hash
+        function removeHash() {
+            window.location.hash = '';
+        }
+
+        var backtotop = $('.back-to-top');
+        var gotobottom = $('.go-to-bottom');
+
+        backtotop.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (scrollToTop)
+                scrollToTop();
+            removeHash();
+        });
+        gotobottom.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (scrollToBottom)
+                scrollToBottom();
+            removeHash();
+        });
+
+        var toggle = $('.expand-toggle');
+        var tocExpand = false;
+
+        checkExpandToggle();
+        toggle.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            tocExpand = !tocExpand;
+            checkExpandToggle();
+        })
+
+        function checkExpandToggle () {
+            var toc = $('.ui-toc-dropdown .toc');
+            var toggle = $('.expand-toggle');
+            if (!tocExpand) {
+                toc.removeClass('expand');
+                toggle.text('Expand all');
+            } else {
+                toc.addClass('expand');
+                toggle.text('Collapse all');
+            }
+        }
+
+        function scrollToTop() {
+            $('body, html').stop(true, true).animate({
+                scrollTop: 0
+            }, 100, "linear");
+        }
+
+        function scrollToBottom() {
+            $('body, html').stop(true, true).animate({
+                scrollTop: $(document.body)[0].scrollHeight
+            }, 100, "linear");
+        }
+    </script>
+</body>
+
+</html>

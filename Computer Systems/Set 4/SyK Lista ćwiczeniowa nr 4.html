@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>
+        Lista ćwiczeniowa nr 4 - HackMD
+    </title>
+    <link rel="icon" type="image/png" href="https://hackmd.io/favicon.png">
+    <link rel="apple-touch-icon" href="https://hackmd.io/apple-touch-icon.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" integrity="sha256-3iu9jgsy9TpTwXKb7bNQzqWekRX7pPK+2OLj3R922fo=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.5.0/octicons.min.css" integrity="sha256-QiWfLIsCT02Sdwkogf6YMiQlj4NE84MKkzEMkZnMGdg=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.1/themes/prism.min.css" integrity="sha256-vtR0hSWRc3Tb26iuN2oZHt3KRUomwTufNIf5/4oeCyg=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/css/basic/emojify.min.css" integrity="sha256-UOrvMOsSDSrW6szVLe8ZDZezBxh5IoIfgTwdNDgTjiU=" crossorigin="anonymous" />
+    <style>
+        @charset "UTF-8";@import url(https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i|Source+Code+Pro:300,400,500|Source+Sans+Pro:300,300i,400,400i,600,600i|Source+Serif+Pro&subset=latin-ext);.hljs{display:block;background:#fff;padding:.5em;color:#333;overflow-x:auto}.hljs-comment,.hljs-meta{color:#969896}.hljs-emphasis,.hljs-quote,.hljs-string,.hljs-strong,.hljs-template-variable,.hljs-variable{color:#df5000}.hljs-keyword,.hljs-selector-tag,.hljs-type{color:#a71d5d}.hljs-attribute,.hljs-bullet,.hljs-literal,.hljs-number,.hljs-symbol{color:#0086b3}.hljs-built_in,.hljs-builtin-name{color:#005cc5}.hljs-name,.hljs-section{color:#63a35c}.hljs-tag{color:#333}.hljs-attr,.hljs-selector-attr,.hljs-selector-class,.hljs-selector-id,.hljs-selector-pseudo,.hljs-title{color:#795da3}.hljs-addition{color:#55a532;background-color:#eaffea}.hljs-deletion{color:#bd2c00;background-color:#ffecec}.hljs-link{text-decoration:underline}.markdown-body{font-size:16px;line-height:1.5;word-wrap:break-word}.markdown-body:after,.markdown-body:before{display:table;content:""}.markdown-body:after{clear:both}.markdown-body>:first-child{margin-top:0!important}.markdown-body>:last-child{margin-bottom:0!important}.markdown-body a:not([href]){color:inherit;text-decoration:none}.markdown-body .absent{color:#c00}.markdown-body .anchor{float:left;padding-right:4px;margin-left:-20px;line-height:1}.markdown-body .anchor:focus{outline:none}.markdown-body blockquote,.markdown-body dl,.markdown-body ol,.markdown-body p,.markdown-body pre,.markdown-body table,.markdown-body ul{margin-top:0;margin-bottom:16px}.markdown-body hr{height:.25em;padding:0;margin:24px 0;background-color:#e7e7e7;border:0}.markdown-body blockquote{font-size:16px;padding:0 1em;color:#777;border-left:.25em solid #ddd}.markdown-body blockquote>:first-child{margin-top:0}.markdown-body blockquote>:last-child{margin-bottom:0}.markdown-body kbd,.popover kbd{display:inline-block;padding:3px 5px;font-size:11px;line-height:10px;color:#555;vertical-align:middle;background-color:#fcfcfc;border:1px solid #ccc;border-bottom-color:#bbb;border-radius:3px;box-shadow:inset 0 -1px 0 #bbb}.markdown-body .loweralpha{list-style-type:lower-alpha}.markdown-body h1,.markdown-body h2,.markdown-body h3,.markdown-body h4,.markdown-body h5,.markdown-body h6{margin-top:24px;margin-bottom:16px;font-weight:600;line-height:1.25}.markdown-body h1 .octicon-link,.markdown-body h2 .octicon-link,.markdown-body h3 .octicon-link,.markdown-body h4 .octicon-link,.markdown-body h5 .octicon-link,.markdown-body h6 .octicon-link{color:#000;vertical-align:middle;visibility:hidden}.markdown-body h1:hover .anchor,.markdown-body h2:hover .anchor,.markdown-body h3:hover .anchor,.markdown-body h4:hover .anchor,.markdown-body h5:hover .anchor,.markdown-body h6:hover .anchor{text-decoration:none}.markdown-body h1:hover .anchor .octicon-link,.markdown-body h2:hover .anchor .octicon-link,.markdown-body h3:hover .anchor .octicon-link,.markdown-body h4:hover .anchor .octicon-link,.markdown-body h5:hover .anchor .octicon-link,.markdown-body h6:hover .anchor .octicon-link{visibility:visible}.markdown-body h1 code,.markdown-body h1 tt,.markdown-body h2 code,.markdown-body h2 tt,.markdown-body h3 code,.markdown-body h3 tt,.markdown-body h4 code,.markdown-body h4 tt,.markdown-body h5 code,.markdown-body h5 tt,.markdown-body h6 code,.markdown-body h6 tt{font-size:inherit}.markdown-body h1{font-size:2em}.markdown-body h1,.markdown-body h2{padding-bottom:.3em;border-bottom:1px solid #eee}.markdown-body h2{font-size:1.5em}.markdown-body h3{font-size:1.25em}.markdown-body h4{font-size:1em}.markdown-body h5{font-size:.875em}.markdown-body h6{font-size:.85em;color:#777}.markdown-body ol,.markdown-body ul{padding-left:2em}.markdown-body ol.no-list,.markdown-body ul.no-list{padding:0;list-style-type:none}.markdown-body ol ol,.markdown-body ol ul,.markdown-body ul ol,.markdown-body ul ul{margin-top:0;margin-bottom:0}.markdown-body li>p{margin-top:16px}.markdown-body li+li{padding-top:.25em}.markdown-body dl{padding:0}.markdown-body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}.markdown-body dl dd{padding:0 16px;margin-bottom:16px}.markdown-body table{display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}.markdown-body table th{font-weight:700}.markdown-body table td,.markdown-body table th{padding:6px 13px;border:1px solid #ddd}.markdown-body table tr{background-color:#fff;border-top:1px solid #ccc}.markdown-body table tr:nth-child(2n){background-color:#f8f8f8}.markdown-body img{max-width:100%;box-sizing:content-box;background-color:#fff}.markdown-body img[align=right]{padding-left:20px}.markdown-body img[align=left]{padding-right:20px}.markdown-body .emoji{max-width:none;vertical-align:text-top;background-color:transparent}.markdown-body span.frame{display:block;overflow:hidden}.markdown-body span.frame>span{display:block;float:left;width:auto;padding:7px;margin:13px 0 0;overflow:hidden;border:1px solid #ddd}.markdown-body span.frame span img{display:block;float:left}.markdown-body span.frame span span{display:block;padding:5px 0 0;clear:both;color:#333}.markdown-body span.align-center{display:block;overflow:hidden;clear:both}.markdown-body span.align-center>span{display:block;margin:13px auto 0;overflow:hidden;text-align:center}.markdown-body span.align-center span img{margin:0 auto;text-align:center}.markdown-body span.align-right{display:block;overflow:hidden;clear:both}.markdown-body span.align-right>span{display:block;margin:13px 0 0;overflow:hidden;text-align:right}.markdown-body span.align-right span img{margin:0;text-align:right}.markdown-body span.float-left{display:block;float:left;margin-right:13px;overflow:hidden}.markdown-body span.float-left span{margin:13px 0 0}.markdown-body span.float-right{display:block;float:right;margin-left:13px;overflow:hidden}.markdown-body span.float-right>span{display:block;margin:13px auto 0;overflow:hidden;text-align:right}.markdown-body code,.markdown-body tt{padding:0;padding-top:.2em;padding-bottom:.2em;margin:0;font-size:85%;background-color:rgba(0,0,0,.04);border-radius:3px}.markdown-body code:after,.markdown-body code:before,.markdown-body tt:after,.markdown-body tt:before{letter-spacing:-.2em;content:"\00a0"}.markdown-body code br,.markdown-body tt br{display:none}.markdown-body del code{text-decoration:inherit}.markdown-body pre{word-wrap:normal}.markdown-body pre>code{padding:0;margin:0;font-size:100%;word-break:normal;white-space:pre;background:transparent;border:0}.markdown-body .highlight{margin-bottom:16px}.markdown-body .highlight pre{margin-bottom:0;word-break:normal}.markdown-body .highlight pre,.markdown-body pre{padding:16px;overflow:auto;font-size:85%;line-height:1.45;background-color:#f7f7f7;border-radius:3px}.markdown-body pre code,.markdown-body pre tt{display:inline;max-width:auto;padding:0;margin:0;overflow:visible;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}.markdown-body pre code:after,.markdown-body pre code:before,.markdown-body pre tt:after,.markdown-body pre tt:before{content:normal}.markdown-body .csv-data td,.markdown-body .csv-data th{padding:5px;overflow:hidden;font-size:12px;line-height:1;text-align:left;white-space:nowrap}.markdown-body .csv-data .blob-line-num{padding:10px 8px 9px;text-align:right;background:#fff;border:0}.markdown-body .csv-data tr{border-top:0}.markdown-body .csv-data th{font-weight:700;background:#f8f8f8;border-top:0}.news .alert .markdown-body blockquote{padding:0 0 0 40px;border:0 none}.activity-tab .news .alert .commits,.activity-tab .news .markdown-body blockquote{padding-left:0}.task-list-item{list-style-type:none}.task-list-item label{font-weight:400}.task-list-item.enabled label{cursor:pointer}.task-list-item+.task-list-item{margin-top:3px}.task-list-item-checkbox{float:left;margin:.31em 0 .2em -1.3em!important;vertical-align:middle;cursor:default!important}.markdown-body{padding-top:40px;padding-bottom:40px;max-width:758px;overflow:visible!important}.markdown-body .emoji{vertical-align:top}.markdown-body pre{border:inherit!important}.markdown-body code{color:inherit!important}.markdown-body pre code .wrapper{display:-moz-inline-flex;display:-ms-inline-flex;display:-o-inline-flex;display:inline-flex}.markdown-body pre code .gutter{float:left;overflow:hidden;-webkit-user-select:none;user-select:none}.markdown-body pre code .gutter.linenumber{text-align:right;position:relative;display:inline-block;cursor:default;z-index:4;padding:0 8px 0 0;min-width:20px;box-sizing:content-box;color:#afafaf!important;border-right:3px solid #6ce26c!important}.markdown-body pre code .gutter.linenumber>span:before{content:attr(data-linenumber)}.markdown-body pre code .code{float:left;margin:0 0 0 16px}.markdown-body .gist .line-numbers{border-left:none;border-top:none;border-bottom:none}.markdown-body .gist .line-data{border:none}.markdown-body .gist table{border-spacing:0;border-collapse:inherit!important}.markdown-body code[data-gist-id]{background:none;padding:0}.markdown-body code[data-gist-id]:after,.markdown-body code[data-gist-id]:before{content:""}.markdown-body code[data-gist-id] .blob-num{border:unset}.markdown-body code[data-gist-id] table{overflow:unset;margin-bottom:unset}.markdown-body code[data-gist-id] table tr{background:unset}.markdown-body[dir=rtl] pre{direction:ltr}.markdown-body[dir=rtl] code{direction:ltr;unicode-bidi:embed}.markdown-body .alert>p{margin-bottom:0}.markdown-body pre.abc,.markdown-body pre.flow-chart,.markdown-body pre.graphviz,.markdown-body pre.mermaid,.markdown-body pre.sequence-diagram,.markdown-body pre.vega{text-align:center;background-color:inherit;border-radius:0;white-space:inherit}.markdown-body pre.abc>code,.markdown-body pre.flow-chart>code,.markdown-body pre.graphviz>code,.markdown-body pre.mermaid>code,.markdown-body pre.sequence-diagram>code,.markdown-body pre.vega>code{text-align:left}.markdown-body pre.abc>svg,.markdown-body pre.flow-chart>svg,.markdown-body pre.graphviz>svg,.markdown-body pre.mermaid>svg,.markdown-body pre.sequence-diagram>svg,.markdown-body pre.vega>svg{max-width:100%;height:100%}.markdown-body pre>code.wrap{white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space:-o-pre-wrap;word-wrap:break-word}.markdown-body .alert>p,.markdown-body .alert>ul{margin-bottom:0}.markdown-body summary{display:list-item}.markdown-body summary:focus{outline:none}.markdown-body details summary{cursor:pointer}.markdown-body details:not([open])>:not(summary){display:none}.markdown-body figure{margin:1em 40px}.markdown-body .mark,.markdown-body mark{background-color:#fff1a7}.vimeo,.youtube{cursor:pointer;display:table;text-align:center;background-position:50%;background-repeat:no-repeat;background-size:contain;background-color:#000;overflow:hidden}.vimeo,.youtube{position:relative;width:100%}.youtube{padding-bottom:56.25%}.vimeo img{width:100%;object-fit:contain;z-index:0}.youtube img{object-fit:cover;z-index:0}.vimeo iframe,.youtube iframe,.youtube img{width:100%;height:100%;position:absolute;top:0;left:0}.vimeo iframe,.youtube iframe{vertical-align:middle;z-index:1}.vimeo .icon,.youtube .icon{position:absolute;height:auto;width:auto;top:50%;left:50%;transform:translate(-50%,-50%);color:#fff;opacity:.3;transition:opacity .2s;z-index:0}.vimeo:hover .icon,.youtube:hover .icon{opacity:.6;transition:opacity .2s}.slideshare .inner,.speakerdeck .inner{position:relative;width:100%}.slideshare .inner iframe,.speakerdeck .inner iframe{position:absolute;top:0;bottom:0;left:0;right:0;width:100%;height:100%}.MJX_Assistive_MathML{display:none}.ui-infobar{position:relative;z-index:2;max-width:760px;margin:25px auto -25px;padding:0 15px;color:#777}.toc .invisable-node{list-style-type:none}.ui-toc{position:fixed;bottom:20px;z-index:998}.ui-toc-label{opacity:.3;background-color:#ccc;border:none;transition:opacity .2s}.ui-toc .open .ui-toc-label{opacity:1;color:#fff;transition:opacity .2s}.ui-toc-label:focus{opacity:.3;background-color:#ccc;color:#000}.ui-toc-label:hover{opacity:1;background-color:#ccc;transition:opacity .2s}.ui-toc-dropdown{margin-top:23px;margin-bottom:20px;padding-left:10px;padding-right:10px;max-width:45vw;width:25vw;max-height:70vh;overflow:auto;text-align:inherit}.ui-toc-dropdown>.toc{max-height:calc(70vh - 100px);overflow:auto}.ui-toc-dropdown[dir=rtl] .nav{padding-right:0;letter-spacing:.0029em}.ui-toc-dropdown a{overflow:hidden;text-overflow:ellipsis;white-space:pre}.ui-toc-dropdown .nav>li>a{display:block;padding:4px 20px;font-size:13px;font-weight:500;color:#767676}.ui-toc-dropdown .nav>li:first-child:last-child > ul,.ui-toc-dropdown .toc.expand ul{display:block}.ui-toc-dropdown .nav>li>a:focus,.ui-toc-dropdown .nav>li>a:hover{padding-left:19px;color:#000;text-decoration:none;background-color:transparent;border-left:1px solid #000}.ui-toc-dropdown[dir=rtl] .nav>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav>li>a:hover{padding-right:19px;border-left:none;border-right:1px solid #000}.ui-toc-dropdown .nav>.active:focus>a,.ui-toc-dropdown .nav>.active:hover>a,.ui-toc-dropdown .nav>.active>a{padding-left:18px;font-weight:700;color:#000;background-color:transparent;border-left:2px solid #000}.ui-toc-dropdown[dir=rtl] .nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav>.active>a{padding-right:18px;border-left:none;border-right:2px solid #000}.ui-toc-dropdown .nav .nav{display:none;padding-bottom:10px}.ui-toc-dropdown .nav>.active>ul{display:block}.ui-toc-dropdown .nav .nav>li>a{padding-top:1px;padding-bottom:1px;padding-left:30px;font-size:12px;font-weight:400}.ui-toc-dropdown[dir=rtl] .nav .nav>li>a{padding-right:30px}.ui-toc-dropdown .nav .nav>li>ul>li>a{padding-top:1px;padding-bottom:1px;padding-left:40px;font-size:12px;font-weight:400}.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a{padding-right:40px}.ui-toc-dropdown .nav .nav>li>a:focus,.ui-toc-dropdown .nav .nav>li>a:hover{padding-left:29px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav .nav>li>a:hover{padding-right:29px}.ui-toc-dropdown .nav .nav>li>ul>li>a:focus,.ui-toc-dropdown .nav .nav>li>ul>li>a:hover{padding-left:39px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a:hover{padding-right:39px}.ui-toc-dropdown .nav .nav>.active:focus>a,.ui-toc-dropdown .nav .nav>.active:hover>a,.ui-toc-dropdown .nav .nav>.active>a{padding-left:28px;font-weight:500}.ui-toc-dropdown[dir=rtl] .nav .nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>a{padding-right:28px}.ui-toc-dropdown .nav .nav>.active>.nav>.active:focus>a,.ui-toc-dropdown .nav .nav>.active>.nav>.active:hover>a,.ui-toc-dropdown .nav .nav>.active>.nav>.active>a{padding-left:38px;font-weight:500}.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active>a{padding-right:38px}.markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif}html[lang^=ja] .markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ\ ゴシック,sans-serif}html[lang=zh-tw] .markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif}html[lang=zh-cn] .markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif}html .markdown-body[lang^=ja]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ\ ゴシック,sans-serif}html .markdown-body[lang=zh-tw]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif}html .markdown-body[lang=zh-cn]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif}html[lang^=ja] .ui-toc-dropdown{font-family:Source Sans Pro,Helvetica,Arial,Meiryo UI,MS PGothic,ＭＳ\ Ｐゴシック,sans-serif}html[lang=zh-tw] .ui-toc-dropdown{font-family:Source Sans Pro,Helvetica,Arial,Microsoft JhengHei UI,微軟正黑UI,sans-serif}html[lang=zh-cn] .ui-toc-dropdown{font-family:Source Sans Pro,Helvetica,Arial,Microsoft YaHei UI,微软雅黑UI,sans-serif}html .ui-toc-dropdown[lang^=ja]{font-family:Source Sans Pro,Helvetica,Arial,Meiryo UI,MS PGothic,ＭＳ\ Ｐゴシック,sans-serif}html .ui-toc-dropdown[lang=zh-tw]{font-family:Source Sans Pro,Helvetica,Arial,Microsoft JhengHei UI,微軟正黑UI,sans-serif}html .ui-toc-dropdown[lang=zh-cn]{font-family:Source Sans Pro,Helvetica,Arial,Microsoft YaHei UI,微软雅黑UI,sans-serif}.ui-affix-toc{position:fixed;top:0;max-width:15vw;max-height:70vh;overflow:auto}.back-to-top,.expand-toggle,.go-to-bottom{display:block;padding:4px 10px;margin-top:10px;margin-left:10px;font-size:12px;font-weight:500;color:#999}.back-to-top:focus,.back-to-top:hover,.expand-toggle:focus,.expand-toggle:hover,.go-to-bottom:focus,.go-to-bottom:hover{color:#563d7c;text-decoration:none}.back-to-top,.go-to-bottom{margin-top:0}.ui-user-icon{width:20px;height:20px;display:block;border-radius:3px;margin-top:2px;margin-bottom:2px;margin-right:5px;background-position:50%;background-repeat:no-repeat;background-size:cover}.ui-user-icon.small{width:18px;height:18px;display:inline-block;vertical-align:middle;margin:0 0 .2em}.ui-infobar>small>span{line-height:22px}.ui-infobar>small .dropdown{display:inline-block}.ui-infobar>small .dropdown a:focus,.ui-infobar>small .dropdown a:hover{text-decoration:none}.ui-published-note{color:#337ab7}.ui-published-note .fa{font-size:20px;vertical-align:top}.unselectable{-webkit-user-select:none;-o-user-select:none;user-select:none}@media print{blockquote,div,img,pre,table{page-break-inside:avoid!important}a[href]:after{font-size:12px!important}}.markdown-body.slides{position:relative;z-index:1;color:#222}.markdown-body.slides:before{content:"";display:block;position:absolute;top:0;left:0;right:0;bottom:0;z-index:-1;background-color:currentColor;box-shadow:0 0 0 50vw}.markdown-body.slides section[data-markdown]{position:relative;margin-bottom:1.5em;background-color:#fff;text-align:center}.markdown-body.slides section[data-markdown] code{text-align:left}.markdown-body.slides section[data-markdown]:before{content:"";display:block;padding-bottom:56.23%}.markdown-body.slides section[data-markdown]>div:first-child{position:absolute;top:50%;left:1em;right:1em;transform:translateY(-50%);max-height:100%;overflow:hidden}.markdown-body.slides section[data-markdown]>ul{display:inline-block}.markdown-body.slides>section>section+section:after{content:"";position:absolute;top:-1.5em;right:1em;height:1.5em;border:3px solid #777}body{font-smoothing:subpixel-antialiased!important;-webkit-font-smoothing:subpixel-antialiased!important;-moz-osx-font-smoothing:auto!important;text-shadow:0 0 1em transparent,1px 1px 1.2px rgba(0,0,0,.004);-webkit-overflow-scrolling:touch;letter-spacing:.025em}.focus,:focus{outline:none!important}::-moz-focus-inner{border:0!important}body{font-family:Source Sans Pro,Helvetica,Arial,sans-serif}html[lang^=ja] body{font-family:Source Sans Pro,Helvetica,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ\ ゴシック,sans-serif}html[lang=zh-tw] body{font-family:Source Sans Pro,Helvetica,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif}html[lang=zh-cn] body{font-family:Source Sans Pro,Helvetica,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif}abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}abbr[data-original-title],abbr[title]{cursor:help}body.modal-open{overflow-y:auto;padding-right:0!important}
+    </style>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js" integrity="sha256-g6iAfvZp+nDQ2TdTR/VVKJf3bGro4ub5fvWSWVRi2NE=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.9/es5-shim.min.js" integrity="sha256-8E4Is26QH0bD52WoQpcB+R/tcWQtpzlCojrybUd7Mxo=" crossorigin="anonymous"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div id="doc" class="markdown-body container-fluid comment-enabled" data-hard-breaks="true" style="position: relative;"><h1 id="Lista-ćwiczeniowa-nr-4"><a class="anchor hidden-xs" href="#Lista-ćwiczeniowa-nr-4" title="Lista-ćwiczeniowa-nr-4"><span class="octicon octicon-link"></span></a>Lista ćwiczeniowa nr 4</h1><div class="alert alert-info">
+<p>grupa PWit, środa 8-10</p>
+</div><div class="alert alert-success">
+<p><a href="https://meet.google.com/muu-ahkr-aak?authuser=1" target="_blank" rel="noopener">Link do audio/wideo-konferencji</a></p>
+</div><h2 id="Deklaracje"><a class="anchor hidden-xs" href="#Deklaracje" title="Deklaracje"><span class="octicon octicon-link"></span></a>Deklaracje</h2><div class="alert alert-info">
+<p>Studenci wypełniają poniższą tabelkę przed rozpoczęciem zajęć. Student ma obowiązek zapoznać się&nbsp;wcześniej ze składnią&nbsp;języka Markdown!</p>
+</div><p>Gotowość rozwiązania zadania należy wyrazić poprzez postawienie X w odpowiedniej kolumnie!</p><table>
+<thead>
+<tr>
+<th></th>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+<th>5</th>
+<th>6</th>
+<th>7</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Maksymilian DeBeściak</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>Paweł	Bajgrowicz</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>Przemysław Czerwiński</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>Antoni	Dąbrowski</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>Alicja	Danilczuk</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>Agnieszka	Jonak</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>Agata Kasprzak</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>Karol	Kęciński</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>Błażej	Korasiak</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Józef	Kowalewicz</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Jakub	Mendyk</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>Barbara	Piasecka</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>Damian	Ratajski</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Aleksandra Stępniewska</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>Karol	Stuła</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>Daniel	Wiczołek</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>Patryk	Wilusz</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>Mateusz	Zając</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+</tr>
+</tbody>
+</table><h2 id="Rozwiązania-30-minut"><a class="anchor hidden-xs" href="#Rozwiązania-30-minut" title="Rozwiązania-30-minut"><span class="octicon octicon-link"></span></a>Rozwiązania (30 minut)</h2><div class="alert alert-info">
+<p>Na początku zajęć prowadzący przypisuje studentów do zadań. W ciągu 30 minut student ma obowiązek uzupełnić rozwiązanie zadania. Jeśli zadanie wymaga posłużenia się&nbsp;diagramem, to można wkleić jego zdjęcie.  Prowadzący może zlecić przygotowanie rozwiązania danego zadania więcej niż jednej osobie.</p>
+</div><div class="alert alert-warning">
+<p>Zamieszczanie zdjęć gotowych rozwiązań jest niedozwolone chyba, że prowadzący na to pozwoli.</p>
+</div><div class="alert alert-danger">
+<p>Udostępnianie gotowych rozwiązań studentom z innych grup ćwiczeniowych jest niedozwolone!</p>
+</div><h3 id="Zadanie-1"><a class="anchor hidden-xs" href="#Zadanie-1" title="Zadanie-1"><span class="octicon octicon-link"></span></a>Zadanie 1</h3><blockquote>
+<p><small><i class="fa fa-user"></i> Piotr Witkowski</small> Zadanie rozwiązuje p. Patryk Wilusz.</p>
+</blockquote><p>Rejestry <span class="mathjax"><span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-1-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mtext mathvariant=&quot;monospace&quot;>%reg1%</mtext></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-1" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-2" class="mjx-mrow"><span id="MJXc-Node-3" class="mjx-mtext"><span class="mjx-char MJXc-TeX-type-R" style="padding-top: 0.501em; padding-bottom: 0.501em;">%reg1%</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mtext mathvariant="monospace">%reg1%</mtext></math></span></span><script type="math/tex" id="MathJax-Element-1">\verb@%reg1%@</script></span> i <span class="mathjax"><span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-2-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mtext mathvariant=&quot;monospace&quot;>%reg2</mtext></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-4" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-5" class="mjx-mrow"><span id="MJXc-Node-6" class="mjx-mtext"><span class="mjx-char MJXc-TeX-type-R" style="padding-top: 0.501em; padding-bottom: 0.501em;">%reg2</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mtext mathvariant="monospace">%reg2</mtext></math></span></span><script type="math/tex" id="MathJax-Element-2">\verb@%reg2@</script></span> są tego samego rozmiaru. Wykaż, że niezależnie od zapisanych w nich wartości, interpretowanych jako liczby ze znakiem, instrukcja <span class="mathjax"><span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-3-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mtext mathvariant=&quot;monospace&quot;>cmp&amp;#xA0;%reg1,&amp;#xA0;%reg2</mtext></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-7" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-8" class="mjx-mrow"><span id="MJXc-Node-9" class="mjx-mtext"><span class="mjx-char" style="padding-top: 0.501em; padding-bottom: 0.279em;"><span class="mjx-charbox MJXc-TeX-type-R" style="padding-bottom: 0.233em; margin-right: 0.275em;">cmp&nbsp;</span><span class="mjx-charbox MJXc-TeX-type-R" style="padding-bottom: 0.233em; margin-right: 0.275em;">%reg1,&nbsp;</span><span class="mjx-charbox MJXc-TeX-type-R" style="padding-bottom: 0.233em;">%reg2</span></span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mtext mathvariant="monospace">cmp&nbsp;%reg1,&nbsp;%reg2</mtext></math></span></span><script type="math/tex" id="MathJax-Element-3">\verb@cmp %reg1, %reg2@</script></span> ustawia flagi tak, że <span class="mathjax"><span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-4-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mtext mathvariant=&quot;monospace&quot;>setl&amp;#xA0;%reg3</mtext></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-10" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-11" class="mjx-mrow"><span id="MJXc-Node-12" class="mjx-mtext"><span class="mjx-char" style="padding-top: 0.501em; padding-bottom: 0.279em;"><span class="mjx-charbox MJXc-TeX-type-R" style="padding-bottom: 0.233em; margin-right: 0.275em;">setl&nbsp;</span><span class="mjx-charbox MJXc-TeX-type-R" style="padding-bottom: 0.233em;">%reg3</span></span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mtext mathvariant="monospace">setl&nbsp;%reg3</mtext></math></span></span><script type="math/tex" id="MathJax-Element-4">\verb@setl %reg3@</script></span> zadziała zgodnie z oczekiwaniami. Podobnie, wykaż, że jeśli te wartości intepretujemy jako liczby bez znaku, to <span class="mathjax"><span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-5-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mtext mathvariant=&quot;monospace&quot;>setb&amp;#xA0;%reg3</mtext></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-13" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-14" class="mjx-mrow"><span id="MJXc-Node-15" class="mjx-mtext"><span class="mjx-char" style="padding-top: 0.501em; padding-bottom: 0.279em;"><span class="mjx-charbox MJXc-TeX-type-R" style="padding-bottom: 0.233em; margin-right: 0.275em;">setb&nbsp;</span><span class="mjx-charbox MJXc-TeX-type-R" style="padding-bottom: 0.233em;">%reg3</span></span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mtext mathvariant="monospace">setb&nbsp;%reg3</mtext></math></span></span><script type="math/tex" id="MathJax-Element-5">\verb@setb %reg3@</script></span> zadziała zgodnie z oczekiwaniami. Wywnioskuj stąd, że pozostałe instrukcje rodziny <span class="mathjax"><span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-6-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mtext mathvariant=&quot;monospace&quot;>set</mtext></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-16" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-17" class="mjx-mrow"><span id="MJXc-Node-18" class="mjx-mtext"><span class="mjx-char MJXc-TeX-type-R" style="padding-top: 0.335em; padding-bottom: 0.279em;">set</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mtext mathvariant="monospace">set</mtext></math></span></span><script type="math/tex" id="MathJax-Element-6">\verb@set@</script></span> działają stosownie do swoich sufiksów.</p><pre><code>cmp - ustawia flagi, setl - ustaw 1 jeśli mniejsze
+
+OF - overflow (signed)
+SF - Sign Flag (a - b) &lt; 0
+
+setl - condition code: SF^0F
+cmp %reg1, %reg2 (%reg2 - %reg1)
+
+Niech a = %reg2, b = %reg1
+
+Dla liczb ze znakiem:
+Przypadek 1:
+SF = 1, OF = 0
+a - b &lt; 0 i nie ma przepełnienia
+
+czyli SF^OF = 1
+
+Przypadek 2:
+SF = 0, OF = 1
+a - małe (ujemne)
+b - duże (dodatnie)
+więc a - b &gt; 0, overflow, ale a jest mniejsze niż b
+
+czyli SF^OF = 1
+
+Przypadek 3:
+SF = 1, OF = 1
+a - duże
+b - małe
+więc a - b &lt; 0 -&gt; overflow, ale samo a nie jest mniejsze niż b
+
+czyli SF^OF = 0
+
+Przypadek 4
+SF = 0, OF = 0
+a jest większe niż b, ale nie ma przepełnienia
+
+czyli SF^OF = 0
+
+Dla liczb bez znaku:
+setb - condition code: CF
+
+Porównujemy liczby bez znaku, a porównanie wykonujemy a - b, więc występuje borrow, kiedy b &gt; a, dlatego wystarczy spojrzeć na flagę CF, jeśli borrow wystąpiło wówczas a - b &lt; 0
+
+Dlaczego rodzina set działa? Każda instrukcja z tej rodziny posiada swoje 
+condition code, które na podstawie flag decyduje czy warunek jest spełniony,
+czy nie (codndition code jest zrealizowane w taki sposób, aby uwzględniać wszystkie przypadki).
+</code></pre><p><img src="https://i.imgur.com/tfPfygV.png" alt=""></p><blockquote>
+<p><small><i class="fa fa-user"></i> Piotr Witkowski</small> Wysokopoziomowy kod:<br>
+“Jeśli a &lt; b to c := 1” tłumaczy się na asembler tak:</p>
+<pre><code>cmp b, a
+setl c
+</code></pre>
+<p>Podobnie zamiast c:=1 może być instrukcja skoku, czyli “Jeśli a &lt; b to skocz pod adres L1”</p>
+<pre><code>cmp b, a
+jmpl L1
+</code></pre>
+</blockquote><h3 id="Zadanie-2"><a class="anchor hidden-xs" href="#Zadanie-2" title="Zadanie-2"><span class="octicon octicon-link"></span></a>Zadanie 2</h3><blockquote>
+<p><small><i class="fa fa-user"></i> Piotr Witkowski</small> Zadanie rozwiązuje p. Agata Kasprzak.</p>
+</blockquote><p>Poniżej znajduje się kod funkcji o sygnaturze <code>void who(int16_t v[], size_t n)</code>.<br>
+Przetłumacz go na język C i odpowiedz, jaki jest efekt jego wykonania. Czy znajomość sygnatury jest istotna?</p><pre><code>who:    subq    $1, %rsi            //n=n-1
+        movl    $0, %eax            //i=0
+.L2:    cmpq    %rsi, %rax          // CF=1 jeśli n&gt;i
+        jnb     .L4                 // skok jeśli CF=0 
+        leaq    (%rdi,%rax,2), %rcx //
+        movzwl  (%rcx), %r8d        //a = v[i]
+        leaq    (%rdi,%rsi,2), %rdx //
+        movzwl  (%rdx), %r9d        //b = v[n]
+        movw    %r9w, (%rcx)        //v[i] = b
+        movw    %r8w, (%rdx)        //v[n] = a
+        addq    $1, %rax            //i++
+        subq    $1, %rsi            //n--
+        jmp     .L2
+.L4:    ret
+</code></pre><pre><code class="cpp hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span></div><div class="code"><span class="token keyword">void</span> <span class="token function">who</span><span class="token punctuation">(</span><span class="token keyword">short</span> v<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span> size_t n<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">,</span> j<span class="token operator">=</span>n<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span> i<span class="token operator">&lt;</span>j<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">,</span> j<span class="token operator">--</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">short</span> pom<span class="token operator">=</span>v<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    v<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token operator">=</span>v<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    v<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token operator">=</span>pom<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</div></div></code></pre><h3 id="Zadanie-3"><a class="anchor hidden-xs" href="#Zadanie-3" title="Zadanie-3"><span class="octicon octicon-link"></span></a>Zadanie 3</h3><blockquote>
+<p><small><i class="fa fa-user"></i> Piotr Witkowski</small> Zadanie rozwiązuje p. Paweł Bajgrowicz.</p>
+</blockquote><p>Poniżej znajduje się kod funkcji o sygnaturze <code>bool zonk(char* a, char* b)</code>, jako argumenty przyjmującej C-owe łańcuchy znaków. Przetłumacz ją na język C (bez instrukcji <span class="mathjax"><span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-7-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mtext mathvariant=&quot;monospace&quot;>goto</mtext></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-19" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-20" class="mjx-mrow"><span id="MJXc-Node-21" class="mjx-mtext"><span class="mjx-char MJXc-TeX-type-R" style="padding-top: 0.335em; padding-bottom: 0.501em;">goto</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mtext mathvariant="monospace">goto</mtext></math></span></span><script type="math/tex" id="MathJax-Element-7">\verb@goto@</script></span>). Jaką wartość liczy ta funkcja?</p><pre><code class="asm hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span>
+<span data-linenumber="8"></span>
+<span data-linenumber="9"></span>
+<span data-linenumber="10"></span>
+<span data-linenumber="11"></span>
+<span data-linenumber="12"></span>
+<span data-linenumber="13"></span>
+<span data-linenumber="14"></span></div><div class="code">zonk:   movl    $0, %ecx          // definiujemy i = <span class="hljs-number">0</span>
+.L2:    movslq  %ecx, %rax        // podstawiam wartość %ecx na %rax, tzn. używam %rax jako i
+        movzbl  (%rdi,%rax), %edx // %edx = a[i], ponieważ %rdi to wskaźnik na początek tablicy a, a %rax to przesunięcie w tej tablicy, czyli a[<span class="hljs-number">0</span> + i] i rozszerzamy %edx o <span class="hljs-number">4</span> bajty
+        testb   %dl, %dl          // testb to logiczny AND; %dl = a[i], więc jeśli a[i] = NULL, to ustawiamy flagę ZF
+        je      .L6               // Skok <span class="hljs-keyword">do</span> L6, jeśli jest ustawiona flaga ZF
+        cmpb    %dl, (%rsi,%rax)  // jeśli a[i] oraz b[i] <span class="hljs-keyword">s</span>ą róż<span class="hljs-keyword">ne</span>, to ustawia flagę ~ZF
+        jne     .L5               // Skok <span class="hljs-keyword">do</span> L5, jeśli jest ustawiona flaga ~ZF
+        addl    $1, %ecx          // i++
+        jmp     .L2               // powrót na początek pętli
+.L6:    orb     (%rsi,%rax), %dl  // OR logiczny b[i] z %dl(które <span class="hljs-keyword">ma</span> wartość NULL)
+        sete    %al               // Ustawia wartość %al, gdzie %al to wynik fcji, jako jeden jeśli powyższa operacja ustawiła flagę ZF, czyli i wskazuje w obydwu tablicach na NULL, więc obydwie tablice <span class="hljs-keyword">s</span>ą równe
+        ret                       // zwróć wartość&amp;nbsp;%rax jako wynik fcji
+.L5:    movl    $0, %eax          // ustaw wartość wyniku jako <span class="hljs-number">0</span>
+        ret                       // zwróć wartość&amp;nbsp;%rax jako wynik fcji
+</div></div></code></pre><p>Funkcja sprawdza czy dwie tablice typu char są równe.</p><pre><code class="cpp hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span>
+<span data-linenumber="8"></span>
+<span data-linenumber="9"></span>
+<span data-linenumber="10"></span></div><div class="code"><span class="token keyword">bool</span> <span class="token function">zonk</span><span class="token punctuation">(</span><span class="token keyword">char</span><span class="token operator">*</span> a<span class="token punctuation">,</span> <span class="token keyword">char</span><span class="token operator">*</span> b<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token punctuation">;</span> a<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>b<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">!=</span> a<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>b<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token constant">NULL</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+</div></div></code></pre><h3 id="Zadanie-4"><a class="anchor hidden-xs" href="#Zadanie-4" title="Zadanie-4"><span class="octicon octicon-link"></span></a>Zadanie 4</h3><blockquote>
+<p><small><i class="fa fa-user"></i> Piotr Witkowski</small> Zadanie rozwiązuje p. Daniel Wiczołek.</p>
+</blockquote><p>Zastąp instrukcje <span class="mathjax"><span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-8-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mtext mathvariant=&quot;monospace&quot;>pushq&amp;#xA0;%reg1</mtext></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-22" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-23" class="mjx-mrow"><span id="MJXc-Node-24" class="mjx-mtext"><span class="mjx-char" style="padding-top: 0.501em; padding-bottom: 0.279em;"><span class="mjx-charbox MJXc-TeX-type-R" style="padding-bottom: 0.233em; margin-right: 0.275em;">pushq&nbsp;</span><span class="mjx-charbox MJXc-TeX-type-R" style="padding-bottom: 0.233em;">%reg1</span></span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mtext mathvariant="monospace">pushq&nbsp;%reg1</mtext></math></span></span><script type="math/tex" id="MathJax-Element-8">\verb@pushq %reg1@</script></span> oraz <span class="mathjax"><span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-9-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mtext mathvariant=&quot;monospace&quot;>popq&amp;#xA0;%reg2</mtext></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-25" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-26" class="mjx-mrow"><span id="MJXc-Node-27" class="mjx-mtext"><span class="mjx-char" style="padding-top: 0.501em; padding-bottom: 0.279em;"><span class="mjx-charbox MJXc-TeX-type-R" style="padding-bottom: 0.233em; margin-right: 0.275em;">popq&nbsp;</span><span class="mjx-charbox MJXc-TeX-type-R" style="padding-bottom: 0.233em;">%reg2</span></span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mtext mathvariant="monospace">popq&nbsp;%reg2</mtext></math></span></span><script type="math/tex" id="MathJax-Element-9">\verb@popq %reg2@</script></span> równoważnymi ciągami instrukcji jawnie operującymi na stosie.</p><pre><code>pushq %reg1:
+    sub $8, %rsp
+    movq %reg1, (%rsp)
+
+popq %reg2:
+    movq (%rsp), %reg2
+    addq $8, %rsp
+
+&gt; [PWit] addq $8, %rsp
+&gt;        movq -8(%rsp), %reg2
+&gt; alternatywnie (ale po co?)
+
+&gt;zamiast add %8, %rsp można napisać leaq 8(%rsp), %rsp
+
+Odjęcie stałej od %rsp powoduje zmniejszenie wartości adresu
+przechowywanego przez %rsp o tą stałą (stałą liczbę bajtów).
+Następnie wrzucamy do tego adresu wartość %reg1 czyli dokładnie
+8 bajtów w nim przechowywanych.
+
+W przypadku pop najpierw zapisujemy wartość do destination.
+Nastepnie zwalniamy pamięć poprzez dodanie do wskaznika stałej - 
+zmniejszenie adresu wskazywanego przez %rsp o stałą liczbę bajtów.
+</code></pre><h3 id="Zadanie-5"><a class="anchor hidden-xs" href="#Zadanie-5" title="Zadanie-5"><span class="octicon octicon-link"></span></a>Zadanie 5</h3><blockquote>
+<p><small><i class="fa fa-user"></i> Piotr Witkowski</small> Zadanie rozwiązuje p. Karol Kęciński.</p>
+</blockquote><p>Poniżej znajduje się kod funkcji o sygnaturze <code>foo(int16_t     v[], size_t n)</code>. Przetłumacz ją na język C.  Narysuj ramkę stosu tej funkcji i wytłumacz, jaka jest rola poszczególnych komórek ramki oraz jak jej zawartość zmienia się w trakcie działania. Jaki jest efekt ma ten kod? Jaka jest rola rejestru <span class="mathjax"><span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-10-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mtext mathvariant=&quot;monospace&quot;>%rbp</mtext></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-28" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-29" class="mjx-mrow"><span id="MJXc-Node-30" class="mjx-mtext"><span class="mjx-char MJXc-TeX-type-R" style="padding-top: 0.501em; padding-bottom: 0.501em;">%rbp</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mtext mathvariant="monospace">%rbp</mtext></math></span></span><script type="math/tex" id="MathJax-Element-10">\verb@%rbp@</script></span> w tym kodzie?</p><pre><code>foo:    pushq   %rbp
+        movq    %rsp, %rbp
+        movq    %rdi, -24(%rbp)
+        movq    %rsi, -32(%rbp)
+        movq    $0, -8(%rbp)
+        jmp     .L2
+.L3:    movq    -8(%rbp), %rax
+        leaq    (%rax,%rax), %rdx
+        movq    -24(%rbp), %rax
+        addq    %rdx, %rax
+        movzwl  (%rax), %eax
+        leal    (%rax,%rax), %edx
+        movq    -8(%rbp), %rax
+        leaq    (%rax,%rax), %rcx
+        movq    -24(%rbp), %rax
+        addq    %rcx, %rax
+        movw    %dx, (%rax)
+        addq    $1, -8(%rbp)
+.L2:    movq    -8(%rbp), %rax
+        cmpq    -32(%rbp), %rax
+        jb      .L3
+        nop
+        popq    %rbp
+        ret
+</code></pre><pre><code>
+foo(int16_t v[], size_t n)
+{
+    rax = 0;
+    
+    for(int i = 0; i &lt; n; i++)
+    {
+        rax = i;
+        rdx = 2 * rax; // leaq (%rax,%rax), %rdx
+        rax = v;    //wskaźnik na v
+        rax = rax + rdx; //&amp;v[i] (bo v to &amp;v[0] + 2 * i, gdy typ(v)=int16_t)
+        rax = *rax; //*(&amp;v[i]) ==&gt; v[i]
+        edx = 2 * rax; //2 * v[i]
+        rax = i;
+        rcx = 2 * rax; // 2*i
+        rax = v;
+        rax = rax + rcx; //v + 2 * i = &amp;v[i]
+        *rax = edx; //v[i] = 2 * v[i]
+    }
+}
+
+</code></pre><pre><code>
+void foo(int16_t v[], size_t n)
+{
+    for(size_t i = 0; i &lt; n; i++)
+    {
+        v[i] = 2*v[i];
+    }
+}
+
+</code></pre><p><s>&gt; [name=Piotr Witkowski] Powyższy kod należy uczynić bardziej czytelnym.</s></p><table>
+<thead>
+<tr>
+<th>ramka</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>old %rbp</td>
+</tr>
+<tr>
+<td>saved registers</td>
+</tr>
+<tr>
+<td>local variables</td>
+</tr>
+<tr>
+<td>additional args(&gt;= 7)</td>
+</tr>
+</tbody>
+</table><table>
+<thead>
+<tr>
+<th>schemat frame’a procedury</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>%rsp &lt;--  %rsp ==%rbp</td>
+</tr>
+<tr>
+<td>i  &lt;--  %rsp-8</td>
+</tr>
+<tr>
+<td>v  &lt;--  %rsp-24</td>
+</tr>
+<tr>
+<td>n  &lt;--  %rsp - 32</td>
+</tr>
+</tbody>
+</table><h3 id="Zadanie-6"><a class="anchor hidden-xs" href="#Zadanie-6" title="Zadanie-6"><span class="octicon octicon-link"></span></a>Zadanie 6</h3><blockquote>
+<p><small><i class="fa fa-user"></i> Piotr Witkowski</small> Zadanie rozwiązuje p. Antoni Dąbrowski.</p>
+</blockquote><p>Poniżej znajduje się kod funkcji rekurencyjnej o nieznanej sygnaturze. Przetłumacz tę funkcję na język C, odkryj jej sygnaturę i odpowiedz, jaką wartość ona liczy.</p><pre><code class="c hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span>
+<span data-linenumber="8"></span>
+<span data-linenumber="9"></span>
+<span data-linenumber="10"></span>
+<span data-linenumber="11"></span>
+<span data-linenumber="12"></span>
+<span data-linenumber="13"></span>
+<span data-linenumber="14"></span>
+<span data-linenumber="15"></span>
+<span data-linenumber="16"></span></div><div class="code">reccur<span class="token punctuation">:</span>                           <span class="token comment">//Zmienna wejściowa jest trzymana w rejestrze %rdi</span>
+        pushq   <span class="token operator">%</span>rbp              <span class="token comment">//Wkłada element do stosu</span>
+        movq    <span class="token operator">%</span>rsp<span class="token punctuation">,</span> <span class="token operator">%</span>rbp        <span class="token comment">//Przypisuje rejestrowi %rbp wartość %rsp</span>
+        subq    $<span class="token number">16</span><span class="token punctuation">,</span> <span class="token operator">%</span>rsp         <span class="token comment">//Zmniejsza o 16 wartość %rsp</span>
+        movl    <span class="token operator">%</span>edi<span class="token punctuation">,</span> <span class="token operator">-</span><span class="token function">4</span><span class="token punctuation">(</span><span class="token operator">%</span>rbp<span class="token punctuation">)</span>    <span class="token comment">//Przypisuje wartość %edi pod rejestr -4(%rbp)</span>
+        cmpl    $<span class="token number">0</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token function">4</span><span class="token punctuation">(</span><span class="token operator">%</span>rbp<span class="token punctuation">)</span>      <span class="token comment">//Odejmuje od wartości pod adresem -4(%rbp) 0, zapala flagi</span>
+        jne     <span class="token punctuation">.</span>L2               <span class="token comment">//Skok gdy ZF=0, czyli kiedy -4(%rbp) jest różny od zera</span>
+        movl    $<span class="token number">1</span><span class="token punctuation">,</span> <span class="token operator">%</span>eax          <span class="token comment">//Przypisuje rejestrowi %eax wartość 1</span>
+        jmp     <span class="token punctuation">.</span>L3               <span class="token comment">//Skok bezwarunkowy</span>
+<span class="token punctuation">.</span>L2<span class="token punctuation">:</span>    movl    <span class="token operator">-</span><span class="token function">4</span><span class="token punctuation">(</span><span class="token operator">%</span>rbp<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token operator">%</span>eax    <span class="token comment">//Przypisuje rejestrowi %eax wartość pod rejestrem -4(%rbp)</span>
+        subl    $<span class="token number">1</span><span class="token punctuation">,</span> <span class="token operator">%</span>eax          <span class="token comment">//Dekrementuje %eax</span>
+        movl    <span class="token operator">%</span>eax<span class="token punctuation">,</span> <span class="token operator">%</span>edi        <span class="token comment">//Przenosi wartość %eax pod %edi</span>
+        call    reccur            <span class="token comment">//Wykonuje ponownie funkcję reccur dla zdekrementowanej wartości</span>
+        imull   <span class="token operator">-</span><span class="token function">4</span><span class="token punctuation">(</span><span class="token operator">%</span>rbp<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token operator">%</span>eax    <span class="token comment">//Wymnaża wyniki</span>
+<span class="token punctuation">.</span>L3<span class="token punctuation">:</span>    leave                     <span class="token comment">//Podstawia %rbp pod %rsp oraz wykonuje popq %rbp </span>
+        ret
+</div></div></code></pre><p>Funkcja reccur w języku C:</p><pre><code class="c hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span></div><div class="code"><span class="token keyword">int</span> <span class="token function">reccur</span><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>x <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span>
+        <span class="token keyword">return</span> <span class="token number">1</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> x <span class="token operator">*</span> <span class="token function">reccur</span><span class="token punctuation">(</span>x<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</div></div></code></pre><p>Sygnatura: <code>int reccur(int x)</code><br>
+Funkcja oblicza silnię.</p><h3 id="Zadanie-7"><a class="anchor hidden-xs" href="#Zadanie-7" title="Zadanie-7"><span class="octicon octicon-link"></span></a>Zadanie 7</h3><blockquote>
+<p><small><i class="fa fa-user"></i> Piotr Witkowski</small> Zadanie rozwiązuje p. Jakub Mendyk.</p>
+</blockquote><p>Dana jest funkcja o sygnaturze postaci <code>int32_t bar(int32_t a1,...,int32_t an)</code>, gdzie <span class="mathjax"><span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-11-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mtext mathvariant=&quot;monospace&quot;>n</mtext></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-31" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-32" class="mjx-mrow"><span id="MJXc-Node-33" class="mjx-mtext"><span class="mjx-char MJXc-TeX-type-R" style="padding-top: 0.224em; padding-bottom: 0.279em;">n</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mtext mathvariant="monospace">n</mtext></math></span></span><script type="math/tex" id="MathJax-Element-11">\verb@n@</script></span> jest nieznane. Jaka jest minimalna wartość <span class="mathjax"><span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-12-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mtext mathvariant=&quot;monospace&quot;>n</mtext></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-34" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-35" class="mjx-mrow"><span id="MJXc-Node-36" class="mjx-mtext"><span class="mjx-char MJXc-TeX-type-R" style="padding-top: 0.224em; padding-bottom: 0.279em;">n</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mtext mathvariant="monospace">n</mtext></math></span></span><script type="math/tex" id="MathJax-Element-12">\verb@n@</script></span>, jeżeli wiadomo, że funkcja zwraca wartość jednego ze swoich argumentów, a jej  kod wygląda tak</p><pre><code>bar:    pushq   %rbp
+        movq    %rsp, %rbp
+           .....
+        movl    16(%rbp), %eax
+        popq    %rbp
+        ret
+</code></pre><p>Napisz szkic kodu asemblerowego wywołującego funkcję <span class="mathjax"><span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-13-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mtext mathvariant=&quot;monospace&quot;>bar</mtext></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-37" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-38" class="mjx-mrow"><span id="MJXc-Node-39" class="mjx-mtext"><span class="mjx-char MJXc-TeX-type-R" style="padding-top: 0.39em; padding-bottom: 0.279em;">bar</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mtext mathvariant="monospace">bar</mtext></math></span></span><script type="math/tex" id="MathJax-Element-13">\verb@bar@</script></span> z liczbą parametrów równą takiemu minimalnemu <span class="mathjax"><span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-14-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mtext mathvariant=&quot;monospace&quot;>n</mtext></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-40" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-41" class="mjx-mrow"><span id="MJXc-Node-42" class="mjx-mtext"><span class="mjx-char MJXc-TeX-type-R" style="padding-top: 0.224em; padding-bottom: 0.279em;">n</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mtext mathvariant="monospace">n</mtext></math></span></span><script type="math/tex" id="MathJax-Element-14">\verb@n@</script></span>. Zadbaj o poprawne przekazanie argumentów do funkcji. Jak zmieni się napisany przez Ciebie kod, gdy <span class="mathjax"><span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-15-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mtext mathvariant=&quot;monospace&quot;>n</mtext></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-43" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-44" class="mjx-mrow"><span id="MJXc-Node-45" class="mjx-mtext"><span class="mjx-char MJXc-TeX-type-R" style="padding-top: 0.224em; padding-bottom: 0.279em;">n</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mtext mathvariant="monospace">n</mtext></math></span></span><script type="math/tex" id="MathJax-Element-15">\verb@n@</script></span> będzie większe?</p><h3 id="Rozwiązanie"><a class="anchor hidden-xs" href="#Rozwiązanie" title="Rozwiązanie"><span class="octicon octicon-link"></span></a>Rozwiązanie</h3><p>Przeanalizujmy jak wygląda wierzchnia część stosu w momencie<br>
+rozpoczęcia wykonywania kodu asemblerowego odpowiadającego<br>
+procedurze <code>bar</code>:</p><table>
+<thead>
+<tr>
+<th>Adres</th>
+<th>Wartość</th>
+<th>Komentarz</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A + 16</td>
+<td>zzz</td>
+<td>argument dla <code>bar</code></td>
+</tr>
+<tr>
+<td>A + 12</td>
+<td>yyy</td>
+<td>argument dla bar albo przestrzeń by %rsp dzieliło się przez 16</td>
+</tr>
+<tr>
+<td>A+8</td>
+<td>aaa</td>
+<td>adres powrotu do wołającego <code>bar</code></td>
+</tr>
+<tr>
+<td>A</td>
+<td>%rbp</td>
+<td>stary rbp</td>
+</tr>
+</tbody>
+</table><p>Skoro wiemy, że <code>bar</code> zwraca wartość jednego ze swoich argumentów oraz z analizy końcówki kodu wiemy<br>
+że wartość na stosie z adresu <code>16(%rbp), %eax</code> przeności do rejestr <code>%eax</code> odpowiadającego<br>
+w ABI za wynik procedury to wartość pod adresem <code>16(%rbp)</code> jest argumentem dla <code>bar</code>.<br>
+Jednocześnie pamiętamy, że pierwsze 6 argumentów zgodnie z ABI umieszczamy w rejestrach.<br>
+Jako że zwracana wartość ma 4 bajty, nie mamy pewności co znajduje się pod adresem <code>A-12</code>.<br>
+Stąd wiemy jedynie, że bar przyjmuje co najmniej <span class="mathjax"><span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-16-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mtext mathvariant=&quot;monospace&quot;>n</mtext><mo>=</mo><mn>7</mn></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-46" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-47" class="mjx-mrow"><span id="MJXc-Node-48" class="mjx-mtext"><span class="mjx-char MJXc-TeX-type-R" style="padding-top: 0.224em; padding-bottom: 0.279em;">n</span></span><span id="MJXc-Node-49" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.058em; padding-bottom: 0.335em;">=</span></span><span id="MJXc-Node-50" class="mjx-mn MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">7</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mtext mathvariant="monospace">n</mtext><mo>=</mo><mn>7</mn></math></span></span><script type="math/tex" id="MathJax-Element-16">\verb@n@ = 7</script></span> argumentów.</p><p>Przykładowe wywołanie procedury <code>bar</code>:</p><pre><code class="asm hljs">;; tutaj można dokładać kolejne argumenty, na przykład:
+;; <span class="hljs-keyword">push</span><span class="hljs-string">q (* 9-ty argument *)</span>
+;; <span class="hljs-keyword">push</span><span class="hljs-string">q (* 8-my argument *)</span>
+
+pushl (* <span class="hljs-number">7</span>-<span class="hljs-keyword">my</span> argument *)
+subq $8, %rsp   
+
+movl (* <span class="hljs-number">1</span>-szy argument *), %edi
+movl (* <span class="hljs-number">2</span>-gi argument *), %esi
+movl (* <span class="hljs-number">3</span>-ci argument *), %edx
+movl (* <span class="hljs-number">4</span>-ty argument *), %ecx
+movl (* <span class="hljs-number">5</span>-ty argument *), %r8d
+movl (* <span class="hljs-number">6</span>-ty argument *), %r9d
+
+call bar
+</code></pre><h2 id="Konsultacje-60-minut"><a class="anchor hidden-xs" href="#Konsultacje-60-minut" title="Konsultacje-60-minut"><span class="octicon octicon-link"></span></a>Konsultacje (60 minut)</h2><div class="alert alert-info">
+<p>W trakcie konsultacji prowadzący udostępnia kartę przeglądarki z bieżącym dokumentem w wideokonferencji. Moderuje dyskusję według własnego uznania, na przykład:</p>
+<ul>
+<li>kieruje dodatkowe pytania do osób, które dostarczyły rozwiązania,</li>
+<li>wymaga uzupełnienia rozwiązania przez autora lub wybraną osobę,</li>
+<li>umożliwia studentom zadawanie pytań,</li>
+<li>odpowiada na pytania w komentarzach.</li>
+</ul>
+</div></div>
+    <div class="ui-toc dropup unselectable hidden-print" style="display:none;">
+        <div class="pull-right dropdown">
+            <a id="tocLabel" class="ui-toc-label btn btn-default" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" title="Table of content">
+                <i class="fa fa-bars"></i>
+            </a>
+            <ul id="ui-toc" class="ui-toc-dropdown dropdown-menu" aria-labelledby="tocLabel">
+                <div class="toc"><ul class="nav">
+<li class=""><a href="#Lista-ćwiczeniowa-nr-4" title="Lista ćwiczeniowa nr 4">Lista ćwiczeniowa nr 4</a><ul class="nav">
+<li class=""><a href="#Deklaracje" title="Deklaracje">Deklaracje</a></li>
+<li class=""><a href="#Rozwiązania-30-minut" title="Rozwiązania (30 minut)">Rozwiązania (30 minut)</a><ul class="nav">
+<li class=""><a href="#Zadanie-1" title="Zadanie 1">Zadanie 1</a></li>
+<li><a href="#Zadanie-2" title="Zadanie 2">Zadanie 2</a></li>
+<li><a href="#Zadanie-3" title="Zadanie 3">Zadanie 3</a></li>
+<li><a href="#Zadanie-4" title="Zadanie 4">Zadanie 4</a></li>
+<li><a href="#Zadanie-5" title="Zadanie 5">Zadanie 5</a></li>
+<li class=""><a href="#Zadanie-6" title="Zadanie 6">Zadanie 6</a></li>
+<li><a href="#Zadanie-7" title="Zadanie 7">Zadanie 7</a></li>
+<li class=""><a href="#Rozwiązanie" title="Rozwiązanie">Rozwiązanie</a></li>
+</ul>
+</li>
+<li class=""><a href="#Konsultacje-60-minut" title="Konsultacje (60 minut)">Konsultacje (60 minut)</a></li>
+</ul>
+</li>
+</ul>
+</div><div class="toc-menu"><a class="expand-toggle" href="#">Expand all</a><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a></div>
+            </ul>
+        </div>
+    </div>
+    <div id="ui-toc-affix" class="ui-affix-toc ui-toc-dropdown unselectable hidden-print" data-spy="affix" style="top:17px;display:none;" null null>
+        <div class="toc"><ul class="nav">
+<li class=""><a href="#Lista-ćwiczeniowa-nr-4" title="Lista ćwiczeniowa nr 4">Lista ćwiczeniowa nr 4</a><ul class="nav">
+<li class=""><a href="#Deklaracje" title="Deklaracje">Deklaracje</a></li>
+<li class=""><a href="#Rozwiązania-30-minut" title="Rozwiązania (30 minut)">Rozwiązania (30 minut)</a><ul class="nav">
+<li class=""><a href="#Zadanie-1" title="Zadanie 1">Zadanie 1</a></li>
+<li><a href="#Zadanie-2" title="Zadanie 2">Zadanie 2</a></li>
+<li><a href="#Zadanie-3" title="Zadanie 3">Zadanie 3</a></li>
+<li><a href="#Zadanie-4" title="Zadanie 4">Zadanie 4</a></li>
+<li><a href="#Zadanie-5" title="Zadanie 5">Zadanie 5</a></li>
+<li class=""><a href="#Zadanie-6" title="Zadanie 6">Zadanie 6</a></li>
+<li><a href="#Zadanie-7" title="Zadanie 7">Zadanie 7</a></li>
+<li class=""><a href="#Rozwiązanie" title="Rozwiązanie">Rozwiązanie</a></li>
+</ul>
+</li>
+<li class=""><a href="#Konsultacje-60-minut" title="Konsultacje (60 minut)">Konsultacje (60 minut)</a></li>
+</ul>
+</li>
+</ul>
+</div><div class="toc-menu"><a class="expand-toggle" href="#">Expand all</a><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gist-embed/2.6.0/gist-embed.min.js" integrity="sha256-KyF2D6xPIJUW5sUDSs93vWyZm+1RzIpKCexxElmxl8g=" crossorigin="anonymous" defer></script>
+    <script>
+        var markdown = $(".markdown-body");
+        //smooth all hash trigger scrolling
+        function smoothHashScroll() {
+            var hashElements = $("a[href^='#']").toArray();
+            for (var i = 0; i < hashElements.length; i++) {
+                var element = hashElements[i];
+                var $element = $(element);
+                var hash = element.hash;
+                if (hash) {
+                    $element.on('click', function (e) {
+                        // store hash
+                        var hash = this.hash;
+                        if ($(hash).length <= 0) return;
+                        // prevent default anchor click behavior
+                        e.preventDefault();
+                        // animate
+                        $('body, html').stop(true, true).animate({
+                            scrollTop: $(hash).offset().top
+                        }, 100, "linear", function () {
+                            // when done, add hash to url
+                            // (default click behaviour)
+                            window.location.hash = hash;
+                        });
+                    });
+                }
+            }
+        }
+
+        smoothHashScroll();
+        var toc = $('.ui-toc');
+        var tocAffix = $('.ui-affix-toc');
+        var tocDropdown = $('.ui-toc-dropdown');
+        //toc
+        tocDropdown.click(function (e) {
+            e.stopPropagation();
+        });
+
+        var enoughForAffixToc = true;
+
+        function generateScrollspy() {
+            $(document.body).scrollspy({
+                target: ''
+            });
+            $(document.body).scrollspy('refresh');
+            if (enoughForAffixToc) {
+                toc.hide();
+                tocAffix.show();
+            } else {
+                tocAffix.hide();
+                toc.show();
+            }
+            $(document.body).scroll();
+        }
+
+        function windowResize() {
+            //toc right
+            var paddingRight = parseFloat(markdown.css('padding-right'));
+            var right = ($(window).width() - (markdown.offset().left + markdown.outerWidth() - paddingRight));
+            toc.css('right', right + 'px');
+            //affix toc left
+            var newbool;
+            var rightMargin = (markdown.parent().outerWidth() - markdown.outerWidth()) / 2;
+            //for ipad or wider device
+            if (rightMargin >= 133) {
+                newbool = true;
+                var affixLeftMargin = (tocAffix.outerWidth() - tocAffix.width()) / 2;
+                var left = markdown.offset().left + markdown.outerWidth() - affixLeftMargin;
+                tocAffix.css('left', left + 'px');
+            } else {
+                newbool = false;
+            }
+            if (newbool != enoughForAffixToc) {
+                enoughForAffixToc = newbool;
+                generateScrollspy();
+            }
+        }
+        $(window).resize(function () {
+            windowResize();
+        });
+        $(document).ready(function () {
+            windowResize();
+            generateScrollspy();
+        });
+
+        //remove hash
+        function removeHash() {
+            window.location.hash = '';
+        }
+
+        var backtotop = $('.back-to-top');
+        var gotobottom = $('.go-to-bottom');
+
+        backtotop.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (scrollToTop)
+                scrollToTop();
+            removeHash();
+        });
+        gotobottom.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (scrollToBottom)
+                scrollToBottom();
+            removeHash();
+        });
+
+        var toggle = $('.expand-toggle');
+        var tocExpand = false;
+
+        checkExpandToggle();
+        toggle.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            tocExpand = !tocExpand;
+            checkExpandToggle();
+        })
+
+        function checkExpandToggle () {
+            var toc = $('.ui-toc-dropdown .toc');
+            var toggle = $('.expand-toggle');
+            if (!tocExpand) {
+                toc.removeClass('expand');
+                toggle.text('Expand all');
+            } else {
+                toc.addClass('expand');
+                toggle.text('Collapse all');
+            }
+        }
+
+        function scrollToTop() {
+            $('body, html').stop(true, true).animate({
+                scrollTop: 0
+            }, 100, "linear");
+        }
+
+        function scrollToBottom() {
+            $('body, html').stop(true, true).animate({
+                scrollTop: $(document.body)[0].scrollHeight
+            }, 100, "linear");
+        }
+    </script>
+</body>
+
+</html>

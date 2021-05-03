@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>
+        Lista ćwiczeniowa nr A(środa) - HackMD
+    </title>
+    <link rel="icon" type="image/png" href="https://hackmd.io/favicon.png">
+    <link rel="apple-touch-icon" href="https://hackmd.io/apple-touch-icon.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" integrity="sha256-3iu9jgsy9TpTwXKb7bNQzqWekRX7pPK+2OLj3R922fo=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.5.0/octicons.min.css" integrity="sha256-QiWfLIsCT02Sdwkogf6YMiQlj4NE84MKkzEMkZnMGdg=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.1/themes/prism.min.css" integrity="sha256-vtR0hSWRc3Tb26iuN2oZHt3KRUomwTufNIf5/4oeCyg=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/css/basic/emojify.min.css" integrity="sha256-UOrvMOsSDSrW6szVLe8ZDZezBxh5IoIfgTwdNDgTjiU=" crossorigin="anonymous" />
+    <style>
+        @charset "UTF-8";@import url(https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i|Source+Code+Pro:300,400,500|Source+Sans+Pro:300,300i,400,400i,600,600i|Source+Serif+Pro&subset=latin-ext);.hljs{display:block;background:#fff;padding:.5em;color:#333;overflow-x:auto}.hljs-comment,.hljs-meta{color:#969896}.hljs-emphasis,.hljs-quote,.hljs-string,.hljs-strong,.hljs-template-variable,.hljs-variable{color:#df5000}.hljs-keyword,.hljs-selector-tag,.hljs-type{color:#a71d5d}.hljs-attribute,.hljs-bullet,.hljs-literal,.hljs-number,.hljs-symbol{color:#0086b3}.hljs-built_in,.hljs-builtin-name{color:#005cc5}.hljs-name,.hljs-section{color:#63a35c}.hljs-tag{color:#333}.hljs-attr,.hljs-selector-attr,.hljs-selector-class,.hljs-selector-id,.hljs-selector-pseudo,.hljs-title{color:#795da3}.hljs-addition{color:#55a532;background-color:#eaffea}.hljs-deletion{color:#bd2c00;background-color:#ffecec}.hljs-link{text-decoration:underline}.markdown-body{font-size:16px;line-height:1.5;word-wrap:break-word}.markdown-body:after,.markdown-body:before{display:table;content:""}.markdown-body:after{clear:both}.markdown-body>:first-child{margin-top:0!important}.markdown-body>:last-child{margin-bottom:0!important}.markdown-body a:not([href]){color:inherit;text-decoration:none}.markdown-body .absent{color:#c00}.markdown-body .anchor{float:left;padding-right:4px;margin-left:-20px;line-height:1}.markdown-body .anchor:focus{outline:none}.markdown-body blockquote,.markdown-body dl,.markdown-body ol,.markdown-body p,.markdown-body pre,.markdown-body table,.markdown-body ul{margin-top:0;margin-bottom:16px}.markdown-body hr{height:.25em;padding:0;margin:24px 0;background-color:#e7e7e7;border:0}.markdown-body blockquote{font-size:16px;padding:0 1em;color:#777;border-left:.25em solid #ddd}.markdown-body blockquote>:first-child{margin-top:0}.markdown-body blockquote>:last-child{margin-bottom:0}.markdown-body kbd,.popover kbd{display:inline-block;padding:3px 5px;font-size:11px;line-height:10px;color:#555;vertical-align:middle;background-color:#fcfcfc;border:1px solid #ccc;border-bottom-color:#bbb;border-radius:3px;box-shadow:inset 0 -1px 0 #bbb}.markdown-body .loweralpha{list-style-type:lower-alpha}.markdown-body h1,.markdown-body h2,.markdown-body h3,.markdown-body h4,.markdown-body h5,.markdown-body h6{margin-top:24px;margin-bottom:16px;font-weight:600;line-height:1.25}.markdown-body h1 .octicon-link,.markdown-body h2 .octicon-link,.markdown-body h3 .octicon-link,.markdown-body h4 .octicon-link,.markdown-body h5 .octicon-link,.markdown-body h6 .octicon-link{color:#000;vertical-align:middle;visibility:hidden}.markdown-body h1:hover .anchor,.markdown-body h2:hover .anchor,.markdown-body h3:hover .anchor,.markdown-body h4:hover .anchor,.markdown-body h5:hover .anchor,.markdown-body h6:hover .anchor{text-decoration:none}.markdown-body h1:hover .anchor .octicon-link,.markdown-body h2:hover .anchor .octicon-link,.markdown-body h3:hover .anchor .octicon-link,.markdown-body h4:hover .anchor .octicon-link,.markdown-body h5:hover .anchor .octicon-link,.markdown-body h6:hover .anchor .octicon-link{visibility:visible}.markdown-body h1 code,.markdown-body h1 tt,.markdown-body h2 code,.markdown-body h2 tt,.markdown-body h3 code,.markdown-body h3 tt,.markdown-body h4 code,.markdown-body h4 tt,.markdown-body h5 code,.markdown-body h5 tt,.markdown-body h6 code,.markdown-body h6 tt{font-size:inherit}.markdown-body h1{font-size:2em}.markdown-body h1,.markdown-body h2{padding-bottom:.3em;border-bottom:1px solid #eee}.markdown-body h2{font-size:1.5em}.markdown-body h3{font-size:1.25em}.markdown-body h4{font-size:1em}.markdown-body h5{font-size:.875em}.markdown-body h6{font-size:.85em;color:#777}.markdown-body ol,.markdown-body ul{padding-left:2em}.markdown-body ol.no-list,.markdown-body ul.no-list{padding:0;list-style-type:none}.markdown-body ol ol,.markdown-body ol ul,.markdown-body ul ol,.markdown-body ul ul{margin-top:0;margin-bottom:0}.markdown-body li>p{margin-top:16px}.markdown-body li+li{padding-top:.25em}.markdown-body dl{padding:0}.markdown-body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}.markdown-body dl dd{padding:0 16px;margin-bottom:16px}.markdown-body table{display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}.markdown-body table th{font-weight:700}.markdown-body table td,.markdown-body table th{padding:6px 13px;border:1px solid #ddd}.markdown-body table tr{background-color:#fff;border-top:1px solid #ccc}.markdown-body table tr:nth-child(2n){background-color:#f8f8f8}.markdown-body img{max-width:100%;box-sizing:content-box;background-color:#fff}.markdown-body img[align=right]{padding-left:20px}.markdown-body img[align=left]{padding-right:20px}.markdown-body .emoji{max-width:none;vertical-align:text-top;background-color:transparent}.markdown-body span.frame{display:block;overflow:hidden}.markdown-body span.frame>span{display:block;float:left;width:auto;padding:7px;margin:13px 0 0;overflow:hidden;border:1px solid #ddd}.markdown-body span.frame span img{display:block;float:left}.markdown-body span.frame span span{display:block;padding:5px 0 0;clear:both;color:#333}.markdown-body span.align-center{display:block;overflow:hidden;clear:both}.markdown-body span.align-center>span{display:block;margin:13px auto 0;overflow:hidden;text-align:center}.markdown-body span.align-center span img{margin:0 auto;text-align:center}.markdown-body span.align-right{display:block;overflow:hidden;clear:both}.markdown-body span.align-right>span{display:block;margin:13px 0 0;overflow:hidden;text-align:right}.markdown-body span.align-right span img{margin:0;text-align:right}.markdown-body span.float-left{display:block;float:left;margin-right:13px;overflow:hidden}.markdown-body span.float-left span{margin:13px 0 0}.markdown-body span.float-right{display:block;float:right;margin-left:13px;overflow:hidden}.markdown-body span.float-right>span{display:block;margin:13px auto 0;overflow:hidden;text-align:right}.markdown-body code,.markdown-body tt{padding:0;padding-top:.2em;padding-bottom:.2em;margin:0;font-size:85%;background-color:rgba(0,0,0,.04);border-radius:3px}.markdown-body code:after,.markdown-body code:before,.markdown-body tt:after,.markdown-body tt:before{letter-spacing:-.2em;content:"\00a0"}.markdown-body code br,.markdown-body tt br{display:none}.markdown-body del code{text-decoration:inherit}.markdown-body pre{word-wrap:normal}.markdown-body pre>code{padding:0;margin:0;font-size:100%;word-break:normal;white-space:pre;background:transparent;border:0}.markdown-body .highlight{margin-bottom:16px}.markdown-body .highlight pre{margin-bottom:0;word-break:normal}.markdown-body .highlight pre,.markdown-body pre{padding:16px;overflow:auto;font-size:85%;line-height:1.45;background-color:#f7f7f7;border-radius:3px}.markdown-body pre code,.markdown-body pre tt{display:inline;max-width:auto;padding:0;margin:0;overflow:visible;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}.markdown-body pre code:after,.markdown-body pre code:before,.markdown-body pre tt:after,.markdown-body pre tt:before{content:normal}.markdown-body .csv-data td,.markdown-body .csv-data th{padding:5px;overflow:hidden;font-size:12px;line-height:1;text-align:left;white-space:nowrap}.markdown-body .csv-data .blob-line-num{padding:10px 8px 9px;text-align:right;background:#fff;border:0}.markdown-body .csv-data tr{border-top:0}.markdown-body .csv-data th{font-weight:700;background:#f8f8f8;border-top:0}.news .alert .markdown-body blockquote{padding:0 0 0 40px;border:0 none}.activity-tab .news .alert .commits,.activity-tab .news .markdown-body blockquote{padding-left:0}.task-list-item{list-style-type:none}.task-list-item label{font-weight:400}.task-list-item.enabled label{cursor:pointer}.task-list-item+.task-list-item{margin-top:3px}.task-list-item-checkbox{float:left;margin:.31em 0 .2em -1.3em!important;vertical-align:middle;cursor:default!important}.markdown-body{padding-top:40px;padding-bottom:40px;max-width:758px;overflow:visible!important}.markdown-body .emoji{vertical-align:top}.markdown-body pre{border:inherit!important}.markdown-body code{color:inherit!important}.markdown-body pre code .wrapper{display:-moz-inline-flex;display:-ms-inline-flex;display:-o-inline-flex;display:inline-flex}.markdown-body pre code .gutter{float:left;overflow:hidden;-webkit-user-select:none;user-select:none}.markdown-body pre code .gutter.linenumber{text-align:right;position:relative;display:inline-block;cursor:default;z-index:4;padding:0 8px 0 0;min-width:20px;box-sizing:content-box;color:#afafaf!important;border-right:3px solid #6ce26c!important}.markdown-body pre code .gutter.linenumber>span:before{content:attr(data-linenumber)}.markdown-body pre code .code{float:left;margin:0 0 0 16px}.markdown-body .gist .line-numbers{border-left:none;border-top:none;border-bottom:none}.markdown-body .gist .line-data{border:none}.markdown-body .gist table{border-spacing:0;border-collapse:inherit!important}.markdown-body code[data-gist-id]{background:none;padding:0}.markdown-body code[data-gist-id]:after,.markdown-body code[data-gist-id]:before{content:""}.markdown-body code[data-gist-id] .blob-num{border:unset}.markdown-body code[data-gist-id] table{overflow:unset;margin-bottom:unset}.markdown-body code[data-gist-id] table tr{background:unset}.markdown-body[dir=rtl] pre{direction:ltr}.markdown-body[dir=rtl] code{direction:ltr;unicode-bidi:embed}.markdown-body .alert>p{margin-bottom:0}.markdown-body pre.abc,.markdown-body pre.flow-chart,.markdown-body pre.graphviz,.markdown-body pre.mermaid,.markdown-body pre.sequence-diagram,.markdown-body pre.vega{text-align:center;background-color:inherit;border-radius:0;white-space:inherit;overflow:visible}.markdown-body pre.abc>code,.markdown-body pre.flow-chart>code,.markdown-body pre.graphviz>code,.markdown-body pre.mermaid>code,.markdown-body pre.sequence-diagram>code,.markdown-body pre.vega>code{text-align:left}.markdown-body pre.abc>svg,.markdown-body pre.flow-chart>svg,.markdown-body pre.graphviz>svg,.markdown-body pre.mermaid>svg,.markdown-body pre.sequence-diagram>svg,.markdown-body pre.vega>svg{max-width:100%;height:100%}.markdown-body pre>code.wrap{white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space:-o-pre-wrap;word-wrap:break-word}.markdown-body .alert>p,.markdown-body .alert>ul{margin-bottom:0}.markdown-body summary{display:list-item}.markdown-body summary:focus{outline:none}.markdown-body details summary{cursor:pointer}.markdown-body details:not([open])>:not(summary){display:none}.markdown-body figure{margin:1em 40px}.markdown-body .mark,.markdown-body mark{background-color:#fff1a7}.vimeo,.youtube{cursor:pointer;display:table;text-align:center;background-position:50%;background-repeat:no-repeat;background-size:contain;background-color:#000;overflow:hidden}.vimeo,.youtube{position:relative;width:100%}.youtube{padding-bottom:56.25%}.vimeo img{width:100%;object-fit:contain;z-index:0}.youtube img{object-fit:cover;z-index:0}.vimeo iframe,.youtube iframe,.youtube img{width:100%;height:100%;position:absolute;top:0;left:0}.vimeo iframe,.youtube iframe{vertical-align:middle;z-index:1}.vimeo .icon,.youtube .icon{position:absolute;height:auto;width:auto;top:50%;left:50%;transform:translate(-50%,-50%);color:#fff;opacity:.3;transition:opacity .2s;z-index:0}.vimeo:hover .icon,.youtube:hover .icon{opacity:.6;transition:opacity .2s}.slideshare .inner,.speakerdeck .inner{position:relative;width:100%}.slideshare .inner iframe,.speakerdeck .inner iframe{position:absolute;top:0;bottom:0;left:0;right:0;width:100%;height:100%}.MJX_Assistive_MathML{display:none}.ui-infobar{position:relative;z-index:2;max-width:760px;margin:25px auto -25px;padding:0 15px;color:#777}.toc .invisable-node{list-style-type:none}.ui-toc{position:fixed;bottom:20px;z-index:998}.ui-toc-label{opacity:.3;background-color:#ccc;border:none;transition:opacity .2s}.ui-toc .open .ui-toc-label{opacity:1;color:#fff;transition:opacity .2s}.ui-toc-label:focus{opacity:.3;background-color:#ccc;color:#000}.ui-toc-label:hover{opacity:1;background-color:#ccc;transition:opacity .2s}.ui-toc-dropdown{margin-top:23px;margin-bottom:20px;padding-left:10px;padding-right:10px;max-width:45vw;width:25vw;max-height:70vh;overflow:auto;text-align:inherit}.ui-toc-dropdown>.toc{max-height:calc(70vh - 100px);overflow:auto}.ui-toc-dropdown[dir=rtl] .nav{padding-right:0;letter-spacing:.0029em}.ui-toc-dropdown a{overflow:hidden;text-overflow:ellipsis;white-space:pre}.ui-toc-dropdown .nav>li>a{display:block;padding:4px 20px;font-size:13px;font-weight:500;color:#767676}.ui-toc-dropdown .nav>li:first-child:last-child > ul,.ui-toc-dropdown .toc.expand ul{display:block}.ui-toc-dropdown .nav>li>a:focus,.ui-toc-dropdown .nav>li>a:hover{padding-left:19px;color:#000;text-decoration:none;background-color:transparent;border-left:1px solid #000}.ui-toc-dropdown[dir=rtl] .nav>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav>li>a:hover{padding-right:19px;border-left:none;border-right:1px solid #000}.ui-toc-dropdown .nav>.active:focus>a,.ui-toc-dropdown .nav>.active:hover>a,.ui-toc-dropdown .nav>.active>a{padding-left:18px;font-weight:700;color:#000;background-color:transparent;border-left:2px solid #000}.ui-toc-dropdown[dir=rtl] .nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav>.active>a{padding-right:18px;border-left:none;border-right:2px solid #000}.ui-toc-dropdown .nav .nav{display:none;padding-bottom:10px}.ui-toc-dropdown .nav>.active>ul{display:block}.ui-toc-dropdown .nav .nav>li>a{padding-top:1px;padding-bottom:1px;padding-left:30px;font-size:12px;font-weight:400}.ui-toc-dropdown[dir=rtl] .nav .nav>li>a{padding-right:30px}.ui-toc-dropdown .nav .nav>li>ul>li>a{padding-top:1px;padding-bottom:1px;padding-left:40px;font-size:12px;font-weight:400}.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a{padding-right:40px}.ui-toc-dropdown .nav .nav>li>a:focus,.ui-toc-dropdown .nav .nav>li>a:hover{padding-left:29px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav .nav>li>a:hover{padding-right:29px}.ui-toc-dropdown .nav .nav>li>ul>li>a:focus,.ui-toc-dropdown .nav .nav>li>ul>li>a:hover{padding-left:39px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a:hover{padding-right:39px}.ui-toc-dropdown .nav .nav>.active:focus>a,.ui-toc-dropdown .nav .nav>.active:hover>a,.ui-toc-dropdown .nav .nav>.active>a{padding-left:28px;font-weight:500}.ui-toc-dropdown[dir=rtl] .nav .nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>a{padding-right:28px}.ui-toc-dropdown .nav .nav>.active>.nav>.active:focus>a,.ui-toc-dropdown .nav .nav>.active>.nav>.active:hover>a,.ui-toc-dropdown .nav .nav>.active>.nav>.active>a{padding-left:38px;font-weight:500}.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active>a{padding-right:38px}.markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif}html[lang^=ja] .markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ\ ゴシック,sans-serif}html[lang=zh-tw] .markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif}html[lang=zh-cn] .markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif}html .markdown-body[lang^=ja]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ\ ゴシック,sans-serif}html .markdown-body[lang=zh-tw]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif}html .markdown-body[lang=zh-cn]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif}html[lang^=ja] .ui-toc-dropdown{font-family:Source Sans Pro,Helvetica,Arial,Meiryo UI,MS PGothic,ＭＳ\ Ｐゴシック,sans-serif}html[lang=zh-tw] .ui-toc-dropdown{font-family:Source Sans Pro,Helvetica,Arial,Microsoft JhengHei UI,微軟正黑UI,sans-serif}html[lang=zh-cn] .ui-toc-dropdown{font-family:Source Sans Pro,Helvetica,Arial,Microsoft YaHei UI,微软雅黑UI,sans-serif}html .ui-toc-dropdown[lang^=ja]{font-family:Source Sans Pro,Helvetica,Arial,Meiryo UI,MS PGothic,ＭＳ\ Ｐゴシック,sans-serif}html .ui-toc-dropdown[lang=zh-tw]{font-family:Source Sans Pro,Helvetica,Arial,Microsoft JhengHei UI,微軟正黑UI,sans-serif}html .ui-toc-dropdown[lang=zh-cn]{font-family:Source Sans Pro,Helvetica,Arial,Microsoft YaHei UI,微软雅黑UI,sans-serif}.ui-affix-toc{position:fixed;top:0;max-width:15vw;max-height:70vh;overflow:auto}.back-to-top,.expand-toggle,.go-to-bottom{display:block;padding:4px 10px;margin-top:10px;margin-left:10px;font-size:12px;font-weight:500;color:#999}.back-to-top:focus,.back-to-top:hover,.expand-toggle:focus,.expand-toggle:hover,.go-to-bottom:focus,.go-to-bottom:hover{color:#563d7c;text-decoration:none}.back-to-top,.go-to-bottom{margin-top:0}.ui-user-icon{width:20px;height:20px;display:block;border-radius:3px;margin-top:2px;margin-bottom:2px;margin-right:5px;background-position:50%;background-repeat:no-repeat;background-size:cover}.ui-user-icon.small{width:18px;height:18px;display:inline-block;vertical-align:middle;margin:0 0 .2em}.ui-infobar>small>span{line-height:22px}.ui-infobar>small .dropdown{display:inline-block}.ui-infobar>small .dropdown a:focus,.ui-infobar>small .dropdown a:hover{text-decoration:none}.ui-published-note{color:#337ab7}.ui-published-note .fa{font-size:20px;vertical-align:top}.unselectable{-webkit-user-select:none;-o-user-select:none;user-select:none}@media print{blockquote,div,img,pre,table{page-break-inside:avoid!important}a[href]:after{font-size:12px!important}}.markdown-body.slides{position:relative;z-index:1;color:#222}.markdown-body.slides:before{content:"";display:block;position:absolute;top:0;left:0;right:0;bottom:0;z-index:-1;background-color:currentColor;box-shadow:0 0 0 50vw}.markdown-body.slides section[data-markdown]{position:relative;margin-bottom:1.5em;background-color:#fff;text-align:center}.markdown-body.slides section[data-markdown] code{text-align:left}.markdown-body.slides section[data-markdown]:before{content:"";display:block;padding-bottom:56.23%}.markdown-body.slides section[data-markdown]>div:first-child{position:absolute;top:50%;left:1em;right:1em;transform:translateY(-50%);max-height:100%;overflow:hidden}.markdown-body.slides section[data-markdown]>ul{display:inline-block}.markdown-body.slides>section>section+section:after{content:"";position:absolute;top:-1.5em;right:1em;height:1.5em;border:3px solid #777}body{font-smoothing:subpixel-antialiased!important;-webkit-font-smoothing:subpixel-antialiased!important;-moz-osx-font-smoothing:auto!important;text-shadow:0 0 1em transparent,1px 1px 1.2px rgba(0,0,0,.004);-webkit-overflow-scrolling:touch;letter-spacing:.025em}.focus,:focus{outline:none!important}::-moz-focus-inner{border:0!important}body{font-family:Source Sans Pro,Helvetica,Arial,sans-serif}html[lang^=ja] body{font-family:Source Sans Pro,Helvetica,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ\ ゴシック,sans-serif}html[lang=zh-tw] body{font-family:Source Sans Pro,Helvetica,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif}html[lang=zh-cn] body{font-family:Source Sans Pro,Helvetica,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif}abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}abbr[data-original-title],abbr[title]{cursor:help}body.modal-open{overflow-y:auto;padding-right:0!important}
+    </style>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js" integrity="sha256-g6iAfvZp+nDQ2TdTR/VVKJf3bGro4ub5fvWSWVRi2NE=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.9/es5-shim.min.js" integrity="sha256-8E4Is26QH0bD52WoQpcB+R/tcWQtpzlCojrybUd7Mxo=" crossorigin="anonymous"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div id="doc" class="markdown-body container-fluid comment-enabled" data-hard-breaks="true" style="position: relative;"><h1 id="Lista-ćwiczeniowa-nr-Aśroda"><a class="anchor hidden-xs" href="#Lista-ćwiczeniowa-nr-Aśroda" title="Lista-ćwiczeniowa-nr-Aśroda"><span class="octicon octicon-link"></span></a>Lista ćwiczeniowa nr A(środa)</h1><div class="alert alert-info">
+<p>grupa PWit, środa 8-10</p>
+</div><div class="alert alert-success">
+<p><a href="https://meet.google.com/muu-ahkr-aak?authuser=1" target="_blank" rel="noopener">Link do audio/wideo-konferencji</a></p>
+</div><h2 id="Deklaracje"><a class="anchor hidden-xs" href="#Deklaracje" title="Deklaracje"><span class="octicon octicon-link"></span></a>Deklaracje</h2><div class="alert alert-info">
+<p>Studenci wypełniają poniższą tabelkę przed rozpoczęciem zajęć. Student ma obowiązek zapoznać się&nbsp;wcześniej ze składnią&nbsp;języka Markdown!</p>
+</div><p>Gotowość rozwiązania zadania należy wyrazić poprzez postawienie X w odpowiedniej kolumnie!</p><table>
+<thead>
+<tr>
+<th></th>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+<th>5</th>
+<th>6</th>
+<th>7</th>
+<th>8</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Maksymilian DeBeściak</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>Paweł	Bajgrowicz</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Przemysław Czerwiński</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Antoni	Dąbrowski</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Alicja	Danilczuk</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Agnieszka	Jonak</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Agata Kasprzak</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Karol	Kęciński</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Błażej	Korasiak</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Józef	Kowalewicz</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Jakub	Mendyk</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>Barbara	Piasecka</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Damian	Ratajski</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Aleksandra Stępniewska</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Karol	Stuła</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Daniel	Wiczołek</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Patryk	Wilusz</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Mateusz	Zając</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table><h2 id="Rozwiązania-30-minut"><a class="anchor hidden-xs" href="#Rozwiązania-30-minut" title="Rozwiązania-30-minut"><span class="octicon octicon-link"></span></a>Rozwiązania (30 minut)</h2><div class="alert alert-info">
+<p>Na początku zajęć prowadzący przypisuje studentów do zadań. W ciągu 30 minut student ma obowiązek uzupełnić rozwiązanie zadania. Jeśli zadanie wymaga posłużenia się&nbsp;diagramem, to można wkleić jego zdjęcie.  Prowadzący może zlecić przygotowanie rozwiązania danego zadania więcej niż jednej osobie.</p>
+</div><div class="alert alert-warning">
+<p>Zamieszczanie zdjęć gotowych rozwiązań jest niedozwolone chyba, że prowadzący na to pozwoli.</p>
+</div><div class="alert alert-danger">
+<p>Udostępnianie gotowych rozwiązań studentom z innych grup ćwiczeniowych jest niedozwolone!</p>
+</div><p>Należy przygotować się do zajęć czytając następujące rozdziały książek:</p><ul>
+<li>Tanenbaum (wydanie czwarte): 1.1, 1.2, 1.4, 1.5, 2.1, 10.3, 11.4</li>
+<li>Arpaci-Dusseau:<br>
+\Link{<a href="http://pages.cs.wisc.edu/~remzi/OSTEP/intro.pdf" target="_blank" rel="noopener">http://pages.cs.wisc.edu/~remzi/OSTEP/intro.pdf</a>}{Introduction}<br>
+\Link{<a href="http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-intro.pdf" target="_blank" rel="noopener">http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-intro.pdf</a>}{Processes},<br>
+\Link{<a href="http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-api.pdf" target="_blank" rel="noopener">http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-api.pdf</a>}{Process API},<br>
+\Link{<a href="http://pages.cs.wisc.edu/~remzi/OSTEP/vm-intro.pdf" target="_blank" rel="noopener">http://pages.cs.wisc.edu/~remzi/OSTEP/vm-intro.pdf</a>}{Address Spaces}</li>
+</ul><p>UWAGA!:W trakcie prezentacji należy być&nbsp;gotowym do zdefiniowania pojęć<br>
+oznaczonych \textbf{wytłuszczoną} czcionką.</p><p>Podręcznikiem do zadań praktycznych/prezentacyjnych jest<br>
+\Quote{Advanced Programming in the UNIX Environment} (w skrócie \textsc{APUE}). Proszę przede wszystkim korzystać z podręcznika systemowego (polecenia {\tt man} i~{\tt apropos}).  Jeśli jego treść w \textit{Linuksie} nie jest wystarczająco klarowna, to warto spojrzeć<br>
+do odpowiednika z \textsc{BSD} – najlepiej z użyciem strony \href{<a href="https://mdoc.su" target="_blank" rel="noopener">https://mdoc.su</a>}{<a href="http://mdoc.su" target="_blank" rel="noopener">mdoc.su</a>}.</p><p>W zadaniach oznaczonych literą P, wymagamy praktycznej \textbf{demonstracji} działania programów, najlepiej poprzez udostępnienie ekranu własnego komputera w usłudze Google Meet. By taka prezentacja była płynna należy przygotować w~domu plik tekstowy z listą poleceń do wykonania i komentarzami. Każde zadanie należy mieć właściwie przygotowane do prezentacji \underline{przed zajęciami}. W przypadku zbędnego przeciągania czasu odpowiedzi ze~względu na problemy techniczne prowadzący ma prawo skreślić zadanie i postawić jeden punkt ujemny.</p><h3 id="Zadanie-1"><a class="anchor hidden-xs" href="#Zadanie-1" title="Zadanie-1"><span class="octicon octicon-link"></span></a>Zadanie 1</h3><blockquote>
+<p><small><i class="fa fa-user"></i> Piotr Witkowski</small> Zadanie rozwiązuje p. Paweł Bajgrowicz.</p>
+</blockquote><p>Wyjaśnij różnice między \textbf{powłoką} \English{shell}, \textbf{system operacyjnym} i \textbf{jądrem systemu operacyjnego} \English{kernel}. W tym celu dobierz kilka przykładów powszechnie wykorzystywanego oprogramowania. Jakie są główne zadania systemu operacyjnego z~punktu widzenia programisty?</p><hr><p>kernel - łączy fizyczną część komputera z aplikacjami. Jest rdzeniem systemu operacyjnego.</p><p>shell - interfejs między użytkownikiem a kernelem.</p><p>system operacyjny - dzieli się na jądro, powłokę i system plików</p><p>przykłady jąder: Solaris, Windows NT, Linux Kernel, FreeBSD<br>
+przykłady systemów: Windows, Linux, MacOS<br>
+przykłady powłok: bash, dash, zsh, Windows shell, gnome</p><p>Główne zadania systemów operacyjnych z punktu widzenia programisty:</p><ul>
+<li>planowanie listy procesów i zarządzanie już działającymi</li>
+<li>zarządzanie wątkami</li>
+<li>rozporządzanie pamięcią</li>
+<li>dbanie o komunikację między urządzeniami zewnętrznymi</li>
+<li>przekazanie interfejsu dla użytkownika</li>
+</ul><h3 id="Zadanie-2"><a class="anchor hidden-xs" href="#Zadanie-2" title="Zadanie-2"><span class="octicon octicon-link"></span></a>Zadanie 2</h3><blockquote>
+<p><small><i class="fa fa-user"></i> Piotr Witkowski</small> Zadanie rozwiązuje p. Daniel Wiczołek.</p>
+</blockquote><p>Czym jest \textbf{zadanie} w \textbf{systemach wsadowych}? Jaką&nbsp;rolę&nbsp;pełni \textbf{monitor}? Na czym polega \textbf{planowanie zadań}? Zapoznaj się z rozdziałem \Quote{System Supervisor} dokumentu \Link{<a href="http://bitsavers.org/pdf/ibm/7090/C28-6248-7_v13_IBSYS_Dec66.pdf" target="_blank" rel="noopener">http://bitsavers.org/pdf/ibm/7090/C28-6248-7_v13_IBSYS_Dec66.pdf</a>}{IBM 7090/7094 IBSYS Operating System}. Wyjaśnij pobieżnie znaczenie poleceń \textbf{języka kontroli zadań} \English{Job Control Language} użytych na rysunku 3 na stronie 13. Do jakich zastosowań używa się dziś systemów wsadowych?</p><p>Wskazówka: Bardzo popularnym systemem realizującym szeregowanie zadań wsadowych jest \Link{<a href="https://slurm.schedmd.com/SC17/SlurmOverviewSC17.pdf" target="_blank" rel="noopener">https://slurm.schedmd.com/SC17/SlurmOverviewSC17.pdf</a>}{SLURM}.</p><p><strong>Roziwązanie</strong><br>
+Zadanie to program lub zestaw programów do przetworzenia.</p><p>Monitor to oprogramowanie systemowe odpowiedzialne za interpretację i wykonywanie zadań.<br>
+Kiedy monitor rozpoczyna zadanie, przekazuje kontrolę nad całym komputerem do zadania, które następnie steruje komputerem aż do jego zakończenia.</p><p>Planowanie zadań polaga na ustaleniu kolejności wykonywania zadań, przydzieleniu im czasu działania (czasu korzystania z CPU) oraz ilości innych zasobów.</p><p>Język kontroli zadań to nazwa określająca języki skryptowe używanych w systemach operacyjnych na komputerach mainframe IBM w celu instruowania systemu, jak i w jakiej kolejności uruchomić zadanie lub podsystem.</p><p><img src="https://i.imgur.com/Yy9BukI.png" alt=""></p><ul>
+<li>JOB – początek zadania o danym ID</li>
+<li>EXECUTE – wykonaj zadanie (lub podsystem) o podanym ID</li>
+<li>RELEASE – zwolnienie jednostki systemowej</li>
+<li>IBSYS – przekazanie kontroli do systemu</li>
+</ul><h3 id="Zadanie-3"><a class="anchor hidden-xs" href="#Zadanie-3" title="Zadanie-3"><span class="octicon octicon-link"></span></a>Zadanie 3</h3><blockquote>
+<p><small><i class="fa fa-user"></i> Piotr Witkowski</small> Zadanie rozwiązuje p. Przemysław Czerwiński.</p>
+</blockquote><p>Jaka była motywacja do wprowadzenia \textbf{wieloprogramowych} systemów wsadowych? W~jaki sposób wieloprogramowe systemy wsadowe wyewoluowały w systemy z \textbf{podziałem czasu} \English{time sharing}? Podaj przykład historycznego systemu \textbf{interaktywnego}, który nie jest wieloprogramowy.</p><h4 id="Rozwiązanie0"><a class="anchor hidden-xs" href="#Rozwiązanie0" title="Rozwiązanie0"><span class="octicon octicon-link"></span></a>Rozwiązanie</h4><p>Motywacją do wprowadzenia wieloprogramowych systemów wsadowych było lepsze wykorzystanie mocy obliczeniowej – poprzednio podczas gdy dany program czekał na dane wejściowe, procesor się marnował.</p><p>Wieloprogramowe systemy wsadowe wyewoluowały w systemy z podziałem czasu (czyli systemy, gdzie w danej jednostce czasu wiele róznych programów może wykonywać po kolei instrukcje), ponieważ programistom potrzebny był szybki feedback. Poprzednio w sytuacji gdy wielu programistów miało dostęp tylko do jednego komputera, wszystkie programy były stopniowo zbierane i uruchamiane jak zbierze się ich więcej. Oznaczało to czasem kilkugodzinne oczekiwanie na raport o prostym błędzie, np. braku przecinka.</p><p>Przykładem historycznego systemu interaktywnego, który nie jest wieloprogramowy, jest MS DOS.</p><h3 id="Zadanie-4P"><a class="anchor hidden-xs" href="#Zadanie-4P" title="Zadanie-4P"><span class="octicon octicon-link"></span></a>Zadanie 4[P]</h3><blockquote>
+<p><small><i class="fa fa-user"></i> Piotr Witkowski</small> Zadanie rozwiązuje p. Agata Kasprzak.</p>
+</blockquote><p>Uruchom program \Symbol{1_ls} pod kontrolą&nbsp;narzędzia \Symbol{ltrace -S}. Na podstawie śladu wykonania programu zidentyfikuj, które z \textbf{wywołań systemowych} są używane przez procedury: \Symbol{opendir}, \Symbol{readdir}, \Symbol{printf} i \Symbol{closedir}. Do czego służy wywołanie systemowe \Symbol{brk}? Używając debuggera \Symbol{gdb} i polecenia \Symbol{catch syscall brk} zidentyfikuj, która funkcja używa \Symbol{brk}.</p><p><strong>Wywołania systemowe</strong><br>
+program użytkownika, aby uzyskać dostęp do usług SO musi stworzyć wywołanie systemowe. Łapie ono w pułapkę proces jądra i woła SO. Instrukcja pułapki przełącza się z trybu użytkownika na tryb jądra i uruchamia SO. Po zakończeniu pracy kontrola jest zwracana do programu użytkownika o adresie instrukcji po wywołaniu systemowym.</p><p><code>ltrace -S</code> - narzędzie do analizy kodu badające interakcję programu z używanymi przez niego bibliotekami dzielonymi (shared libraries).  Display system calls as well as library calls.</p><p><img src="https://i.imgur.com/pfAm4mG.png" alt=""></p><ul>
+<li>«opendir» - SYS_openat</li>
+<li>«readdir» - SYS_getdents64</li>
+<li>«printf» - SYS_write</li>
+<li>«closedir» - SYS_close</li>
+</ul><p>Wywołanie systemowe SYS_brk powoduje zmianę lokalizacji przerwania programu, czyli zmianę końca segmentu danych procesu. Zwiększenie wartosci brk powoduje przydzielenie pamieci do procesu, a zmiejszenie tej wartosci zwalnia tę pamięć.</p><p><img src="https://i.imgur.com/ZrXCcgH.png" alt=""></p><p><img src="https://i.imgur.com/z4eJRop.png" alt=""><br>
+Na początku funkcja start (która jest wywoływana jeszcze przed main) alokuje pamięć, więc używa «brk».</p><p><img src="https://i.imgur.com/szoahNO.png" alt=""><br>
+Zauważmy również, że funkcja «opendir» używa «brk», aby zobaczyć co jest przechowywane w analizowaym folderze.</p><h3 id="Zadanie-5P"><a class="anchor hidden-xs" href="#Zadanie-5P" title="Zadanie-5P"><span class="octicon octicon-link"></span></a>Zadanie 5[P]</h3><blockquote>
+<p><small><i class="fa fa-user"></i> Piotr Witkowski</small> Zadanie rozwiązuje p. Jakub Mendyk. Uwaga: p. Jakub rozwiązuje w sumie 3 zadania (jeszcze 6. i 7.).</p>
+</blockquote><p>Pod kontrolą narzędzia \Symbol{strace} uruchom program \Symbol{2_cat} korzystający bezpośrednio z~wywołań systemowych do interakcji ze \textbf{standardowym wejściem i wyjściem}. Pokaż, że program oczekuje na odczyt na \textbf{deskryptorze pliku} 0 i pisze do deskryptora 1. Naciśnij kombinację klawiszy \Symbol{CTRL+D} kończąc wejściowy strumień danych – co zwróciło \Symbol{read}? Zmodyfikuj program tak, by czytał z pliku podanego w~linii poleceń. Co się stanie, jeśli przekażesz \textbf{ścieżkę} do katalogu zamiast do pliku regularnego?</p><h3 id="Rozwiązanie1"><a class="anchor hidden-xs" href="#Rozwiązanie1" title="Rozwiązanie1"><span class="octicon octicon-link"></span></a>Rozwiązanie</h3><p><strong>Standardowe wejście</strong> i <strong>wyjście</strong> to “pliki”, do których ma dostęp każdy program od razu po uruchomieniu. Standardowe wejście jest zazwyczaj związane z klawiaturą, a wyjście z ekranem (a dawniej np. z drukarką liniową). <strong>Deskryptor pliku</strong> to identyfikator, zazwyczaj nieujemna liczba naturalna, związana z plikiem do którego program może czytać i/lub pisać. Standardowe wejście ma zazwyczaj deskryptor pliku równy zero, a wyjście równe jeden.</p><p><strong>Ścieżka</strong> to ciąg znaków, będący identyfikatorem pliku w drzewiastej strukturze będącej abstrakcją zawartości dysku/dysków.</p><h3 id="Co-pojawi-się-na-prezentacji0"><a class="anchor hidden-xs" href="#Co-pojawi-się-na-prezentacji0" title="Co-pojawi-się-na-prezentacji0"><span class="octicon octicon-link"></span></a>Co pojawi się na prezentacji</h3><p>Uruchamiamy <code>strace ./2_cat</code>. <code>strace</code> będzie listował na standardowe wyjście wywołania systemowe wraz z ich argumentami. Po uruchomieniu programu, jego wykonanie zatrzyma się na wywołaniu <code>read</code>. Jak dobrze wiemy, pierwszym argumentem tego wywołania jest deskryptor pliku, tutaj równy 0. Wiemy, że 0 reprezentuje standardowe wejście, zatem to z niego program czyta. Po wpisaniu dowolnego ciągu zakończonego Enterem, wykonanie programu zostanie wznowione aż do kolejnego wywołania <code>read</code>.</p><p><img src="https://i.imgur.com/3h0m83u.png" alt=""></p><p>Po naciśnięciu Entera, nasz program <code>./2_cat</code> oraz <code>strace</code> wypisały dodatkowe informacje.</p><p><img src="https://i.imgur.com/Sh53h0U.png" alt=""></p><p>Zakończyło się wywołanie funkcji <code>read</code>, która zwróciła liczbę 4 – wczytanych do bufora bajtów (3*‘a’ + ‘\n’). Następnie została wywołana procedura <code>write</code>, z pierwszym argumentem – czyli deskryptorem pliku – równym 1. Wiemy zatem, że program wypisuje informacje na standardowe wyjście, co też widzimy bo na ekranie pojawił się “aaa” wewnątrz raportu <code>strace</code> o wywołaniu <code>write</code>.</p><p><img src="https://i.imgur.com/lZBFqp0.png" alt=""></p><p>Naciśnięcie <code>Ctr+D</code>, które wysyła do emulatora terminala komunikat <code>EOF</code> – o zakończeniu pliku, powoduje że <code>read</code> zwraca 0, gdyż tyle właśnie bajtów udało mu się wczytać, po czym program kończy działanie.</p><p>Zmodyfikujmy teraz <code>2_cat</code>, aby czytał dane z pliku podanego jako argument w wierszu poleceń.</p><p><img src="https://i.imgur.com/xLzh31d.png" alt=""></p><p>Po lewej stronie oryginalny kod programu, po prawej zmodyfikowany. Korzystamy oczywiście ze zmiennej <code>argv</code>. Następnie używając <code>open</code>, otwieramy plik o ścieżce podanej w <code>argv[1]</code> tylko do odczytu (<code>O_RDONLY</code>). W końcu modyfikujemy wywołanie <code>read</code> by zamiast używać deskryptora pliku dla standardowego wejścia, używało deskryptora pliku którego ścieżka została podana na wejściu.</p><p>Teraz gdy uruchomimy nasz zmodyfikowany program ze ścieżką do pliku jako argumentem, program wypisze zawartość tego pliku. Pokazuje to zalety zrównania – dzięki deskryptorom plików – plików oraz urządzeń we/wy. Jeśli ścieżka będzie wskazywała na katalog, a nie plik, wywołanie <code>read</code> zakończy się z błędem <code>read error: Is a directory</code> wypisanym na ekran.</p><h3 id="Zadanie-6P"><a class="anchor hidden-xs" href="#Zadanie-6P" title="Zadanie-6P"><span class="octicon octicon-link"></span></a>Zadanie 6[P]</h3><blockquote>
+<p><small><i class="fa fa-user"></i> Piotr Witkowski</small> Zadanie rozwiązuje p. Aleksandra Stępniewska.</p>
+</blockquote><p>W systemach uniksowych wszystkie procesy są związane relacją \textbf{rodzic-dziecko}. Uruchom polecenie \Symbol{ps -eo user,pid,ppid,pgid,tid,pri,stat,wchan,cmd}.  Na wydruku zidentyfikuj \textbf{identyfikator procesu}, \textbf{identyfikator grupy procesów}, \textbf{identyfikator rodzica} oraz \textbf{właściciela} procesu. Kto~jest rodzicem procesu \texttt{init}? Wskaż, które z wyświetlonych zadań są \textbf{wątkami jądra}. Jakie jest znaczenie poszczególnych znaków w kolumnie \verb@STAT@?  Wyświetl drzewiastą reprezentację \textbf{hierarchii procesów} poleceniem \verb@pstree@ -  które z zadań są wątkami?</p><p><strong>Rozwiązanie:</strong></p><p><em><strong>rodzic-dziecko</strong></em> – każdy proces poza init ma swojego rodzica, proces od którego pochodzi</p><p><em><strong>Kto jest rodzicem procesu init?</strong></em><br>
+Rodzicem inita (jak i <strong>kthread</strong> (wątku jądra)) jest jądro (PID 0).</p><p><em><strong>Wątki jądra</strong></em> – lekkie procesy, działające asynchronicznie w przestrzeni jądra (podobnie jak zwykłe wątki w przestrzeni użytkownika), niezwiązane z żadnym procesem użytkownika.<br>
+(to te, które są w nawiasach np. <em>[kworker/7:2-mm_percpu_wq]</em>.)</p><ul>
+<li>PID – to identyfikator procesu (numer procesu),</li>
+<li>PPID – identyfikator procesu rodzica,</li>
+<li>PGID – to identyfikator grupy procesów</li>
+<li>USER – właściciel procesu</li>
+</ul><p><img src="https://i.imgur.com/aLuGyKU.png" alt=""><br>
+…<br>
+<img src="https://i.imgur.com/xr8PWaj.png" alt=""><br>
+“<em>ksoftirqd</em> – demon szeregujący i uruchamiający dolne połówki (bottom-halves) przerwań programowych (software interrupts)<br>
+<em>migration</em> – wątek odpowiedzialny za przenoszenie procesów między procesorami<br>
+<em>pdflush</em> – odpowiada za zrzucanie zabrudzonych stron pamięci na dysk<br>
+<em>kacpid</em> - wątek obsługujący zdarzenia związane z zarządzaniem poborem mocy<br>
+<em>scsi_eh_?</em> - wątek obsługi błędów urządzeń SCSI<br>
+<em>kjournald</em> – wątek obsługujący dziennik systemów plików np ext3<br>
+<em>kswapd</em> – demon odzyskujący pamięćkondemand – wątek regulujący częstotliwość taktowania procesora (p-state”<br>
+///powyższe wytłumaczenia przytoczone za <a href="http://students.mimuw.edu.pl/ZSO/Wyklady/00_stud/watki_jadra.pdf" target="_blank" rel="noopener">http://students.mimuw.edu.pl/ZSO/Wyklady/00_stud/watki_jadra.pdf</a></p><p><em><strong>Jakie  jest  znaczenie  poszczególnych znaków w kolumnie STAT?</strong></em><br>
+<img src="https://i.imgur.com/oq1jbNH.png" alt=""><br>
+Przetłumaczone opisy:<br>
+S  –  przerywany sen (oczekuje na skończenie zdarzenia (waiting for event to complete))<br>
+D – czyli proces śpi tak mocno, że nie da się go przerwać<br>
+I – jak procesor nic nie robi to musi na nim i tak chodzić jakiś kod, i to jest właśnie wątek Idle<br>
+R – proces sobie chodzi / albo może chodzić (czyli nie śpi)<br>
+T – został zatrzymany przez sygnał<br>
+t – przez debuger<br>
+W – nie ważne<br>
+X – proces umarł, został pogrzebany ale nadal jest widoczny (tak być nie powinno)<br>
+Z – proces umarł (się skończył) ale jeszcze nie został pochowany przez rodzica/ żniwiarza<br>
+&lt; – wysoki prorytet<br>
+N – niski priorytet<br>
+s – jest liderem sesji (jego PID to ID grupy procesów)<br>
+l – wielowątkowy<br>
++ – jest w pierwszoplanowej grupie procesów (czyli te które mają dostęp do terminala)</p><p><strong>wątki to te procesy w [{…}]</strong><br>
+<img src="https://i.imgur.com/lSXcOJC.png" alt=""><br>
+<img src="https://i.imgur.com/Kj7lN3j.png" alt=""><br>
+<img src="https://i.imgur.com/rpIPqlx.png" alt=""></p><h3 id="Zadanie-7P"><a class="anchor hidden-xs" href="#Zadanie-7P" title="Zadanie-7P"><span class="octicon octicon-link"></span></a>Zadanie 7[P]</h3><blockquote>
+<p><small><i class="fa fa-user"></i> Piotr Witkowski</small> Zadanie rozwiązuje p. Jakub Mendyk.</p>
+</blockquote><p>Znajdź \textrm{pid} procesu \Link{<a href="https://en.wikipedia.org/wiki/X_Window_System" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/X_Window_System</a>}{X serwera}, a następnie używając polecenia \Symbol{pmap} wyświetl zawartość jego przestrzeni adresowej. Zidentyfikuj w niej poszczególne \textit{zasoby pamięciowe} – tj. stos, stertę, \textbf{segmenty programu}, \textbf{pamięć anonimową}, \textbf{pliki odwzorowane w~pamięć}. Należy wyjaśnić znaczenie kolumn wydruku!</p><h3 id="Rozwiązanie2"><a class="anchor hidden-xs" href="#Rozwiązanie2" title="Rozwiązanie2"><span class="octicon octicon-link"></span></a>Rozwiązanie</h3><p>Segment programu to odwzorowanie pewnego obiektu będącego nośnikiem danych w przestrzeń adresową programu. Jeśli segment odpowiada plikowi, to mówimy o <strong>plikach odwzorowanych w pamięć</strong>. Jednak, tym obiektem nie zawsze musi być plik. Przykładami innych obiektów jest <strong>pamięć anonimowa</strong>, która nie jest powiązana z żądnym nośnikiem pamięci, którego zawartość zostaje odwzorowana w pamięć. W taki sposób, otrzymujemy pamięć efemeryczną, która gdy przestaniemy jej potrzebować, bezpowrotnie zniknie. W takim segmencie możemy umieścić np. stos albo pamięć współdzieloną przez wiele procesów jako sposób komunikacji.</p><p>Polecenie <code>pmap</code>, mówi o sobie w <code>man</code>ie, że “pmap - report memory map of a process”,<br>
+czyli przedstawia raport segmentów procesu. Kolejne kolumny wydruku polecenia <code>pmap</code> oznaczają odpowiednio:</p><ul>
+<li>adres początkowy odwzorowania,</li>
+<li>rozmiar w kilobajtach,</li>
+<li>prawa do: odczytu, zapisu, wykonania, współdzielenia, czy jest prywatna (wtedy występuje copy-on-write),</li>
+<li>plik który jest odwzorowany lub “[ anon ]” gdy jest to pamięć anonimowa lub “[ stack ]” gdy jest to stos.</li>
+</ul><p>Stos <em>X-serwera</em> możemy łatwo znaleźć poleceniem <code>pmap $(pidof Xorg) | grep "stack"</code> (zakładając, że to jest proces X-serwera, o którym myślimy – w zależności od maszyny ten proces ma sensowny wynik lub mizerny, co wyjaśnię przy prezentacji). Sterty możemy szukać wśród wpisów związanych z pamięcią anonimową. Od sterty oczekujemy, że będzie miała prawa “rw”. W niefiltrowanym raporcie programu <code>pmap</code> widzimy wiele plików odwzorowanych w pamięć, głównie bibliotek.</p><h3 id="Co-pojawi-się-na-prezentacji0"><a class="anchor hidden-xs" href="#Co-pojawi-się-na-prezentacji0" title="Co-pojawi-się-na-prezentacji0"><span class="octicon octicon-link"></span></a>Co pojawi się na prezentacji</h3><p>Uruchamiamy program <code>pmap</code>, przykładowy początek wyniku wywołania <code>pmap $(pidof Xorg)</code> wygląda następująco:</p><pre><code>5564:   /usr/lib/xorg/Xorg vt2 -displayfd 3 -auth /run/user/1000/gdm/Xauthority -background none -noreset -keeptty -verbose 3
+000055dd28e5f000   2308K r-x-- Xorg
+000055dd2929f000     16K r---- Xorg
+000055dd292a3000     44K rw--- Xorg
+000055dd292ae000    128K rw---   [ anon ]
+000055dd2a992000  53668K rw---   [ anon ]
+00007f07435c4000   7920K rw-s-   [ shmid=0xc8013 ]
+00007f0743d80000  65536K rw-s-   [ shmid=0x2e ]
+00007f0748000000    132K rw---   [ anon ]
+00007f0748021000  65404K -----   [ anon ]
+</code></pre><p>Po wyszukaniu stosu w wynikach, znajdujemy taki wpis. Nikogo zapewne nie zaskakuje, że ten segment można odczytywać i modyfikować.</p><pre><code>00007ffc77c35000    132K rw---   [ stack ]
+</code></pre><p>Gdy wyszukamy segmenty odpowiedzialne za pamięć anonimową, otrzymamy między innymi takie wyniki:</p><pre><code>00007f07666b9000    628K rw---   [ anon ]
+00007f076675f000      4K rwx--   [ anon ]
+00007f0766776000     12K rw---   [ anon ]
+00007f076677b000      4K rw---   [ anon ]
+00007ffc77cef000     12K r----   [ anon ]
+00007ffc77cf2000      4K r-x--   [ anon ]
+ffffffffff600000      4K --x--   [ anon ]
+</code></pre><p>Wśród wpisów wyróżnia się ostatni, którego nie możemy odczytać ani zapisać ale możemy uruchamiać.</p><p>W listingu możemy znaleźć także wiele segmentów związanych z plikami odwzorowanymi w pamięć:</p><pre><code>00007f0755fff000   1104K r-x-- libglib-2.0.so.0.5600.4
+00007f0756113000   2048K ----- libglib-2.0.so.0.5600.4
+00007f0756313000      4K r---- libglib-2.0.so.0.5600.4
+00007f0756314000      4K rw--- libglib-2.0.so.0.5600.4
+00007f0756316000    328K r-x-- libgobject-2.0.so.0.5600.4
+00007f0756368000   2048K ----- libgobject-2.0.so.0.5600.4
+00007f0756568000      4K r---- libgobject-2.0.so.0.5600.4
+00007f0756569000      4K rw--- libgobject-2.0.so.0.5600.4
+00007f075656a000     36K r-x-- libgudev-1.0.so.0.2.0
+</code></pre><h3 id="Zadanie-8P"><a class="anchor hidden-xs" href="#Zadanie-8P" title="Zadanie-8P"><span class="octicon octicon-link"></span></a>Zadanie 8[P]</h3><blockquote>
+<p><small><i class="fa fa-user"></i> Piotr Witkowski</small> Zadanie rozwiązuje p. Jakub Mendyk.</p>
+</blockquote><p>Używając programu \Symbol{lsof} wyświetl \textbf{zasoby plikopodobne} podpięte do procesu przeglądarki \Symbol{firefox}.  Wyjaśnij znaczenie poszczególnych kolumn wykazu, po czym zidentyfikuj \textbf{pliki zwykłe}, \textbf{katalogi}, \textbf{urządzenia}, \textbf{gniazda} (sieciowe lub domeny uniksowej) i \textbf{potoki}. Przekieruj wyjście z~programu \Symbol{lsof}, przed i po otwarciu wybranej strony, odpowiednio do plików \Symbol{before} i \Symbol{after}. Czy poleceniem \Symbol{diff -u before after} jesteś w stanie zidentyfikować nowo utworzone połączenia sieciowe?</p><h3 id="Rozwiązanie"><a class="anchor hidden-xs" href="#Rozwiązanie" title="Rozwiązanie"><span class="octicon octicon-link"></span></a>Rozwiązanie</h3><ul>
+<li>Zasoby plikopodobne – obiekty prezentujące się jak pliki, jednak nie odpowiadające zawartości trwałego nośnika,</li>
+<li>Pliki zwykłe – ciąg bajtów o swobodnym dostępie,</li>
+<li>Katalogi – ciąg rekordów opisujących zawartość katalogu,</li>
+<li>Urządzenia – pliki reprezentujące zawartość fizycznych urządzeń.</li>
+</ul><p><strong>Gniazda</strong> (ang. sockets) to <strong>dwukierunkowe</strong> kanały komunikacyjne<br>
+między procesami, w szczególności znajdującymi się na różnych<br>
+komputerach. <strong>Potoki</strong> (ang. pipes) to <strong>jednokierunkowe</strong> kanały<br>
+komunikacyjne. Przez oba kanały przesyłane są ciągi bajtów, oba typy<br>
+dają <strong>sekwencyjny</strong> dostęp do danych. W gniazdach może być koncept<br>
+grupowania bajtów w pakiety, w potokach ich nie ma.</p><p>Dodatkową, ciekawą funkcją UNIXowych gniazd jest możliwość przekazywania<br>
+nimi zasobów oraz tożsamości.</p><p>Użyjemy polecenia <code>lsof -c firefox</code>.</p><p>Wykaz wynikowy programu <code>lsof</code> zawiera kolumny opisujące:</p><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>COMMAND</td>
+<td>polecenie związane z procesem</td>
+</tr>
+<tr>
+<td>PID</td>
+<td>PID</td>
+</tr>
+<tr>
+<td>USER</td>
+<td>właściciel procesu (dokładniej: właściciel katalogu w /proc związanego z procesem</td>
+</tr>
+<tr>
+<td>FD</td>
+<td>numer deskryptora pliku lub cwd - gdy katalogiem roboczym, rtd – gdy korzeniem systemu plików, mem – plik mapowany w pamięci</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>rodzaj zasobu, np. gniazdo IPv4, katalog, zwykły plik</td>
+</tr>
+<tr>
+<td>DEVICE</td>
+<td>identyfikator urządzania, z którego pochodzi plik</td>
+</tr>
+<tr>
+<td>SIZE/OFF</td>
+<td>rozmiar lub lokalizacja kursora w zasobie</td>
+</tr>
+<tr>
+<td>NODE</td>
+<td>identyfikator i-węzła, oznaczenie TCP i inne</td>
+</tr>
+</tbody>
+</table><h3 id="Co-pojawi-się-na-prezentacji"><a class="anchor hidden-xs" href="#Co-pojawi-się-na-prezentacji" title="Co-pojawi-się-na-prezentacji"><span class="octicon octicon-link"></span></a>Co pojawi się na prezentacji</h3><p>Przykładowy wynik porównania otwartych przez Firefoxa plików przed i po załadowaniu pewnej strony, ograniczony do połączeń IPv4, wygląda następująco:</p><p><img src="https://i.imgur.com/o6DqlJ3.png" alt=""></p><h2 id="Konsultacje-60-minut"><a class="anchor hidden-xs" href="#Konsultacje-60-minut" title="Konsultacje-60-minut"><span class="octicon octicon-link"></span></a>Konsultacje (60 minut)</h2><div class="alert alert-info">
+<p>W trakcie konsultacji prowadzący udostępnia kartę przeglądarki z bieżącym dokumentem w wideokonferencji. Moderuje dyskusję według własnego uznania, na przykład:</p>
+<ul>
+<li>kieruje dodatkowe pytania do osób, które dostarczyły rozwiązania,</li>
+<li>wymaga uzupełnienia rozwiązania przez autora lub wybraną osobę,</li>
+<li>umożliwia studentom zadawanie pytań,</li>
+<li>odpowiada na pytania w komentarzach.</li>
+</ul>
+</div></div>
+    <div class="ui-toc dropup unselectable hidden-print" style="display:none;">
+        <div class="pull-right dropdown">
+            <a id="tocLabel" class="ui-toc-label btn btn-default" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" title="Table of content">
+                <i class="fa fa-bars"></i>
+            </a>
+            <ul id="ui-toc" class="ui-toc-dropdown dropdown-menu" aria-labelledby="tocLabel">
+                <div class="toc"><ul class="nav">
+<li class=""><a href="#Lista-ćwiczeniowa-nr-Aśroda" title="Lista ćwiczeniowa nr A(środa)">Lista ćwiczeniowa nr A(środa)</a><ul class="nav">
+<li><a href="#Deklaracje" title="Deklaracje">Deklaracje</a></li>
+<li class=""><a href="#Rozwiązania-30-minut" title="Rozwiązania (30 minut)">Rozwiązania (30 minut)</a><ul class="nav">
+<li><a href="#Zadanie-1" title="Zadanie 1">Zadanie 1</a></li>
+<li><a href="#Zadanie-2" title="Zadanie 2">Zadanie 2</a></li>
+<li><a href="#Zadanie-3" title="Zadanie 3">Zadanie 3</a></li>
+<li><a href="#Zadanie-4P" title="Zadanie 4[P]">Zadanie 4[P]</a></li>
+<li class=""><a href="#Zadanie-5P" title="Zadanie 5[P]">Zadanie 5[P]</a></li>
+<li class=""><a href="#Rozwiązanie1" title="Rozwiązanie">Rozwiązanie</a></li>
+<li class=""><a href="#Co-pojawi-się-na-prezentacji0" title="Co pojawi się na prezentacji">Co pojawi się na prezentacji</a></li>
+<li class=""><a href="#Zadanie-6P" title="Zadanie 6[P]">Zadanie 6[P]</a></li>
+<li class=""><a href="#Zadanie-7P" title="Zadanie 7[P]">Zadanie 7[P]</a></li>
+<li class=""><a href="#Rozwiązanie2" title="Rozwiązanie">Rozwiązanie</a></li>
+<li class=""><a href="#Co-pojawi-się-na-prezentacji0" title="Co pojawi się na prezentacji">Co pojawi się na prezentacji</a></li>
+<li><a href="#Zadanie-8P" title="Zadanie 8[P]">Zadanie 8[P]</a></li>
+<li><a href="#Rozwiązanie" title="Rozwiązanie">Rozwiązanie</a></li>
+<li><a href="#Co-pojawi-się-na-prezentacji" title="Co pojawi się na prezentacji">Co pojawi się na prezentacji</a></li>
+</ul>
+</li>
+<li><a href="#Konsultacje-60-minut" title="Konsultacje (60 minut)">Konsultacje (60 minut)</a></li>
+</ul>
+</li>
+</ul>
+</div><div class="toc-menu"><a class="expand-toggle" href="#">Expand all</a><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a></div>
+            </ul>
+        </div>
+    </div>
+    <div id="ui-toc-affix" class="ui-affix-toc ui-toc-dropdown unselectable hidden-print" data-spy="affix" style="top:17px;display:none;" null null>
+        <div class="toc"><ul class="nav">
+<li class=""><a href="#Lista-ćwiczeniowa-nr-Aśroda" title="Lista ćwiczeniowa nr A(środa)">Lista ćwiczeniowa nr A(środa)</a><ul class="nav">
+<li><a href="#Deklaracje" title="Deklaracje">Deklaracje</a></li>
+<li class=""><a href="#Rozwiązania-30-minut" title="Rozwiązania (30 minut)">Rozwiązania (30 minut)</a><ul class="nav">
+<li><a href="#Zadanie-1" title="Zadanie 1">Zadanie 1</a></li>
+<li><a href="#Zadanie-2" title="Zadanie 2">Zadanie 2</a></li>
+<li><a href="#Zadanie-3" title="Zadanie 3">Zadanie 3</a></li>
+<li><a href="#Zadanie-4P" title="Zadanie 4[P]">Zadanie 4[P]</a></li>
+<li class=""><a href="#Zadanie-5P" title="Zadanie 5[P]">Zadanie 5[P]</a></li>
+<li class=""><a href="#Rozwiązanie1" title="Rozwiązanie">Rozwiązanie</a></li>
+<li class=""><a href="#Co-pojawi-się-na-prezentacji0" title="Co pojawi się na prezentacji">Co pojawi się na prezentacji</a></li>
+<li class=""><a href="#Zadanie-6P" title="Zadanie 6[P]">Zadanie 6[P]</a></li>
+<li class=""><a href="#Zadanie-7P" title="Zadanie 7[P]">Zadanie 7[P]</a></li>
+<li class=""><a href="#Rozwiązanie2" title="Rozwiązanie">Rozwiązanie</a></li>
+<li class=""><a href="#Co-pojawi-się-na-prezentacji0" title="Co pojawi się na prezentacji">Co pojawi się na prezentacji</a></li>
+<li><a href="#Zadanie-8P" title="Zadanie 8[P]">Zadanie 8[P]</a></li>
+<li><a href="#Rozwiązanie" title="Rozwiązanie">Rozwiązanie</a></li>
+<li><a href="#Co-pojawi-się-na-prezentacji" title="Co pojawi się na prezentacji">Co pojawi się na prezentacji</a></li>
+</ul>
+</li>
+<li><a href="#Konsultacje-60-minut" title="Konsultacje (60 minut)">Konsultacje (60 minut)</a></li>
+</ul>
+</li>
+</ul>
+</div><div class="toc-menu"><a class="expand-toggle" href="#">Expand all</a><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gist-embed/2.6.0/gist-embed.min.js" integrity="sha256-KyF2D6xPIJUW5sUDSs93vWyZm+1RzIpKCexxElmxl8g=" crossorigin="anonymous" defer></script>
+    <script>
+        var markdown = $(".markdown-body");
+        //smooth all hash trigger scrolling
+        function smoothHashScroll() {
+            var hashElements = $("a[href^='#']").toArray();
+            for (var i = 0; i < hashElements.length; i++) {
+                var element = hashElements[i];
+                var $element = $(element);
+                var hash = element.hash;
+                if (hash) {
+                    $element.on('click', function (e) {
+                        // store hash
+                        var hash = this.hash;
+                        if ($(hash).length <= 0) return;
+                        // prevent default anchor click behavior
+                        e.preventDefault();
+                        // animate
+                        $('body, html').stop(true, true).animate({
+                            scrollTop: $(hash).offset().top
+                        }, 100, "linear", function () {
+                            // when done, add hash to url
+                            // (default click behaviour)
+                            window.location.hash = hash;
+                        });
+                    });
+                }
+            }
+        }
+
+        smoothHashScroll();
+        var toc = $('.ui-toc');
+        var tocAffix = $('.ui-affix-toc');
+        var tocDropdown = $('.ui-toc-dropdown');
+        //toc
+        tocDropdown.click(function (e) {
+            e.stopPropagation();
+        });
+
+        var enoughForAffixToc = true;
+
+        function generateScrollspy() {
+            $(document.body).scrollspy({
+                target: ''
+            });
+            $(document.body).scrollspy('refresh');
+            if (enoughForAffixToc) {
+                toc.hide();
+                tocAffix.show();
+            } else {
+                tocAffix.hide();
+                toc.show();
+            }
+            $(document.body).scroll();
+        }
+
+        function windowResize() {
+            //toc right
+            var paddingRight = parseFloat(markdown.css('padding-right'));
+            var right = ($(window).width() - (markdown.offset().left + markdown.outerWidth() - paddingRight));
+            toc.css('right', right + 'px');
+            //affix toc left
+            var newbool;
+            var rightMargin = (markdown.parent().outerWidth() - markdown.outerWidth()) / 2;
+            //for ipad or wider device
+            if (rightMargin >= 133) {
+                newbool = true;
+                var affixLeftMargin = (tocAffix.outerWidth() - tocAffix.width()) / 2;
+                var left = markdown.offset().left + markdown.outerWidth() - affixLeftMargin;
+                tocAffix.css('left', left + 'px');
+            } else {
+                newbool = false;
+            }
+            if (newbool != enoughForAffixToc) {
+                enoughForAffixToc = newbool;
+                generateScrollspy();
+            }
+        }
+        $(window).resize(function () {
+            windowResize();
+        });
+        $(document).ready(function () {
+            windowResize();
+            generateScrollspy();
+        });
+
+        //remove hash
+        function removeHash() {
+            window.location.hash = '';
+        }
+
+        var backtotop = $('.back-to-top');
+        var gotobottom = $('.go-to-bottom');
+
+        backtotop.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (scrollToTop)
+                scrollToTop();
+            removeHash();
+        });
+        gotobottom.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (scrollToBottom)
+                scrollToBottom();
+            removeHash();
+        });
+
+        var toggle = $('.expand-toggle');
+        var tocExpand = false;
+
+        checkExpandToggle();
+        toggle.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            tocExpand = !tocExpand;
+            checkExpandToggle();
+        })
+
+        function checkExpandToggle () {
+            var toc = $('.ui-toc-dropdown .toc');
+            var toggle = $('.expand-toggle');
+            if (!tocExpand) {
+                toc.removeClass('expand');
+                toggle.text('Expand all');
+            } else {
+                toc.addClass('expand');
+                toggle.text('Collapse all');
+            }
+        }
+
+        function scrollToTop() {
+            $('body, html').stop(true, true).animate({
+                scrollTop: 0
+            }, 100, "linear");
+        }
+
+        function scrollToBottom() {
+            $('body, html').stop(true, true).animate({
+                scrollTop: $(document.body)[0].scrollHeight
+            }, 100, "linear");
+        }
+    </script>
+</body>
+
+</html>
