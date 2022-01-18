@@ -1,0 +1,7 @@
+[package]
+name = "dscs-ex8"
+version = "0.1.0"
+authors = ["Sebastian Hungerecker <hungerecker@isp.uni-luebeck.de>"]
+edition = "2018"
+
+[dependencies]
