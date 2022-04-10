@@ -1,0 +1,15 @@
+C:\Users\Karol\Desktop\Lista 5\zadanie2\zadanie2\bin\Debug\net6.0\zadanie2.exe
+C:\Users\Karol\Desktop\Lista 5\zadanie2\zadanie2\bin\Debug\net6.0\zadanie2.deps.json
+C:\Users\Karol\Desktop\Lista 5\zadanie2\zadanie2\bin\Debug\net6.0\zadanie2.runtimeconfig.json
+C:\Users\Karol\Desktop\Lista 5\zadanie2\zadanie2\bin\Debug\net6.0\zadanie2.dll
+C:\Users\Karol\Desktop\Lista 5\zadanie2\zadanie2\bin\Debug\net6.0\zadanie2.pdb
+C:\Users\Karol\Desktop\Lista 5\zadanie2\zadanie2\obj\Debug\net6.0\zadanie2.csproj.AssemblyReference.cache
+C:\Users\Karol\Desktop\Lista 5\zadanie2\zadanie2\obj\Debug\net6.0\zadanie2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Karol\Desktop\Lista 5\zadanie2\zadanie2\obj\Debug\net6.0\zadanie2.AssemblyInfoInputs.cache
+C:\Users\Karol\Desktop\Lista 5\zadanie2\zadanie2\obj\Debug\net6.0\zadanie2.AssemblyInfo.cs
+C:\Users\Karol\Desktop\Lista 5\zadanie2\zadanie2\obj\Debug\net6.0\zadanie2.csproj.CoreCompileInputs.cache
+C:\Users\Karol\Desktop\Lista 5\zadanie2\zadanie2\obj\Debug\net6.0\zadanie2.dll
+C:\Users\Karol\Desktop\Lista 5\zadanie2\zadanie2\obj\Debug\net6.0\refint\zadanie2.dll
+C:\Users\Karol\Desktop\Lista 5\zadanie2\zadanie2\obj\Debug\net6.0\zadanie2.pdb
+C:\Users\Karol\Desktop\Lista 5\zadanie2\zadanie2\obj\Debug\net6.0\zadanie2.genruntimeconfig.cache
+C:\Users\Karol\Desktop\Lista 5\zadanie2\zadanie2\obj\Debug\net6.0\ref\zadanie2.dll
