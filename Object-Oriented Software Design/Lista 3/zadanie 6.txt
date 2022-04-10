@@ -1,0 +1,7 @@
+SRP: Single Responsibility Principle 
+- Żadna klasa nie może być modyfikowana z więcecj niż jednego powodu. 
+
+ISP: Interface Segregation Principle
+- Klient nie powinien być zmuszany do zależności od metod których nie używa.
+
+SRP dotyczy klas i ich odpowiedzialności, a ISP dotyczy interfejsów.

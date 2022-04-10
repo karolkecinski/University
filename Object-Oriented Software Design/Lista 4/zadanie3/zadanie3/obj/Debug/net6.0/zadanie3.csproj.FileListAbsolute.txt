@@ -1,0 +1,15 @@
+C:\Users\Karol\Desktop\zadanie3\zadanie3\obj\Debug\net6.0\zadanie3.csproj.AssemblyReference.cache
+C:\Users\Karol\Desktop\zadanie3\zadanie3\obj\Debug\net6.0\zadanie3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Karol\Desktop\zadanie3\zadanie3\obj\Debug\net6.0\zadanie3.AssemblyInfoInputs.cache
+C:\Users\Karol\Desktop\zadanie3\zadanie3\obj\Debug\net6.0\zadanie3.AssemblyInfo.cs
+C:\Users\Karol\Desktop\zadanie3\zadanie3\obj\Debug\net6.0\zadanie3.csproj.CoreCompileInputs.cache
+C:\Users\Karol\Desktop\zadanie3\zadanie3\bin\Debug\net6.0\zadanie3.exe
+C:\Users\Karol\Desktop\zadanie3\zadanie3\bin\Debug\net6.0\zadanie3.deps.json
+C:\Users\Karol\Desktop\zadanie3\zadanie3\bin\Debug\net6.0\zadanie3.runtimeconfig.json
+C:\Users\Karol\Desktop\zadanie3\zadanie3\bin\Debug\net6.0\zadanie3.dll
+C:\Users\Karol\Desktop\zadanie3\zadanie3\bin\Debug\net6.0\zadanie3.pdb
+C:\Users\Karol\Desktop\zadanie3\zadanie3\obj\Debug\net6.0\zadanie3.dll
+C:\Users\Karol\Desktop\zadanie3\zadanie3\obj\Debug\net6.0\refint\zadanie3.dll
+C:\Users\Karol\Desktop\zadanie3\zadanie3\obj\Debug\net6.0\zadanie3.pdb
+C:\Users\Karol\Desktop\zadanie3\zadanie3\obj\Debug\net6.0\zadanie3.genruntimeconfig.cache
+C:\Users\Karol\Desktop\zadanie3\zadanie3\obj\Debug\net6.0\ref\zadanie3.dll

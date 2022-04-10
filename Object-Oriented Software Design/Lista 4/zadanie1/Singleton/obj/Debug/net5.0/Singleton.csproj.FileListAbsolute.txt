@@ -1,0 +1,32 @@
+C:\Users\karol.kecinski\OneDrive - mediatec.net GmbH\Desktop\zadanie1\Singleton\bin\Debug\net5.0\Singleton.exe
+C:\Users\karol.kecinski\OneDrive - mediatec.net GmbH\Desktop\zadanie1\Singleton\bin\Debug\net5.0\Singleton.deps.json
+C:\Users\karol.kecinski\OneDrive - mediatec.net GmbH\Desktop\zadanie1\Singleton\bin\Debug\net5.0\Singleton.runtimeconfig.json
+C:\Users\karol.kecinski\OneDrive - mediatec.net GmbH\Desktop\zadanie1\Singleton\bin\Debug\net5.0\Singleton.runtimeconfig.dev.json
+C:\Users\karol.kecinski\OneDrive - mediatec.net GmbH\Desktop\zadanie1\Singleton\bin\Debug\net5.0\Singleton.dll
+C:\Users\karol.kecinski\OneDrive - mediatec.net GmbH\Desktop\zadanie1\Singleton\bin\Debug\net5.0\Singleton.pdb
+C:\Users\karol.kecinski\OneDrive - mediatec.net GmbH\Desktop\zadanie1\Singleton\obj\Debug\net5.0\Singleton.csproj.AssemblyReference.cache
+C:\Users\karol.kecinski\OneDrive - mediatec.net GmbH\Desktop\zadanie1\Singleton\obj\Debug\net5.0\Singleton.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\karol.kecinski\OneDrive - mediatec.net GmbH\Desktop\zadanie1\Singleton\obj\Debug\net5.0\Singleton.AssemblyInfoInputs.cache
+C:\Users\karol.kecinski\OneDrive - mediatec.net GmbH\Desktop\zadanie1\Singleton\obj\Debug\net5.0\Singleton.AssemblyInfo.cs
+C:\Users\karol.kecinski\OneDrive - mediatec.net GmbH\Desktop\zadanie1\Singleton\obj\Debug\net5.0\Singleton.csproj.CoreCompileInputs.cache
+C:\Users\karol.kecinski\OneDrive - mediatec.net GmbH\Desktop\zadanie1\Singleton\obj\Debug\net5.0\Singleton.dll
+C:\Users\karol.kecinski\OneDrive - mediatec.net GmbH\Desktop\zadanie1\Singleton\obj\Debug\net5.0\ref\Singleton.dll
+C:\Users\karol.kecinski\OneDrive - mediatec.net GmbH\Desktop\zadanie1\Singleton\obj\Debug\net5.0\Singleton.pdb
+C:\Users\karol.kecinski\OneDrive - mediatec.net GmbH\Desktop\zadanie1\Singleton\obj\Debug\net5.0\Singleton.genruntimeconfig.cache
+C:\Users\karol.kecinski\OneDrive - mediatec.net GmbH\Desktop\zadanie1\Singleton\obj\Debug\net5.0\refint\Singleton.dll
+C:\Users\Karol\Desktop\zadanie1\Singleton\bin\Debug\net5.0\Singleton.exe
+C:\Users\Karol\Desktop\zadanie1\Singleton\bin\Debug\net5.0\Singleton.deps.json
+C:\Users\Karol\Desktop\zadanie1\Singleton\bin\Debug\net5.0\Singleton.runtimeconfig.json
+C:\Users\Karol\Desktop\zadanie1\Singleton\bin\Debug\net5.0\Singleton.runtimeconfig.dev.json
+C:\Users\Karol\Desktop\zadanie1\Singleton\bin\Debug\net5.0\Singleton.dll
+C:\Users\Karol\Desktop\zadanie1\Singleton\bin\Debug\net5.0\Singleton.pdb
+C:\Users\Karol\Desktop\zadanie1\Singleton\obj\Debug\net5.0\Singleton.csproj.AssemblyReference.cache
+C:\Users\Karol\Desktop\zadanie1\Singleton\obj\Debug\net5.0\Singleton.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Karol\Desktop\zadanie1\Singleton\obj\Debug\net5.0\Singleton.AssemblyInfoInputs.cache
+C:\Users\Karol\Desktop\zadanie1\Singleton\obj\Debug\net5.0\Singleton.AssemblyInfo.cs
+C:\Users\Karol\Desktop\zadanie1\Singleton\obj\Debug\net5.0\Singleton.csproj.CoreCompileInputs.cache
+C:\Users\Karol\Desktop\zadanie1\Singleton\obj\Debug\net5.0\Singleton.dll
+C:\Users\Karol\Desktop\zadanie1\Singleton\obj\Debug\net5.0\refint\Singleton.dll
+C:\Users\Karol\Desktop\zadanie1\Singleton\obj\Debug\net5.0\Singleton.pdb
+C:\Users\Karol\Desktop\zadanie1\Singleton\obj\Debug\net5.0\Singleton.genruntimeconfig.cache
+C:\Users\Karol\Desktop\zadanie1\Singleton\obj\Debug\net5.0\ref\Singleton.dll
