@@ -1,0 +1,15 @@
+D:\GitHub\University\Object-Oriented Software Design\Lista 6\zadanie 1\zadanie 1\obj\Debug\net6.0\zadanie 1.csproj.AssemblyReference.cache
+D:\GitHub\University\Object-Oriented Software Design\Lista 6\zadanie 1\zadanie 1\obj\Debug\net6.0\zadanie 1.GeneratedMSBuildEditorConfig.editorconfig
+D:\GitHub\University\Object-Oriented Software Design\Lista 6\zadanie 1\zadanie 1\obj\Debug\net6.0\zadanie 1.AssemblyInfoInputs.cache
+D:\GitHub\University\Object-Oriented Software Design\Lista 6\zadanie 1\zadanie 1\obj\Debug\net6.0\zadanie 1.AssemblyInfo.cs
+D:\GitHub\University\Object-Oriented Software Design\Lista 6\zadanie 1\zadanie 1\obj\Debug\net6.0\zadanie 1.csproj.CoreCompileInputs.cache
+D:\GitHub\University\Object-Oriented Software Design\Lista 6\zadanie 1\zadanie 1\bin\Debug\net6.0\zadanie 1.exe
+D:\GitHub\University\Object-Oriented Software Design\Lista 6\zadanie 1\zadanie 1\bin\Debug\net6.0\zadanie 1.deps.json
+D:\GitHub\University\Object-Oriented Software Design\Lista 6\zadanie 1\zadanie 1\bin\Debug\net6.0\zadanie 1.runtimeconfig.json
+D:\GitHub\University\Object-Oriented Software Design\Lista 6\zadanie 1\zadanie 1\bin\Debug\net6.0\zadanie 1.dll
+D:\GitHub\University\Object-Oriented Software Design\Lista 6\zadanie 1\zadanie 1\bin\Debug\net6.0\zadanie 1.pdb
+D:\GitHub\University\Object-Oriented Software Design\Lista 6\zadanie 1\zadanie 1\obj\Debug\net6.0\zadanie 1.dll
+D:\GitHub\University\Object-Oriented Software Design\Lista 6\zadanie 1\zadanie 1\obj\Debug\net6.0\refint\zadanie 1.dll
+D:\GitHub\University\Object-Oriented Software Design\Lista 6\zadanie 1\zadanie 1\obj\Debug\net6.0\zadanie 1.pdb
+D:\GitHub\University\Object-Oriented Software Design\Lista 6\zadanie 1\zadanie 1\obj\Debug\net6.0\zadanie 1.genruntimeconfig.cache
+D:\GitHub\University\Object-Oriented Software Design\Lista 6\zadanie 1\zadanie 1\obj\Debug\net6.0\ref\zadanie 1.dll
