@@ -29,8 +29,8 @@
 
         public void RemoveSubscriber<T>(ISubscriber<T> subscriber)
         {
-            if (!_subscribers.ContainsKey(typeof(T)))
-                _subscribers.[typeof(T)].Remove(subscriber);
+            //if (!_subscribers.ContainsKey(typeof(T)))
+                //_subscribers.[typeof(T)].Remove(subscriber);
         }
 
         public void Publish<T>(T Event)
