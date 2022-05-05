@@ -1,0 +1,8 @@
+D:\GitHub\University\Object-Oriented Software Design\Lista 8\zadanie 4\zadanie 4\bin\Debug\zadanie 4.exe.config
+D:\GitHub\University\Object-Oriented Software Design\Lista 8\zadanie 4\zadanie 4\bin\Debug\zadanie 4.exe
+D:\GitHub\University\Object-Oriented Software Design\Lista 8\zadanie 4\zadanie 4\bin\Debug\zadanie 4.pdb
+D:\GitHub\University\Object-Oriented Software Design\Lista 8\zadanie 4\zadanie 4\obj\Debug\zadanie 4.csproj.AssemblyReference.cache
+D:\GitHub\University\Object-Oriented Software Design\Lista 8\zadanie 4\zadanie 4\obj\Debug\zadanie 4.csproj.SuggestedBindingRedirects.cache
+D:\GitHub\University\Object-Oriented Software Design\Lista 8\zadanie 4\zadanie 4\obj\Debug\zadanie 4.csproj.CoreCompileInputs.cache
+D:\GitHub\University\Object-Oriented Software Design\Lista 8\zadanie 4\zadanie 4\obj\Debug\zadanie 4.exe
+D:\GitHub\University\Object-Oriented Software Design\Lista 8\zadanie 4\zadanie 4\obj\Debug\zadanie 4.pdb
